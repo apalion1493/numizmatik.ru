@@ -1,0 +1,71 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.contact-info {
+  border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
+  margin-top: 5px;
+
+  .location {
+    margin-bottom: -10px;
+
+    .location__address {
+      display: flex;
+
+      .location__marker {
+        background: url("../../img/header-icon/marker.svg") no-repeat center;
+        background-size: 100% auto;
+        width: 10px;
+        height: 15px;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .location__schedule {
+      display: flex;
+
+      .location__clock {
+        background: url("../../img/header-icon/clock.svg") no-repeat center;
+        background-size: 100% auto;
+        color: #252B7F;
+        width: 17px;
+        height: 17px;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .location__communications {
+      span {
+        color: #EBAD45;
+        margin-right: 10px;
+      }
+      
+      .location__men {
+        background: url("../../img/header-icon/man-user.svg") no-repeat center;
+        background-size: 100% auto;
+        width: 11px;
+        height: 14px;
+        position: relative;
+        margin-top: 8px;
+        margin-right: 5px;
+        margin-left: 10px;
+      }
+      
+      p {
+        color: #252B7F;
+      }
+    }
+    
+    .location__balance p {
+      color: #EBAD45;
+    }
+  }
+}
+
+.header-info__logo {
+  background: url("../../img/header-icon/logo.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 224px;
+  height: 45px;
+}
+

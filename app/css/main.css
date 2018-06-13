@@ -349,6 +349,68 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.ordering-forms {
+  width: 820px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-top: 68px; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .subscription {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2691,9 +2753,9 @@ tbody {
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-border-radius: 0.25rem;
-          border-radius: 0.25rem;
+  border: 1px solid #EDE6DE;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4093,9 +4155,9 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  -webkit-border-radius: 0.25rem;
-          border-radius: 0.25rem; }
+  border: 1px solid #EDE6DE;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
@@ -4230,7 +4292,7 @@ input[type="button"].btn-block {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   -webkit-background-size: 8px 10px;
           background-size: 8px 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #EDE6DE;
   -webkit-border-radius: 0.25rem;
           border-radius: 0.25rem;
   -webkit-appearance: none;
@@ -4305,9 +4367,9 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
-  -webkit-border-radius: 0.25rem;
-          border-radius: 0.25rem; }
+  border: 1px solid #EDE6DE;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
   .custom-file-label::after {
     position: absolute;
     top: 0;
@@ -4321,9 +4383,9 @@ input[type="button"].btn-block {
     color: #495057;
     content: "Browse";
     background-color: #e9ecef;
-    border-left: 1px solid #ced4da;
-    -webkit-border-radius: 0 0.25rem 0.25rem 0;
-            border-radius: 0 0.25rem 0.25rem 0; }
+    border-left: 1px solid #EDE6DE;
+    -webkit-border-radius: 0 0px 0px 0;
+            border-radius: 0 0px 0px 0; }
 
 .custom-range {
   width: 100%;

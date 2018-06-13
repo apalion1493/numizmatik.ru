@@ -6,13 +6,13 @@ $normal-size: 16px;
   border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
   margin-top: 5px;
 
-  .location {
+  .general-information {
     margin-bottom: -10px;
 
-    .location__address {
+    .contact-info__location {
       display: flex;
 
-      .location__marker {
+      .contact-info__location-marker {
         background: url("../../img/header-icon/marker.svg") no-repeat center;
         background-size: 100% auto;
         width: 10px;
@@ -21,15 +21,16 @@ $normal-size: 16px;
         margin-right: 5px;
       }
 
-      p {
+      .contact-info__location-address-link {
         font-size: $normal-size;
+        color: #333;
       }
     }
 
-    .location__schedule {
+    .contact-info__schedule {
       display: flex;
 
-      .location__clock {
+      .contact-info__clock {
         background: url("../../img/header-icon/clock.svg") no-repeat center;
         background-size: 100% auto;
         color: #252B7F;
@@ -39,22 +40,23 @@ $normal-size: 16px;
         margin-right: 5px;
       }
 
-      p {
+      .contact-info__timetable {
         font-size: $normal-size;
+        color: #333333;
       }
     }
 
-    .location__communications {
+    .contact-info__communications {
       display: flex;
       padding-right: 0;
 
-      span {
+      .contact-info__phone-call {
         color: #EBAD45;
         margin-left: 60px;
         font-size: $normal-size;
       }
       
-      .location__men {
+      .contact-info__men {
         background: url("../../img/header-icon/man-user.svg") no-repeat center;
         background-size: 100% auto;
         width: 11px;
@@ -65,18 +67,18 @@ $normal-size: 16px;
         margin-left: auto;
       }
       
-      p {
+      .contact-info__email {
         color: #252B7F;
         font-size: $normal-size;
       }
     }
     
-    .location__balance  {
+    .contact-info__balance  {
       display: flex;
       justify-content: flex-end;
       padding-left: 0;
 
-      p {
+      .contact-info__money {
         color: #EBAD45;
         font-size: $normal-size;
       }
@@ -97,7 +99,7 @@ $normal-size: 16px;
     height: 45px;
   }
 
-  .header-info__list a {
+  .header-info__link {
     margin-right: 5px;
     font-size: 18px;
     color: #252B7F;
@@ -130,10 +132,12 @@ $normal-size: 16px;
     .header-info__number {
       margin-left: 20px;
 
-       p {
+       .header-info__number-link {
+         display: block;
          margin: 0;
          font-size: $normal-size;
          font-weight: bold;
+         color: #333333;
 
          span {
            position: relative;
@@ -151,9 +155,7 @@ $normal-size: 16px;
     }
   }
 
-  .header-info__shop {
-
-    .header-info__border {
+  .btn-outline-primary {
       border: 1px solid #EBAD45;
       border-radius: 20px;
       width: 173px;
@@ -166,13 +168,15 @@ $normal-size: 16px;
         background-size: 100% auto;
         width: 21px;
         height: 19px;
-        margin-left: 10px;
       }
 
       .header-info__purchases {
         margin-left: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-        p {
+        .header-info__purchases-text {
           font-size: 12px;
           margin: 0;
 
@@ -182,7 +186,6 @@ $normal-size: 16px;
           }
         }
       }
-    }
   }
 }
 

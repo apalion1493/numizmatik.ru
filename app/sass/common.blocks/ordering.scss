@@ -8,4 +8,24 @@
   flex-direction: column;
   margin: auto;
   margin-top: 68px;
+
+  header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .ordering-forms__title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .ordering-forms__line {
+    background: #D8D8D8;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+  }
 }

@@ -370,6 +370,20 @@
           flex-direction: column;
   margin: auto;
   margin-top: 68px; }
+  .ordering-forms header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px; }
+  .ordering-forms .ordering-forms__title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold; }
+  .ordering-forms .ordering-forms__line {
+    background: #D8D8D8;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px; }
 
 /*!
  * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
@@ -580,14 +594,14 @@
 .contact-info {
   border-bottom: 1px solid rgba(216, 216, 216, 0.3);
   margin-top: 5px; }
-  .contact-info .location {
+  .contact-info .general-information {
     margin-bottom: -10px; }
-    .contact-info .location .location__address {
+    .contact-info .general-information .contact-info__location {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      .contact-info .location .location__address .location__marker {
+      .contact-info .general-information .contact-info__location .contact-info__location-marker {
         background: url("../../img/header-icon/marker.svg") no-repeat center;
         -webkit-background-size: 100% auto;
                 background-size: 100% auto;
@@ -595,14 +609,15 @@
         height: 15px;
         margin-top: 5px;
         margin-right: 5px; }
-      .contact-info .location .location__address p {
-        font-size: 16px; }
-    .contact-info .location .location__schedule {
+      .contact-info .general-information .contact-info__location .contact-info__location-address-link {
+        font-size: 16px;
+        color: #333; }
+    .contact-info .general-information .contact-info__schedule {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      .contact-info .location .location__schedule .location__clock {
+      .contact-info .general-information .contact-info__schedule .contact-info__clock {
         background: url("../../img/header-icon/clock.svg") no-repeat center;
         -webkit-background-size: 100% auto;
                 background-size: 100% auto;
@@ -611,19 +626,20 @@
         height: 14px;
         margin-top: 5px;
         margin-right: 5px; }
-      .contact-info .location .location__schedule p {
-        font-size: 16px; }
-    .contact-info .location .location__communications {
+      .contact-info .general-information .contact-info__schedule .contact-info__timetable {
+        font-size: 16px;
+        color: #333333; }
+    .contact-info .general-information .contact-info__communications {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       padding-right: 0; }
-      .contact-info .location .location__communications span {
+      .contact-info .general-information .contact-info__communications .contact-info__phone-call {
         color: #EBAD45;
         margin-left: 60px;
         font-size: 16px; }
-      .contact-info .location .location__communications .location__men {
+      .contact-info .general-information .contact-info__communications .contact-info__men {
         background: url("../../img/header-icon/man-user.svg") no-repeat center;
         -webkit-background-size: 100% auto;
                 background-size: 100% auto;
@@ -633,10 +649,10 @@
         margin-top: 6px;
         margin-right: 5px;
         margin-left: auto; }
-      .contact-info .location .location__communications p {
+      .contact-info .general-information .contact-info__communications .contact-info__email {
         color: #252B7F;
         font-size: 16px; }
-    .contact-info .location .location__balance {
+    .contact-info .general-information .contact-info__balance {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -646,7 +662,7 @@
           -ms-flex-pack: end;
               justify-content: flex-end;
       padding-left: 0; }
-      .contact-info .location .location__balance p {
+      .contact-info .general-information .contact-info__balance .contact-info__money {
         color: #EBAD45;
         font-size: 16px; }
 
@@ -667,7 +683,7 @@
             background-size: 100% auto;
     width: 224px;
     height: 45px; }
-  .header-info .header-info__list a {
+  .header-info .header-info__link {
     margin-right: 5px;
     font-size: 18px;
     color: #252B7F; }
@@ -699,11 +715,13 @@
       top: 5px; }
     .header-info .header-info__phone .header-info__number {
       margin-left: 20px; }
-      .header-info .header-info__phone .header-info__number p {
+      .header-info .header-info__phone .header-info__number .header-info__number-link {
+        display: block;
         margin: 0;
         font-size: 16px;
-        font-weight: bold; }
-        .header-info .header-info__phone .header-info__number p span {
+        font-weight: bold;
+        color: #333333; }
+        .header-info .header-info__phone .header-info__number .header-info__number-link span {
           position: relative;
           bottom: 2px; }
     .header-info .header-info__phone .header-info__star {
@@ -713,7 +731,7 @@
       width: 40px;
       height: 40px;
       margin-left: auto; }
-  .header-info .header-info__shop .header-info__border {
+  .header-info .btn-outline-primary {
     border: 1px solid #EBAD45;
     -webkit-border-radius: 20px;
             border-radius: 20px;
@@ -727,19 +745,31 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .header-info .header-info__shop .header-info__border .header-info__basket {
+    .header-info .btn-outline-primary .header-info__basket {
       background: url("../../img/header-icon/shopping-cart.svg") no-repeat center;
       -webkit-background-size: 100% auto;
               background-size: 100% auto;
       width: 21px;
-      height: 19px;
-      margin-left: 10px; }
-    .header-info .header-info__shop .header-info__border .header-info__purchases {
-      margin-left: 8px; }
-      .header-info .header-info__shop .header-info__border .header-info__purchases p {
+      height: 19px; }
+    .header-info .btn-outline-primary .header-info__purchases {
+      margin-left: 8px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .header-info .btn-outline-primary .header-info__purchases .header-info__purchases-text {
         font-size: 12px;
         margin: 0; }
-        .header-info .header-info__shop .header-info__border .header-info__purchases p span {
+        .header-info .btn-outline-primary .header-info__purchases .header-info__purchases-text span {
           font-weight: bold;
           margin-left: 6px; }
 

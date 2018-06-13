@@ -1,0 +1,12 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.back-to-top {
+  background: url("../../img/recommendation/Group8.svg") no-repeat center;
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+  position: fixed;
+  right: 90px;
+  bottom: 50px;
+  border-radius: 50px !important;
+}

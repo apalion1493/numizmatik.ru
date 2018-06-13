@@ -4,18 +4,19 @@
   padding: $breadcrumb-padding-y $breadcrumb-padding-x;
   margin-bottom: $breadcrumb-margin-bottom;
   list-style: none;
-  background-color: $breadcrumb-bg;
+  background-color: #ffffff;
   @include border-radius($breadcrumb-border-radius);
+  margin-top: 33px;
 }
 
 .breadcrumb-item {
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   + .breadcrumb-item {
-    padding-left: $breadcrumb-item-padding;
+    padding-left: 20px;
 
     &::before {
       display: inline-block; // Suppress underlining of the separator in modern browsers
-      padding-right: $breadcrumb-item-padding;
+      padding-right: 20px;
       color: $breadcrumb-divider-color;
       content: '>';
     }

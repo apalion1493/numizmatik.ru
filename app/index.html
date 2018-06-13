@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
 
@@ -19,7 +21,7 @@
                     <div class="location__clock"></div>
                     <p><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
                 </div>
-                <div class="col-4 location__communications d-flex">
+                <div class="col-4 location__communications">
                     <span>Заказать звонок </span>
                     <div class="location__men"></div>
                     <p> username@yandex.ru </p>
@@ -46,8 +48,8 @@
                 <div class="header-info__ellipsis"></div>
                 <div class="header-info__cellphone"></div>
                 <div class="header-info__number">
-                    <p>8 (800) 333-14-77</p>
-                    <p>7 (903) 006-00-44</p>
+                    <p>8 <span>(</span>800<span>)</span> 333-14-77</p>
+                    <p>7 <span>(</span>903<span>)</span> 006-00-44</p>
                 </div>
                 <div class="header-info__star"></div>
             </div>
@@ -55,18 +57,709 @@
                 <div class="header-info__border">
                     <div class="header-info__basket"></div>
                     <div class="header-info__purchases">
-                        <div class="header-info__goods">
-                            <p>Товаров: 3шт.</p>
-                        </div>
-                        <div class="header-info__price">
-                            <p>На сумму: 200 000 ₽</p>
-                        </div>
+                        <p>Товаров: <span>3шт.</span></p>
+                        <p>На сумму: <b>200 000 ₽</b></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pl-0" id="section-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Магазин монет
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Банкноты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аксессуары</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Жетоны</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Нотгельды</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Книги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Распродажи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">История просмотров</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
+<main>
+    <button type="button" class="btn back-to-top"></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pl-0">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container basket-caption">
+        <div class="row d-flex align-items-center">
+            <div class="col-3 basket-caption__name">
+                <p>Корзина</p>
+            </div>
+            <div class="col-5 basket-caption__info">
+                <p>Товары в корзине до:</p>
+                <div class="basket-caption__time">
+                    <div class="basket-caption__number">
+                        <p class="basket-caption__one">1</p>
+                    </div>
+                    <div class="basket-caption__number">
+                        <p>5</p>
+                    </div>
+                    <span>:</span>
+                    <div class="basket-caption__number">
+                        <p>4</p>
+                    </div>
+                    <div class="basket-caption__number">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <table class="table table-hover mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">&shy</th>
+                        <th scope="col">Фото</th>
+                        <th scope="col">Группа - Страна</th>
+                        <th scope="col">Наименование</th>
+                        <th scope="col">Год</th>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Ценна</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col" class="last-cell">
+                            <div class="trashcan"></div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th rowspan="3" scope="row">
+                            <div class="th-vertical first-vertical-th">Мелочь</div>
+                        </th>
+                        <td class="table__first-img">
+                            <img src="img/table-img/Bitmap.png" alt="">
+                        </td>
+                        <td class="table__color-text">Кирибати</td>
+                        <td class="table__color-text">1 доллар</td>
+                        <td>2018</td>
+                        <td>CS-387</td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td>
+                            <div class="regulator">
+                                <span>1</span>
+                            </div>
+                        </td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td class="last-cell">
+                            <img src="img/table-img/cross.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table__second-img">
+                            <img src="img/table-img/Bitmap2.png" alt="">
+                        </td>
+                        <td class="table__color-text">Кирибати</td>
+                        <td class="table__color-text">1 доллар</td>
+                        <td>2018</td>
+                        <td>CS-387</td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td>
+                            <div class="regulator">
+                                <span>1</span>
+                            </div>
+                        </td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td class="last-cell">
+                            <img src="img/table-img/cross.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="table__third-img">
+                            <img src="img/table-img/Bitmap3.png" alt="">
+                        </td>
+                        <td class="table__color-text">Кирибати</td>
+                        <td class="table__color-text">1 доллар</td>
+                        <td>2018</td>
+                        <td>CS-387</td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td>
+                            <div class="regulator">
+                                <span>1</span>
+                            </div>
+                        </td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td class="last-cell">
+                            <img src="img/table-img/cross.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="th-grey">
+                            <div class="th-vertical">Боны</div>
+                        </th>
+                        <td class="table__fourth-img">
+                            <img src="img/table-img/Bitmap4.png" alt="">
+                        </td>
+                        <td class="table__color-text">Бангладеш</td>
+                        <td class="table__color-text">70 така</td>
+                        <td>2018</td>
+                        <td>CS-387</td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td>
+                            <div class="regulator">
+                                <span>1</span>
+                            </div>
+                        </td>
+                        <td class="table__bold-text">250 ₽</td>
+                        <td class="last-cell">
+                            <img src="img/table-img/cross.svg" alt="">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6 ml-auto">
+                <div class="basket-caption__totals d-flex justify-content-around align-items-center">
+                    <p>Итого:</p>
+                    <span>1000  ₽</span>
+                    <div class="basket-caption__cross">
+                        <img src="img/table-img/cross.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 ml-auto button-group">
+                <button type="button" class="btn btn-light btn-lg">Продолжить покупки</button>
+                <button type="button" class="btn btn-success btn-lg">Купить без регистрации</button>
+                <button type="button" class="btn btn-primary btn-lg">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="container recommendations">
+        <header class="recommendations__title">
+            <h3>Рекомендуем преобрести</h3>
+        </header>
+        <div class="row recommendations__content" data-slick-slider>
+                <div class="col">
+                    <div class="card card-first">
+                        <img class="card-img-top card-first__img" src="img/recommendation/coin-img.png" alt="Card image cap">
+                        <div class="card-body card-first__body">
+                            <h4 class="card-title">Монета Россия 3 рубля Серебро 2008 Proof</h4>
+                            <div class="card-text">
+                                <p class="card-text__info">
+                                    Страна:<br>
+                                    Год:<br>
+                                    Металл:<br>
+                                    Состояние:<br>
+                                    Номер:<br>
+                                    Количество:
+                                </p>
+                                <p class="card-text__result">
+                                    Россия<br>
+                                    2008<br>
+                                    Серебро<br>
+                                    Proof<br>
+                                    PL129-09<br>
+                                    10 шт.
+                                </p>
+                            </div>
+                            <div class="footer-card">
+                                <span>8 000 ₽</span>
+                                <div class="footer-card__btn">
+                                    <a href="#" class="btn footer-card__btn-star"></a>
+                                    <a href="#" class="btn footer-card__btn-basket"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-second">
+                        <img class="card-img-top card-second__img" src="img/recommendation/coin-img-2.png" alt="Card image cap">
+                        <div class="card-body card-second__body">
+                            <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                            <div class="card-text">
+                                <p class="card-text__info">
+                                    Страна:<br>
+                                    Год:<br>
+                                    Металл:<br>
+                                    Состояние:<br>
+                                    Номер:<br>
+                                    Количество:
+                                </p>
+                                <p class="card-text__result">
+                                    Австралия<br>
+                                    2018<br>
+                                    Латунь<br>
+                                    UNC<br>
+                                    CS-080<br>
+                                    10 шт.
+                                </p>
+                            </div>
+                            <div class="footer-card">
+                                <span>360 ₽</span>
+                                <div class="footer-card__btn">
+                                    <a href="#" class="btn footer-card__btn-star"></a>
+                                    <a href="#" class="btn footer-card__btn-basket"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-third">
+                        <img class="card-img-top card-third__img" src="img/recommendation/coin-img-3.png" alt="Card image cap">
+                        <div class="card-body card-third__body">
+                            <h4 class="card-title">Монета Украина 5 гривен Биметалл 2018 UNC</h4>
+                            <div class="card-text">
+                                <p class="card-text__info">
+                                    Страна:<br>
+                                    Год:<br>
+                                    Металл:<br>
+                                    Состояние:<br>
+                                    Номер:<br>
+                                    Количество:
+                                </p>
+                                <p class="card-text__result">
+                                    Украина<br>
+                                    2018<br>
+                                    Биметалл<br>
+                                    UNC<br>
+                                    CS-542<br>
+                                    10 шт.
+                                </p>
+                            </div>
+                            <div class="footer-card">
+                                <span>500 ₽</span>
+                                <div class="footer-card__btn">
+                                    <a href="#" class="btn footer-card__btn-star"></a>
+                                    <a href="#" class="btn footer-card__btn-basket"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-fourth">
+                        <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                        <div class="card-body card-fourth__body">
+                            <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                            <div class="card-text">
+                                <p class="card-text__info">
+                                    Страна:<br>
+                                    Год:<br>
+                                    Металл:<br>
+                                    Состояние:<br>
+                                    Номер:<br>
+                                    Количество:
+                                </p>
+                                <p class="card-text__result">
+                                    Австралия<br>
+                                    2018<br>
+                                    Латунь<br>
+                                    UNC<br>
+                                    CS-080<br>
+                                    10 шт.
+                                </p>
+                            </div>
+                            <div class="footer-card">
+                                <span>360 ₽</span>
+                                <div class="footer-card__btn">
+                                    <a href="#" class="btn footer-card__btn-star"></a>
+                                    <a href="#" class="btn footer-card__btn-basket"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-fourth">
+                    <img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap">
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title">Монета Австралия 2 доллара Латунь 2018 UNC</h4>
+                        <div class="card-text">
+                            <p class="card-text__info">
+                                Страна:<br>
+                                Год:<br>
+                                Металл:<br>
+                                Состояние:<br>
+                                Номер:<br>
+                                Количество:
+                            </p>
+                            <p class="card-text__result">
+                                Австралия<br>
+                                2018<br>
+                                Латунь<br>
+                                UNC<br>
+                                CS-080<br>
+                                10 шт.
+                            </p>
+                        </div>
+                        <footer class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="subscription">
+        <div class="subscription__text">
+            <p>ХОТИТЕ БЫТЬ В КУРСЕ СОБЫТИЙ? ВСЕГДА АКТУАЛЬНАЯ ИНФОРМАЦИЯ! ПОДПИШИТЕСЬ</p>
+        </div>
+        <div class="subscription__btn">
+            <button type="button" class="btn btn-secondary"><span>Подписаться</span><div class="subscription__icon"></div> </button>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>Магазин монет</h4>
+                    <p>
+                        Монеты<br>
+                        Распродажа монет<br>
+                        Оплата и доставка<br>
+                        Покупка/скупка монет<br>
+                        Скупка-оценка<br>
+                        Контакты
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Каталог монет</h4>
+                    <p>
+                        Каталог монет<br>
+                        Наборы монет<br>
+                        Банкноты<br>
+                        Подарочные монеты<br>
+                        Аксессуары<br>
+                        Программа нумизмата<br>
+                        Приложения для смартфона
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Нумизмату</h4>
+                    <p>
+                        Библиотека нумизмата<br>
+                        Новости нумизматики<br>
+                        Клуб Нумизмат<br>
+                        Форум нумизматов<br>
+                        Черный список<br>
+                        Ценник на монеты<br>
+                        Стоимость монет
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Обратная связь</h4>
+                    <p>
+                        Библиотека нумизмата<br>
+                        Новости нумизматики<br>
+                        Клуб Нумизмат<br>
+                        Форум нумизматов<br>
+                        Черный список<br>
+                        Ценник на монеты<br>
+                        Стоимость монет
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Для клиентов</h4>
+                    <p>
+                        О магазине<br>
+                        Видео о компании<br>
+                        Доставка и оплата<br>
+                        Boxberry в 360 городах России<br>
+                        Правила монетной лавки<br>
+                        Гарантии подлинности монет<br>
+                        ЧаВо по магазину<br>
+                        Панорама магазина<br>
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Контактные данные</h4>
+                    <h5>Москва</h5>
+                    <p class="address-text">Адрес: <br>
+                        г. Москва, ул. Тверская 12 стр. 8.<br> Станция метро: Чеховская,<br> Тверская, Пушкинская
+                    </p>
+                    <p class="address-text mt-4">Телефоны: <br>
+                        +8-800-333-14-77 (Россия бесплатно), <br>
+                        +7-903-006-00-44
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h5 class="title-petersburg">Санкт-Петербургe</h5>
+                    <p class="address-text">
+                        Адрес: <br>
+                        Санкт-Петербург, ул. Турку 31
+                    </p>
+                    <p class="address-text mt-4">
+                        Телефон: <br>
+                        +7-812-925-53-22
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <div class="footer-logo"></div>
+                    <p>2001 - 2018 &copy Клуб Нумизмат</p>
+                    <div class="footer-img">
+                        <div class="footer-img__metrika"></div>
+                        <div class="footer-img__icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info__copyrighted">
+            <p>При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна. administrator@numizmatik.ru</p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="js/recommendations.js"></script>
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
 
 </body>
 </html>

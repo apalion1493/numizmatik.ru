@@ -1,5 +1,7 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+$normal-size: 16px;
+
 .contact-info {
   border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
   margin-top: 5px;
@@ -18,6 +20,10 @@
         margin-top: 5px;
         margin-right: 5px;
       }
+
+      p {
+        font-size: $normal-size;
+      }
     }
 
     .location__schedule {
@@ -27,17 +33,25 @@
         background: url("../../img/header-icon/clock.svg") no-repeat center;
         background-size: 100% auto;
         color: #252B7F;
-        width: 17px;
-        height: 17px;
+        width: 14px;
+        height: 14px;
         margin-top: 5px;
         margin-right: 5px;
+      }
+
+      p {
+        font-size: $normal-size;
       }
     }
 
     .location__communications {
+      display: flex;
+      padding-right: 0;
+
       span {
         color: #EBAD45;
-        margin-right: 10px;
+        margin-left: 60px;
+        font-size: $normal-size;
       }
       
       .location__men {
@@ -46,26 +60,136 @@
         width: 11px;
         height: 14px;
         position: relative;
-        margin-top: 8px;
+        margin-top: 6px;
         margin-right: 5px;
-        margin-left: 10px;
+        margin-left: auto;
       }
       
       p {
         color: #252B7F;
+        font-size: $normal-size;
       }
     }
     
-    .location__balance p {
-      color: #EBAD45;
+    .location__balance  {
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 0;
+
+      p {
+        color: #EBAD45;
+        font-size: $normal-size;
+      }
     }
   }
 }
 
-.header-info__logo {
-  background: url("../../img/header-icon/logo.svg") no-repeat center;
-  background-size: 100% auto;
-  width: 224px;
-  height: 45px;
+.header-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .header-info__logo {
+    background: url("../../img/header-icon/logo.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 224px;
+    height: 45px;
+  }
+
+  .header-info__list a {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #252B7F;
+  }
+
+  .header-info__phone {
+    display: flex;
+
+    .header-info__ellipsis {
+      background: url("../../img/header-icon/Group2.svg") no-repeat center;
+      background-size: cover;
+      width: 23px;
+      height: 6px;
+      align-self: center;
+      position: relative;
+      left: 10px;
+    }
+
+    .header-info__cellphone {
+      background: url("../../img/header-icon/phone-receiver.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 15px;
+      height: 15px;
+      margin-left: 20px;
+      position: relative;
+      left: 10px;
+      top: 5px;
+    }
+
+    .header-info__number {
+      margin-left: 20px;
+
+       p {
+         margin: 0;
+         font-size: $normal-size;
+         font-weight: bold;
+
+         span {
+           position: relative;
+           bottom: 2px;
+         }
+       }
+    }
+
+    .header-info__star {
+      background: url("../../img/header-icon/favorite.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 40px;
+      height: 40px;
+      margin-left: auto;
+    }
+  }
+
+  .header-info__shop {
+
+    .header-info__border {
+      border: 1px solid #EBAD45;
+      border-radius: 20px;
+      width: 173px;
+      height: 41px;
+      display: flex;
+      align-items: center;
+
+      .header-info__basket {
+        background: url("../../img/header-icon/shopping-cart.svg") no-repeat center;
+        background-size: 100% auto;
+        width: 21px;
+        height: 19px;
+        margin-left: 10px;
+      }
+
+      .header-info__purchases {
+        margin-left: 8px;
+
+        p {
+          font-size: 12px;
+          margin: 0;
+
+          span {
+            font-weight: bold;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
 }
+
+.header-menu {
+  background: #252B7F;
+  border-bottom: 2px solid #EBAD45;
+  height: 52px;
+}
+
 

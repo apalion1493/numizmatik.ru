@@ -24,6 +24,7 @@
     "imagemin-pngquant": "^5.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "npm": "^6.1.0"
   }
 }

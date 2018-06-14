@@ -6,32 +6,22 @@
   .col {
     position: relative;
   }
-  .col:nth-child(odd):after {
-    content: 'NEW  05.11';
-    font-size: 10px;
-    padding: 2px 23px 4px 23px;
-    color: #fff;
-    background: $secondary;
-    width: 100px;
-    height: 19px;
-    position: absolute;
-    top: -19px;
-    right: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+  //.col:nth-child(odd):after {
+  //  display: block;
+  //  content: 'NEW  05.11';
+  //  font-size: 10px;
+  //  padding: 2px 23px 4px 23px;
+  //  color: #fff;
+  //  background: $secondary;
+  //  width: 100px;
+  //  height: 19px;
+  //  position: absolute;
+  //  top: -19px;
+  //  right: 15px;
+  //  border-top-left-radius: 10px;
+  //  border-top-right-radius: 10px;
+  //}
 }
-
-//.recommendations__content:after {
-//  content: '';
-//  background: url("../../img/recommendation/Group8.svg") no-repeat center;
-//  background-size: 100% auto;
-//  position: absolute;
-//  width: 51px;
-//  height: 51px;
-//  right: -80px;
-//  top: 60px;
-//}
 
 .card-first {
   .card-first__img {
@@ -105,15 +95,55 @@
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  
-  .card-text__info {
-    color: #777777;
-    flex-grow: 1;
+  margin-bottom: 45px;
+}
+
+.card-text__table {
+  width: 100%;
+}
+
+.card-text__body {
+  border: none;
+
+  .card-text__first-column,
+  .card-text__second-column {
+    padding-top: 0 !important;
+    padding-bottom: 2px !important;
   }
   
-  .card-text__result {
+  .card-text__first-column {
+    color: #777777;
+    font-size: 14px;
+    width: 115px;
+  }
+
+  .card-text__second-column {
     color: #333333;
-    flex-grow: 1;
+    font-size: 14px;
   }
 }
 
+.card-new-icon {
+  display: block;
+  font-size: 10px;
+  padding: 2px 23px 4px 23px;
+  color: #fff;
+  background: $secondary;
+  width: 100px;
+  height: 19px;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 100;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  padding-top: 20px;
+}
+
+.card-title a {
+  color: $secondary;
+}

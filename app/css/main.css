@@ -90,7 +90,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.basket-caption .basket-caption__name p {
+.basket-caption .basket-caption__name .basket-caption__title {
   font-size: 32px;
   font-weight: bold;
   color: #333333; }
@@ -101,7 +101,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: auto; }
-  .basket-caption .basket-caption__info p {
+  .basket-caption .basket-caption__info .basket-caption__info-title {
     font-size: 24px;
     color: #555555;
     margin-left: 60px;
@@ -121,18 +121,24 @@
       position: relative;
       bottom: 5px;
       margin-left: 7px; }
-      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number p {
+      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number .basket-caption__number-second,
+      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number .basket-caption__number-third,
+      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number .basket-caption__number-fourth {
         margin: 0;
         position: relative;
         top: 5px;
         left: 8px;
-        color: #EBAD45; }
-      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number .basket-caption__one {
+        color: #EBAD45;
+        font-size: 24px;
+        font-weight: bold; }
+      .basket-caption .basket-caption__info .basket-caption__time .basket-caption__number .basket-caption__number-first {
         margin: 0;
         position: relative;
         top: 5px;
         left: 10px;
-        color: #EBAD45; }
+        color: #EBAD45;
+        font-size: 24px;
+        font-weight: bold; }
     .basket-caption .basket-caption__info .basket-caption__time span {
       font-size: 20px;
       margin-left: 6px; }
@@ -140,18 +146,29 @@
 .basket-caption table .last-cell {
   padding-left: 25px;
   padding-right: 15px; }
+  .basket-caption table .last-cell .trashcan {
+    display: block;
+    background: url("../../img/table-img/delete-photo.svg") no-repeat center;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    width: 14px;
+    height: 20px;
+    z-index: 100; }
 
-.basket-caption table .trashcan {
-  background: url("../../img/table-img/delete-photo.svg") no-repeat center;
-  -webkit-background-size: 100% auto;
-          background-size: 100% auto;
-  position: relative;
-  bottom: 5px;
-  left: 5px;
-  width: 14px;
-  height: 20px; }
+.basket-caption table input[type="number"]::-webkit-inner-spin-button,
+.basket-caption table input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
 
-.basket-caption table .regulator {
+.basket-caption table input[type="number"] {
+  -moz-appearance: textfield; }
+
+.basket-caption table .quantity-block {
   background: #FAEFDC;
   -webkit-border-radius: 20px;
           border-radius: 20px;
@@ -169,69 +186,75 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .basket-caption table .regulator span {
-    font-size: 16px;
-    font-weight: bold;
-    background: #ffffff;
-    height: 38px;
-    width: 30px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .basket-caption table .regulator span:after {
-    content: '';
-    background: url("../../img/table-img/plus.svg") no-repeat center;
-    -webkit-background-size: 100% auto;
-            background-size: 100% auto;
-    position: absolute;
-    right: 10px;
-    top: 13px;
-    width: 11px;
-    height: 11px; }
-  .basket-caption table .regulator span:before {
-    content: '';
-    background: url("../../img/table-img/minus.svg") no-repeat center;
-    -webkit-background-size: 100% auto;
-            background-size: 100% auto;
-    position: absolute;
-    left: 10px;
-    top: 18px;
-    width: 11px;
-    height: 2px; }
+          align-items: center;
+  margin-right: 12px; }
+
+.basket-caption table .quantity-arrow-minus {
+  cursor: pointer;
+  border: none;
+  background: url("../../img/table-img/minus.svg") no-repeat center;
+  -webkit-background-size: 11px 2px;
+          background-size: 11px 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 31px;
+  height: 40px; }
+
+.basket-caption table .quantity-arrow-plus {
+  cursor: pointer;
+  border: none;
+  background: url("../../img/table-img/plus.svg") no-repeat center;
+  -webkit-background-size: 11px 11px;
+          background-size: 11px 11px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 31px;
+  height: 40px; }
+
+.basket-caption table .quantity-num {
+  width: 30px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none; }
 
 .basket-caption table .table__bold-text {
   font-weight: bold;
   color: #555555;
   font-size: 18px; }
 
-.basket-caption table .table__color-text {
+.basket-caption table .table__link {
   color: #252B7F; }
 
 .basket-caption table thead tr th {
   font-size: 18px; }
 
 .basket-caption .basket-caption__totals {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FAF8F4;
   width: 368px;
   height: 67px;
   margin-left: auto;
   margin-bottom: 32px; }
-  .basket-caption .basket-caption__totals p, .basket-caption .basket-caption__totals span {
+  .basket-caption .basket-caption__totals .basket-caption__titles, .basket-caption .basket-caption__totals .basket-caption__price {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 0;
     margin-left: 100px; }
-  .basket-caption .basket-caption__totals span {
+  .basket-caption .basket-caption__totals .basket-caption__price {
     margin-left: 70px; }
   .basket-caption .basket-caption__totals .basket-caption__cross {
     background: #EDE7D9;
@@ -472,30 +495,48 @@
 .footer-info {
   background: #404851;
   width: 100%;
-  height: 670px;
   color: #ffffff; }
   .footer-info .col-3 {
     margin-top: 50px; }
-    .footer-info .col-3 h5 {
-      font-size: 16px;
-      color: #ffffff;
-      margin-bottom: 15px; }
-    .footer-info .col-3 h4 {
-      font-size: 18px;
-      color: #ffffff;
-      margin-bottom: 20px;
-      text-transform: uppercase; }
-    .footer-info .col-3 p {
-      font-size: 16px;
-      color: #EFEFEF;
-      line-height: 28px; }
+    .footer-info .col-3 nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .footer-info .col-3 nav h5 {
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 15px; }
+
+.address-text {
+  font-size: 16px;
+  color: #EFEFEF;
+  line-height: 28px; }
+
+.footer-info__link {
+  font-size: 16px;
+  color: #EFEFEF;
+  margin-bottom: 8px; }
+
+.footer-info__link-compact {
+  margin-bottom: 0; }
+
+.title-moscow {
+  font-weight: bold; }
 
 .title-petersburg {
-  margin-top: 42px; }
+  margin-top: 42px;
+  font-weight: bold; }
 
 .footer-info .col-3 .address-text {
   line-height: 20px;
-  margin-top: 10px; }
+  margin-top: 5px;
+  margin-bottom: 0; }
 
 .footer-logo {
   background: url("../../img/footer/Object.svg") no-repeat center;
@@ -529,6 +570,13 @@
     height: 31px;
     margin-left: 33px; }
 
+.footer-info__title {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 .footer-info__copyrighted {
   display: -webkit-box;
   display: -webkit-flex;
@@ -546,9 +594,11 @@
   width: 100%;
   height: 50px;
   margin-top: 30px; }
-  .footer-info__copyrighted p {
+  .footer-info__copyrighted .footer-info__copyrighted-text {
     margin: 0;
     font-size: 16px;
+    color: #EFEFEF; }
+  .footer-info__copyrighted .footer-info__copyrighted-link {
     color: #EFEFEF; }
 
 /*!
@@ -822,21 +872,6 @@
   position: relative; }
   .recommendations__content .col {
     position: relative; }
-  .recommendations__content .col:nth-child(odd):after {
-    content: 'NEW  05.11';
-    font-size: 10px;
-    padding: 2px 23px 4px 23px;
-    color: #fff;
-    background: #252B7F;
-    width: 100px;
-    height: 19px;
-    position: absolute;
-    top: -19px;
-    right: 15px;
-    -webkit-border-top-left-radius: 10px;
-            border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-            border-top-right-radius: 10px; }
 
 .card-first .card-first__img {
   padding: 23px 18px 38px 32px; }
@@ -899,19 +934,49 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
-  .card-text .card-text__info {
+  display: flex;
+  margin-bottom: 45px; }
+
+.card-text__table {
+  width: 100%; }
+
+.card-text__body {
+  border: none; }
+  .card-text__body .card-text__first-column,
+  .card-text__body .card-text__second-column {
+    padding-top: 0 !important;
+    padding-bottom: 2px !important; }
+  .card-text__body .card-text__first-column {
     color: #777777;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
-  .card-text .card-text__result {
+    font-size: 14px;
+    width: 115px; }
+  .card-text__body .card-text__second-column {
     color: #333333;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
+    font-size: 14px; }
+
+.card-new-icon {
+  display: block;
+  font-size: 10px;
+  padding: 2px 23px 4px 23px;
+  color: #fff;
+  background: #252B7F;
+  width: 100px;
+  height: 19px;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
+  z-index: 100; }
+
+.slick-initialized .slick-slide {
+  display: block;
+  padding-top: 20px; }
+
+.card-title a {
+  color: #252B7F; }
 
 /*!
  * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)

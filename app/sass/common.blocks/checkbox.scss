@@ -1,0 +1,41 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+/* Скрываем реальный чекбокс */
+.checkbox {
+  display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+  position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+  width: 18px;             /* Обязательно задаем ширину */
+  height: 18px;            /* Обязательно задаем высоту */
+  border: 1px solid $primary;
+  border-radius: 2px;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom:before {
+  content: "\2713";         /* Добавляем наш псевдоэлемент */
+  display: block;			 /* Делаем его блочным элементом */
+  position: absolute;      /* Позиционируем его абсолютным образом */
+  /* Задаем расстояние от верхней, правой, нижней и левой границы */
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  font-size: 15px;
+  color: $primary;
+  text-align: center;
+  line-height: 15px;
+}
+
+.form-check-position {
+  position: relative;
+  right: 45px;
+}

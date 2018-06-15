@@ -1,0 +1,87 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.blocks-info {
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 47px;
+}
+
+.block-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #FAF8F4;
+  height: 99px;
+  width: 261px;
+  margin-top: 12px;
+  flex-grow: 1;
+}
+
+.block-info:nth-child(1),
+.block-info:nth-child(2),
+.block-info:nth-child(4),
+.block-info:nth-child(5) {
+  margin-right: 16px;
+}
+
+
+.blocks-info .active {
+  background: #EBAD45;
+  color: #ffffff;
+
+  .block-info__text {
+    color: #fff;
+  }
+}
+
+.block-info__desk {
+  background: url("../../img/forms-img/desk.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 36px;
+  height: 33px;
+  position: relative;
+  right: 3px;
+}
+
+.block-info__marker {
+  background: url("../../img/forms-img/placeholder.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.block-info__metro {
+  background: url("../../img/forms-img/tbilisi-metro-logo-symbol.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 40px;
+  height: 24px;
+  position: relative;
+  right: 5px;
+}
+
+.block-info__man {
+  background: url("../../img/forms-img/delivery-man.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 33px;
+  height: 38px;
+  position: relative;
+  margin-right: 30px;
+  left: 8px;
+}
+
+.block-info__parcel {
+  background: url("../../img/forms-img/parcel.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 39px;
+  height: 20px;
+  position: relative;
+  right: 10px;
+}
+
+.block-info__text {
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+  left: -10px;
+}

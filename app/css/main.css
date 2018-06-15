@@ -90,6 +90,138 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.blocks-info {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 47px; }
+
+.block-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAF8F4;
+  height: 99px;
+  width: 261px;
+  margin-top: 12px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.block-info:nth-child(1),
+.block-info:nth-child(2),
+.block-info:nth-child(4),
+.block-info:nth-child(5) {
+  margin-right: 16px; }
+
+.blocks-info .active {
+  background: #EBAD45;
+  color: #ffffff; }
+  .blocks-info .active .block-info__text {
+    color: #fff; }
+
+.block-info__desk {
+  background: url("../../img/forms-img/desk.svg") no-repeat center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  width: 36px;
+  height: 33px;
+  position: relative;
+  right: 3px; }
+
+.block-info__marker {
+  background: url("../../img/forms-img/placeholder.svg") no-repeat center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  position: relative; }
+
+.block-info__metro {
+  background: url("../../img/forms-img/tbilisi-metro-logo-symbol.svg") no-repeat center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  width: 40px;
+  height: 24px;
+  position: relative;
+  right: 5px; }
+
+.block-info__man {
+  background: url("../../img/forms-img/delivery-man.svg") no-repeat center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  width: 33px;
+  height: 38px;
+  position: relative;
+  margin-right: 30px;
+  left: 8px; }
+
+.block-info__parcel {
+  background: url("../../img/forms-img/parcel.svg") no-repeat center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  width: 39px;
+  height: 20px;
+  position: relative;
+  right: 10px; }
+
+.block-info__text {
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+  left: -10px; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .basket-caption .basket-caption__name .basket-caption__title {
   font-size: 32px;
   font-weight: bold;
@@ -153,7 +285,6 @@
             background-size: 100% auto;
     position: relative;
     bottom: 5px;
-    left: 5px;
     width: 14px;
     height: 20px;
     z-index: 100; }
@@ -264,7 +395,7 @@
     .basket-caption .basket-caption__totals .basket-caption__cross img {
       position: relative;
       top: 20px;
-      left: 22px; }
+      left: 24px; }
 
 .basket-caption .button-group {
   display: -webkit-box;
@@ -283,10 +414,300 @@
     margin-right: 18px;
     font-size: 16px; }
   .basket-caption .button-group .btn-light {
-    margin-right: 82px;
+    margin-right: 22px;
     font-size: 16px; }
   .basket-caption .button-group .btn-primary {
     font-size: 16px; }
+
+.table__information-subject {
+  text-align: left !important;
+  padding-left: 10px;
+  color: #555;
+  font-size: 16px; }
+
+@charset "UTF-8";
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Скрываем реальный чекбокс */
+.checkbox {
+  display: none; }
+
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+  position: relative;
+  /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+  width: 18px;
+  /* Обязательно задаем ширину */
+  height: 18px;
+  /* Обязательно задаем высоту */
+  border: 1px solid #EBAD45;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom:before {
+  content: "\2713";
+  /* Добавляем наш псевдоэлемент */
+  display: block;
+  /* Делаем его блочным элементом */
+  position: absolute;
+  /* Позиционируем его абсолютным образом */
+  /* Задаем расстояние от верхней, правой, нижней и левой границы */
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #EBAD45;
+  text-align: center;
+  line-height: 15px; }
+
+.form-check-position {
+  position: relative;
+  right: 45px; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container-ordering {
+  width: 816px !important; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.form-personal__form {
+  width: 100%; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.form-time {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.form-control {
+  width: 291px !important; }
+
+.form-period {
+  width: 122px;
+  border: 1px solid #EDE6DE;
+  height: 40px; }
+
+.form-time span {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../../../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.order-title__text {
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold; }
+
+.order-title__line {
+  width: 100%;
+  height: 1px;
+  background: #D8D8D8; }
 
 /*!
  * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
@@ -2598,7 +3019,7 @@ pre {
   background-color: transparent; }
   .table th,
   .table td {
-    padding: 1.3rem;
+    padding: 14px 14px;
     vertical-align: center;
     border-bottom: 1px solid #D8D8D8;
     text-align: center; }
@@ -3793,7 +4214,8 @@ input[type="button"].btn-block {
   width: 100%; }
 
 .btn-primary {
-  color: #fff; }
+  color: #fff;
+  padding: 10px 30px; }
 
 .btn-primary:hover {
   color: #fff; }

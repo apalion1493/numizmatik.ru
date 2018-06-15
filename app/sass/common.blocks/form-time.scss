@@ -1,0 +1,21 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.form-time {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  width: 291px !important;
+}
+
+.form-period {
+  width: 122px;
+  border: 1px solid #EDE6DE;
+  height: 40px;
+}
+
+.form-time span {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.totals {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #FAF8F4;
+  width: 368px;
+  height: 67px;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.totals__titles, .totals__price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-left: 100px;
+}
+
+.totals__price {
+  margin-left: 70px;
+}
+
+.totals__cross {
+  background: #EDE7D9;
+  width: 57px;
+  height: 67px;
+  margin-left: auto;
+}
+
+.totals__cross img {
+  position: relative;
+  top: 20px;
+  left: 24px;
+}
+
+.totals-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #FAF8F4;
+  width: 313px;
+  height: 50px;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.totals__titles-modal {
+  margin-left: 80px;
+}
+
+.totals__price-modal {
+  margin-right: 15px;
+}

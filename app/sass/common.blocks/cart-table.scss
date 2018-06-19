@@ -82,73 +82,6 @@
       }
     }
 
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      margin: 0;
-    }
-    input[type="number"] {
-      -moz-appearance: textfield;
-    }
-
-    .quantity-block {
-      background: #FAEFDC;
-      border-radius: 20px;
-      width: 92px;
-      height: 40px;
-      position: relative;
-      left: 14px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-right: 12px;
-    }
-
-    .quantity-arrow-minus {
-      cursor: pointer;
-      border: none;
-      background: url("../../img/table-img/minus.svg") no-repeat center;
-      background-size: 11px 2px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 31px;
-      height: 40px;
-    }
-    .quantity-arrow-plus {
-      cursor: pointer;
-      border: none;
-      background: url("../../img/table-img/plus.svg") no-repeat center;
-      background-size: 11px 11px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 31px;
-      height: 40px;
-    }
-
-    .quantity-num {
-      width: 30px;
-      height: 38px;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 5px 10px;
-      border: none;
-    }
-
-    .table__bold-text {
-      font-weight: bold;
-      color: #555555;
-      font-size: 18px;
-    }
-    
-    .table__link {
-      color: $secondary;
-
-    }
-
     thead {
       tr {
         th {
@@ -157,8 +90,9 @@
       }
     }
   }
+
   
-  .basket-caption__totals {
+  .totals {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -168,18 +102,18 @@
     margin-left: auto;
     margin-bottom: 32px;
 
-    .basket-caption__titles, .basket-caption__price {
+    .totals__titles, .totals__price {
       font-weight: bold;
       font-size: 20px;
       margin-bottom: 0;
       margin-left: 100px;
     }
 
-    .basket-caption__price {
+    .totals__price {
       margin-left: 70px;
     }
     
-    .basket-caption__cross {
+    .totals__cross {
       background: #EDE7D9;
       width: 57px;
       height: 67px;
@@ -219,4 +153,70 @@
   padding-left: 10px;
   color: #555;
   font-size: 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity-block {
+  background: #FAEFDC;
+  border-radius: 20px;
+  width: 92px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quantity-arrow-minus {
+  cursor: pointer;
+  border: none;
+  background: url("../../img/table-img/minus.svg") no-repeat center;
+  background-size: 11px 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 31px;
+  height: 40px;
+}
+.quantity-arrow-plus {
+  cursor: pointer;
+  border: none;
+  background: url("../../img/table-img/plus.svg") no-repeat center;
+  background-size: 11px 11px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 31px;
+  height: 40px;
+}
+
+.quantity-num {
+  width: 30px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+}
+
+.table__bold-text {
+  font-weight: bold;
+  color: #555555;
+  font-size: 18px;
+}
+
+.table__link {
+  color: $secondary;
 }

@@ -17,6 +17,7 @@
 .label {
   display: inline-block;
   vertical-align: middle;
+  color: #777777;
 }
 /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
 .checkbox:checked + .checkbox-custom:before {

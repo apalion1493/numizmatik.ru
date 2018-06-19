@@ -18,7 +18,7 @@
   }
 
   thead th {
-    vertical-align: bottom;
+    vertical-align: center;
     //border-bottom: (2 * $table-border-width) solid $table-border-color;
     background: #EBAD45;
     color: #ffffff;
@@ -216,10 +216,10 @@ th:first-child {
   background-color: #E2DAC8 !important;
 }
 
-td  {
-  padding-top: 13px !important;
-  padding-bottom: 16px !important;
-}
+//td  {
+//  padding-top: 13px !important;
+//  padding-bottom: 16px !important;
+//}
 
 tbody {
   border-right: 1px solid #D8D8D8;

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="sass/library.blocks/bootstrap/utilities/_Glyphter.scss">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="contact-info">
+        <div class="container">
+            <div class="row general-information">
+                <div class="col-3 contact-info__location">
+                    <i class="contact-info__location-marker"></i>
+                    <address class="contact-info__location-address"><a href="#" class="contact-info__location-address-link">Москва: ул. Тверская 12 стр. 8</a></address>
+                </div>
+                <div class="col-4 contact-info__schedule">
+                    <i class="contact-info__clock"></i>
+                    <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
+                </div>
+                <div class="col-4 contact-info__communications">
+                    <a href="#" class="contact-info__phone-call">Заказать звонок </a>
+                    <i class="contact-info__men"></i>
+                    <a href="#" class="contact-info__email"> username@yandex.ru </a>
+                </div>
+                <div class="col-1 contact-info__balance">
+                    <a href="#" class="contact-info__money">2 500  ₽</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row header-info">
+            <div class="col-3">
+                <div class="header-info__logo"></div>
+            </div>
+            <nav class="col-4 header-info__list-of-links">
+                <a href="#" class="header-info__link">Информация</a>
+                <a href="#" class="header-info__link">Гарантия</a>
+                <a href="#" class="header-info__link">Скидки</a>
+                <a href="#" class="header-info__link">Контакты</a>
+            </nav>
+            <div class="col-3 header-info__phone">
+                <a href="#" class="header-info__ellipsis"></a>
+                <i class="header-info__cellphone"></i>
+                <div class="header-info__number">
+                    <a href="#" class="header-info__number-link">8 <span>(</span>800<span>)</span> 333-14-77</a>
+                    <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
+                </div>
+                <i class="header-info__star"></i>
+            </div>
+            <a class="btn btn-outline-primary">
+                <i class="header-info__basket"></i>
+                <div class="header-info__purchases">
+                    <div class="header-info__purchases-text">Товаров: <span>3шт.</span></div>
+                    <div class="header-info__purchases-text">На сумму: <b>200 000 ₽</b></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pl-0" id="section-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Магазин монет
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Банкноты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аксессуары</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Жетоны</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Нотгельды</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Книги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Распродажи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">История просмотров</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <a href="#" class="btn back-to-top"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="container basket-caption">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 basket-caption__name">
+                <h1 class="basket-caption__title">Оформление заказа</h1>
+            </div>
+            <div class="col-6 basket-caption__info">
+                <div class="basket-caption__info-title ml-auto">Заказ действителен до:</div>
+                <div class="basket-caption__time ml-1">
+                    <div class="basket-caption__number">
+                        <div class="basket-caption__number-first">1</div>
+                    </div>
+                    <div class="basket-caption__number">
+                        <div class="basket-caption__number-second">5</div>
+                    </div>
+                    <span>:</span>
+                    <div class="basket-caption__number">
+                        <div class="basket-caption__number-third">4</div>
+                    </div>
+                    <div class="basket-caption__number">
+                        <div class="basket-caption__number-fourth">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-7 ml-auto button-group">
+                <form action="index.html">
+                    <button type="submit" class="btn btn-primary btn-lg mb-5">Назад в корзину</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-ordering">
+
+        <section class="row order-title">
+            <div class="col-12 px-0">
+                <h3 class="order-title__text">Контактные данные</h3>
+                <div class="order-title__line"></div>
+            </div>
+        </section>
+
+        <div class="form-personal mt-3 mb-4 row">
+            <form class="form-personal__form">
+                <div class="form-group form-personal__phone row">
+                    <label for="your-data" class="col-sm-3 col-form-label">Телефон</label>
+                    <div class="col-sm-6">
+                        <input type="text"  class="form-control form-personal__entry-field" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                    </div>
+                </div>
+
+                <div class="form-group form-personal__phone row mt-3">
+                    <label for="your-data" class="col-sm-3 col-form-label">Ваши даные</label>
+                    <div class="col-sm-6">
+                        <input type="text"  class="form-control form-personal__entry-field" id="your-data" placeholder="ФИО">
+                    </div>
+                </div>
+
+                <div class="form-group form-personal__phone row mt-3 d-flex align-items-center">
+                    <label for="recipient-information" class="col-sm-3 col-form-label">Даные получателя</label>
+                    <div class="col-sm-5">
+                        <input type="text"  class="form-control form-personal__entry-field" id="recipient-information" placeholder="ФИО">
+                    </div>
+                    <div class="form-check form-check-position col-sm-3 mt-1">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="checkbox-test">
+                            <span class="checkbox-custom"></span>
+                            <span class="label ml-2">Я получатель</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <section class="row order-title">
+            <div class="col-12 px-0">
+                <h3 class="order-title__text">Способ доставки</h3>
+                <div class="order-title__line"></div>
+            </div>
+        </section>
+
+        <div class="row blocks-info">
+            <div class="block-info active">
+                <i class="block-info__desk"></i>
+                <a href="#" class="block-info__text">В офисе м.Тверская</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__marker"></i>
+                <a href="#" class="block-info__text">Пункт выдачи СДЭК</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__metro"></i>
+                <a href="#" class="block-info__text">Встречи на кольцевых</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__man"></i>
+                <a href="#" class="block-info__text">Курьерская доставка</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__parcel"></i>
+                <a href="#" class="block-info__text">Отправка по почте</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__marker block-info__marker-second"></i>
+                <a href="#" class="block-info__text">Пункт выдачи BoxBerry</a>
+            </div>
+        </div>
+
+        <div class="form-time form-group row">
+            <label for="inputState" class="col col-form-label pl-0 form-time__label">В офисе м. Тверская:</label>
+                <select id="inputState" class="form-control form-time__first-form">
+                    <option selected>Среда 2018.06.06</option>
+                    <option>...</option>
+                </select>
+            <span class="form-time__time-from">с</span>
+                <select id="inputState" class="form-period">
+                    <option selected> 10:00</option>
+                    <option>...</option>
+                </select>
+            <span class="form-time__text-to">по</span>
+                <select id="inputState" class="form-period">
+                    <option selected> 10:00</option>
+                    <option>...</option>
+                </select>
+        </div>
+
+        <section class="row order-title">
+            <div class="col-12 px-0">
+                <h3 class="order-title__text">Способ оплаты</h3>
+                <div class="order-title__line"></div>
+            </div>
+        </section>
+
+        <div class="row blocks-payment">
+            <div class="block-info">
+                <i class="block-info__cash"></i>
+                <a href="#" class="block-info__text">Наличными</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__yandex"></i>
+                <a href="#" class="block-info__text">YandexMoney - 1%</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__sberbank"></i>
+                <a href="#" class="block-info__text">Сбербанк - экономия времени и стоимости</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__credit-cards"></i>
+                <a href="#" class="block-info__text">Кредитные карты VISA,MasterCard - 4%</a>
+            </div>
+
+            <div class="block-info">
+                <i class="block-info__webmoney"></i>
+                <a href="#" class="block-info__text">WebMoney - 0,8%</a>
+            </div>
+        </div>
+
+        <div class="form-discount row">
+            <div class="d-flex pl-0 align-items-center">
+                <label for="discount-code" class="col-form-label">Купоны на скидку</label>
+                <input type="text"  class="form-control form-discount__code" id="discount-code">
+                <i class="form-discount__dash"></i>
+                <input type="text"  class="form-control form-discount__code" id="discount-code">
+                <i class="form-discount__dash"></i>
+                <input type="text"  class="form-control form-discount__code" id="discount-code">
+                <i class="form-discount__dash"></i>
+                <input type="text"  class="form-control form-discount__code" id="discount-code">
+                <p class="form-discount__text">Если у Вас есть купон(ы) на скидку и Вы желаете их использовать в данном заказе, введите код.</p>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="form-discount__coupon">Проверить купон</a>
+                <div class="form-discount__details">
+                    <p class="form-discount__text-details">Более подробно смотрите раздел <a href="#" class="form-discount__text-link"> Система купонов на скидку</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-comment">
+            <div class="form-group row form-comment__container">
+                <label for="exampleFormControlTextarea1" class="form-comment__title">Комментарий к заказу</label>
+                <textarea class="form-control form-comment__entry-field" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="form-payment">
+            <div class="row">
+                <table class="form-payment__table col-4">
+                    <tbody class="form-payment__body">
+                    <tr>
+                        <td class="form-payment__first-column">Сумма заказа</td>
+                        <td class="form-payment__second-column">1000  ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="form-payment__first-column">Скидка</td>
+                        <td class="form-payment__second-column">5 %</td>
+                    </tr>
+                    <tr class="form-payment__last-line">
+                        <td class="form-payment__first-column">Доставка</td>
+                        <td class="form-payment__second-column">0  ₽</td>
+                    </tr>
+                    <tr class="form-payment__table-footer">
+                        <td class="form-payment__total">Итоговая сумма</td>
+                        <td class="form-payment__amount">950  ₽</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="form-payment__inquiry col-8">
+                    <p class="form-payment__text">Если Вы оставляли заявки на монеты в каталоге и они присутствуют в этом заказе, то Вы можете автоматически убрать их из рассылки(телефонного уведомления) о новых поступлениях этих монет </p>
+                    <select id="inputState" class="form-period form-payment__entry-field">
+                        <option selected>Оставить заявки</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+                <div class="form-check form-payment__check">
+                    <label>
+                        <input class="checkbox" type="checkbox" name="checkbox-test">
+                        <span class="checkbox-custom"></span>
+                        <span class="label form-payment__check-text">Нажимая кнопку "Подтвердить заказ" я подтверждаю свою дееспособность, даю согласие на обработку своих персональных <br> данных.</span>
+                    </label>
+                </div>
+
+                <div class="container form-payment__btn">
+                    <div class="row">
+                        <div class="col-7 button-group pl-0 mt-4">
+                            <button type="button" class="btn btn-primary btn-lg mb-5">Подтвердить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="subscription">
+        <div class="subscription__text">
+            <p>ХОТИТЕ БЫТЬ В КУРСЕ СОБЫТИЙ? ВСЕГДА АКТУАЛЬНАЯ ИНФОРМАЦИЯ! ПОДПИШИТЕСЬ</p>
+        </div>
+        <div class="subscription__btn">
+            <button type="button" class="btn btn-secondary">
+                <span>Подписаться</span>
+                <div class="subscription__icon"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="footer-info__title">Магазин монет</h4>
+                    <nav class="d-flex flex-column">
+                        <a href="#" class="footer-info__link">Монеты</a>
+                        <a href="#" class="footer-info__link">Распродажа монет</a>
+                        <a href="#" class="footer-info__link">Оплата и доставка</a>
+                        <a href="#" class="footer-info__link">Покупка/скупка монет</a>
+                        <a href="#" class="footer-info__link">Скупка-оценка</a>
+                        <a href="#" class="footer-info__link">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="col-3">
+                    <h4 class="footer-info__title">Каталог монет</h4>
+                    <nav class="d-flex flex-column">
+                        <a href="#" class="footer-info__link">Каталог монет</a>
+                        <a href="#" class="footer-info__link">Наборы монет</a>
+                        <a href="#" class="footer-info__link">Банкноты</a>
+                        <a href="#" class="footer-info__link">Подарочные монеты</a>
+                        <a href="#" class="footer-info__link">Аксессуары</a>
+                        <a href="#" class="footer-info__link">Программа нумизмата</a>
+                        <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                    </nav>
+                </div>
+
+                <div class="col-3">
+                    <h4 class="footer-info__title">Нумизмату</h4>
+                    <nav class="d-flex flex-column">
+                        <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                        <a href="#" class="footer-info__link">Новости нумизматики</a>
+                        <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                        <a href="#" class="footer-info__link">Форум нумизматов</a>
+                        <a href="#" class="footer-info__link">Черный список</a>
+                        <a href="#" class="footer-info__link">Ценник на монеты</a>
+                        <a href="#" class="footer-info__link">Стоимость монет</a>
+                    </nav>
+                </div>
+
+                <div class="col-3">
+                    <h4 class="footer-info__title">Обратная связь</h4>
+                    <nav class="d-flex flex-column">
+                        <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                        <a href="#" class="footer-info__link">Новости нумизматики</a>
+                        <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                        <a href="#" class="footer-info__link">Форум нумизматов</a>
+                        <a href="#" class="footer-info__link">Черный список</a>
+                        <a href="#" class="footer-info__link">Ценник на монеты</a>
+                        <a href="#" class="footer-info__link">Стоимость монет</a>
+                    </nav>
+                </div>
+
+                <div class="col-3">
+                    <h4 class="footer-info__title">Для клиентов</h4>
+                    <nav class="d-flex flex-column">
+                        <a href="#" class="footer-info__link">О магазине</a>
+                        <a href="#" class="footer-info__link">Видео о компании</a>
+                        <a href="#" class="footer-info__link">Доставка и оплата</a>
+                        <a href="#" class="footer-info__link">Boxberry в 360 городах России</a>
+                        <a href="#" class="footer-info__link">Правила монетной лавки</a>
+                        <a href="#" class="footer-info__link">Гарантии подлинности монет</a>
+                        <a href="#" class="footer-info__link">ЧаВо по магазину</a>
+                        <a href="#" class="footer-info__link">Панорама магазина</a>
+                    </nav>
+                </div>
+
+                <div class="col-3 d-flex flex-column">
+                    <h4 class="footer-info__title">Контактные данные</h4>
+                    <h5 class="title-moscow">Москва</h5>
+                    <p class="address-text">Адрес:</p>
+                    <address><a href="#" class="footer-info__link footer-info__link-compact">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
+                    <p class="address-text">Телефоны:</p>
+                    <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                    <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                </div>
+
+                <div class="col-3">
+                    <h5 class="title-petersburg">Санкт-Петербургe</h5>
+                    <p class="address-text">Адрес:</p>
+                    <address><a href="#" class="footer-info__link">Санкт-Петербург, ул. Турку 31</a></address>
+                    <p class="address-text">Телефон:</p>
+                    <a href="#" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                </div>
+
+                <div class="col-3">
+                    <div class="footer-logo"></div>
+                    <p>2001 - 2018 &copy Клуб Нумизмат</p>
+                    <div class="footer-img">
+                        <a href="#"><div class="footer-img__metrika"></div></a>
+                        <a href="#"><div class="footer-img__icon"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info__copyrighted">
+            <p class="footer-info__copyrighted-text">При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна. <a href="#" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a></p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="js/recommendations.js"></script>
+<script src="js/table-form.js"></script>
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>

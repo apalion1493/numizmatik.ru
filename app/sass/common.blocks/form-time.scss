@@ -1,12 +1,13 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
-.form-time {
+main .form-time {
   display: flex;
   align-items: center;
+  margin-bottom: 48px;
 }
 
-.form-control {
-  width: 291px !important;
+.form-time .form-time__first-form {
+  width: 291px;
 }
 
 .form-period {
@@ -15,7 +16,29 @@
   height: 40px;
 }
 
-.form-time span {
-  margin-left: 10px;
-  margin-right: 10px;
+.form-time__time-from {
+  width: 20px;
+  height: 19px;
+  margin-left: 22px;
+  margin-right: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-time__text-to {
+  width: 20px;
+  height: 19px;
+  margin-left: 15px;
+  margin-right: 11px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-time .form-control {
+  color: #999999;
+}
+
+.form-period {
+  padding-left: 13px;
+  color: #999999;
 }

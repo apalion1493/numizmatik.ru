@@ -1,0 +1,45 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+.modal .modal-quick-order {
+  max-width: 1178px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-quick-order__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 26px;
+}
+
+.modal-content {
+  padding: 24px 32px 44px 38px;
+}
+
+.modal-quick-order__icon {
+  display: block;
+  background: url("../../img/modal-img/close.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+}
+
+.modal-quick-order__text {
+  font-size: 14px;
+  color: #777;
+  margin-left: 24px;
+}
+
+.modal-quick-order .modal-quick-order__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.modal-content__tbody {
+  border: 1px solid #D8D8D8;
+}
+
+.modal-forms__name {
+  margin-left: 25px;
+}

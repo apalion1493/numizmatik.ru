@@ -1,5 +1,22 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+.form-personal .form-personal__entry-field {
+  width: 291px;
+}
+
 .form-personal__form {
   width: 100%;
 }
+
+.form-personal .form-control {
+  color: #999999;
+}
+
+.form-personal__phone {
+
+  input[type="text"]::placeholder {
+    color: #999999;
+  }
+}
+
+

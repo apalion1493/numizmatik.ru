@@ -1,0 +1,57 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.form-discount .form-discount__code {
+  width: 40px !important;
+  height: 40px;
+  margin-right: 9px;
+}
+
+.form-discount .col-form-label {
+  width: 178px;
+}
+
+.form-discount__dash {
+  background: url("../../img/forms-img/dash.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 11px;
+  height: 19px;
+  margin-right: 6px;
+}
+
+.form-discount__text {
+  margin-left: 24px;
+  margin-bottom: 0;
+  color: #777;
+  width: 384px;
+  font-size: 14px;
+}
+
+.form-discount__coupon {
+  color: #090F65;
+  font-size: 16px;
+  margin-left: 176px;
+  margin-top: 21px;
+  width: 178px;
+}
+
+.form-discount__details {
+  width: 421px;
+  display: flex;
+  margin-left: 95px;
+  font-size: 14px;
+  margin-top: 18px;
+
+  .form-discount__text-details {
+    margin-bottom: 0;
+    color: #777;
+
+    .form-discount__text-link {
+      color: #090F65;
+    }
+  }
+}
+
+.form-discount .form-discount__code  {
+  padding-left: 10px;
+  padding-right: 5px;
+}

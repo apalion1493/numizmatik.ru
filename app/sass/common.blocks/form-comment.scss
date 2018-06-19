@@ -1,0 +1,20 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.form-comment {
+  margin-top: 46px;
+
+  .form-comment__title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  .form-comment__entry-field {
+    width: 539px;
+    height: 60px;
+  }
+}
+
+.form-comment__container {
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.modal-forms {
+  display: flex;
+  align-items: flex-end;
+}
+
+.modal-forms__phone {
+  display: flex;
+}
+
+.modal-forms__name {
+  display: flex;
+}
+
+.modal-forms__btn {
+  position: relative;
+  top: 5px;
+}

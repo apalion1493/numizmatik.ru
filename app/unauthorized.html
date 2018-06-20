@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
-
 <header class="page-header">
     <div class="contact-info">
         <div class="container">
@@ -22,16 +21,129 @@
                     <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
                 </div>
                 <div class="col-4 contact-info__communications">
-                    <a href="#" class="contact-info__phone-call">Заказать звонок </a>
-                    <i class="contact-info__men"></i>
-                    <a href="#" class="contact-info__email"> username@yandex.ru </a>
+                    <a href="#" class="contact-info__phone-call contact-info__phone-unauthorized">Заказать звонок </a>
+                    <button href="#" class="btn contact-info__registration" type="button" data-toggle="modal" data-target="#exampleModalRegistration">
+                        Регистрация
+                    </button>
                 </div>
-                <div class="col-1 contact-info__balance">
-                    <a href="#" class="contact-info__money">2 500  ₽</a>
+                <div class="col-1 contact-info__entry">
+                    <button class="btn contact-info__entry-btn" data-toggle="modal" data-target="#exampleModalEntry" type="button">
+                        Вход
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--MODAL ENTRY-->
+
+    <div class="modal fade" id="exampleModalEntry" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-entry">
+                <div class="modal-header modal-entry__header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Вход на сайт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="modal-quick-order__icon"></i>
+                    </button>
+                </div>
+                <div class="modal-body modal-entry__body">
+
+                    <form class="form-personal__form">
+                        <div class="form-group form-personal__phone row">
+                            <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email"  class="form-control form-personal__entry-field" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Пароль</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="modal-entry__btn  col-10 ml-auto">
+                        <a class="modal-entry__btn-link" href="#">Я не помню пароль</a>
+                        <button type="submit" class="btn btn-primary btn-lg modal-entry__button">Войти на сайт</button>
+                    </div>
+
+                    <div class="d-flex justify-content-center" id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=google,vkontakte,facebook,odnoklassniki;hidden=twitter,yandex,livejournal,openid,lastfm,linkedin,liveid,soundcloud,steam,flickr,uid,youtube,webmoney,foursquare,tumblr,googleplus,vimeo,instagram,wargaming;redirect_uri=http%3A%2F%2Fwww.numizmatik.ru;mobilebuttons=0;"></div>
+
+                </div>
+                <div class="modal-footer modal-entry__footer">
+                    <button type="submit" class="btn btn-light btn-lg modal-entry__footer-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL ENTRY-->
+
+    <div class="modal fade" id="exampleModalRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Регистрация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="modal-quick-order__icon"></i>
+                    </button>
+                </div>
+                <div class="modal-body modal-entry__body">
+
+                    <form class="form-personal__form">
+                        <div class="form-group form-personal__phone row">
+                            <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email"  class="form-control form-personal__entry-field" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Пароль</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Повторить пароль</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">ФИО</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Логин (необязательно)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group form-personal__phone row mt-3">
+                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Защита от спама</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="modal-entry__btn  col-10 ml-auto">
+                        <button type="submit" class="btn btn-primary btn-lg modal-entry__button">Зарегистрироваться</button>
+                    </div>
+
+                    <div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=google,vkontakte,facebook,odnoklassniki;hidden=twitter,yandex,livejournal,openid,lastfm,linkedin,liveid,soundcloud,steam,flickr,uid,youtube,webmoney,foursquare,tumblr,googleplus,vimeo,instagram,wargaming;redirect_uri=http%3A%2F%2Fwww.numizmatik.ru;mobilebuttons=0;"></div>
+
+                </div>
+                <div class="modal-footer modal-entry__footer">
+                    <button type="submit" class="btn btn-light btn-lg modal-entry__footer-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="container">
         <div class="row header-info">
@@ -46,20 +158,20 @@
             </nav>
             <div class="col-3 header-info__phone">
                 <a href="#" class="header-info__ellipsis"></a>
-                <i class="header-info__cellphone"></i>
-                <div class="header-info__number">
+                <i class="header-info__cellphone-unauthorized "></i>
+                <div class="header-info__number-unauthorized">
                     <a href="#" class="header-info__number-link">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
                 </div>
-                <a href="#"><i class="header-info__star"></i></a>
             </div>
-            <a class="btn btn-outline-primary">
-                <i class="header-info__basket"></i>
-                <div class="header-info__purchases">
-                    <div class="header-info__purchases-text">Товаров: <span>3шт.</span></div>
-                    <div class="header-info__purchases-text">На сумму: <b>200 000 ₽</b></div>
-                </div>
-            </a>
+            <div class="header-info__icons">
+                <a href="#" class="btn btn-outline-primary-unauthorized">
+                    <i class="header-info__star-unauthorized"></i>
+                </a>
+                <a href="#" class="btn btn-outline-primary-unauthorized">
+                    <i class="header-info__basket-unauthorized"></i>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -153,20 +265,20 @@
             <div class="col-12">
                 <table class="table table-hover mb-0">
                     <thead>
-                        <tr>
-                            <th scope="col">&shy</th>
-                            <th scope="col">Фото</th>
-                            <th scope="col">Группа - Страна</th>
-                            <th scope="col">Наименование</th>
-                            <th scope="col">Год</th>
-                            <th scope="col">Описание</th>
-                            <th scope="col">Ценна</th>
-                            <th scope="col">Количество</th>
-                            <th scope="col">Сумма</th>
-                            <th scope="col" class="last-cell">
-                                <i class="trashcan"></i>
-                            </th>
-                        </tr>
+                    <tr>
+                        <th scope="col">&shy</th>
+                        <th scope="col">Фото</th>
+                        <th scope="col">Группа - Страна</th>
+                        <th scope="col">Наименование</th>
+                        <th scope="col">Год</th>
+                        <th scope="col">Описание</th>
+                        <th scope="col">Ценна</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col" class="last-cell">
+                            <i class="trashcan"></i>
+                        </th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -289,192 +401,192 @@
         </header>
         <div class="row recommendations__content" data-slick-slider>
 
-                <div class="col">
-                    <div class="card card-first">
-                        <div class="card-new-icon">NEW  05.11</div>
-                        <a href="#"><img class="card-img-top card-first__img" src="img/recommendation/coin-img.png" alt="Card image cap"></a>
-                        <div class="card-body card-first__body">
-                            <h4 class="card-title"><a href="#" class="card-title__link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
-                            <div class="card-text">
-                                <table class="card-text__table">
-                                    <tbody class="card-text__body">
-                                        <tr>
-                                            <td class="card-text__first-column">Страна:</td>
-                                            <td class="card-text__second-column">Россия</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="card-text__first-column">Год:</td>
-                                            <td class="card-text__second-column">2008</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="card-text__first-column">Металл:</td>
-                                            <td class="card-text__second-column">Серебро</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="card-text__first-column">Состояние:</td>
-                                            <td class="card-text__second-column">Proof</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="card-text__first-column">Номер:</td>
-                                            <td class="card-text__second-column">PL129-09</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="card-text__first-column">Количество:</td>
-                                            <td class="card-text__second-column">10 шт.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="footer-card">
-                                <span>8 000 ₽</span>
-                                <div class="footer-card__btn">
-                                    <a href="#" class="btn footer-card__btn-star"></a>
-                                    <!--<a href="#" class="btn footer-card__btn-basket"></a>-->
-                                    <button type="button" class="btn footer-card__btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
-                                </div>
+            <div class="col">
+                <div class="card card-first">
+                    <div class="card-new-icon">NEW  05.11</div>
+                    <a href="#"><img class="card-img-top card-first__img" src="img/recommendation/coin-img.png" alt="Card image cap"></a>
+                    <div class="card-body card-first__body">
+                        <h4 class="card-title"><a href="#" class="card-title__link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                        <div class="card-text">
+                            <table class="card-text__table">
+                                <tbody class="card-text__body">
+                                <tr>
+                                    <td class="card-text__first-column">Страна:</td>
+                                    <td class="card-text__second-column">Россия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Год:</td>
+                                    <td class="card-text__second-column">2008</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Металл:</td>
+                                    <td class="card-text__second-column">Серебро</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Состояние:</td>
+                                    <td class="card-text__second-column">Proof</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Номер:</td>
+                                    <td class="card-text__second-column">PL129-09</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Количество:</td>
+                                    <td class="card-text__second-column">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer-card">
+                            <span>8 000 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <!--<a href="#" class="btn footer-card__btn-basket"></a>-->
+                                <button type="button" class="btn footer-card__btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col">
-                    <div class="card card-second">
-                        <a href="#"><img class="card-img-top card-second__img" src="img/recommendation/coin-img-2.png" alt="Card image cap"></a>
-                        <div class="card-body card-second__body">
-                            <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
-                            <div class="card-text">
-                                <table class="card-text__table">
-                                    <tbody class="card-text__body">
-                                    <tr>
-                                        <td class="card-text__first-column">Страна:</td>
-                                        <td class="card-text__second-column">Австралия</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Год:</td>
-                                        <td class="card-text__second-column">2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Металл:</td>
-                                        <td class="card-text__second-column">Латунь</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Состояние:</td>
-                                        <td class="card-text__second-column">UNC</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Номер:</td>
-                                        <td class="card-text__second-column">CS-080</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Количество:</td>
-                                        <td class="card-text__second-column">10 шт.</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="footer-card">
-                                <span>360 ₽</span>
-                                <div class="footer-card__btn">
-                                    <a href="#" class="btn footer-card__btn-star"></a>
-                                    <a href="#" class="btn footer-card__btn-basket"></a>
-                                </div>
+            <div class="col">
+                <div class="card card-second">
+                    <a href="#"><img class="card-img-top card-second__img" src="img/recommendation/coin-img-2.png" alt="Card image cap"></a>
+                    <div class="card-body card-second__body">
+                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-text">
+                            <table class="card-text__table">
+                                <tbody class="card-text__body">
+                                <tr>
+                                    <td class="card-text__first-column">Страна:</td>
+                                    <td class="card-text__second-column">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Год:</td>
+                                    <td class="card-text__second-column">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Металл:</td>
+                                    <td class="card-text__second-column">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Состояние:</td>
+                                    <td class="card-text__second-column">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Номер:</td>
+                                    <td class="card-text__second-column">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Количество:</td>
+                                    <td class="card-text__second-column">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col">
-                    <div class="card card-third">
-                        <div class="card-new-icon">NEW  05.11</div>
-                        <a href="#"><img class="card-img-top card-third__img" src="img/recommendation/coin-img-3.png" alt="Card image cap"></a>
-                        <div class="card-body card-third__body">
-                            <h4 class="card-title"><a href="#">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
-                            <div class="card-text">
-                                <table class="card-text__table">
-                                    <tbody class="card-text__body">
-                                    <tr>
-                                        <td class="card-text__first-column">Страна:</td>
-                                        <td class="card-text__second-column">Украина</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Год:</td>
-                                        <td class="card-text__second-column">2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Металл:</td>
-                                        <td class="card-text__second-column">Биметалл</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Состояние:</td>
-                                        <td class="card-text__second-column">UNC</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Номер:</td>
-                                        <td class="card-text__second-column">CS-542</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Количество:</td>
-                                        <td class="card-text__second-column">10 шт.</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="footer-card">
-                                <span>500 ₽</span>
-                                <div class="footer-card__btn">
-                                    <a href="#" class="btn footer-card__btn-star"></a>
-                                    <a href="#" class="btn footer-card__btn-basket"></a>
-                                </div>
+            <div class="col">
+                <div class="card card-third">
+                    <div class="card-new-icon">NEW  05.11</div>
+                    <a href="#"><img class="card-img-top card-third__img" src="img/recommendation/coin-img-3.png" alt="Card image cap"></a>
+                    <div class="card-body card-third__body">
+                        <h4 class="card-title"><a href="#">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                        <div class="card-text">
+                            <table class="card-text__table">
+                                <tbody class="card-text__body">
+                                <tr>
+                                    <td class="card-text__first-column">Страна:</td>
+                                    <td class="card-text__second-column">Украина</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Год:</td>
+                                    <td class="card-text__second-column">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Металл:</td>
+                                    <td class="card-text__second-column">Биметалл</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Состояние:</td>
+                                    <td class="card-text__second-column">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Номер:</td>
+                                    <td class="card-text__second-column">CS-542</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Количество:</td>
+                                    <td class="card-text__second-column">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer-card">
+                            <span>500 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col">
-                    <div class="card card-fourth">
-                        <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                        <div class="card-body card-fourth__body">
-                            <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                            <div class="card-text">
-                                <table class="card-text__table">
-                                    <tbody class="card-text__body">
-                                    <tr>
-                                        <td class="card-text__first-column">Страна:</td>
-                                        <td class="card-text__second-column">Австралия</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Год:</td>
-                                        <td class="card-text__second-column">2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Металл:</td>
-                                        <td class="card-text__second-column">Латунь</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Состояние:</td>
-                                        <td class="card-text__second-column">UNC</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Номер:</td>
-                                        <td class="card-text__second-column">CS-080</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-text__first-column">Количество:</td>
-                                        <td class="card-text__second-column">10 шт.</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="footer-card">
-                                <span>360 ₽</span>
-                                <div class="footer-card__btn">
-                                    <a href="#" class="btn footer-card__btn-star"></a>
-                                    <a href="#" class="btn footer-card__btn-basket"></a>
-                                </div>
+            <div class="col">
+                <div class="card card-fourth">
+                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
+                    <div class="card-body card-fourth__body">
+                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
+                        <div class="card-text">
+                            <table class="card-text__table">
+                                <tbody class="card-text__body">
+                                <tr>
+                                    <td class="card-text__first-column">Страна:</td>
+                                    <td class="card-text__second-column">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Год:</td>
+                                    <td class="card-text__second-column">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Металл:</td>
+                                    <td class="card-text__second-column">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Состояние:</td>
+                                    <td class="card-text__second-column">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Номер:</td>
+                                    <td class="card-text__second-column">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-text__first-column">Количество:</td>
+                                    <td class="card-text__second-column">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer-card">
+                            <span>360 ₽</span>
+                            <div class="footer-card__btn">
+                                <a href="#" class="btn footer-card__btn-star"></a>
+                                <a href="#" class="btn footer-card__btn-basket"></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
             <div class="col">
                 <div class="card card-fourth">
@@ -911,12 +1023,12 @@
                                             <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                                         </div>
                                     </div>
-                                     <div class="col-3 form-group row pl-0 modal-forms__name mb-0">
-                                         <label for="your-data" class="col-sm-5 col-form-label">ФИО</label>
-                                         <div class="col-sm-12">
-                                             <input type="text"  class="form-control" id="your-data" placeholder="">
-                                         </div>
-                                     </div>
+                                    <div class="col-3 form-group row pl-0 modal-forms__name mb-0">
+                                        <label for="your-data" class="col-sm-5 col-form-label">ФИО</label>
+                                        <div class="col-sm-12">
+                                            <input type="text"  class="form-control" id="your-data" placeholder="">
+                                        </div>
+                                    </div>
                                     <div class="container modal-forms__btn">
                                         <div class="row">
                                             <div class="col-7 button-group">
@@ -1065,6 +1177,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="//ulogin.ru/js/ulogin.js"></script>
 
 <script src="js/recommendations.js"></script>
 <script src="js/table-form.js"></script>

@@ -48,7 +48,8 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app'
+			baseDir: 'app',
+			index: 'unauthorized.html'
 		},
 		notify: false
 	});

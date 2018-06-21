@@ -26,7 +26,7 @@
                         Регистрация
                     </button>
                 </div>
-                <div class="col-1 contact-info__entry">
+                <div class="col-1 contact-info__entry pr-0">
                     <button class="btn contact-info__entry-btn" data-toggle="modal" data-target="#exampleModalEntry" type="button">
                         Вход
                     </button>
@@ -50,15 +50,15 @@
 
                     <form class="form-personal__form">
                         <div class="form-group form-personal__phone row">
-                            <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
+                            <label for="entryEmail1" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email"  class="form-control form-personal__entry-field" id="exampleInputEmail1" placeholder="">
+                                <input type="email"  class="form-control form-personal__entry-field" id="entryEmail1" placeholder="">
                             </div>
                         </div>
                         <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Пароль</label>
+                            <label for="entryPassword1" class="col-sm-2 col-form-label">Пароль</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <input type="password" class="form-control form-personal__entry-field" id="entryPassword1" placeholder="">
                             </div>
                         </div>
                     </form>
@@ -81,56 +81,57 @@
 
     <div class="modal fade" id="exampleModalRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content modal-registration">
+                <div class="modal-header modal-registration__header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Регистрация</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="modal-quick-order__icon"></i>
                     </button>
                 </div>
-                <div class="modal-body modal-entry__body">
+                <div class="modal-body modal-registration__body">
 
                     <form class="form-personal__form">
-                        <div class="form-group form-personal__phone row">
-                            <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
+                        <div class="form-group modal-registration__form-email row">
+                            <label for="registrationEmail1" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email"  class="form-control form-personal__entry-field" id="exampleInputEmail1" placeholder="">
+                                <input type="email"  class="form-control form-personal__entry-field" id="registrationEmail1" placeholder="">
                             </div>
                         </div>
-                        <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="form-group modal-registration__form-password row">
+                            <label for="registrationPassword1" class="col-sm-2 col-form-label">Пароль</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <input type="password" class="form-control form-personal__entry-field" id="registrationPassword1" placeholder="">
                             </div>
                         </div>
-                        <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Повторить пароль</label>
+                        <div class="form-group modal-registration__form-password-second row">
+                            <label for="registrationPassword2" class="col-sm-2 col-form-label pt-0">Повторить пароль</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <input type="password" class="form-control form-personal__entry-field" id="registrationPassword2" placeholder="">
                             </div>
                         </div>
-                        <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">ФИО</label>
+                        <div class="form-group modal-registration__form-initials row">
+                            <label for="registrationInitials" class="col-sm-2 col-form-label">ФИО</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <input type="text" class="form-control form-personal__entry-field" id="registrationInitials" placeholder="">
                             </div>
                         </div>
-                        <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Логин (необязательно)</label>
+                        <div class="form-group modal-registration__form-login row mt-3">
+                            <label for="registrationLogin" class="col-sm-2 col-form-label pt-0">Логин <span class="modal-registration__span">(необязательно)</span></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <input type="text" class="form-control form-personal__entry-field" id="registrationLogin" placeholder="">
                             </div>
                         </div>
-                        <div class="form-group form-personal__phone row mt-3">
-                            <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Защита от спама</label>
+                        <div class="form-group modal-registration__form row mt-3">
+                            <label for="registrationSpam" class="col-sm-2 col-form-label modal-registration__last-label">Защита от спама</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-personal__entry-field" id="exampleInputPassword1" placeholder="">
+                                <p class="modal-registration__text">Введите (цифрами) <span class="modal-registration__text-span">Вocемьдeсят один</span></p>
+                                <input type="text" class="form-control form-personal__entry-field" id="registrationSpam" placeholder="">
                             </div>
                         </div>
                     </form>
 
-                    <div class="modal-entry__btn  col-10 ml-auto">
-                        <button type="submit" class="btn btn-primary btn-lg modal-entry__button">Зарегистрироваться</button>
+                    <div class="modal-registration__btn  col-10 ">
+                        <button type="submit" class="btn btn-primary btn-lg modal-registration__button">Зарегистрироваться</button>
                     </div>
 
                     <div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=google,vkontakte,facebook,odnoklassniki;hidden=twitter,yandex,livejournal,openid,lastfm,linkedin,liveid,soundcloud,steam,flickr,uid,youtube,webmoney,foursquare,tumblr,googleplus,vimeo,instagram,wargaming;redirect_uri=http%3A%2F%2Fwww.numizmatik.ru;mobilebuttons=0;"></div>
@@ -158,9 +159,9 @@
             </nav>
             <div class="col-3 header-info__phone">
                 <a href="#" class="header-info__ellipsis"></a>
-                <i class="header-info__cellphone-unauthorized "></i>
+                <!--<i class="header-info__cellphone-unauthorized "></i>-->
                 <div class="header-info__number-unauthorized">
-                    <a href="#" class="header-info__number-link">8 <span>(</span>800<span>)</span> 333-14-77</a>
+                    <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
                 </div>
             </div>
@@ -1018,15 +1019,15 @@
 
                                 <div class="modal-forms col-12 pl-0">
                                     <div class="col-3 form-group row pl-0 mb-0 modal-forms__phone">
-                                        <label for="your-data" class="col-sm-5 col-form-label">Телефон</label>
+                                        <label for="fast-shop-phone" class="col-sm-5 col-form-label">Телефон</label>
                                         <div class="col-sm-12">
-                                            <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                                            <input type="text"  class="form-control" id="fast-shop-phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                                         </div>
                                     </div>
                                     <div class="col-3 form-group row pl-0 modal-forms__name mb-0">
-                                        <label for="your-data" class="col-sm-5 col-form-label">ФИО</label>
+                                        <label for="fast-shop-initials" class="col-sm-5 col-form-label">ФИО</label>
                                         <div class="col-sm-12">
-                                            <input type="text"  class="form-control" id="your-data" placeholder="">
+                                            <input type="text"  class="form-control" id="fast-shop-initials" placeholder="">
                                         </div>
                                     </div>
                                     <div class="container modal-forms__btn">

@@ -13,9 +13,14 @@
 }
 
 .form-personal__phone {
+  display: flex;
+  align-items: center;
+
+
 
   input[type="text"]::placeholder {
     color: #999999;
+    line-height: 20px;
   }
 }
 

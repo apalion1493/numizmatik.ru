@@ -1,0 +1,72 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.modal-registration {
+  width: 600px;
+  height: 778px;
+  padding: 0;
+}
+
+.modal .modal-registration__header {
+  padding: 25px 34px 0 27px;
+}
+
+.modal .modal-registration__body {
+  padding: 48px 35px 0 30px;
+}
+
+.modal-registration__span {
+  font-size: 12px;
+  color: #777;
+}
+
+.modal-registration__text {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #777;
+}
+
+.modal-registration__text-span {
+  color: #555;
+  font-weight: bold;
+}
+
+.modal-registration__btn {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.modal .modal-registration__button {
+  margin-top: 41px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.modal-entry__footer-btn {
+  font-size: 16px;
+}
+
+.modal-registration__last-label {
+  position: relative;
+  top: 10px;
+}
+
+.modal .modal-registration__form-email {
+  margin-bottom: 30px;
+}
+
+.modal .modal-registration__form-password {
+  margin-bottom: 32px;
+}
+
+.modal .modal-registration__form-password-second {
+  margin-bottom: 25px;
+}
+
+.modal .modal-registration__form-initials {
+  margin-bottom: 25px;
+}
+
+.modal .modal-registration__form-login {
+  margin-bottom: 18px;
+}

@@ -47,9 +47,9 @@
             </nav>
             <div class="col-3 header-info__phone">
                 <a href="#" class="header-info__ellipsis"></a>
-                <i class="header-info__cellphone"></i>
+                <!--<i class="header-info__cellphone"></i>-->
                 <div class="header-info__number">
-                    <a href="#" class="header-info__number-link">8 <span>(</span>800<span>)</span> 333-14-77</a>
+                    <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
                 </div>
                 <a href="#"><i class="header-info__star"></i></a>
@@ -176,23 +176,23 @@
         <div class="form-personal mt-3 mb-4 row">
             <form class="form-personal__form">
                 <div class="form-group form-personal__phone row">
-                    <label for="your-data" class="col-sm-3 col-form-label">Телефон</label>
+                    <label for="contact-number" class="col-sm-3 col-form-label">Телефон</label>
                     <div class="col-sm-6">
-                        <input type="text"  class="form-control form-personal__entry-field" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                        <input type="text"  class="form-control form-personal__entry-field" id="contact-number" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                     </div>
                 </div>
 
                 <div class="form-group form-personal__phone row mt-3">
-                    <label for="your-data" class="col-sm-3 col-form-label">Ваши даные</label>
+                    <label for="contact-your-data" class="col-sm-3 col-form-label">Ваши даные</label>
                     <div class="col-sm-6">
-                        <input type="text"  class="form-control form-personal__entry-field" id="your-data" placeholder="ФИО">
+                        <input type="text"  class="form-control form-personal__entry-field" id="contact-your-data" placeholder="ФИО">
                     </div>
                 </div>
 
                 <div class="form-group form-personal__phone row mt-3 d-flex align-items-center">
-                    <label for="recipient-information" class="col-sm-3 col-form-label">Даные получателя</label>
+                    <label for="contact-recipient-information" class="col-sm-3 col-form-label">Даные получателя</label>
                     <div class="col-sm-5">
-                        <input type="text"  class="form-control form-personal__entry-field" id="recipient-information" placeholder="ФИО">
+                        <input type="text"  class="form-control form-personal__entry-field" id="contact-recipient-information" placeholder="ФИО">
                     </div>
                     <div class="form-check form-check-position col-sm-3 mt-1">
                         <label>
@@ -245,18 +245,18 @@
         </div>
 
         <div class="form-time form-group row">
-            <label for="inputState" class="col col-form-label pl-0 form-time__label">В офисе м. Тверская:</label>
-                <select id="inputState" class="form-control form-time__first-form">
+            <label for="date" class="col col-form-label pl-0 form-time__label">В офисе м. Тверская:</label>
+                <select id="date" class="form-control form-time__first-form">
                     <option selected>Среда 2018.06.06</option>
                     <option>...</option>
                 </select>
-            <span class="form-time__time-from">с</span>
-                <select id="inputState" class="form-period">
+            <label for="time-from" class="form-time__time-from">с</label>
+                <select id="time-from" class="form-period">
                     <option selected> 10:00</option>
                     <option>...</option>
                 </select>
-            <span class="form-time__text-to">по</span>
-                <select id="inputState" class="form-period">
+            <label for="time-bottom" class="form-time__text-to">по</label>
+                <select id="time-bottom" class="form-period">
                     <option selected> 10:00</option>
                     <option>...</option>
                 </select>
@@ -318,8 +318,8 @@
 
         <div class="form-comment">
             <div class="form-group row form-comment__container">
-                <label for="exampleFormControlTextarea1" class="form-comment__title">Комментарий к заказу</label>
-                <textarea class="form-control form-comment__entry-field" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="comment" class="form-comment__title">Комментарий к заказу</label>
+                <textarea class="form-control form-comment__entry-field" id="comment" rows="3"></textarea>
             </div>
         </div>
 
@@ -346,8 +346,8 @@
                     </tbody>
                 </table>
                 <div class="form-payment__inquiry col-8">
-                    <p class="form-payment__text">Если Вы оставляли заявки на монеты в каталоге и они присутствуют в этом заказе, то Вы можете автоматически убрать их из рассылки(телефонного уведомления) о новых поступлениях этих монет </p>
-                    <select id="inputState" class="form-period form-payment__entry-field">
+                    <label for="application" class="form-payment__text">Если Вы оставляли заявки на монеты в каталоге и они присутствуют в этом заказе, то Вы можете автоматически убрать их из рассылки(телефонного уведомления) о новых поступлениях этих монет </label>
+                    <select id="application" class="form-period form-payment__entry-field">
                         <option selected>Оставить заявки</option>
                         <option>...</option>
                     </select>

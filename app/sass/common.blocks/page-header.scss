@@ -86,6 +86,11 @@ $normal-size: 16px;
   }
 }
 
+.contact-info__registration {
+  position: relative;
+  left: 20px;
+}
+
 .header-info {
   display: flex;
   align-items: center;
@@ -116,7 +121,6 @@ $normal-size: 16px;
       height: 6px;
       align-self: center;
       position: relative;
-      left: 10px;
     }
 
     .header-info__cellphone {
@@ -142,7 +146,7 @@ $normal-size: 16px;
     }
 
     .header-info__number {
-      margin-left: 20px;
+      margin-left: 45px;
 
        .header-info__number-link {
          display: block;
@@ -150,6 +154,7 @@ $normal-size: 16px;
          font-size: $normal-size;
          font-weight: bold;
          color: #333333;
+         position: relative;
 
          span {
            position: relative;
@@ -215,14 +220,26 @@ $normal-size: 16px;
   }
 }
 
+.header-info__number-icon:before {
+  content: '';
+  background: url("../../img/header-icon/phone-receiver.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -22px;
+  top: 5px;
+}
+
 .header-info__icons {
   display: flex;
   margin-left: auto;
 }
 
 .btn-outline-primary-unauthorized {
-  margin-left: auto;
   background: #fff;
+  padding: 0 !important;
+  margin-left: 20px;
 
   .header-info__basket-unauthorized {
     display: block;
@@ -257,8 +274,12 @@ $normal-size: 16px;
 
 .header-info__number-unauthorized {
   width: 140px;
+  margin-left: 120px;
+  position: relative;
+  left: 20px;
 
   .header-info__number-link {
+    position: relative;
     display: block;
     margin: 0;
     font-size: $normal-size;
@@ -280,7 +301,6 @@ $normal-size: 16px;
   color: $secondary;
   margin-left: auto;
   background: #fff;
-  color: $secondary;
   overflow: hidden;
   position: relative;
   bottom: 10px;

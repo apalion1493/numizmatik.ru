@@ -6,7 +6,7 @@ $normal-size: 16px;
   border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
   margin-top: 5px;
 
-  .general-information {
+  .contact-info__content {
     margin-bottom: -10px;
 
     .contact-info__location {
@@ -115,6 +115,7 @@ $normal-size: 16px;
     align-items: center;
 
     .header-info__ellipsis {
+      display: block;
       background: url("../../img/header-icon/Group2.svg") no-repeat center;
       background-size: 100% auto;
       width: 23px;

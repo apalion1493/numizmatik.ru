@@ -12,7 +12,7 @@
 <header class="page-header">
     <div class="contact-info">
         <div class="container">
-            <div class="row general-information">
+            <div class="row contact-info__content">
                 <div class="col-3 contact-info__location">
                     <i class="contact-info__location-marker"></i>
                     <address class="contact-info__location-address"><a href="#" class="contact-info__location-address-link">Москва: ул. Тверская 12 стр. 8</a></address>
@@ -45,8 +45,14 @@
                 <a href="#" class="header-info__link">Контакты</a>
             </nav>
             <div class="col-3 header-info__phone">
-                <a href="#" class="header-info__ellipsis"></a>
-                <!--<i class="header-info__cellphone"></i>-->
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Action</a>
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Another action</a>
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Something else here</a>
+                    </div>
+                </div>
                 <div class="header-info__number">
                     <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
@@ -112,7 +118,7 @@
     </div>
 </header>
 
-<main>
+<main class="main">
     <a href="#" class="btn back-to-top"></a>
     <div class="container">
         <div class="row">
@@ -164,7 +170,7 @@
                             <th scope="col">Количество</th>
                             <th scope="col">Сумма</th>
                             <th scope="col" class="last-cell">
-                                <i class="trashcan"></i>
+                                <i class="last-cell__trashcan"></i>
                             </th>
                         </tr>
                     </thead>
@@ -179,7 +185,7 @@
                         <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
                         <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
                         <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. <br> UNUSUAL. ММД</td>
+                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
                         <td class="table__bold-text">250 ₽</td>
                         <td>
                             <div class="quantity-block">
@@ -200,7 +206,7 @@
                         <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
                         <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
                         <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. <br> UNUSUAL. ММД</td>
+                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
                         <td class="table__bold-text">250 ₽</td>
                         <td>
                             <div class="quantity-block">
@@ -222,7 +228,7 @@
                         <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
                         <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
                         <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. <br> UNUSUAL. ММД</td>
+                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
                         <td class="table__bold-text">250 ₽</td>
                         <td>
                             <div class="quantity-block">
@@ -246,7 +252,7 @@
                         <td class="table__color-text"><a href="#" class="table__link">Бангладеш</a></td>
                         <td class="table__color-text"><a href="#" class="table__link">70 така</a></td>
                         <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. <br> UNUSUAL. ММД</td>
+                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
                         <td class="table__bold-text">250 ₽</td>
                         <td>
                             <div class="quantity-block">
@@ -946,7 +952,7 @@
         <div class="subscription__btn">
             <button type="button" class="btn btn-secondary">
                 <span>Подписаться</span>
-                <div class="subscription__icon"></div>
+                <i class="subscription__icon"></i>
             </button>
         </div>
     </div>
@@ -1048,7 +1054,10 @@
             </div>
         </div>
         <div class="footer-info__copyrighted">
-            <p class="footer-info__copyrighted-text">При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна. <a href="#" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a></p>
+            <p class="footer-info__copyrighted-text">
+                При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна.
+                <a href="#" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a>
+            </p>
         </div>
 
     </div>

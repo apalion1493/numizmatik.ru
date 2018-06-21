@@ -34,13 +34,13 @@
       margin-left: $caret-width * .85;
       vertical-align: $caret-width * .85;
       content: "";
-      @if $direction == down {
-        @include caret-down;
-      } @else if $direction == up {
-        @include caret-up;
-      } @else if $direction == right {
-        @include caret-right;
-      }
+      //@if $direction == down {
+      //  @include caret-down;
+      //} @else if $direction == up {
+      //  @include caret-up;
+      //} @else if $direction == right {
+      //  @include caret-right;
+      //}
     }
 
     @if $direction == left {

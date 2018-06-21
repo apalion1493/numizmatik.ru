@@ -13,7 +13,7 @@
 <header class="page-header">
     <div class="contact-info">
         <div class="container">
-            <div class="row general-information">
+            <div class="row contact-info__content">
                 <div class="col-3 contact-info__location">
                     <i class="contact-info__location-marker"></i>
                     <address class="contact-info__location-address"><a href="#" class="contact-info__location-address-link">Москва: ул. Тверская 12 стр. 8</a></address>
@@ -46,7 +46,14 @@
                 <a href="#" class="header-info__link">Контакты</a>
             </nav>
             <div class="col-3 header-info__phone">
-                <a href="#" class="header-info__ellipsis"></a>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Action</a>
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Another action</a>
+                        <a class="dropdown-item header-info__ellipsis-item" href="#">Something else here</a>
+                    </div>
+                </div>
                 <!--<i class="header-info__cellphone"></i>-->
                 <div class="header-info__number">
                     <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>

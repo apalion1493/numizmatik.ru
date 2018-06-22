@@ -6,62 +6,49 @@
   .col {
     position: relative;
   }
-  //.col:nth-child(odd):after {
-  //  display: block;
-  //  content: 'NEW  05.11';
-  //  font-size: 10px;
-  //  padding: 2px 23px 4px 23px;
-  //  color: #fff;
-  //  background: $secondary;
-  //  width: 100px;
-  //  height: 19px;
-  //  position: absolute;
-  //  top: -19px;
-  //  right: 15px;
-  //  border-top-left-radius: 10px;
-  //  border-top-right-radius: 10px;
-  //}
 }
 
-.card-first {
-  .card-first__img {
-    padding: 23px 18px 38px 32px;
-  }
+//.card-first {
+//  .card-first__img {
+//    padding: 23px 18px 38px 32px;
+//  }
+//
+//  .card-first__body {
+//    padding-top: 5px;
+//  }
+//}
+//
+//.card-second {
+//  .card-second__img {
+//    padding: 9px 21px 23px 25px;
+//  }
+//
+//  .card-second__body {
+//    padding-top: 15px;
+//  }
+//}
+//
+//.card-third {
+//  .card-third__img {
+//    padding: 9px 27px 22px 21px;
+//  }
+//
+//  .card-third__body {
+//    padding-top: 15px;
+//  }
+//}
+//
+//.card-fourth {
+//  .card-fourth__img {
+//    padding: 23px 23px 27px 30px;
+//  }
+//
+//  .card-fourth__body {
+//    padding-top: 15px;
+//  }
+//}
 
-  .card-first__body {
-    padding-top: 5px;
-  }
-}
 
-.card-second {
-  .card-second__img {
-    padding: 9px 21px 23px 25px;
-  }
-
-  .card-second__body {
-    padding-top: 15px;
-  }
-}
-
-.card-third {
-  .card-third__img {
-    padding: 9px 27px 22px 21px;
-  }
-
-  .card-third__body {
-    padding-top: 15px;
-  }
-}
-
-.card-fourth {
-  .card-fourth__img {
-    padding: 23px 23px 27px 30px;
-  }
-
-  .card-fourth__body {
-    padding-top: 15px;
-  }
-}
 
 .footer-card {
   display: flex;
@@ -91,39 +78,39 @@
   }
 }
 
-.card-text {
+.card-coins__text {
   font-size: 14px;
   line-height: 16px;
   display: flex;
   margin-bottom: 45px;
 }
 
-.card-text__table {
+.card-coins__table {
   width: 100%;
 }
 
-.card-text__body {
+.card-coins__table-body {
   border: none;
 
-  .card-text__first-column,
-  .card-text__second-column {
+  .card-coins__static-information,
+  .card-coins__dynamic-information {
     padding-top: 0 !important;
     padding-bottom: 2px !important;
   }
   
-  .card-text__first-column {
+  .card-coins__static-information {
     color: #777777;
     font-size: 14px;
     width: 115px;
   }
 
-  .card-text__second-column {
+  .card-coins__dynamic-information {
     color: #333333;
     font-size: 14px;
   }
 }
 
-.card-new-icon {
+.coins-russia__new-icon {
   display: block;
   font-size: 10px;
   padding: 2px 23px 4px 23px;
@@ -144,10 +131,20 @@
   padding-top: 20px;
 }
 
-.card-title a {
+.card-coins__title-link {
   color: $secondary;
+  font-size: 18px;
+  margin-bottom: 17px;
+  &:hover {
+    color: $secondary;
+  }
 }
 
-.card-title a:hover {
-  color: $secondary;
+
+.card-coins__link {
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  display: block;
 }

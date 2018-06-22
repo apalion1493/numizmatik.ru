@@ -212,9 +212,13 @@ $normal-size: 16px;
           font-size: 12px;
           margin: 0;
 
-          span {
+          .header-info__price-amount {
             font-weight: bold;
             margin-left: 6px;
+          }
+
+          .header-info__price-total {
+            font-weight: bold;
           }
         }
       }
@@ -275,9 +279,9 @@ $normal-size: 16px;
 
 .header-info__number-unauthorized {
   width: 140px;
-  margin-left: 120px;
+  margin-left: 115px;
   position: relative;
-  left: 20px;
+  left: 15px;
 
   .header-info__number-link {
     position: relative;

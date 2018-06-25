@@ -2,18 +2,44 @@
 
 .modal-forms {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .modal-forms__phone {
   display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
 .modal-forms__name {
   display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 50px;
+}
+
+.modal-forms__name-form {
+  width: 200px;
+  height: 40px;
 }
 
 .modal-forms__btn {
   position: relative;
   top: 5px;
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal-forms__button-ordering {
+  width: 178px;
+  height: 50px;
+  font-size: 16px !important;
+}
+
+.modal-forms__phone-form {
+  width: 200px;
+  height: 40px;
 }

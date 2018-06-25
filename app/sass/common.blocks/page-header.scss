@@ -325,3 +325,7 @@ $normal-size: 16px;
   bottom: 10px;
   padding-bottom: 0;
 }
+
+@include media-breakpoint-up(sm) {
+
+}

@@ -232,11 +232,11 @@
     </div>
 </header>
 
-<main>
+<main class="main">
     <a href="#" class="btn back-to-top"></a>
     <div class="container">
         <div class="row">
-            <div class="col-12 pl-0">
+            <div class="col-12">
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb pl-0">
                         <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
@@ -247,7 +247,7 @@
         </div>
     </div>
 
-    <section class="container cart-content">
+    <form class="container cart-content" action="ordering.html">
         <div class="row d-flex align-items-center">
             <div class="col-4 cart-content__name">
                 <h1 class="cart-header__title">Корзина</h1>
@@ -270,187 +270,184 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <table class="table table-hover mb-0">
-                    <thead>
-                    <tr>
-                        <th scope="col">&shy</th>
-                        <th scope="col">Фото</th>
-                        <th scope="col" class="name-country">Группа - Страна</th>
-                        <th scope="col">Наименование</th>
-                        <th scope="col">Год</th>
-                        <th scope="col">Описание</th>
-                        <th scope="col">Ценна</th>
-                        <th scope="col">Количество</th>
-                        <th scope="col">Сумма</th>
-                        <th scope="col" class="last-cell">
-                            <i class="trashcan"></i>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th rowspan="3" scope="row">
-                            <div class="th-vertical first-vertical-th">Мелочь</div>
-                        </th>
-                        <td class="table__first-img">
-                            <a href="#"><img src="img/table-img/Bitmap.png" alt=""></a>
-                        </td>
-                        <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
-                        <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
-                        <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td>
-                            <div class="quantity-block">
-                                <button class="quantity-arrow-minus"></button>
-                                <input class="quantity-num" type="number" value="1">
-                                <button class="quantity-arrow-plus"></button>
-                            </div>
-                        </td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td class="last-cell">
-                            <a href="#"><img src="img/table-img/cross.svg" alt=""></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table__second-img">
-                            <a href="#"><img src="img/table-img/Bitmap2.png" alt=""></a>
-                        </td>
-                        <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
-                        <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
-                        <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td>
-                            <div class="quantity-block">
-                                <button class="quantity-arrow-minus"></button>
-                                <input class="quantity-num" type="number" value="1">
-                                <button class="quantity-arrow-plus"></button>
-                            </div>
-                        </td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td class="last-cell">
-                            <a href="#"><img src="img/table-img/cross.svg" alt=""></a>
-                        </td>
-                    </tr>
-                    <tr>
+            <div class="cart-table">
+                <div class="col-12">
+                    <table class="table table-hover cart-table__main mb-0">
+                        <thead>
+                        <tr>
+                            <th scope="col">&shy</th>
+                            <th scope="col">Фото</th>
+                            <th scope="col" class="cart-table__name-country">Группа - Страна</th>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Год</th>
+                            <th scope="col">Описание</th>
+                            <th scope="col">Ценна</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Сумма</th>
+                            <th scope="col" class="cart-table__last-cell">
+                                <i class="cart-table__trashcan"></i>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="3" scope="row">
+                                <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
+                            </th>
+                            <td class="cart-table__img">
+                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap.png" alt=""></a>
+                            </td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__year">2018</td>
+                            <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td>
+                                <div class="cart-table__block">
+                                    <button class="cart-table__block-minus"></button>
+                                    <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
+                                    <button class="cart-table__block-plus"></button>
+                                </div>
+                            </td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__last-cell">
+                                <a class="cart-table__last-cell-link" href="#"><img class="cart-table__last-cell-img" src="img/table-img/cross.svg" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart-table__img">
+                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap2.png" alt=""></a>
+                            </td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__year">2018</td>
+                            <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td>
+                                <div class="cart-table__block">
+                                    <button class="cart-table__block-minus"></button>
+                                    <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
+                                    <button class="cart-table__block-plus"></button>
+                                </div>
+                            </td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__last-cell">
+                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                            </td>
+                        </tr>
+                        <tr>
 
-                        <td class="table__third-img">
-                            <a href="#"><img src="img/table-img/Bitmap3.png" alt=""></a>
-                        </td>
-                        <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
-                        <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
-                        <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td>
-                            <div class="quantity-block">
-                                <button class="quantity-arrow-minus"></button>
-                                <input class="quantity-num" type="number" value="1">
-                                <button class="quantity-arrow-plus"></button>
-                            </div>
-                        </td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td class="last-cell">
-                            <a href="#"><img src="img/table-img/cross.svg" alt=""></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="th-grey">
-                            <div class="th-vertical">Боны</div>
-                        </th>
-                        <td class="table__fourth-img">
-                            <a href="#"><img src="img/table-img/Bitmap4.png" alt=""></a>
-                        </td>
-                        <td class="table__color-text"><a href="#" class="table__link">Бангладеш</a></td>
-                        <td class="table__color-text"><a href="#" class="table__link">70 така</a></td>
-                        <td>2018</td>
-                        <td class="table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td>
-                            <div class="quantity-block">
-                                <button class="quantity-arrow-minus"></button>
-                                <input class="quantity-num" type="number" value="1">
-                                <button class="quantity-arrow-plus"></button>
-                            </div>
-                        </td>
-                        <td class="table__bold-text">250 ₽</td>
-                        <td class="last-cell">
-                            <a href="#"><img src="img/table-img/cross.svg" alt=""></a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-6 ml-auto">
-                <div class="totals">
-                    <h1 class="totals__titles">Итого:</h1>
-                    <span class="totals__price">1000  ₽</span>
-                    <div class="totals__cross">
-                        <a href="#" class="totals__cross-link"><img src="img/table-img/cross.svg" alt=""></a>
+                            <td class="cart-table__img">
+                                <a href="#" class="cart-table__link"><img src="img/table-img/Bitmap3.png" alt="" class="cart-table__link-img"></a>
+                            </td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__year">2018</td>
+                            <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td>
+                                <div class="cart-table__block">
+                                    <button class="cart-table__block-minus"></button>
+                                    <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
+                                    <button class="cart-table__block-plus"></button>
+                                </div>
+                            </td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__last-cell">
+                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="cart-table__th-grey">
+                                <div class="cart-table__th-vertical">Боны</div>
+                            </th>
+                            <td class="cart-table__img">
+                                <a href="#" class="cart-table__link"><img src="img/table-img/Bitmap4.png" alt="" class="cart-table__link-img"></a>
+                            </td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Бангладеш</a></td>
+                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">70 така</a></td>
+                            <td class="cart-table__year">2018</td>
+                            <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td>
+                                <div class="cart-table__block">
+                                    <button class="cart-table__block-minus"></button>
+                                    <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
+                                    <button class="cart-table__block-plus"></button>
+                                </div>
+                            </td>
+                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__last-cell">
+                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6 ml-auto">
+                    <div class="cart-table__totals">
+                        <h1 class="cart-table__totals-titles">Итого:</h1>
+                        <span class="cart-table__totals-price">1000  ₽</span>
+                        <div class="cart-table__totals-cross">
+                            <a href="#" class="cart-table__totals-cross-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8 ml-auto button-group">
+            <div class="col-8 ml-auto cart-content__button-group">
                 <button type="button" class="btn btn-light btn-lg">Продолжить покупки</button>
-                <!--<button type="button" class="btn btn-success btn-lg">Купить без регистрации</button>-->
-                <form action="ordering.html">
-                    <button type="submit" class="btn btn-primary btn-lg">Оформить заказ</button>
-                </form>
-
+                <button type="submit" class="btn btn-primary btn-lg">Оформить заказ</button>
             </div>
         </div>
-    </section>
+    </form>
 
     <section class="container recommendations">
-        <header class="recommendations__title">
-            <h3>Рекомендуем преобрести</h3>
+        <header class="recommendations__header">
+            <h3 class="recommendations__title">Рекомендуем преобрести</h3>
         </header>
         <div class="row recommendations__content" data-slick-slider>
 
             <div class="col">
-                <div class="card card-first">
-                    <div class="card-new-icon">NEW  05.11</div>
-                    <a href="#"><img class="card-img-top card-first__img" src="img/recommendation/coin-img.png" alt="Card image cap"></a>
-                    <div class="card-body card-first__body">
-                        <h4 class="card-title"><a href="#" class="card-title__link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <div class="card-coins__new-icon">NEW  05.11</div>
+                    <a href="#" style="background-image: url(img/recommendation/coin-img.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Россия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Россия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2008</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2008</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Серебро</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Серебро</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">Proof</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">Proof</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">PL129-09</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">PL129-09</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>8 000 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <!--<a href="#" class="btn footer-card__btn-basket"></a>-->
-                                <button type="button" class="btn footer-card__btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">8 000 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -458,45 +455,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-second">
-                    <a href="#"><img class="card-img-top card-second__img" src="img/recommendation/coin-img-2.png" alt="Card image cap"></a>
-                    <div class="card-body card-second__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -504,46 +501,46 @@
             </div>
 
             <div class="col">
-                <div class="card card-third">
-                    <div class="card-new-icon">NEW  05.11</div>
-                    <a href="#"><img class="card-img-top card-third__img" src="img/recommendation/coin-img-3.png" alt="Card image cap"></a>
-                    <div class="card-body card-third__body">
-                        <h4 class="card-title"><a href="#">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <div class="card-coins__new-icon">NEW  05.11</div>
+                    <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Украина</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Украина</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Биметалл</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Биметалл</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-542</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-542</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>500 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">500 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -551,45 +548,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -597,45 +594,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -643,45 +640,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -689,45 +686,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -735,45 +732,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -781,45 +778,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -827,45 +824,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -873,91 +870,45 @@
             </div>
 
             <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
                                 <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
                                 </tr>
                                 <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-fourth">
-                    <a href="#"><img class="card-img-top card-fourth__img" src="img/recommendation/Bitmap.png" alt="Card image cap"></a>
-                    <div class="card-body card-fourth__body">
-                        <h4 class="card-title"><a href="#">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
-                        <div class="card-text">
-                            <table class="card-text__table">
-                                <tbody class="card-text__body">
-                                <tr>
-                                    <td class="card-text__first-column">Страна:</td>
-                                    <td class="card-text__second-column">Австралия</td>
-                                </tr>
-                                <tr>
-                                    <td class="card-text__first-column">Год:</td>
-                                    <td class="card-text__second-column">2018</td>
-                                </tr>
-                                <tr>
-                                    <td class="card-text__first-column">Металл:</td>
-                                    <td class="card-text__second-column">Латунь</td>
-                                </tr>
-                                <tr>
-                                    <td class="card-text__first-column">Состояние:</td>
-                                    <td class="card-text__second-column">UNC</td>
-                                </tr>
-                                <tr>
-                                    <td class="card-text__first-column">Номер:</td>
-                                    <td class="card-text__second-column">CS-080</td>
-                                </tr>
-                                <tr>
-                                    <td class="card-text__first-column">Количество:</td>
-                                    <td class="card-text__second-column">10 шт.</td>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="footer-card">
-                            <span>360 ₽</span>
-                            <div class="footer-card__btn">
-                                <a href="#" class="btn footer-card__btn-star"></a>
-                                <a href="#" class="btn footer-card__btn-basket"></a>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
                     </div>
@@ -1026,15 +977,15 @@
 
                                 <div class="modal-forms col-12 pl-0">
                                     <div class="col-3 form-group row pl-0 mb-0 modal-forms__phone">
-                                        <label for="fast-shop-phone" class="col-sm-5 col-form-label">Телефон</label>
+                                        <label for="your-data" class="col-sm-5 col-form-label">Телефон</label>
                                         <div class="col-sm-12">
-                                            <input type="text"  class="form-control" id="fast-shop-phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                                            <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                                         </div>
                                     </div>
                                     <div class="col-3 form-group row pl-0 modal-forms__name mb-0">
-                                        <label for="fast-shop-initials" class="col-sm-5 col-form-label">ФИО</label>
+                                        <label for="your-data" class="col-sm-5 col-form-label">ФИО</label>
                                         <div class="col-sm-12">
-                                            <input type="text"  class="form-control" id="fast-shop-initials" placeholder="">
+                                            <input type="text"  class="form-control" id="your-data" placeholder="">
                                         </div>
                                     </div>
                                     <div class="container modal-forms__btn">
@@ -1047,8 +998,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
@@ -1066,7 +1015,7 @@
         <div class="subscription__btn">
             <button type="button" class="btn btn-secondary">
                 <span>Подписаться</span>
-                <div class="subscription__icon"></div>
+                <i class="subscription__icon"></i>
             </button>
         </div>
     </div>

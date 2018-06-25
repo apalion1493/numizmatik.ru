@@ -5,85 +5,85 @@ $normal-size: 16px;
 .contact-info {
   border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
   margin-top: 5px;
+}
 
-  .contact-info__content {
-    margin-bottom: -10px;
+.contact-info__content {
+  margin-bottom: -10px;
+}
 
-    .contact-info__location {
-      display: flex;
+.contact-info__location {
+  display: flex;
+}
 
-      .contact-info__location-marker {
-        background: url("../../img/header-icon/marker.svg") no-repeat center;
-        background-size: 100% auto;
-        width: 10px;
-        height: 15px;
-        margin-top: 5px;
-        margin-right: 5px;
-      }
+.contact-info__location-marker {
+  background: url("../../img/header-icon/marker.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 10px;
+  height: 15px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
 
-      .contact-info__location-address-link {
-        font-size: $normal-size;
-        color: #333;
-      }
-    }
+.contact-info__location-address-link {
+  font-size: $normal-size;
+  color: #333;
+}
 
-    .contact-info__schedule {
-      display: flex;
+.contact-info__schedule {
+  display: flex;
+}
 
-      .contact-info__clock {
-        background: url("../../img/header-icon/clock.svg") no-repeat center;
-        background-size: 100% auto;
-        color: #252B7F;
-        width: 14px;
-        height: 14px;
-        margin-top: 5px;
-        margin-right: 5px;
-      }
+.contact-info__clock {
+  background: url("../../img/header-icon/clock.svg") no-repeat center;
+  background-size: 100% auto;
+  color: #252B7F;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
 
-      .contact-info__timetable {
-        font-size: $normal-size;
-        color: #333333;
-      }
-    }
+.contact-info__timetable {
+  font-size: $normal-size;
+  color: #333333;
+}
 
-    .contact-info__communications {
-      display: flex;
-      padding-right: 0;
+.contact-info__communications {
+  display: flex;
+  padding-right: 0;
+}
 
-      .contact-info__phone-call {
-        color: #EBAD45;
-        margin-left: 60px;
-        font-size: $normal-size;
-      }
-      
-      .contact-info__men {
-        background: url("../../img/header-icon/man-user.svg") no-repeat center;
-        background-size: 100% auto;
-        width: 11px;
-        height: 14px;
-        position: relative;
-        margin-top: 6px;
-        margin-right: 5px;
-        margin-left: auto;
-      }
-      
-      .contact-info__email {
-        color: #252B7F;
-        font-size: $normal-size;
-      }
-    }
-    
-    .contact-info__balance  {
-      display: flex;
-      justify-content: flex-end;
-      padding-left: 0;
+.contact-info__phone-call {
+  color: #EBAD45;
+  margin-left: 60px;
+  font-size: $normal-size;
+}
 
-      .contact-info__money {
-        color: #EBAD45;
-        font-size: $normal-size;
-      }
-    }
-  }
+.contact-info__men {
+  background: url("../../img/header-icon/man-user.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 11px;
+  height: 14px;
+  position: relative;
+  margin-top: 6px;
+  margin-right: 5px;
+  margin-left: auto;
+}
+
+.contact-info__email {
+  color: #252B7F;
+  font-size: $normal-size;
+}
+
+.contact-info__balance  {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.contact-info__money {
+  color: #EBAD45;
+  font-size: $normal-size;
 }
 
 .contact-info__registration {
@@ -104,25 +104,13 @@ $normal-size: 16px;
     height: 45px;
   }
 
-  .header-info__link {
-    margin-right: 5px;
-    font-size: 18px;
-    color: #252B7F;
-  }
+
 
   .header-info__phone {
     display: flex;
     align-items: center;
 
-    .header-info__ellipsis {
-      display: block;
-      background: url("../../img/header-icon/Group2.svg") no-repeat center;
-      background-size: 100% auto;
-      width: 23px;
-      height: 6px;
-      align-self: center;
-      position: relative;
-    }
+
 
     .header-info__cellphone {
       background: url("../../img/header-icon/phone-receiver.svg") no-repeat center;
@@ -147,7 +135,7 @@ $normal-size: 16px;
     }
 
     .header-info__number {
-      margin-left: 45px;
+      margin-left: 75px;
 
        .header-info__number-link {
          display: block;
@@ -223,6 +211,29 @@ $normal-size: 16px;
         }
       }
   }
+}
+
+.page-header .header-info__link {
+  margin-right: 2px;
+  font-size: 18px;
+  color: #252B7F !important;
+}
+
+.header-info__list-of-links {
+  display: flex;
+  z-index: 300;
+}
+
+.header-info__ellipsis {
+  display: block;
+  background: url("../../img/header-icon/Group2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 6px;
+  align-self: center;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
 .header-info__number-icon:before {
@@ -326,6 +337,80 @@ $normal-size: 16px;
   padding-bottom: 0;
 }
 
-@include media-breakpoint-up(sm) {
 
+.menu-item-goods {
+  position: relative;
+
+  &:not(.active):after {
+    content: '';
+    background: #EBAD45;
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    top: 17px;
+    right: 0;
+  }
+
+  &:last-child:after {
+    content: '';
+    background: #EBAD45;
+    width: 0;
+    height: 16px;
+    position: absolute;
+    top: 17px;
+    right: 0;
+  }
 }
+
+
+
+@include media-breakpoint-between(xs,sm) {
+
+  .contact-info__location,
+  .contact-info__schedule,
+  .contact-info__phone-call,
+  .contact-info__email {
+    display: none;
+  }
+
+  .contact-info__men {
+    position: absolute;
+    right: 80px;
+  }
+
+  .contact-info__money {
+    position: absolute;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-info .header-info__logo {
+    width: 132px;
+    height: 27px;
+  }
+
+  .header-info__list-of-links {
+    order: -1;
+  }
+
+  .page-header .header-info__ellipsis {
+    display: none;
+  }
+
+  .page-header .header-info__ellipsis-menu {
+    display: block;
+    border: none;
+    padding-top: 0;
+  }
+
+  .page-header .header-info__ellipsis-item {
+    display: block;
+    font-size: 18px;
+    color: #252B7F !important;
+    padding: 8px 0;
+  }
+}
+

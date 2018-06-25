@@ -50,3 +50,9 @@
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
+@include media-breakpoint-between(xs,sm) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

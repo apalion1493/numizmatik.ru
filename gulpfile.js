@@ -49,7 +49,7 @@ gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
 			baseDir: 'app',
-			index: 'unauthorized.html'
+			index: 'index.html'
 		},
 		notify: false
 	});

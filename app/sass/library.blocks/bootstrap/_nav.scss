@@ -121,26 +121,26 @@ li.nav-item.active {
   background-color: #EBAD45;
 }
 
-.nav-item {
-  position: relative;
-
-  &:not(.active):after {
-    content: '';
-    background: #EBAD45;
-    width: 1px;
-    height: 16px;
-    position: absolute;
-    top: 17px;
-    right: 0;
-  }
-
-  &:last-child:after {
-    content: '';
-    background: #EBAD45;
-    width: 0;
-    height: 16px;
-    position: absolute;
-    top: 17px;
-    right: 0;
-  }
-}
+//.nav-item {
+//  position: relative;
+//
+//  &:not(.active):after {
+//    content: '';
+//    background: #EBAD45;
+//    width: 1px;
+//    height: 16px;
+//    position: absolute;
+//    top: 17px;
+//    right: 0;
+//  }
+//
+//  &:last-child:after {
+//    content: '';
+//    background: #EBAD45;
+//    width: 0;
+//    height: 16px;
+//    position: absolute;
+//    top: 17px;
+//    right: 0;
+//  }
+//}

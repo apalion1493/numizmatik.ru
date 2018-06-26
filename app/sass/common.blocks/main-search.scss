@@ -1,0 +1,35 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.main .main-search {
+  display: none;
+}
+
+@include media-breakpoint-between(xs,sm) {
+
+  .main {
+
+    .main-search {
+      padding: 0;
+      border-bottom: 2px solid #EBAD45;
+    }
+
+    .main-search__content {
+      width: 100%;
+      background: #ffffff;
+    }
+
+    .main-search__icon {
+      background: url("../../img/search/search.svg") no-repeat center;
+      background-size: 100% auto;
+      height: 38px;
+      border: none;
+    }
+
+    .main-search__form {
+      width: 85%;
+      border: none;
+      padding-left: 16px;
+    }
+
+  }
+}

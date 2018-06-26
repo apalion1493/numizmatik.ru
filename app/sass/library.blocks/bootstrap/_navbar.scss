@@ -249,7 +249,7 @@
 // White links against a dark background
 .navbar-dark {
   background: #252B7F;
-  border-bottom: 2px solid #EBAD45;
+  //border-bottom: 2px solid #EBAD45;
   .navbar-brand {
     color: $navbar-dark-active-color;
 
@@ -282,7 +282,7 @@
 
   .navbar-toggler {
     color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
+    //border-color: $navbar-dark-toggler-border-color;
   }
 
   .navbar-toggler-icon {

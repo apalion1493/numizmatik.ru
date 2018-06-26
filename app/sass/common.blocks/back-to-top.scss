@@ -16,3 +16,9 @@
 .back-to-top:hover {
   opacity: 1;
 }
+
+@include media-breakpoint-between(xs,sm) {
+  .main .back-to-top {
+    display: none;
+  }
+}

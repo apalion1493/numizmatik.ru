@@ -45,4 +45,13 @@ main .recommendations .recommendations__content {
   cursor: pointer;
 }
 
+@include media-breakpoint-between(xs,sm) {
+  .recommendations {
+    .recommendations__title {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
 

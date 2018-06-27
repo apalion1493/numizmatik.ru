@@ -565,14 +565,7 @@ $normal-size: 16px;
   }
 
   .header-menu .menu-item-goods {
-    height: 40px;
-
-    .nav-link {
-      padding: 8px 0 8px 23px !important;
-    }
-  }
-
-  .menu-item-goods {
+    height: 30px;
     position: relative;
 
     &:not(.active):after {
@@ -581,6 +574,11 @@ $normal-size: 16px;
 
     &:last-child:after {
       display: none;
+    }
+
+    .nav-link {
+      height: 30px;
+      padding: 4px 0 12px 23px !important;
     }
   }
 

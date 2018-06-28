@@ -1,5 +1,9 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+.cart-table {
+  width: 100%;
+}
+
 .cart-content {
   position: relative;
 
@@ -134,21 +138,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    .btn-success {
-      margin-right: 18px;
-      font-size: 16px;
-    }
-
-    .btn-light {
-      margin-right: 22px;
-      font-size: 16px;
-    }
-
-    .btn-primary {
-      font-size: 16px;
-    }
+    margin-left: auto;
   }
+}
+
+.cart-content__button-continue {
+  margin-right: 22px;
+  font-size: 16px;
+}
+
+.cart-content__button-issue {
+  font-size: 16px;
 }
 
 .cart-table__information-subject {
@@ -582,11 +582,18 @@ tbody {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
 
-      .btn-light {
-        margin-right: 0;
-        margin-top: 20px;
-      }
+    .cart-content__button-continue {
+      margin-right: 0;
+      margin-top: 20px;
+      order: 2;
+      font-size: 16px;
+    }
+
+    .cart-content__button-issue {
+      font-size: 16px;
+      order: 1;
     }
 
 

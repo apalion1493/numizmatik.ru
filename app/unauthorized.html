@@ -152,21 +152,38 @@
             <div class="col-3">
                 <a href="#"><div class="header-info__logo"></div></a>
             </div>
-            <nav class="col-4 header-info__list-of-links">
-                <a href="#" class="header-info__link">Информация</a>
-                <a href="#" class="header-info__link">Гарантия</a>
-                <a href="#" class="header-info__link">Скидки</a>
-                <a href="#" class="header-info__link">Контакты</a>
+            <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
+                <button class="navbar-toggler header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon header-info__burger-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link header-info__link" href="#">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-info__link" href="#">Гарантия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-info__link" href="#">Скидки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-info__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item header-info__ellipsis-item" href="#">Action</a>
+                                    <a class="dropdown-item header-info__ellipsis-item" href="#">Another action</a>
+                                    <a class="dropdown-item header-info__ellipsis-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div class="col-3 header-info__phone">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item header-info__ellipsis-item" href="#">Action</a>
-                        <a class="dropdown-item header-info__ellipsis-item" href="#">Another action</a>
-                        <a class="dropdown-item header-info__ellipsis-item" href="#">Something else here</a>
-                    </div>
-                </div>
                 <div class="header-info__number-unauthorized">
                     <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
@@ -186,41 +203,44 @@
     <div class="header-menu">
         <div class="container">
             <div class="row">
-                <div class="col-12 pl-0" id="section-navbar">
-                    <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+                <div class="col-12 px-0" id="section-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-dark header-menu__navbar">
+                        <button class="navbar-toggler pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon header-menu__catalog"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active dropdown">
+                                <li class="nav-item active dropdown menu-item-goods">
                                     <a class="nav-link dropdown-toggle header-menu__dropdown-store" href="#" id="navbarDropdown" role="button"
                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Магазин монет
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu header-menu__dropdown" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Action</a>
                                         <a class="dropdown-item" href="#">Another action</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item  menu-item-goods">
                                     <a class="nav-link" href="#">Банкноты</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">Аксессуары</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">Жетоны</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">Нотгельды</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">Книги</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">Распродажи</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item menu-item-goods">
                                     <a class="nav-link" href="#">История просмотров</a>
                                 </li>
                             </ul>
@@ -249,12 +269,12 @@
 
     <form class="container cart-content" action="ordering.html">
         <div class="row d-flex align-items-center">
-            <div class="col-4 cart-content__name">
+            <div class="col-lg-2 cart-content__name">
                 <h1 class="cart-header__title">Корзина</h1>
             </div>
-            <div class="col-6 cart-content__info">
+            <div class="col-lg-6 cart-content__info">
                 <div class="cart-content__info-title ml-auto">Заказ действителен до:</div>
-                <div class="cart-content__time ml-1">
+                <div class="cart-content__time">
                     <div class="cart-content__number">
                         <div class="cart-content__number-first">1</div>
                     </div>
@@ -271,11 +291,11 @@
                 </div>
             </div>
             <div class="cart-table">
-                <div class="col-12">
+                <div class="col-lg-12">
                     <table class="table table-hover cart-table__main mb-0">
                         <thead>
                         <tr>
-                            <th scope="col">&shy</th>
+                            <th scope="col" class="cart-table__cell-angle">&shy</th>
                             <th scope="col">Фото</th>
                             <th scope="col" class="cart-table__name-country">Группа - Страна</th>
                             <th scope="col">Наименование</th>
@@ -290,53 +310,52 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th rowspan="3" scope="row">
+                        <tr class="cart-table__lines">
+                            <th rowspan="3" scope="row" class="cart-table__th-grey">
                                 <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
                             </th>
                             <td class="cart-table__img">
-                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap.png" alt=""></a>
+                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap.svg" alt=""></a>
                             </td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                             <td class="cart-table__year">2018</td>
                             <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                            <td class="cart-table__bold-text">250 ₽</td>
-                            <td>
+                            <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                            <td class="cart-table__sum">
                                 <div class="cart-table__block">
                                     <button class="cart-table__block-minus"></button>
                                     <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
                                     <button class="cart-table__block-plus"></button>
                                 </div>
                             </td>
-                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
                             <td class="cart-table__last-cell">
-                                <a class="cart-table__last-cell-link" href="#"><img class="cart-table__last-cell-img" src="img/table-img/cross.svg" alt=""></a>
+                                <a class="cart-table__last-cell-link" href="#"><i class="cart-table__last-cell-img"></i></a>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="cart-table__lines">
                             <td class="cart-table__img">
                                 <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap2.png" alt=""></a>
                             </td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                             <td class="cart-table__year">2018</td>
                             <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                            <td class="cart-table__bold-text">250 ₽</td>
-                            <td>
+                            <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                            <td class="cart-table__sum">
                                 <div class="cart-table__block">
                                     <button class="cart-table__block-minus"></button>
                                     <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
                                     <button class="cart-table__block-plus"></button>
                                 </div>
                             </td>
-                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
                             <td class="cart-table__last-cell">
-                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                                <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                             </td>
                         </tr>
-                        <tr>
-
+                        <tr class="cart-table__lines">
                             <td class="cart-table__img">
                                 <a href="#" class="cart-table__link"><img src="img/table-img/Bitmap3.png" alt="" class="cart-table__link-img"></a>
                             </td>
@@ -354,10 +373,10 @@
                             </td>
                             <td class="cart-table__bold-text">250 ₽</td>
                             <td class="cart-table__last-cell">
-                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                                <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="cart-table__lines">
                             <th scope="row" class="cart-table__th-grey">
                                 <div class="cart-table__th-vertical">Боны</div>
                             </th>
@@ -378,25 +397,27 @@
                             </td>
                             <td class="cart-table__bold-text">250 ₽</td>
                             <td class="cart-table__last-cell">
-                                <a href="#" class="cart-table__last-cell-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__last-cell-img"></a>
+                                <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-6 ml-auto">
+                <div class="col-lg-6 ml-auto">
                     <div class="cart-table__totals">
-                        <h1 class="cart-table__totals-titles">Итого:</h1>
-                        <span class="cart-table__totals-price">1000  ₽</span>
+                        <div class="cart-table__totals-content">
+                            <h1 class="cart-table__totals-titles">Итого:</h1>
+                            <span class="cart-table__totals-price">1000  ₽</span>
+                        </div>
                         <div class="cart-table__totals-cross">
-                            <a href="#" class="cart-table__totals-cross-link"><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>
+                            <a href="#" class="cart-table__totals-cross-link"><span class="cart-table__totals-cross-mobil">Очистить корзину</span><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8 ml-auto cart-content__button-group">
-                <button type="button" class="btn btn-light btn-lg">Продолжить покупки</button>
-                <button type="submit" class="btn btn-primary btn-lg">Оформить заказ</button>
+            <div class="col-lg-8 cart-content__button-group">
+                <button type="button" class="btn btn-light btn-lg cart-content__button-continue">Продолжить покупки</button>
+                <button type="submit" class="btn btn-primary btn-lg cart-content__button-issue">Оформить заказ</button>
             </div>
         </div>
     </form>
@@ -935,12 +956,12 @@
                                     Если вы хотите продолжать выбор товаров, то используйте обычную функцию заказа - "В корзину"
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <table class="table table-hover mb-0">
+                            <div class="cart-table col-lg-12">
+                                <table class="table table-hover cart-table__main mb-0">
                                     <thead>
                                     <tr>
                                         <th scope="col">Фото</th>
-                                        <th scope="col">Группа - Страна</th>
+                                        <th scope="col" class="cart-table__name-country">Группа - Страна</th>
                                         <th scope="col">Наименование</th>
                                         <th scope="col">Год</th>
                                         <th scope="col">Ценна</th>
@@ -950,50 +971,48 @@
                                     </thead>
                                     <tbody class="modal-content__tbody">
                                     <tr>
-                                        <td class="table__first-img">
-                                            <a href="#"><img src="img/table-img/Bitmap.png" alt=""></a>
+                                        <td class="cart-table__img">
+                                            <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap2.png" alt=""></a>
                                         </td>
-                                        <td class="table__color-text"><a href="#" class="table__link">Кирибати</a></td>
-                                        <td class="table__color-text"><a href="#" class="table__link">1 доллар</a></td>
-                                        <td>2018</td>
-                                        <td class="table__bold-text">250 ₽</td>
+                                        <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
+                                        <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                                        <td class="cart-table__year">2018</td>
+                                        <td class="cart-table__bold-text">250 ₽</td>
                                         <td>
-                                            <div class="quantity-block">
-                                                <button class="quantity-arrow-minus"></button>
-                                                <input class="quantity-num" type="number" value="1">
-                                                <button class="quantity-arrow-plus"></button>
+                                            <div class="cart-table__block">
+                                                <button class="cart-table__block-minus"></button>
+                                                <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
+                                                <button class="cart-table__block-plus"></button>
                                             </div>
                                         </td>
-                                        <td class="table__bold-text">250 ₽</td>
+                                        <td class="cart-table__bold-text">250 ₽</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="col-6 ml-auto pr-0">
+                                <div class="col-lg-6 ml-auto pr-0">
                                     <div class="totals-modal totals">
                                         <h1 class="totals__titles totals__titles-modal">Итого:</h1>
                                         <span class="totals__price totals__price-modal">1000  ₽</span>
                                     </div>
                                 </div>
 
-                                <div class="modal-forms col-12 pl-0">
-                                    <div class="col-3 form-group row pl-0 mb-0 modal-forms__phone">
-                                        <label for="your-data" class="col-sm-5 col-form-label">Телефон</label>
-                                        <div class="col-sm-12">
+                                <div class="modal-forms">
+                                    <div class="form-group modal-forms__phone">
+                                        <label for="your-data" class="col-form-label">Телефон</label>
+                                        <div class="modal-forms__phone-form">
                                             <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                                         </div>
                                     </div>
-                                    <div class="col-3 form-group row pl-0 modal-forms__name mb-0">
-                                        <label for="your-data" class="col-sm-5 col-form-label">ФИО</label>
-                                        <div class="col-sm-12">
+                                    <div class="form-group modal-forms__name">
+                                        <label for="your-data" class="col-form-label">ФИО</label>
+                                        <div class="modal-forms__name-form">
                                             <input type="text"  class="form-control" id="your-data" placeholder="">
                                         </div>
                                     </div>
-                                    <div class="container modal-forms__btn">
+                                    <div class="modal-forms__btn">
                                         <div class="row">
-                                            <div class="col-7 button-group">
-                                                <form action="index.html">
-                                                    <button type="submit" class="btn btn-primary btn-lg">Отправить заказ</button>
-                                                </form>
+                                            <div class="button-group">
+                                                <button type="submit" class="btn btn-primary btn-lg modal-forms__button-ordering">Отправить заказ</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1004,6 +1023,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 </main>
 

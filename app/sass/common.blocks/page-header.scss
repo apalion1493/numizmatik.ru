@@ -96,6 +96,7 @@ $normal-size: 16px;
   align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 100%;
 
   .header-info__logo {
     background: url("../../img/header-icon/logo.svg") no-repeat center;
@@ -293,7 +294,7 @@ $normal-size: 16px;
   width: 140px;
   margin-left: 115px;
   position: relative;
-  left: 15px;
+  left: 48px;
 }
 
 .header-info__number-link {
@@ -321,6 +322,7 @@ $normal-size: 16px;
   overflow: hidden;
   position: relative;
   bottom: 10px;
+  left: 30px;
   padding-bottom: 0;
 }
 
@@ -398,6 +400,7 @@ $normal-size: 16px;
 .page-header .header-info__cart {
   display: flex;
   border-radius: 50px;
+  margin-left: 22px;
 }
 
 .header-info .header-info__badge {

@@ -78,7 +78,7 @@
 
       .cart-table__trashcan {
         display: block;
-        background: url("../../img/table-img/delete-photo.svg") no-repeat center;
+        background: url("#{$rootDir}/img/table-img/delete-photo.svg") no-repeat center;
         background-size: 100% auto;
         position: relative;
         bottom: 5px;
@@ -186,7 +186,7 @@ input[type="number"] {
 .cart-table__block-minus {
   cursor: pointer;
   border: none;
-  background: url("../../img/table-img/minus.svg") no-repeat center;
+  background: url("#{$rootDir}/img/table-img/minus.svg") no-repeat center;
   background-size: 11px 2px;
   position: absolute;
   left: 0;
@@ -197,7 +197,7 @@ input[type="number"] {
 .cart-table__block-plus {
   cursor: pointer;
   border: none;
-  background: url("../../img/table-img/plus.svg") no-repeat center;
+  background: url("#{$rootDir}/img/table-img/plus.svg") no-repeat center;
   background-size: 11px 11px;
   position: absolute;
   right: 0;
@@ -240,7 +240,7 @@ input[type="number"] {
   content: "";
   position: relative;
   bottom: -4px;
-  background: url("../../img/header-icon/more-btn.svg") no-repeat center;
+  background: url("#{$rootDir}/img/header-icon/more-btn.svg") no-repeat center;
   background-size: 100% auto;
   width: 8px;
   height: 8px;
@@ -281,7 +281,7 @@ tbody {
 
 .cart-table .cart-table__last-cell-img {
   display: block;
-  background: url("../../img/table-img/cross.svg") no-repeat center;
+  background: url("#{$rootDir}/img/table-img/cross.svg") no-repeat center;
   background-size: 100% auto;
   width: 19px;
   height: 19px;
@@ -398,7 +398,7 @@ tbody {
 
     .cart-table__last-cell-img {
       display: block;
-      background: url("../../img/table-img/close.svg") no-repeat center;
+      background: url("#{$rootDir}/img/table-img/close.svg") no-repeat center;
       background-size: 100% auto;
       width: 38px;
       height: 38px;

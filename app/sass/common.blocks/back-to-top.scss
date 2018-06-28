@@ -1,7 +1,7 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
 .back-to-top {
-  background: url("../../img/recommendation/Group8.svg") no-repeat center;
+  background: url("#{$rootDir}/img/recommendation/Group8.svg") no-repeat center;
   background-size: cover;
   width: 51px;
   height: 51px;

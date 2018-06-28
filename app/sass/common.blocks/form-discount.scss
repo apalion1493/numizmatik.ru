@@ -11,7 +11,7 @@
 }
 
 .form-discount__dash {
-  background: url("../../img/forms-img/dash.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/dash.svg") no-repeat center;
   background-size: 100% auto;
   min-width: 11px;
   height: 19px;

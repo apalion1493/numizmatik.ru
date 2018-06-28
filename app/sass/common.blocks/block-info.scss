@@ -63,7 +63,7 @@
 }
 
 .block-info__desk {
-  background: url("../../img/forms-img/desk.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/desk.svg") no-repeat center;
   background-size: 100% auto;
   width: 36px;
   height: 33px;
@@ -72,7 +72,7 @@
 }
 
 .block-info__marker {
-  background: url("../../img/forms-img/placeholder.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/placeholder.svg") no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -86,7 +86,7 @@
 }
 
 .block-info__metro {
-  background: url("../../img/forms-img/tbilisi-metro-logo-symbol.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/tbilisi-metro-logo-symbol.svg") no-repeat center;
   background-size: 100% auto;
   width: 40px;
   height: 24px;
@@ -95,7 +95,7 @@
 }
 
 .block-info__man {
-  background: url("../../img/forms-img/delivery-man.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/delivery-man.svg") no-repeat center;
   background-size: 100% auto;
   width: 33px;
   height: 38px;
@@ -104,7 +104,7 @@
 }
 
 .block-info__parcel {
-  background: url("../../img/forms-img/parcel.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/parcel.svg") no-repeat center;
   background-size: 100% auto;
   width: 39px;
   height: 20px;
@@ -113,7 +113,7 @@
 }
 
 .block-info__cash {
-  background: url("../../img/forms-img/banknote.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/banknote.svg") no-repeat center;
   background-size: 100% auto;
   width: 36px;
   height: 28px;
@@ -122,7 +122,7 @@
 }
 
 .block-info__yandex {
-  background: url("../../img/forms-img/yandex-pay-logo.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/yandex-pay-logo.svg") no-repeat center;
   background-size: 100% auto;
   width: 27px;
   height: 26px;
@@ -131,7 +131,7 @@
 }
 
 .block-info__sberbank {
-  background: url("../../img/forms-img/sber.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/sber.svg") no-repeat center;
   background-size: 100% auto;
   min-width: 31px;
   height: 29px;
@@ -140,7 +140,7 @@
 }
 
 .block-info__credit-cards {
-  background: url("../../img/forms-img/visa-pay-logo.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/visa-pay-logo.svg") no-repeat center;
   background-size: 100% auto;
   min-width: 42px;
   height: 13px;
@@ -149,7 +149,7 @@
 }
 
 .block-info__webmoney {
-  background: url("../../img/forms-img/webmoney-paying-logo.svg") no-repeat center;
+  background: url("#{$rootDir}/img/forms-img/webmoney-paying-logo.svg") no-repeat center;
   background-size: 100% auto;
   min-width: 24px;
   height: 23px;

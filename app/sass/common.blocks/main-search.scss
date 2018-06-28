@@ -20,7 +20,7 @@
     }
 
     .main-search__icon {
-      background: url("../../img/search/search.svg") no-repeat center;
+      background: url("#{$rootDir}/img/search/search.svg") no-repeat center;
       background-size: 100% auto;
       height: 38px;
       border: none;

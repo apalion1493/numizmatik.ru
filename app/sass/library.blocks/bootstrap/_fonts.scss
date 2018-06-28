@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'Circe';
-  src: url('../../../fonts/Circe/Circe-Thin.ttf') format('truetype');
+  src: url('#{$rootDir}/fonts/Circe/Circe-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url('../../../fonts/Circe/Circe-Light.ttf') format('truetype');
+  src: url('#{$rootDir}/fonts/Circe/Circe-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url('../../../fonts/Circe/Circe-Regular.ttf') format('truetype');
+  src: url('#{$rootDir}/fonts/Circe/Circe-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url('../../../fonts/Circe/Circe-Bold.ttf') format('truetype');
+  src: url('#{$rootDir}/fonts/Circe/Circe-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }

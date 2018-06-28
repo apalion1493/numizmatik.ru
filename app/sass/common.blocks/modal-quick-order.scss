@@ -18,7 +18,7 @@
 
 .modal-quick-order__icon {
   display: block;
-  background: url("../../img/modal-img/close.svg") no-repeat center;
+  background: url("#{$rootDir}/img/modal-img/close.svg") no-repeat center;
   background-size: 100% auto;
   width: 38px;
   height: 38px;

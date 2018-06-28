@@ -33,7 +33,7 @@
 
 .subscription__icon {
   display: block;
-  background: url("../../img/footer/Shape.svg") no-repeat center;
+  background: url("#{$rootDir}/img/footer/Shape.svg") no-repeat center;
   background-size: 100% auto;
   width: 15px;
   height: 15px;
@@ -98,7 +98,7 @@
 
 
 .footer-logo {
-  background: url("../../img/footer/Object.svg") no-repeat center;
+  background: url("#{$rootDir}/img/footer/Object.svg") no-repeat center;
   background-size: 100% auto;
   width: 208px;
   height: 42px;
@@ -110,14 +110,14 @@
   align-items: center;
   margin-top: 30px;
   .footer-img__metrika {
-    background: url("../../img/footer/3_1_FFFFFFFF_FFF8E8FF_0_visits.svg") no-repeat center;
+    background: url("#{$rootDir}/img/footer/3_1_FFFFFFFF_FFF8E8FF_0_visits.svg") no-repeat center;
     background-size: 100% auto;
     width: 88px;
     height: 31px;
   }
 
   .footer-img__icon {
-    background: url("../../img/footer/rating.svg") no-repeat center;
+    background: url("#{$rootDir}/img/footer/rating.svg") no-repeat center;
     background-size: 100% auto;
     width: 88px;
     height: 31px;

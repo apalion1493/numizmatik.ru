@@ -225,6 +225,17 @@ input[type="number"] {
   color: $secondary;
 }
 
+.cart-table__link-img {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 54px;
+  width: 101px;
+  display: block;
+}
+
+
+
 .cart-table__link:hover {
   color: $secondary;
 }
@@ -304,7 +315,7 @@ tbody {
 }
 
 @include media-breakpoint-between(xs,sm)  {
-  .cart-content {
+  .main {
 
     table {
       border-collapse: inherit;
@@ -392,7 +403,7 @@ tbody {
     .cart-table__last-cell {
       display: block;
       position: absolute;
-      top: 104px;
+      top: 164px;
       right: 0;
     }
 
@@ -441,7 +452,7 @@ tbody {
       position: relative;
       display: flex;
       flex-direction: column;
-      border: 1px solid #D8D8D8;
+      border: 1px solid #F6E9CF;
       font-size: 14px;
       margin-bottom: 18px;
     }
@@ -457,14 +468,12 @@ tbody {
 
     .cart-table__sum {
       display: inline-block;
-    }
-
-    .cart-table__link-img {
-      width: 65%;
+      margin-top: 20px;
     }
 
     .cart-table__country {
       margin-left: 70px;
+      margin-top: 11px;
     }
 
     .cart-table__denomination {
@@ -550,7 +559,7 @@ tbody {
       height: 100px;
       display: flex;
       flex-direction: column;
-      border: 1px solid #D8D8D8;
+      border: 1px solid #F6E9CF;
     }
 
     .cart-table__totals-titles {
@@ -594,6 +603,23 @@ tbody {
     .cart-content__button-issue {
       font-size: 16px;
       order: 1;
+    }
+
+    .cart-table__link-img {
+      background-size: 80% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 150px;
+      display: block;
+      width: auto;
+    }
+
+    .card-coins__link {
+      background-size: 80% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      display: block;
     }
 
 

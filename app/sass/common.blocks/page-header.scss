@@ -2,6 +2,10 @@
 
 $normal-size: 16px;
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 .contact-info {
   border-bottom: 1px solid  rgba(216, 216, 216, 0.3);
   margin-top: 5px;
@@ -482,6 +486,7 @@ $normal-size: 16px;
   .contact-info__money {
     position: absolute;
     top: 8px;
+    padding-right: 15px;
   }
 
   .header-info {

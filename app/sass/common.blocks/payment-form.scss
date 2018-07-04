@@ -6,40 +6,40 @@
   .form-payment__table {
     width: 264px;
     height: 170px;
-
-    .form-payment__body {
-      border-right: none;
-
-      .form-payment__first-column {
-        color: #333333;
-        font-size: 16px;
-        width: 174px;
-        padding: 0;
-      }
-
-      .form-payment__second-column {
-        font-size: 20px;
-        color: #333;
-        font-weight: bold;
-        padding: 0;
-      }
-
-      .form-payment__table-footer {
-        border-top: 3px solid $primary;
-
-        .form-payment__total {
-          font-weight: bold;
-        }
-
-        .form-payment__amount {
-          font-size: 24px;
-          font-weight: bold;
-          color: $primary;
-          padding-top: 10px;
-        }
-      }
-    }
   }
+}
+
+.form-payment__body {
+  border-right: none;
+}
+
+.form-payment__first-column {
+  color: #333333;
+  font-size: 16px;
+  width: 174px;
+  padding: 0;
+}
+
+.form-payment__second-column {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  padding: 0;
+}
+
+.form-payment__table-footer {
+  border-top: 3px solid $primary;
+}
+
+.form-payment__total {
+  font-weight: bold;
+}
+
+.form-payment__amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: $primary;
+  padding-top: 10px;
 }
 
 .form-payment__last-line {
@@ -70,18 +70,23 @@
 
 .form-payment .form-payment__check {
   padding-left: 0;
+}
 
-  .form-payment__check-text {
-    font-size: 14px;
-    color: #777777;
-    width: 463px;
-    margin-top: 35px;
-    margin-left: 14px;
-  }
+.form-payment__check-text {
+  font-size: 14px;
+  color: #777777;
+  width: 463px;
+  margin-top: 35px;
+  margin-left: 14px;
 }
 
 .form-payment__btn {
   margin-bottom: 280px;
+}
+
+.form-payment .form-payment__btn-container {
+  padding-left: 0;
+  margin-top: 32px;
 }
 
 @include media-breakpoint-between(xs,sm) {
@@ -97,6 +102,69 @@
 
     .form-payment__inquiry {
       order: 0;
+      width: 100%;
+      padding: 0;
+      margin-top: 26px;
     }
+
+    .form-payment__text {
+      margin-left: 0;
+    }
+
+    .form-payment__entry-field {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .form-payment__table {
+      order: 1;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-top: 37px;
+    }
+
+    .form-payment__first-column,
+    .form-payment__second-column,
+    .form-payment__total,
+    .form-payment__amount {
+      padding: 0 0 20px 0;
+    }
+
+    .form-payment__first-column {
+      width: auto;
+    }
+
+    .form-payment__check {
+      order: 2;
+      width: 100%;
+    }
+
+    .form-payment__check-label {
+      display: flex;
+    }
+
+    .form-payment__check-text {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .form-payment__btn {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    .form-payment__btn-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-payment__button {
+      font-size: 16px;
+      padding: 10px 22px;
+      margin-bottom: 65px !important;
+    }
+
   }
 }

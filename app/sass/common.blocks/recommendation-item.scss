@@ -121,6 +121,10 @@
   display: none;
 }
 
+.card-coins__footer-btn {
+  display: flex;
+}
+
 @include media-breakpoint-between(xs,sm) {
   .card-coins {
     .card-coins__btn {

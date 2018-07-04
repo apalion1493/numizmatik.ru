@@ -1,7 +1,7 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
 .page-header .modal-entry {
-  width: 600px;
+  max-width: 600px;
   height: 495px;
   padding: 0;
 }
@@ -51,4 +51,26 @@
   font-size: 16px;
   color: #090F65;
   width: 178px;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .page-header .modal-entry {
+    padding: 0 !important;
+    height: auto;
+  }
+
+  .modal-entry__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-entry__button {
+    order: 1;
+  }
+
+  .modal-entry__btn-link {
+    order: 2;
+    margin-top: 20px;
+  }
 }

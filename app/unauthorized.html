@@ -43,7 +43,7 @@
             <div class="modal-content modal-entry">
                 <div class="modal-header modal-entry__header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Вход на сайт</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close modal-entry__close" data-dismiss="modal" aria-label="Close">
                         <i class="modal-quick-order__icon"></i>
                     </button>
                 </div>
@@ -64,7 +64,7 @@
                         </div>
                     </form>
                     
-                    <div class="modal-entry__btn  col-10 ml-auto">
+                    <div class="modal-entry__btn  col-lg-10 ml-auto">
                         <a class="modal-entry__btn-link" href="#">Я не помню пароль</a>
                         <button type="submit" class="btn btn-primary btn-lg modal-entry__button">Войти на сайт</button>
                     </div>
@@ -149,7 +149,7 @@
 
     <div class="container">
         <div class="row header-info">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <a href="#"><div class="header-info__logo"></div></a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
@@ -183,17 +183,17 @@
                     </ul>
                 </div>
             </nav>
-            <div class="col-3 header-info__phone">
-                <div class="header-info__number-unauthorized">
-                    <a href="#" class="header-info__number-link header-info__number-icon">8 <span>(</span>800<span>)</span> 333-14-77</a>
-                    <a href="#" class="header-info__number-link">7 <span>(</span>903<span>)</span> 006-00-44</a>
+            <div class="col-lg-3 header-info__phone">
+                <div class="header-info__number">
+                    <a href="#" class="header-info__number-link header-info__number-icon header-info__number-first">8 <span>(</span>800<span>)</span> 333-14-77</a>
+                    <a href="#" class="header-info__number-link header-info__number-second">7 <span>(</span>903<span>)</span> 006-00-44</a>
                 </div>
             </div>
             <div class="header-info__icons">
-                <a href="#" class="btn btn-outline-primary-unauthorized">
+                <a href="#" class="btn btn-outline-primary-unauthorized header-info__icon-star">
                     <i class="header-info__star-unauthorized"></i>
                 </a>
-                <a href="#" class="btn btn-outline-primary-unauthorized">
+                <a href="#" class="btn btn-outline-primary-unauthorized header-info__icon-basket">
                     <i class="header-info__basket-unauthorized"></i>
                 </a>
             </div>
@@ -201,52 +201,50 @@
     </div>
 
     <div class="header-menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 px-0" id="section-navbar">
-                    <nav class="navbar navbar-expand-lg navbar-dark header-menu__navbar">
-                        <button class="navbar-toggler pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon header-menu__catalog"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active dropdown menu-item-goods">
-                                    <a class="nav-link dropdown-toggle header-menu__dropdown-store" href="#" id="navbarDropdown" role="button"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Магазин монет
-                                    </a>
-                                    <div class="dropdown-menu header-menu__dropdown" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item  menu-item-goods">
-                                    <a class="nav-link" href="#">Банкноты</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">Аксессуары</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">Жетоны</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">Нотгельды</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">Книги</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">Распродажи</a>
-                                </li>
-                                <li class="nav-item menu-item-goods">
-                                    <a class="nav-link" href="#">История просмотров</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+        <div class="container header-menu__content">
+            <div class="px-0" id="section-navbar">
+                <nav class="navbar navbar-expand-lg navbar-dark header-menu__navbar px-0">
+                    <button class="navbar-toggler pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon header-menu__catalog"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+                        <ul class="navbar-nav header-menu__main-menu">
+                            <li class="nav-item active dropdown menu-item-goods">
+                                <a class="nav-link dropdown-toggle header-menu__dropdown-store" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Магазин монет
+                                </a>
+                                <div class="dropdown-menu header-menu__dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item  menu-item-goods">
+                                <a class="nav-link" href="#">Банкноты</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">Аксессуары</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">Жетоны</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">Нотгельды</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">Книги</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">Распродажи</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link" href="#">История просмотров</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -254,7 +252,7 @@
 
 <main class="main">
     <a href="#" class="btn back-to-top"></a>
-    <div class="container">
+    <div class="container main-breadcrumb">
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" role="navigation">
@@ -267,12 +265,19 @@
         </div>
     </div>
 
+    <nav class="navbar navbar-light bg-light main-search">
+        <form class="form-inline main-search__content">
+            <input class="form-control main-search__form" type="search" placeholder="Начните поиск." aria-label="Search">
+            <button class="btn btn-outline-success main-search__icon" type="submit"></button>
+        </form>
+    </nav>
+
     <form class="container cart-content" action="ordering.html">
         <div class="row d-flex align-items-center">
             <div class="col-lg-2 cart-content__name">
                 <h1 class="cart-header__title">Корзина</h1>
             </div>
-            <div class="col-lg-6 cart-content__info">
+            <div class="col-lg-5 cart-content__info">
                 <div class="cart-content__info-title ml-auto">Заказ действителен до:</div>
                 <div class="cart-content__time">
                     <div class="cart-content__number">
@@ -315,7 +320,7 @@
                                 <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
                             </th>
                             <td class="cart-table__img">
-                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap.svg" alt=""></a>
+                                <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
                             </td>
                             <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
                             <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
@@ -336,7 +341,7 @@
                         </tr>
                         <tr class="cart-table__lines">
                             <td class="cart-table__img">
-                                <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap2.png" alt=""></a>
+                                <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
                             </td>
                             <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
                             <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
@@ -357,21 +362,21 @@
                         </tr>
                         <tr class="cart-table__lines">
                             <td class="cart-table__img">
-                                <a href="#" class="cart-table__link"><img src="img/table-img/Bitmap3.png" alt="" class="cart-table__link-img"></a>
+                                <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
                             </td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                            <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                            <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                             <td class="cart-table__year">2018</td>
                             <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                            <td class="cart-table__bold-text">250 ₽</td>
-                            <td>
+                            <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                            <td class="cart-table__sum">
                                 <div class="cart-table__block">
                                     <button class="cart-table__block-minus"></button>
                                     <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
                                     <button class="cart-table__block-plus"></button>
                                 </div>
                             </td>
-                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
                             <td class="cart-table__last-cell">
                                 <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                             </td>
@@ -381,21 +386,21 @@
                                 <div class="cart-table__th-vertical">Боны</div>
                             </th>
                             <td class="cart-table__img">
-                                <a href="#" class="cart-table__link"><img src="img/table-img/Bitmap4.png" alt="" class="cart-table__link-img"></a>
+                                <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
                             </td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">Бангладеш</a></td>
-                            <td class="cart-table__color-text"><a href="#" class="cart-table__link">70 така</a></td>
+                            <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Бангладеш</a></td>
+                            <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
                             <td class="cart-table__year">2018</td>
                             <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                            <td class="cart-table__bold-text">250 ₽</td>
-                            <td>
+                            <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                            <td class="cart-table__sum">
                                 <div class="cart-table__block">
                                     <button class="cart-table__block-minus"></button>
                                     <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
                                     <button class="cart-table__block-plus"></button>
                                 </div>
                             </td>
-                            <td class="cart-table__bold-text">250 ₽</td>
+                            <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
                             <td class="cart-table__last-cell">
                                 <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                             </td>
@@ -471,6 +476,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -517,6 +523,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -564,6 +571,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -610,6 +618,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -656,6 +665,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -702,6 +712,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -748,6 +759,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -794,6 +806,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -840,6 +853,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -886,6 +900,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -894,7 +909,7 @@
                 <div class="card card-coins">
                     <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                     <div class="card-body card-coins__body">
-                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</h4></a>
+                        <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                         <div class="card-coins__text">
                             <table class="card-coins__table">
                                 <tbody class="card-coins__table-body">
@@ -932,6 +947,7 @@
                                 <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
                     </div>
                 </div>
             </div>
@@ -942,8 +958,8 @@
                 <div class="modal-content">
                     <section class="container-fluid">
                         <div class="row">
-                            <header class="col-6 modal-quick-order__title">Форма быстрого заказа</header>
-                            <div class="col-6">
+                            <header class="col-lg-6 col-10 modal-quick-order__title">Форма быстрого заказа</header>
+                            <div class="col-lg-6 col-2">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <i class="modal-quick-order__icon"></i>
                                 </button>
@@ -970,31 +986,30 @@
                                     </tr>
                                     </thead>
                                     <tbody class="modal-content__tbody">
-                                    <tr>
+                                    <tr class="cart-table__lines">
                                         <td class="cart-table__img">
-                                            <a class="cart-table__link" href="#"><img class="cart-table__link-img" src="img/table-img/Bitmap2.png" alt=""></a>
+                                            <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
                                         </td>
-                                        <td class="cart-table__color-text"><a href="#" class="cart-table__link">Кирибати</a></td>
-                                        <td class="cart-table__color-text"><a href="#" class="cart-table__link">1 доллар</a></td>
+                                        <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                                        <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                         <td class="cart-table__year">2018</td>
-                                        <td class="cart-table__bold-text">250 ₽</td>
-                                        <td>
+                                        <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                        <td class="cart-table__sum">
                                             <div class="cart-table__block">
                                                 <button class="cart-table__block-minus"></button>
                                                 <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
                                                 <button class="cart-table__block-plus"></button>
                                             </div>
                                         </td>
-                                        <td class="cart-table__bold-text">250 ₽</td>
+                                        <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="col-lg-6 ml-auto pr-0">
-                                    <div class="totals-modal totals">
-                                        <h1 class="totals__titles totals__titles-modal">Итого:</h1>
-                                        <span class="totals__price totals__price-modal">1000  ₽</span>
-                                    </div>
+                                <div class="totals-modal totals">
+                                    <h1 class="totals__titles totals__titles-modal">Итого:</h1>
+                                    <span class="totals__price totals__price-modal">1000  ₽</span>
                                 </div>
+
 
                                 <div class="modal-forms">
                                     <div class="form-group modal-forms__phone">
@@ -1027,7 +1042,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="page-footer">
     <div class="subscription">
         <div class="subscription__text">
             <p>ХОТИТЕ БЫТЬ В КУРСЕ СОБЫТИЙ? ВСЕГДА АКТУАЛЬНАЯ ИНФОРМАЦИЯ! ПОДПИШИТЕСЬ</p>
@@ -1043,9 +1058,33 @@
     <div class="footer-info">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <h4 class="footer-info__title">Магазин монет</h4>
-                    <nav class="d-flex flex-column">
+
+                <!---->
+                <div class="col-lg-3 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingOne">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Магазин монет
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="collapse footer-info__card-content" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Монеты</a>
+                                    <a href="#" class="footer-info__link">Распродажа монет</a>
+                                    <a href="#" class="footer-info__link">Оплата и доставка</a>
+                                    <a href="#" class="footer-info__link">Покупка/скупка монет</a>
+                                    <a href="#" class="footer-info__link">Скупка-оценка</a>
+                                    <a href="#" class="footer-info__link">Контакты</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
                         <a href="#" class="footer-info__link">Монеты</a>
                         <a href="#" class="footer-info__link">Распродажа монет</a>
                         <a href="#" class="footer-info__link">Оплата и доставка</a>
@@ -1055,9 +1094,34 @@
                     </nav>
                 </div>
 
-                <div class="col-3">
-                    <h4 class="footer-info__title">Каталог монет</h4>
-                    <nav class="d-flex flex-column">
+                <!---->
+
+                <div class="col-lg-3 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingTwo">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Каталог монет
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse footer-info__card-content" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Каталог монет</a>
+                                    <a href="#" class="footer-info__link">Наборы монет</a>
+                                    <a href="#" class="footer-info__link">Банкноты</a>
+                                    <a href="#" class="footer-info__link">Подарочные монеты</a>
+                                    <a href="#" class="footer-info__link">Аксессуары</a>
+                                    <a href="#" class="footer-info__link">Программа нумизмата</a>
+                                    <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
                         <a href="#" class="footer-info__link">Каталог монет</a>
                         <a href="#" class="footer-info__link">Наборы монет</a>
                         <a href="#" class="footer-info__link">Банкноты</a>
@@ -1068,9 +1132,68 @@
                     </nav>
                 </div>
 
-                <div class="col-3">
-                    <h4 class="footer-info__title">Нумизмату</h4>
-                    <nav class="d-flex flex-column">
+                <div class="col-lg-3 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingThree">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Нумизмату
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseThree" class="collapse footer-info__card-content" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                                    <a href="#" class="footer-info__link">Новости нумизматики</a>
+                                    <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                                    <a href="#" class="footer-info__link">Форум нумизматов</a>
+                                    <a href="#" class="footer-info__link">Черный список</a>
+                                    <a href="#" class="footer-info__link">Ценник на монеты</a>
+                                    <a href="#" class="footer-info__link">Стоимость монет</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">Каталог монет</a>
+                        <a href="#" class="footer-info__link">Наборы монет</a>
+                        <a href="#" class="footer-info__link">Банкноты</a>
+                        <a href="#" class="footer-info__link">Подарочные монеты</a>
+                        <a href="#" class="footer-info__link">Аксессуары</a>
+                        <a href="#" class="footer-info__link">Программа нумизмата</a>
+                        <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                    </nav>
+                </div>
+
+                <div class="col-lg-3 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingFour">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Обратная связь
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFour" class="collapse footer-info__card-content" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                                    <a href="#" class="footer-info__link">Новости нумизматики</a>
+                                    <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                                    <a href="#" class="footer-info__link">Форум нумизматов</a>
+                                    <a href="#" class="footer-info__link">Черный список</a>
+                                    <a href="#" class="footer-info__link">Ценник на монеты</a>
+                                    <a href="#" class="footer-info__link">Стоимость монет</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
                         <a href="#" class="footer-info__link">Библиотека нумизмата</a>
                         <a href="#" class="footer-info__link">Новости нумизматики</a>
                         <a href="#" class="footer-info__link">Клуб Нумизмат</a>
@@ -1081,22 +1204,35 @@
                     </nav>
                 </div>
 
-                <div class="col-3">
-                    <h4 class="footer-info__title">Обратная связь</h4>
-                    <nav class="d-flex flex-column">
-                        <a href="#" class="footer-info__link">Библиотека нумизмата</a>
-                        <a href="#" class="footer-info__link">Новости нумизматики</a>
-                        <a href="#" class="footer-info__link">Клуб Нумизмат</a>
-                        <a href="#" class="footer-info__link">Форум нумизматов</a>
-                        <a href="#" class="footer-info__link">Черный список</a>
-                        <a href="#" class="footer-info__link">Ценник на монеты</a>
-                        <a href="#" class="footer-info__link">Стоимость монет</a>
-                    </nav>
-                </div>
+                <!---->
 
-                <div class="col-3">
-                    <h4 class="footer-info__title">Для клиентов</h4>
-                    <nav class="d-flex flex-column">
+                <div class="col-lg-3 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingFive">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Для клиентов
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFive" class="collapse footer-info__card-content" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">О магазине</a>
+                                    <a href="#" class="footer-info__link">Видео о компании</a>
+                                    <a href="#" class="footer-info__link">Доставка и оплата</a>
+                                    <a href="#" class="footer-info__link">Boxberry в 360 городах России</a>
+                                    <a href="#" class="footer-info__link">Правила монетной лавки</a>
+                                    <a href="#" class="footer-info__link">Гарантии подлинности монет</a>
+                                    <a href="#" class="footer-info__link">ЧаВо по магазину</a>
+                                    <a href="#" class="footer-info__link">Панорама магазина</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
                         <a href="#" class="footer-info__link">О магазине</a>
                         <a href="#" class="footer-info__link">Видео о компании</a>
                         <a href="#" class="footer-info__link">Доставка и оплата</a>
@@ -1108,17 +1244,48 @@
                     </nav>
                 </div>
 
-                <div class="col-3 d-flex flex-column">
-                    <h4 class="footer-info__title">Контактные данные</h4>
-                    <h5 class="title-moscow">Москва</h5>
-                    <p class="address-text">Адрес:</p>
-                    <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
-                    <p class="address-text">Телефоны:</p>
-                    <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
-                    <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                <!---->
+
+                <div class="col-lg-3 d-flex flex-column footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingSix">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    Контактные данные
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseSix" class="collapse footer-info__card-content" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <h5 class="title-moscow">Москва</h5>
+                                <p class="address-text">Адрес:</p>
+                                <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
+                                <p class="address-text">Телефоны:</p>
+                                <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                                <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                                <h5 class="title-petersburg">Санкт-Петербургe</h5>
+                                <p class="address-text">Адрес:</p>
+                                <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
+                                <p class="address-text">Телефон:</p>
+                                <a href="#" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-info__list">
+                        <h5 class="title-moscow">Москва</h5>
+                        <p class="address-text">Адрес:</p>
+                        <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
+                        <p class="address-text">Телефоны:</p>
+                        <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                        <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                    </div>
                 </div>
 
-                <div class="col-3">
+                <!---->
+
+                <div class="col-lg-3 footer-info__address-piter footer-info__block">
                     <h5 class="title-petersburg">Санкт-Петербургe</h5>
                     <p class="address-text">Адрес:</p>
                     <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
@@ -1126,7 +1293,9 @@
                     <a href="#" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
                 </div>
 
-                <div class="col-3">
+                <!---->
+
+                <div class="col-lg-3 footer-info__block">
                     <div class="footer-logo"></div>
                     <p>2001 - 2018 &copy Клуб Нумизмат</p>
                     <div class="footer-img">
@@ -1137,7 +1306,10 @@
             </div>
         </div>
         <div class="footer-info__copyrighted">
-            <p class="footer-info__copyrighted-text">При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна. <a href="mailto:administrator@numizmatik.ru" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a></p>
+            <p class="footer-info__copyrighted-text">
+                При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна.
+                <a href="mailto:administrator@numizmatik.ru" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a>
+            </p>
         </div>
 
     </div>

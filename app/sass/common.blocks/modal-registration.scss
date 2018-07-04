@@ -70,3 +70,22 @@
 .modal .modal-registration__form-login {
   margin-bottom: 18px;
 }
+
+.modal-registration__header {
+}
+
+.modal .modal-entry__close {
+  z-index: 500;
+}
+
+
+@include media-breakpoint-between(xs,sm) {
+  .modal-registration {
+    padding: 0 !important;
+    height: auto;
+  }
+
+  .modal .modal-registration__body {
+    padding: 20px 35px 0 30px;
+  }
+}

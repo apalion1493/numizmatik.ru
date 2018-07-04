@@ -51,6 +51,14 @@ main .recommendations .recommendations__content {
       font-size: 20px;
       margin-bottom: 18px;
     }
+
+    .slick-dots {
+      display: none !important;
+    }
+  }
+
+  .main .recommendations .recommendations__content {
+    margin-bottom: 60px;
   }
 }
 

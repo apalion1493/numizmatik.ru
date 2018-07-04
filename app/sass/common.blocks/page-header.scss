@@ -366,7 +366,7 @@ html, body {
   background: #fff;
   overflow: hidden;
   position: relative;
-  bottom: 10px;
+  bottom: -5px;
   left: 30px;
   padding-bottom: 0;
 }
@@ -459,6 +459,10 @@ html, body {
 
 @include media-breakpoint-between(xs,sm) {
 
+  body {
+    padding-top: 15px;
+  }
+
   .container .row {
     margin-left: -20px;
     margin-right: -20px;
@@ -482,8 +486,8 @@ html, body {
 
   .contact-info__men {
     position: absolute;
-    right: 80px;
-    top: 6px;
+    right: 35px;
+    top: 20px;
   }
 
   .contact-info__money {
@@ -661,6 +665,46 @@ html, body {
       display: block;
       padding: 4px 0 12px 38px !important;
     }
+  }
+
+  .page-header .contact-info__communications {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+
+    .contact-info__registration {
+      margin-left: 0;
+      z-index: 300;
+    }
+  }
+
+  .contact-info__entry-btn {
+    margin-right: 15px;
+  }
+
+  .header-info__icons {
+    position: absolute;
+    bottom: -50px;
+    right: 15px;
+    z-index: 500;
+
+    .btn-outline-primary-unauthorized, .btn-outline-primary-unauthorized:hover {
+      width: 30px;
+      height: 31px;
+    }
+
+    .btn-outline-primary-unauthorized:hover .header-info__star-unauthorized:hover, .header-info__star-unauthorized {
+      left: 0;
+    }
+  }
+
+  .menu-item-goods__link, .header-menu__dropdown {
+    width: 100%;
+  }
+
+  .header-menu__dropdown {
+    position: absolute !important;
+    margin-top: 0 !important;
   }
 
 }

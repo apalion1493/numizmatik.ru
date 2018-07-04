@@ -366,7 +366,7 @@ html, body {
   background: #fff;
   overflow: hidden;
   position: relative;
-  bottom: -5px;
+  bottom: 10px;
   left: 30px;
   padding-bottom: 0;
 }
@@ -705,6 +705,17 @@ html, body {
   .header-menu__dropdown {
     position: absolute !important;
     margin-top: 0 !important;
+  }
+
+  .page-header  .contact-info__registration {
+    color: $secondary;
+    margin-left: auto;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    bottom: -5px;
+    left: 30px;
+    padding-bottom: 0;
   }
 
 }

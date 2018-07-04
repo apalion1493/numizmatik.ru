@@ -10,6 +10,12 @@
   width: 178px;
 }
 
+.form-discount .form-discount__content {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
 .form-discount__dash {
   background: url("#{$rootDir}/img/forms-img/dash.svg") no-repeat center;
   background-size: 100% auto;
@@ -54,4 +60,49 @@
 .form-discount .form-discount__code  {
   padding-left: 10px;
   padding-right: 5px;
+}
+
+.discount-code__forms {
+  display: flex;
+  align-items: center;
+}
+
+.form-discount .form-discount__links {
+  display: flex;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .form-discount {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .form-discount__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .discount-code__forms {
+      margin-top: 10px;
+    }
+
+    .form-discount__coupon {
+      display: none;
+    }
+
+    .form-discount__text {
+      margin-left: 0;
+      width: auto;
+      margin-top: 20px;
+    }
+
+    .form-discount__links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-discount__details {
+      margin-left: 0;
+      width: auto;
+    }
+  }
 }

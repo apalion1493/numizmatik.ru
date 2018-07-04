@@ -1,0 +1,15 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.return-button {
+  margin-top: 40px;
+}
+
+.return-button__content {
+  margin-left: auto;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .return-button {
+    display: none;
+  }
+}

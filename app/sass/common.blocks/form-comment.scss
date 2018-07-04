@@ -18,3 +18,14 @@
 .form-comment__container {
   flex-direction: column;
 }
+
+@include media-breakpoint-between(xs,sm) {
+  .form-comment {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .form-comment__entry-field {
+      width: auto;
+    }
+  }
+}

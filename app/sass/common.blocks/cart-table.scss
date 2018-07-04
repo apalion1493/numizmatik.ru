@@ -314,6 +314,12 @@ tbody {
   margin-left: auto;
 }
 
+.cart-table .cart-header__title, .cart-header__title-ordering {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
+
 @include media-breakpoint-between(xs,sm)  {
   .main {
 
@@ -326,7 +332,7 @@ tbody {
       }
     }
 
-    .cart-header__title {
+    .cart-header__title, .cart-header__title-ordering {
       font-size: 24px;
       font-weight: bold;
       color: #333333;
@@ -620,6 +626,10 @@ tbody {
       background-position: center;
       height: 200px;
       display: block;
+    }
+
+    .time-counter {
+      display: none;
     }
 
 

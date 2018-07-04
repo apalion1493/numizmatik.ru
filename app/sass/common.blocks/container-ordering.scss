@@ -1,5 +1,12 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
-.container-ordering {
-  width: 816px !important;
+.main .container-ordering {
+  width: 816px;
+}
+
+@include media-breakpoint-between(xs,sm)  {
+  .main .container-ordering {
+    width: 100%;
+    margin-top: 40px;
+  }
 }

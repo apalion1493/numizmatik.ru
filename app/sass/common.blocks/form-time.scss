@@ -42,3 +42,39 @@ main .form-time {
   padding-left: 13px;
   color: #999999;
 }
+
+.form-time__label {
+  margin-right: auto;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .form-time {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .form-time__label {
+      margin-bottom: 23px;
+    }
+
+    .form-time__first-form {
+      width: 100%;
+      margin-bottom: 19px;
+    }
+
+    .form-period {
+      width: 95px;
+    }
+
+    .form-time__time-from {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .form-time__text-to {
+      margin-left: auto;
+      margin-right: 7px;
+    }
+  }
+
+
+}

@@ -16,12 +16,25 @@
   display: flex;
   align-items: center;
 
-
-
   input[type="text"]::placeholder {
     color: #999999;
     line-height: 20px;
   }
 }
 
+@include media-breakpoint-between(xs,sm) {
+  .form-personal {
+    padding-left: 20px;
+    padding-right: 20px;
 
+    .form-personal__entry-field {
+      width: 100%;
+    }
+
+    .form-personal__phone {
+      flex-direction: column;
+    }
+  }
+
+
+}

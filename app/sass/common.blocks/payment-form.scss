@@ -83,3 +83,20 @@
 .form-payment__btn {
   margin-bottom: 280px;
 }
+
+@include media-breakpoint-between(xs,sm) {
+  .form-payment {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .form-payment__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-payment__inquiry {
+      order: 0;
+    }
+  }
+}

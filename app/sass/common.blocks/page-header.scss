@@ -83,7 +83,7 @@ html, body {
   display: flex;
   justify-content: flex-end;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 15px;
 }
 
 .contact-info__money {
@@ -101,48 +101,44 @@ html, body {
   align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
+}
 
+.header-info__logo {
+  background: url("#{$rootDir}/img/header-icon/logo.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 224px;
+  height: 45px;
+}
 
-  .header-info__logo {
-    background: url("#{$rootDir}/img/header-icon/logo.svg") no-repeat center;
-    background-size: 100% auto;
-    width: 224px;
-    height: 45px;
-  }
+.header-info__phone {
+  display: flex;
+  align-items: center;
+}
 
+.header-info__cellphone {
+  background: url("#{$rootDir}/img/header-icon/phone-receiver.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  position: relative;
+  left: 10px;
+  bottom: 12px;
+}
 
+.header-info__cellphone-unauthorized {
+  background: url("#{$rootDir}/img/header-icon/phone-receiver.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  margin-left: 100px;
+  position: relative;
+  bottom: 12px;
+  right: 8px;
+}
 
-  .header-info__phone {
-    display: flex;
-    align-items: center;
-
-
-    .header-info__cellphone {
-      background: url("#{$rootDir}/img/header-icon/phone-receiver.svg") no-repeat center;
-      background-size: 100% auto;
-      width: 15px;
-      height: 15px;
-      margin-left: 20px;
-      position: relative;
-      left: 10px;
-      bottom: 12px;
-    }
-
-    .header-info__cellphone-unauthorized {
-      background: url("#{$rootDir}/img/header-icon/phone-receiver.svg") no-repeat center;
-      background-size: 100% auto;
-      width: 15px;
-      height: 15px;
-      margin-left: 100px;
-      position: relative;
-      bottom: 12px;
-      right: 8px;
-    }
-
-    .header-info__number {
-      margin-left: 75px;
-    }
-  }
+.header-info__number {
+  margin-left: 75px;
 }
 
 .header-info__star {
@@ -153,7 +149,7 @@ html, body {
   height: 40px;
   margin-left: auto;
   position: relative;
-  left: 20px;
+  left: 35px;
 }
 
 .header-info__star:hover {
@@ -164,13 +160,13 @@ html, body {
   height: 40px;
   margin-left: auto;
   position: relative;
-  left: 20px;
+  left: 35px;
 }
 
 .btn-outline-primary {
   border: 1px solid #EBAD45;
   border-radius: 20px;
-  width: 173px;
+  width: 173px !important;
   height: 41px;
   display: flex;
   align-items: center;
@@ -257,6 +253,7 @@ html, body {
 .header-info__icons {
   display: flex;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .page-header .btn-outline-primary-unauthorized {
@@ -288,7 +285,6 @@ html, body {
   height: 18px;
   position: relative;
   bottom: 1px;
-  left: 1px;
   border-color: #fff;
 }
 
@@ -321,7 +317,6 @@ html, body {
     height: 18px;
     position: relative;
     bottom: 1px;
-    left: 1px;
     filter: sepia(100%) brightness(300%);
   }
 
@@ -357,7 +352,7 @@ html, body {
 }
 
 .page-header .contact-info__phone-unauthorized {
-  margin-left: 140px !important;
+  margin-left: 140px;
 }
 
 .page-header  .contact-info__registration {
@@ -383,7 +378,7 @@ html, body {
   position: relative;
   bottom: 10px;
   padding-bottom: 0;
-  padding-right: 0;
+  padding-right: 15px;
 }
 
 
@@ -449,7 +444,6 @@ html, body {
 .page-header .header-info__cart {
   display: flex;
   border-radius: 50px;
-  margin-left: 22px;
 }
 
 .header-info .header-info__badge {
@@ -493,7 +487,7 @@ html, body {
   .contact-info__money {
     position: absolute;
     top: 8px;
-    padding-right: 15px;
+    padding-right: 0;
     font-weight: bold;
   }
 
@@ -679,14 +673,15 @@ html, body {
   }
 
   .contact-info__entry-btn {
-    margin-right: 15px;
+    margin-right: 0;
   }
 
-  .header-info__icons {
+  .page-header .header-info__icons {
     position: absolute;
     bottom: -50px;
-    right: 15px;
+    right: 0;
     z-index: 500;
+    width: 140px;
 
     .btn-outline-primary-unauthorized, .btn-outline-primary-unauthorized:hover {
       width: 30px;
@@ -718,5 +713,194 @@ html, body {
     padding-bottom: 0;
   }
 
+  .header-info__cart {
+    width: 30px !important;
+  }
+
+}
+
+@include media-breakpoint-only(md)  {
+
+  .page-header {
+
+    .contact-info__phone-unauthorized {
+      margin-left: 0;
+    }
+
+    .contact-info {
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    .contact-info__communications {
+      margin-left: auto;
+      z-index: 600;
+    }
+
+    .contact-info__clock {
+      margin-left: auto;
+    }
+
+    .contact-info__balance {
+      padding-right: 15px;
+    }
+
+    .contact-info__phone-call {
+      margin-left: 0;
+    }
+
+    .header-info__list-of-links {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      z-index: 501;
+      min-width: 100%;
+    }
+
+    .header-info__collapse {
+      background: #ffffff;
+    }
+
+    .header-info__burger-light {
+      background: url(#{$rootDir}/img/header-icon/gamburger1.svg) no-repeat center !important;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+      width: 18px;
+      height: 15px;
+    }
+
+    .info__logo {
+      background: url(#{$rootDir}/img/header-icon/logo.svg) no-repeat center;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+      width: 224px;
+      height: 46px;
+    }
+
+    .header-info__logotip {
+      padding-right: 0;
+    }
+
+    .header-info__number {
+      margin-left: 0;
+    }
+
+    .header-info__cart {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .header-info__phone {
+      position: relative;
+      left: 55px;
+    }
+
+    .header-info__star {
+      z-index: 500;
+    }
+
+    .header-menu__content {
+      position: relative;
+      top: 10px;
+      z-index: 500;
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 100%;
+    }
+
+    .header-menu__main-menu {
+      padding-top: 10px;
+    }
+
+    .header-info__main-menu {
+      position: relative;
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+      left: 40px;
+    }
+
+    .header-info__link {
+      padding-left: 40px !important;
+    }
+
+    .header-info__ellipsis {
+      display: none;
+    }
+
+    .header-info__ellipsis-item {
+      margin-right: 2px;
+      font-size: 18px;
+      color: #252B7F !important;
+      padding: 0.5rem 1rem;
+      padding-left: 40px;
+    }
+
+    .header-info__ellipsis-menu {
+      display: block;
+      border: none;
+      padding-top: 0;
+    }
+
+    .menu-item-goods:not(.active):after {
+      display: none;
+    }
+
+    .header-menu__catalog {
+      left: 40px;
+    }
+
+    .header-info__lines {
+      border-bottom: 1px solid #252B7F;
+    }
+
+    .contact-info__registration, .contact-info__entry-btn {
+      bottom: 6px;
+    }
+
+    .contact-info__entry {
+      z-index: 600;
+    }
+
+    .header-info__icons {
+      justify-content: flex-end;
+    }
+
+    .header-info__star-unauthorized {
+      left: 0 !important;
+    }
+
+
+
+
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .contact-info__schedule {
+    justify-content: flex-end;
+  }
+
+  .contact-info__communications {
+    margin-left: auto;
+  }
+
+  .page-header .contact-info__phone-unauthorized {
+    margin-left: 0;
+  }
+
+  .page-header .contact-info__registration {
+    left: 0;
+  }
+
+  .header-info__number {
+    margin-left: 0;
+  }
+
+  .header-info__phone {
+    left: 48px;
+  }
 }
 

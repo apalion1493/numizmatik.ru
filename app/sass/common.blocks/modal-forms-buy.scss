@@ -103,3 +103,14 @@
 
   }
 }
+
+@include media-breakpoint-only(md) {
+  .modal-dialog .modal-content {
+    padding: 10px;
+
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

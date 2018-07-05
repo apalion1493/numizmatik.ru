@@ -275,3 +275,28 @@
     }
   }
 }
+
+@include media-breakpoint-only(md)  {
+  .subscription {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer-info__copyrighted {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer-info__address-piter {
+    margin-left: auto;
+  }
+
+  .title-petersburg {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .footer-info__copyrighted-text {
+    text-align: center;
+  }
+}

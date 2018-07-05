@@ -44,9 +44,11 @@
   .block-info__cash,
   .block-info__yandex,
   .block-info__credit-cards,
-  .block-info__webmoney {
+  .block-info__webmoney,
+  .block-info__desk {
     filter: sepia(100%) brightness(300%);
   }
+
 }
 
 .blocks-info__container:nth-child(1),
@@ -259,8 +261,55 @@
       margin-top: 0;
     }
   }
+}
+
+@include media-breakpoint-only(md) {
+
+  .main .blocks-payment {
+    padding: 0;
+  }
+
+  .blocks-info, .blocks-payment  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main .blocks-info {
+
+    .blocks-info__container:nth-child(2),
+    .blocks-info__container:nth-child(4),
+    .blocks-info__container:nth-child(6) {
+      padding-left: 7px !important;
+      padding-right: 0 !important;
+    }
+
+    .blocks-info__container:nth-child(1),
+    .blocks-info__container:nth-child(3),
+    .blocks-info__container:nth-child(5) {
+      padding-left: 0 !important;
+      padding-right: 7px !important;
+    }
+  }
+
+  .main .blocks-payment {
+
+    .blocks-payment__container:nth-child(1),
+    .blocks-payment__container:nth-child(3),
+    .blocks-payment__container:nth-child(5) {
+      padding-left: 0;
+      padding-right: 7px;
+    }
+
+    .blocks-payment__container:nth-child(2),
+    .blocks-payment__container:nth-child(4) {
+      padding-left: 7px;
+      padding-right: 0;
+    }
+  }
 
 
 
-
+  .blocks-info {
+    padding: 0;
+  }
 }

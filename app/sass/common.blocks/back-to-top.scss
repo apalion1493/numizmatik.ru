@@ -22,3 +22,9 @@
     display: none;
   }
 }
+
+@include media-breakpoint-only(md) {
+  .main .back-to-top {
+    display: none;
+  }
+}

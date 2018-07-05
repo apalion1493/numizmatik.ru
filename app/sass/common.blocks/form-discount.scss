@@ -30,6 +30,7 @@
   color: #777;
   width: 384px;
   font-size: 14px;
+  right: 80px;
 }
 
 .form-discount__coupon {
@@ -46,6 +47,8 @@
   margin-left: 95px;
   font-size: 14px;
   margin-top: 18px;
+  position: relative;
+  left: 52px;
 
   .form-discount__text-details {
     margin-bottom: 0;
@@ -93,6 +96,10 @@
       margin-left: 0;
       width: auto;
       margin-top: 20px;
+      position: relative;
+      left: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .form-discount__links {
@@ -104,5 +111,52 @@
       margin-left: 0;
       width: auto;
     }
+
+    .form-discount__label, .discount-code__forms {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .form-discount__details {
+      left: 0;
+    }
+  }
+
+
+}
+
+@include media-breakpoint-only(md) {
+  .form-discount__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-discount__details {
+    margin-left: 0;
+  }
+
+  .form-discount__coupon {
+    color: #090F65;
+    font-size: 16px;
+    margin-left: 186px;
+    margin-top: 3px;
+    width: 178px;
+  }
+
+  .form-discount .form-discount__label {
+    padding-left: 0;
+  }
+
+  .form-discount__text {
+    margin-left: 0;
+    margin-bottom: 0;
+    color: #777;
+    font-size: 14px;
+    position: relative;
+    right: 30px;
+  }
+
+  .form-discount__details {
+    left: 0;
   }
 }

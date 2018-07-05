@@ -168,3 +168,18 @@
 
   }
 }
+
+@include media-breakpoint-only(md) {
+  .form-payment {
+    margin-top: 20px;
+  }
+
+  .form-payment__btn {
+    margin-bottom: 100px;
+  }
+
+  .form-payment__btn-container {
+    display: flex;
+    justify-content: center;
+  }
+}

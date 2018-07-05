@@ -320,6 +320,11 @@ tbody {
   color: #333333;
 }
 
+.cart-content__container {
+  display: flex;
+  align-items: center;
+}
+
 @include media-breakpoint-between(xs,sm)  {
   .main {
 
@@ -631,13 +636,29 @@ tbody {
     .time-counter {
       display: none;
     }
-
-
-
-
-
-
-
-
   }
 }
+
+@include media-breakpoint-only(md) {
+
+  .cart-content {
+
+    .cart-table__description {
+      min-width: 240px;
+    }
+
+    .cart-table__name-country {
+      min-width: 155px;
+    }
+
+    .cart-content__button-group {
+      justify-content: space-around;
+    }
+
+    .cart-content__container {
+      align-items: start;
+    }
+  }
+
+}
+

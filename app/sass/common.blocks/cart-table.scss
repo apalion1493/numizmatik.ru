@@ -674,7 +674,7 @@ tbody {
 
 @include media-breakpoint-only(xl) {
 
-  .cart-table .cart-table__main {
+  .cart-table__main {
     max-width: 1169px;
   }
 }

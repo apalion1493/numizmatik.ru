@@ -300,3 +300,10 @@
     text-align: center;
   }
 }
+
+@include media-breakpoint-only(lg) {
+  .subscription {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

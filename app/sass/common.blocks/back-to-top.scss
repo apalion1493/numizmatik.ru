@@ -28,3 +28,9 @@
     display: none;
   }
 }
+
+@include media-breakpoint-only(lg) {
+  .main .back-to-top {
+    display: none;
+  }
+}

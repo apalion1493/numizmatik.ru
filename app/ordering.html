@@ -14,15 +14,15 @@
     <div class="contact-info">
         <div class="container">
             <div class="row contact-info__content">
-                <div class="col-lg-3 col-md-5 contact-info__location">
+                <div class="col-lg-6 col-md-5 col-xl-3 contact-info__location">
                     <i class="contact-info__location-marker"></i>
                     <address class="contact-info__location-address"><a href="https://yandex.ru/maps/213/moscow/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933&ll=37.609982%2C55.764224&z=18" class="contact-info__location-address-link" target="_blank" rel="noopener">Москва: ул. Тверская 12 стр. 8</a></address>
                 </div>
-                <div class="col-lg-4 col-md-7 contact-info__schedule">
+                <div class="col-lg-6 col-md-7 col-xl-4 contact-info__schedule">
                     <i class="contact-info__clock"></i>
                     <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
                 </div>
-                <div class="col-lg-4 col-md-6 contact-info__communications">
+                <div class="col-lg-11 col-md-6 col-xl-4 contact-info__communications">
                     <a href="#" class="contact-info__phone-call">Заказать звонок </a>
                     <i class="contact-info__men"></i>
                     <a href="#" class="contact-info__email"> username@yandex.ru </a>
@@ -51,25 +51,31 @@
                         <li class="nav-item header-info__lines">
                             <a class="nav-link header-info__link" href="#">Гарантия</a>
                         </li>
-                        <li class="nav-item header-info__lines">
+                        <li class="nav-item header-info__lines header-info__lines-discounts">
                             <a class="nav-link header-info__link" href="#">Скидки</a>
                         </li>
-                        <li class="nav-item header-info__lines">
+                        <li class="nav-item header-info__lines header-info__lines-contacts">
                             <a class="nav-link header-info__link" href="#">Контакты</a>
                         </li>
                         <li>
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                 <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
-                                    <ul class="navbar-nav mr-auto mt-lg-0">
-                                        <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__ellipsis-item" href="#">Action</a>
+                                    <ul class="navbar-nav mr-auto mt-lg-0 d-block">
+                                        <li class="header-info__lines header-info__lines-discounts-lg">
+                                            <a class="nav-link header-info__link header-info__link-discounts" href="#">Скидки</a>
+                                        </li>
+                                        <li class="header-info__lines header-info__lines-contacts-lg">
+                                            <a class="nav-link header-info__link header-info__link-contact" href="#">Контакты</a>
                                         </li>
                                         <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__ellipsis-item" href="#">Another action</a>
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Action</a>
                                         </li>
                                         <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__ellipsis-item" href="#">Something else here</a>
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Another action</a>
+                                        </li>
+                                        <li class="header-info__lines">
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -178,7 +184,7 @@
             <div class="col-lg-4 col-md-4 cart-content__name">
                 <h1 class="cart-header__title-ordering">Оформление заказа</h1>
             </div>
-            <div class="col-lg-5 col-md-8 cart-content__info time-counter">
+            <div class="col-lg-6 col-xl-5 col-md-8 cart-content__info time-counter">
                 <div class="cart-content__info-title ml-auto">Заказ действителен до:</div>
                 <div class="cart-content__time">
                     <div class="cart-content__number">
@@ -201,7 +207,7 @@
 
     <div class="container return-button">
         <div class="row">
-            <div class="col-lg-7 button-group return-button__content">
+            <div class="col-lg-12 col-xl-12 button-group return-button__content">
                 <form action="index.html">
                     <button type="submit" class="btn btn-primary btn-lg mb-5">Назад в корзину</button>
                 </form>

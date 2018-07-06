@@ -138,7 +138,7 @@ html, body {
 }
 
 .header-info__number {
-  margin-left: 75px;
+  margin-left: auto;
 }
 
 .header-info__star {
@@ -149,7 +149,7 @@ html, body {
   height: 40px;
   margin-left: auto;
   position: relative;
-  left: 35px;
+  left: 20px;
 }
 
 .header-info__star:hover {
@@ -351,13 +351,13 @@ html, body {
   }
 }
 
-.page-header .contact-info__phone-unauthorized {
-  margin-left: 140px;
-}
+//.page-header .contact-info__phone-unauthorized {
+//  margin-left: auto;
+//}
 
 .page-header  .contact-info__registration {
   color: $secondary;
-  margin-left: auto;
+  margin-left: 35px;
   background: #fff;
   overflow: hidden;
   position: relative;
@@ -447,6 +447,10 @@ html, body {
 }
 
 .header-info .header-info__badge {
+  display: none;
+}
+
+.header-info__lines-contacts-lg {
   display: none;
 }
 
@@ -860,6 +864,10 @@ html, body {
       bottom: 6px;
     }
 
+    .contact-info__registration {
+      margin-left: auto;
+    }
+
     .contact-info__entry {
       z-index: 600;
     }
@@ -871,10 +879,6 @@ html, body {
     .header-info__star-unauthorized {
       left: 0 !important;
     }
-
-
-
-
   }
 }
 
@@ -885,6 +889,7 @@ html, body {
 
   .contact-info__communications {
     margin-left: auto;
+    padding-bottom: 10px;
   }
 
   .page-header .contact-info__phone-unauthorized {
@@ -893,6 +898,7 @@ html, body {
 
   .page-header .contact-info__registration {
     left: 0;
+    margin-left: auto;
   }
 
   .header-info__number {
@@ -900,7 +906,46 @@ html, body {
   }
 
   .header-info__phone {
+    left: -15px;
+  }
+
+  .header-info__phone-unauthorized {
     left: 48px;
+  }
+
+  .header-info__cart {
+    position: relative;
+    right: 45px;
+  }
+
+  .contact-info__phone-call {
+    margin-left: 0;
+  }
+
+  .contact-info__entry {
+    padding-bottom: 10px;
+  }
+
+  .header-menu {
+    background: #252B7F;
+    border-bottom: 2px solid #EBAD45;
+    height: 76px;
+  }
+
+  .header-menu__main-menu {
+    align-items: center;
+  }
+
+  .header-info .header-info__lines-contacts, .header-info__lines-discounts {
+    display: none;
+  }
+
+  .header-info__lines-contacts-lg, .header-info__lines-discounts-lg {
+    display: block;
+  }
+
+  .header-info__link-contact, .header-info__link-discounts {
+    padding-left: 23px !important;
   }
 }
 

@@ -662,3 +662,12 @@ tbody {
 
 }
 
+@include media-breakpoint-only(lg) {
+  .cart-table__description {
+    min-width: 245px;
+  }
+
+  .cart-table__name-country {
+    min-width: 152px;
+  }
+}

@@ -22,7 +22,7 @@
                     <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
                 </div>
                 <div class="col-lg-11 col-xl-4 col-md-6 contact-info__communications">
-                    <a href="#" class="contact-info__phone-call contact-info__phone-unauthorized">Заказать звонок </a>
+                    <a href="#" class="contact-info__phone-call contact-info__phone-unauthorized" data-toggle="modal" data-target="#ModalPhone">Заказать звонок </a>
                     <button href="#" class="btn contact-info__registration" type="button" data-toggle="modal" data-target="#exampleModalRegistration">
                         Регистрация
                     </button>
@@ -35,6 +35,29 @@
             </div>
         </div>
     </div>
+
+    <!-- ModalPhone -->
+    <div class="modal fade" id="ModalPhone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Заказать обратный звонок</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="modal-quick-order__icon"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field" id="contact-number" placeholder="Ваш телефон">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field mt-4" id="contact-your-data" placeholder="Ваше имя">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
 
     <!--MODAL ENTRY-->
 
@@ -150,7 +173,7 @@
     <div class="container">
         <div class="row header-info">
             <div class="col-lg-3 col-md-4">
-                <a href="#"><div class="header-info__logo"></div></a>
+                <a href="index.html"><div class="header-info__logo"></div></a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
                 <button class="navbar-toggler header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -1298,7 +1321,7 @@
 
                 <!---->
 
-                <div class="col-lg-3 col-md-4 footer-info__address-piter footer-info__block">
+                <div class="col-lg-3 col-md-8 footer-info__address-piter footer-info__block">
                     <h5 class="title-petersburg">Санкт-Петербургe</h5>
                     <p class="address-text">Адрес:</p>
                     <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>

@@ -23,7 +23,7 @@
                     <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
                 </div>
                 <div class="col-lg-11 col-md-6 col-xl-4 contact-info__communications">
-                    <a href="#" class="contact-info__phone-call">Заказать звонок </a>
+                    <a href="#" class="contact-info__phone-call" data-toggle="modal" data-target="#ModalPhone">Заказать звонок </a>
                     <i class="contact-info__men"></i>
                     <a href="#" class="contact-info__email"> username@yandex.ru </a>
                 </div>
@@ -34,10 +34,33 @@
         </div>
     </div>
 
+    <!-- ModalPhone -->
+    <div class="modal fade" id="ModalPhone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Заказать обратный звонок</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="modal-quick-order__icon"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field" id="contact-number" placeholder="Ваш телефон">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field mt-4" id="contact-your-data" placeholder="Ваше имя">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+
     <div class="container">
         <div class="row header-info">
             <div class="col-lg-3 col-md-4 header-info__logotip">
-                <a href="#"><div class="header-info__logo"></div></a>
+                <a href="index.html"><div class="header-info__logo"></div></a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
                 <button class="navbar-toggler header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +115,7 @@
                 <a href="#"><i class="header-info__star"></i></a>
             </div>
             <div class="col-lg-2 col-md-4">
-                <a class="btn btn-outline-primary header-info__cart">
+                <a href="index.html" class="btn btn-outline-primary header-info__cart">
                     <i class="header-info__basket"></i>
                     <span class="badge badge-secondary header-info__badge">
                     <span class="header-info__badge-content">99</span>
@@ -263,7 +286,7 @@
             <div class="col-lg-4 col-6 blocks-info__container">
                 <div class="block-info">
                     <i class="block-info__desk"></i>
-                    <a href="#" class="block-info__text">В офисе м.Тверская</a>
+                    <a class="block-info__text" data-toggle="collapse" href="#blocks-info__office" role="button" aria-expanded="false" aria-controls="collapseExample">>В офисе м.Тверская</a>
                 </div>
             </div>
 
@@ -275,9 +298,17 @@
             </div>
 
             <div class="col-lg-4 col-6 blocks-info__container">
-                <div class="block-info">
+                <div class="block-info" data-trigger="hover"  data-toggle="tooltip" data-placement="top" title="Доставка осуществляется бесплатно
+Место встречи: кольцевые станции метрополитена
+Время встречи: с 18-00 до 20-00 в будние дни 2-3 раза в неделю
+Встречи происходят без опозданий с Вашей стороны (4 минуты считается опозданием)
+Встреча происходит только после того, как с администратором по телефону обговорены все детали
+Обзвон клиентов производится с 12.00 до 15.00 в указанный Вами день при оформлении заказа, если звонка не поступило - просьба связаться с администратором по телефону 8-800-333-14-77 (бесплатный звонок по России) до 16.00
+Сумма заказа должна быть не менее 500 руб.
+Вес заказа не более 5 кг., при весе более 5 кг. доставка расчитывается как в пределах станций кольцевой линии Метрополитена «внутри кольца» за каждые неполные 5 кг.
+По телефону в день встречи с Вами свяжется наш сотрудник, который опишет себя и место встречи">
                     <i class="block-info__metro"></i>
-                    <a href="#" class="block-info__text">Встречи на кольцевых</a>
+                    <a class="block-info__text" data-toggle="collapse" href="#blocks-info__metro" role="button" aria-expanded="false" aria-controls="collapseExample">Встречи на кольцевых</a>
                 </div>
             </div>
 
@@ -289,9 +320,12 @@
             </div>
 
             <div class="col-lg-4 col-6 blocks-info__container">
-                <div class="block-info">
+                <div class="block-info" data-trigger="hover"  data-toggle="tooltip" data-placement="top" title="Доставка почтой осуществляется только по территории РФ
+Сумма заказа должна быть не менее 500 руб. и не более 40 000 руб.
+Заказы отправляються с города Долгопрудного
+К стоимости Вашего заказа будет добавлена стоимость почтовых услуг по упаковке, страховке и доставке его Вам, которая зависит от пункта назначения, массы и стоимости товара. Почтовые услуги ~ от 5 до 10 %">
                     <i class="block-info__parcel"></i>
-                    <a href="#" class="block-info__text">Отправка по почте</a>
+                    <a class="block-info__text" data-toggle="collapse" href="#blocks-info__email" role="button" aria-expanded="false" aria-controls="collapseExample">Отправка по почте</a>
                 </div>
             </div>
 
@@ -303,7 +337,7 @@
             </div>
         </div>
 
-        <div class="form-time form-group row">
+        <div class="form-time form-group row collapse" id="blocks-info__office">
             <label for="date" class="col-form-label pl-0 form-time__label">В офисе м. Тверская:</label>
             <select id="date" class="form-control form-time__first-form col-md-3">
                 <option selected>Среда 2018.06.06</option>
@@ -319,6 +353,58 @@
                 <option selected> 10:00</option>
                 <option>...</option>
             </select>
+
+            <div class="details-link">
+                <p class="details-link__text">Более подробно смотрите раздел <a href="#" class="details-link__ref"> Оплата и доставка</a></p>
+            </div>
+        </div>
+
+        <div class="form-subway row collapse" id="blocks-info__metro">
+            <select id="date" class="form-control form-subway__list col-md-6 col-12">
+                <option selected>Выберите метро</option>
+                <option>Новослободская</option>
+                <option>Белорусская</option>
+                <option>Краснопресненская</option>
+                <option>Киевская</option>
+                <option>Парк Культуры</option>
+                <option>Октябрьская</option>
+                <option>Добрынинская</option>
+                <option>Павелецкая</option>
+                <option>Таганская</option>
+                <option>Курская</option>
+                <option>Комсомольская</option>
+                <option>Проспект мира</option>
+            </select>
+
+            <label for="subwayTime-from" class="form-subway__time-from">с</label>
+            <select id="subwayTime-from" class="form-period col-lg-2 col-4 col-md-2">
+                <option selected> 17-30</option>
+                <option>...</option>
+            </select>
+            <label for="subwayTime-bottom" class="form-subway__text-to">по</label>
+            <select id="subwayTime-bottom" class="form-period col-lg-2 col-4 col-md-2">
+                <option selected> 17-30</option>
+                <option>...</option>
+            </select>
+
+            <div class="details-link">
+                <p class="details-link__text">Более подробно смотрите раздел <a href="#" class="details-link__ref"> Оплата и доставка</a></p>
+            </div>
+        </div>
+
+        <div class="row mail-comments collapse" id="blocks-info__email">
+            <div class="form-group col-12 px-0 mail-comments__index">
+                <input class="form-control mail-comments__index-form"  placeholder="Индекс">
+            </div>
+
+            <div class="form-group col-12 px-0 mail-comments__address">
+                <textarea class="form-control" id="comment" rows="3" placeholder="Адрес доставки"></textarea>
+            </div>
+
+            <div class="details-link">
+                <p class="details-link__text">Более подробно смотрите раздел <a href="#" class="details-link__ref"> Оплата и доставка</a></p>
+            </div>
+
         </div>
 
         <section class="row order-title">
@@ -685,7 +771,7 @@
 
                 <!---->
 
-                <div class="col-lg-3 col-md-4 footer-info__address-piter footer-info__block">
+                <div class="col-lg-3 col-md-8 footer-info__address-piter footer-info__block">
                     <h5 class="title-petersburg">Санкт-Петербургe</h5>
                     <p class="address-text">Адрес:</p>
                     <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>

@@ -1,0 +1,11 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.details-link {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.details-link__ref {
+  color: $secondary;
+  white-space: nowrap;
+}

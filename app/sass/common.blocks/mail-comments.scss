@@ -1,0 +1,14 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+
+.mail-comments__index-form {
+  vertical-align: middle;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .mail-comments {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+

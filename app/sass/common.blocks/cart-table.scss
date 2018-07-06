@@ -671,3 +671,10 @@ tbody {
     min-width: 152px;
   }
 }
+
+@include media-breakpoint-only(xl) {
+
+  .cart-table .cart-table__main {
+    max-width: 1169px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.quantity-control {
+  background: #FAEFDC;
+  border-radius: 20px;
+  width: 92px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+}
+
+.quantity-control-minus {
+  cursor: pointer;
+  border: none;
+  background: url("#{$rootDir}/img/table-img/minus.svg") no-repeat center;
+  background-size: 11px 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 31px;
+  height: 40px;
+}
+.quantity-control-plus {
+  cursor: pointer;
+  border: none;
+  background: url("#{$rootDir}/img/table-img/plus.svg") no-repeat center;
+  background-size: 11px 11px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 31px;
+  height: 40px;
+}
+
+.quantity-control-num {
+  width: 30px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+}

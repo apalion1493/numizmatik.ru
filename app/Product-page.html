@@ -181,6 +181,16 @@
 </header>
 
 <main class="main">
+
+    <div class="container search-padding">
+        <div class="row search-main mt-4">
+            <input type="text" placeholder="Начните поиск">
+            <button class="btn btn-primary">
+                Найти товар
+            </button>
+        </div>
+    </div>
+
     <a href="#" class="btn back-to-top"></a>
     <div class="container main-breadcrumb">
         <div class="row">
@@ -188,12 +198,16 @@
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb pl-0">
                         <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                        <li class="breadcrumb-item"><a href="#">Магазин монет</a></li>
+                        <li class="breadcrumb-item"><a href="#">Магазин монет</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Монета Россия 25 рублей Медно-никель 2018 UNC Номер Sets18-11</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </div>
+
+
 
     <nav class="navbar navbar-light bg-light main-search">
         <form class="form-inline main-search__content">
@@ -201,167 +215,222 @@
             <button class="btn btn-outline-success main-search__icon" type="submit"></button>
         </form>
     </nav>
-
-    <form class="container cart-content" action="ordering.html">
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-3 col-md-3 col-xl-3 cart-content__name">
-                <h1 class="cart-header__title">Корзина</h1>
-            </div>
-            <div class="col-lg-6 col-md-8 col-xl-5 cart-content__info">
-                <div class="cart-content__info-title ml-auto">Заказ действителен до:</div>
-                <div class="cart-content__time">
-                    <div class="cart-content__number">
-                        <div class="cart-content__number-first">1</div>
-                    </div>
-                    <div class="cart-content__number">
-                        <div class="cart-content__number-second">5</div>
-                    </div>
-                    <span class="cart-content__colon">:</span>
-                    <div class="cart-content__number">
-                        <div class="cart-content__number-third">4</div>
-                    </div>
-                    <div class="cart-content__number">
-                        <div class="cart-content__number-fourth">5</div>
-                    </div>
+    <div class="container product-information">
+        <h2 class="mt-2 pt-2 pb-2">Монета США 20 долларов Золото 1927 UNC- Номер ZL05-03</h2>
+        <div class="row main-info-coin pt-3">
+            <div class="col-lg-7 img-coin-block ">
+                <div class="a-t-f-p-p-icon-mobile text-center">
+                    <svg width="23px" height="22px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="cartblock" transform="translate(-183.000000, -359.000000)" fill="#FFFFFF" stroke="#333333">
+                                <g transform="translate(0.000000, 4.000000)" id="cart">
+                                    <g>
+                                        <g id="favorit" transform="translate(173.000000, 344.000000)">
+                                            <polygon id="favorite" points="20 26 14.1221475 29.0901699 15.2447174 22.545085 10.4894348 17.9098301 17.0610737 16.954915 20 11 22.9389263 16.954915 29.5105652 17.9098301 24.7552826 22.545085 25.8778525 29.0901699"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <a href="#" style="background-image: url(img/product-page__main/Bitmap.jpg);" class="product-information__img"></a>
+                <span class="product-information__big-photo">Большие фото:</span>
+                <div class="product-information__images">
+                    <a href="#" style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></a>
+                    <a href="#" style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></a>
                 </div>
             </div>
-            <div class="cart-table cart-table__main">
-                <div class="col-lg-12">
-                    <div class="table-responsive table-responsive-xl">
-                        <table class="table table-hover cart-table__width mb-0">
-                            <thead>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="product-information__price-rating">
+                        <div class="col-lg-7 order-2 order-lg-1 col-md-12">
+                            <span class="product-information__new-price">8000 ₽</span>
+                            <strong class="product-information__old-price">9000 ₽</strong>
+                        </div>
+                        <div class="col-lg-5 stars-block text-right order-1 order-lg-2 col-12 text-center text-lg-right pt-lg-0 pb-sm-5 pb-lg-0 pt-4 pb-4">
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row buy-coin-count pt-4 d-flex align-items-center">
+                    <div class="col-5 col-sm-6 col-lg-6 col-xl-7 pt-1">
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-control">
+                                <button class="quantity-control-minus"></button>
+                                <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                <button class="quantity-control-plus"></button>
+                            </div>
+                            <div class="count-text">
+                                В наличии: 10 шт.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 col-sm-6 col-lg-6  col-xl-5 btn-to-cart">
+                        <button class="btn btn-primary w-100 btn-lg button-add-cart">
+                            <img src="img/product-page__main/shopping-cart.svg" alt="">
+                            <span class="pl-2">В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row other-capabilities pt-2">
+                    <div class="col-6 col-sm-6 col-lg-6 col-xl-7 buy-one-click  mt-3 ">
+                        <a href="#" class="pl-3">Купить в один клик</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-6 col-xl-5 add-to-favorite-product-page pt-4">
+                        <div class="a-t-f-p-p-btn">
+                            <div class="a-t-f-p-p-icon text-center">
+                                <svg width="23px" height="22px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="cartblock" transform="translate(-183.000000, -359.000000)" fill="#FFFFFF" stroke="#333333">
+                                            <g transform="translate(0.000000, 4.000000)" id="cart">
+                                                <g>
+                                                    <g id="favorit" transform="translate(173.000000, 344.000000)">
+                                                        <polygon id="favorite" points="20 26 14.1221475 29.0901699 15.2447174 22.545085 10.4894348 17.9098301 17.0610737 16.954915 20 11 22.9389263 16.954915 29.5105652 17.9098301 24.7552826 22.545085 25.8778525 29.0901699"></polygon>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <a href="#" class="a-t-f-p-p-text">
+                                В избранное
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristics">
+                    <div class="opportunities col-sm-12 pt-4 mt-1 pl-0">
+                        <h4 class="opportunities__title">Характеристики:</h4>
+                        <table class="characteristics-table">
+                            <tfoot>
                             <tr>
-                                <th scope="col" class="cart-table__cell-angle">&shy</th>
-                                <th scope="col">Фото</th>
-                                <th scope="col" class="cart-table__name-country">Группа - Страна</th>
-                                <th scope="col">Наименование</th>
-                                <th scope="col">Год</th>
-                                <th scope="col" class="cart-table__description">Описание</th>
-                                <th scope="col">Ценна</th>
-                                <th scope="col">Количество</th>
-                                <th scope="col">Сумма</th>
-                                <th scope="col" class="cart-table__last-cell">
-                                    <i class="cart-table__trashcan"></i>
-                                </th>
+                                <td class="characteristics-table__static-information characteristics-table__last-td">Описание:</td>
+                                <td class="characteristics-table__dynamic-information characteristics-table__last-td">Маха Вачиралонгкорн, Рама X</td>
                             </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="cart-table__lines">
-                                <th rowspan="3" scope="row" class="cart-table__th-grey">
-                                    <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
-                                </th>
-                                <td class="cart-table__img">
-                                    <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="cart-table__block">
-                                        <button class="cart-table__block-minus"></button>
-                                        <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="cart-table__block-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a class="cart-table__last-cell-link" href="#"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
+                            </tfoot>
+                            <tbody class="characteristics-table-body">
+                            <tr>
+                                <td class="characteristics-table__static-information">Страна:</td>
+                                <td class="characteristics-table__dynamic-information">Россия</td>
                             </tr>
-                            <tr class="cart-table__lines">
-                                <td class="cart-table__img">
-                                    <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="cart-table__block">
-                                        <button class="cart-table__block-minus"></button>
-                                        <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="cart-table__block-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
+                            <tr>
+                                <td class="characteristics-table__static-information">Номинал:</td>
+                                <td class="characteristics-table__dynamic-information">20 бат</td>
                             </tr>
-                            <tr class="cart-table__lines">
-                                <td class="cart-table__img">
-                                    <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="cart-table__block">
-                                        <button class="cart-table__block-minus"></button>
-                                        <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="cart-table__block-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
+                            <tr>
+                                <td class="characteristics-table__static-information">Год:</td>
+                                <td class="characteristics-table__dynamic-information">2008</td>
                             </tr>
-                            <tr class="cart-table__lines">
-                                <th scope="row" class="cart-table__th-grey">
-                                    <div class="cart-table__th-vertical">Боны</div>
-                                </th>
-                                <td class="cart-table__img">
-                                    <a class="cart-table__link cart-table__link-img" href="#" style="background-image: url(img/table-img/Bitmap.svg);"></a>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Бангладеш</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="cart-table__block">
-                                        <button class="cart-table__block-minus"></button>
-                                        <input class="cart-table__block-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="cart-table__block-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
+                            <tr>
+                                <td class="characteristics-table__static-information">Металл:</td>
+                                <td class="characteristics-table__dynamic-information">Серебро</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Состояние:</td>
+                                <td class="characteristics-table__dynamic-information">Proof</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Номер:</td>
+                                <td class="characteristics-table__dynamic-information">PL129-09</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-6 ml-auto">
-                    <div class="cart-table__totals">
-                        <div class="cart-table__totals-content">
-                            <h1 class="cart-table__totals-titles">Итого:</h1>
-                            <span class="cart-table__totals-price">1000  ₽</span>
-                        </div>
-                        <div class="cart-table__totals-cross">
-                            <a href="#" class="cart-table__totals-cross-link"><span class="cart-table__totals-cross-mobil">Очистить корзину</span><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>
-                        </div>
+                <div class="social-button pt-4 ">
+                    <script type="text/javascript">(function() {
+                        if (window.pluso)if (typeof window.pluso.start == "function") return;
+                        if (window.ifpluso==undefined) { window.ifpluso = 1;
+                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                            var h=d[g]('body')[0];
+                            h.appendChild(s);
+                        }})();</script>
+                    <div class="pluso" data-background="#ebebeb" data-options="medium,square,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row delivery-and-pay mt-5">
+            <div class="col-md-6">
+                <h5 class="pb-3">
+                    Доставка:
+                </h5>
+                <p class="list-orange-points">
+                    Самовывоз в офисе м.Тверская
+                </p>
+                <p class="list-orange-points">
+                    Встречи на кольцевых
+                </p>
+                <p class="list-orange-points">
+                    Курьерская доставка
+                </p>
+                <p class="list-orange-points">
+                    Пункт выдачи BoxBerry
+                </p>
+                <p class="list-orange-points">
+                    Отправка по почте
+                </p>
+                <p class="list-orange-points">
+                    Экспресс доставка (ЕМС)
+                </p>
+                <p class="list-orange-points link-point pt-2">
+                    <a href="">Подробнее</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="pb-3">Оплата:</h5>
+                <p class="list-orange-points">
+                    Наличные
+                </p>
+                <p class="list-orange-points">
+                    Эквайринг от Сбербанка
+                </p>
+                <p class="list-orange-points">
+                    Кредитные карты VISA,MasterCard
+                </p>
+                <p class="list-orange-points">
+                    WebMoney
+                </p>
+                <p class="list-orange-points">
+                    Сбербанк - экономия времени и стоимости
+                </p>
+                <p class="list-orange-points link-point pt-2">
+                    <a href="">Подробнее</a>
+                </p>
+            </div>
+        </div>
+        <div class="other-information-links mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a1">
+                        <a href="">Отзывы покупателей</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a2">
+                        <a href="">Гарантия подлинности</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a3">
+                        <a href="">Система скидок</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 cart-content__button-group">
-                <button type="button" class="btn btn-light btn-lg cart-content__button-continue">Продолжить покупки</button>
-                <button type="submit" class="btn btn-primary btn-lg cart-content__button-issue">Оформить заказ</button>
-            </div>
         </div>
-    </form>
+    </div>
+
 
     <section class="container recommendations">
         <header class="recommendations__header">
-            <h3 class="recommendations__title">Рекомендуем преобрести</h3>
+            <h3 class="recommendations__title">Похожие позиции в магазине</h3>
         </header>
         <div class="row recommendations__content" data-slick-slider>
 

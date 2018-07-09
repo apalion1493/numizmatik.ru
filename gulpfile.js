@@ -49,7 +49,7 @@ gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
 			baseDir: 'app',
-			index: 'index.html'
+			index: 'product-page.html'
 		},
 		notify: false
 	});

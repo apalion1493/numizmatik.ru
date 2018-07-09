@@ -73,7 +73,7 @@ html, body {
   width: 11px;
   height: 14px;
   position: relative;
-  margin-top: 6px;
+  margin-top: 3px;
   margin-right: 5px;
   margin-left: auto;
 }
@@ -463,12 +463,12 @@ html, body {
 @include media-breakpoint-between(xs,sm) {
 
   .page-header .contact-info__entry-btn {
-    bottom: 8px;
+    bottom: -7px;
   }
 
-  body {
-    padding-top: 15px;
-  }
+  //body {
+  //  padding-top: 15px;
+  //}
 
   .container .row {
     margin-left: -20px;
@@ -477,6 +477,7 @@ html, body {
 
   .contact-info {
     border-bottom: none;
+    margin-top: 0;
   }
 
   .contact-info__location,
@@ -494,12 +495,12 @@ html, body {
   .contact-info__men {
     position: absolute;
     right: 35px;
-    top: 20px;
+    top: 9px;
   }
 
   .contact-info__money {
     position: absolute;
-    top: 8px;
+    top: 16px;
     padding-right: 0;
     font-weight: bold;
   }
@@ -721,7 +722,7 @@ html, body {
     background: #fff;
     overflow: hidden;
     position: relative;
-    bottom: -5px;
+    bottom: 0;
     left: 30px;
     padding-bottom: 0;
   }

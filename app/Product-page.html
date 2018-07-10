@@ -218,7 +218,8 @@
     <div class="container product-information">
         <h2 class="mt-2 pt-2 pb-2">Монета США 20 долларов Золото 1927 UNC- Номер ZL05-03</h2>
         <div class="row main-info-coin pt-3">
-            <div class="col-lg-7 img-coin-block ">
+            <div class="col-lg-7 img-coin-block">
+                <div class="product-information__new-icon">NEW  05.11</div>
                 <div class="a-t-f-p-p-icon-mobile text-center">
                     <svg width="23px" height="22px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -234,21 +235,32 @@
                         </g>
                     </svg>
                 </div>
-                <a href="#" style="background-image: url(img/product-page__main/Bitmap.jpg);" class="product-information__img"></a>
-                <span class="product-information__big-photo">Большие фото:</span>
+                <div class="img-coin-block__border">
+                    <ul class="img-coin-block__list">
+                        <li class="img-coin-block__list-item"><div style="background-image: url(img/product-page__main/Bitmap.jpg);" class="product-information__img"></div></li>
+                        <li class="img-coin-block__list-item"><div style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img"></div></li>
+                        <li class="img-coin-block__list-item"><div style="background-image: url(img/product-page__main/Bitmap.jpg);" class="product-information__img"></div></li>
+                    </ul>
+                </div>
+                <span class="product-information__big-photo">Другие фото:</span>
                 <div class="product-information__images">
-                    <a href="#" style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></a>
-                    <a href="#" style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></a>
+                    <ul class="img-coin-block__list-nav">
+                        <li><div style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></div></li>
+                        <li><div style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></div></li>
+                        <li><div style="background-image: url(img/product-page__main/Bitmap1.jpg);" class="product-information__img-min"></div></li>
+                    </ul>
+
+
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 product-information__column">
                 <div class="row">
                     <div class="product-information__price-rating">
-                        <div class="col-lg-7 order-2 order-lg-1 col-md-12">
+                        <div class="product-information__price col-lg-7 order-2 order-lg-1 col-md-12 col-12">
                             <span class="product-information__new-price">8000 ₽</span>
-                            <strong class="product-information__old-price">9000 ₽</strong>
+                            <span class="product-information__old-price">9000 ₽</span>
                         </div>
-                        <div class="col-lg-5 stars-block text-right order-1 order-lg-2 col-12 text-center text-lg-right pt-lg-0 pb-sm-5 pb-lg-0 pt-4 pb-4">
+                        <div class="col-lg-5 stars-block text-right order-1 order-lg-2 col-12 text-center text-lg-right pt-lg-0 pb-sm-5 pb-lg-0 pt-4">
                             <a href="#"><img src="img/rating/Star.svg" alt=""></a>
                             <a href="#"><img src="img/rating/Star.svg" alt=""></a>
                             <a href="#"><img src="img/rating/Star.svg" alt=""></a>
@@ -257,9 +269,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row buy-coin-count pt-4 d-flex align-items-center">
+                <div class="row buy-coin-count d-flex align-items-center">
                     <div class="col-5 col-sm-6 col-lg-6 col-xl-7 pt-1">
-                        <div class="d-flex align-items-center">
+                        <div class="buy-coin-count__container">
                             <div class="quantity-control">
                                 <button class="quantity-control-minus"></button>
                                 <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
@@ -309,7 +321,7 @@
                         <h4 class="opportunities__title">Характеристики:</h4>
                         <table class="characteristics-table">
                             <tfoot>
-                            <tr>
+                            <tr class="characteristics-table__last-tr">
                                 <td class="characteristics-table__static-information characteristics-table__last-td">Описание:</td>
                                 <td class="characteristics-table__dynamic-information characteristics-table__last-td">Маха Вачиралонгкорн, Рама X</td>
                             </tr>
@@ -343,7 +355,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="social-button pt-4 ">
+                <div class="social-button pt-4 social-button__icon">
                     <script type="text/javascript">(function() {
                         if (window.pluso)if (typeof window.pluso.start == "function") return;
                         if (window.ifpluso==undefined) { window.ifpluso = 1;
@@ -407,20 +419,23 @@
             </div>
         </div>
         <div class="other-information-links mt-5 mb-5">
-            <div class="row">
+            <div class="row other-information-links__container">
                 <div class="col-md-4 text-center icon-info-link">
                     <div class="icon-i-b-product a1">
-                        <a href="">Отзывы покупателей</a>
+                        <i class="other-information-links__icon-reviews"></i>
+                        <a href="#">Отзывы покупателей</a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center icon-info-link">
                     <div class="icon-i-b-product a2">
-                        <a href="">Гарантия подлинности</a>
+                        <i class="other-information-links__icon-guarantee"></i>
+                        <a href="#">Гарантия подлинности</a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center icon-info-link">
                     <div class="icon-i-b-product a3">
-                        <a href="">Система скидок</a>
+                        <i class="other-information-links__icon-discounts"></i>
+                        <a href="#">Система скидок</a>
                     </div>
                 </div>
             </div>
@@ -1329,6 +1344,7 @@
 
 <script src="js/recommendations.js"></script>
 <script src="js/table-form.js"></script>
+<script src="js/img-coin-block.js"></script>
 <!-- JS Inline -->
 <script>
     $('[data-toggle="popover"]').popover();

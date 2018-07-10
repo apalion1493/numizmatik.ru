@@ -94,7 +94,7 @@
 }
 
 .list-orange-points {
-  background: url("../../img/product-page__main/LineCopy 2.svg") no-repeat 15px 10px;
+  background: url("#{$rootDir}/img/product-page__main/LineCopy 2.svg") no-repeat 15px 10px;
   font-size: 18px;
   color: #333333;
   padding-bottom: 10px;
@@ -246,21 +246,21 @@
 }
 
 .other-information-links__icon-reviews {
-  background: url(../../img/product-page__main/testimonial.svg) no-repeat left center;
+  background: url(#{$rootDir}/img/product-page__main/testimonial.svg) no-repeat left center;
   width: 36px;
   height: 36px;
   margin-right: 14px;
 }
 
 .other-information-links__icon-guarantee {
-  background: url(../../img/product-page__main/certificate.svg) no-repeat left center;
+  background: url(#{$rootDir}/img/product-page__main/certificate.svg) no-repeat left center;
   width: 42px;
   height: 38px;
   margin-right: 14px;
 }
 
 .other-information-links__icon-discounts {
-  background: url(../../img/product-page__main/discount.svg) no-repeat left center;
+  background: url(#{$rootDir}/img/product-page__main/discount.svg) no-repeat left center;
   width: 39px;
   height: 29px;
   margin-right: 14px;

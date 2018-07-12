@@ -4,7 +4,7 @@
   padding-top: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .track-new__icon {
@@ -13,9 +13,10 @@
   width: 21px;
   height: 19px;
   display: inline-block;
+  margin-right: 5px;
 }
 
-.country-filter-left-column {
+.country-filter {
   background: #FAF8F4;
 }
 
@@ -68,13 +69,13 @@
 }
 
 .main .country-filter__radio-first {
-  margin-right: 40px;
-  padding-left: 26px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .main .country-filter__radio-third {
   margin-top: 15px;
-  padding-left: 26px;
+  padding-left: 20px;
 }
 
 .country-active-group__main {
@@ -104,3 +105,221 @@
   width: 100%;
   margin-right: 50px;
 }
+
+///* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+//.country-filter__navigation-checkbox-custom {
+//  position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+//  width: 100%;             /* Обязательно задаем ширину */
+//  height: 18px;            /* Обязательно задаем высоту */
+//  background: #FFF8E9;
+//  display: block;
+//  left: -3px;
+//
+//}
+///* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+//.country-filter__navigation-letter {
+//  display: inline-block;
+//  vertical-align: middle;
+//  color: #252B7F;
+//  position: relative;
+//  top: -19px;
+//  left: 5px;
+//  font-size: 14px;
+//  text-align: center;
+//}
+//
+//.country-filter__navigation-number {
+//  display: inline-block;
+//  vertical-align: middle;
+//  color: #252B7F;
+//  position: relative;
+//  top: -19px;
+//  left: 0;
+//  font-size: 12px;
+//  text-align: center;
+//}
+//
+///* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+//.checkbox:checked + .country-filter__navigation-checkbox-custom:before {
+//  content: "";         /* Добавляем наш псевдоэлемент */
+//  display: block;			 /* Делаем его блочным элементом */
+//  position: absolute;      /* Позиционируем его абсолютным образом */
+//  /* Задаем расстояние от верхней, правой, нижней и левой границы */
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+//  font-size: 15px;
+//  color: #fff;
+//  text-align: center;
+//  line-height: 15px;
+//  background: #EAAC44;
+//}
+//
+//.checkbox + .country-filter__navigation-checkbox-custom:before {
+//  content: "";         /* Добавляем наш псевдоэлемент */
+//  display: block;			 /* Делаем его блочным элементом */
+//  position: absolute;      /* Позиционируем его абсолютным образом */
+//  /* Задаем расстояние от верхней, правой, нижней и левой границы */
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+//  font-size: 15px;
+//  color: #252B7F;
+//  text-align: center;
+//  line-height: 15px;
+//  background: #FFF8E9;
+//}
+
+.country-filter__navigation {
+  width: 28px;
+  margin-top: 30px;
+  margin-right: 5px;
+}
+
+.country-filter__navigation__paragraph {
+  height: 10px;
+}
+
+.country-filter__navigation a {
+  font-size: 14px;
+  background: #FFF8E9;
+  text-align: center;
+  height: 20px;
+  width: 28px;
+}
+
+.country-filter__navigation a:hover {
+  background: $primary;
+  text-decoration: none;
+  color: #fff;
+}
+
+.form-check_main-countries {
+  margin-bottom: 10px;
+}
+
+.catalog-main__filter-choice {
+  display: flex;
+  margin-top: 40px;
+  background: #FAF8F4;
+  padding-right: 20px;
+}
+
+.catalog-main__filter-dropdown-line {
+  width: 1px;
+  height: 1rem;
+  background: $primary;
+  position: relative;
+  float: left;
+  top: 10px;
+}
+
+.catalog-main__filter-link {
+  float: left;
+}
+
+.catalog-main__filter-options {
+  width: 25px;
+  height: 25px;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 10px;
+  top: 5px;
+  float: left;
+  margin-left: 10px;
+}
+
+.catalog-main__filter-options span {
+  position: relative;
+  top: 1px;
+}
+
+.catalog-main__filter-dropdown {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catalog-main__filter-dropdown:hover {
+  background: $primary;
+}
+
+.catalog-main__filter-dropdown:hover .catalog-main__filter-options {
+  background: #FFFFFF;
+}
+
+.catalog-main__filter-dropdown:hover .catalog-main__filter-link {
+  color: #fff;
+}
+
+.catalog-main__filter-link:after {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: $caret-width * .85;
+  vertical-align: $caret-width * .85;
+  content: "";
+  background: url("../../img/catalog/more-btn.svg") no-repeat center;
+  background-size: 100% auto;
+  position: relative;
+  bottom: -5px;
+}
+
+.catalog-main__filter-dropdown:hover .catalog-main__filter-link:after {
+  background: url("../../img/catalog/more-btn2.svg") no-repeat center;
+}
+
+.catalog-main .catalog-main__filter-dropdown-menu {
+  padding: 30px 50px 30px 30px;
+}
+
+.catalog-main__filter-dropdown-menu-block {
+  float: left;
+}
+
+.catalog-main__filter-dropdown-form {
+  display: flex;
+}
+
+.catalog-main .catalog-main__filter-btn {
+  padding: 10px 15px;
+}
+
+.catalog-main__filter-sbros-icon {
+  background: url("../../img/catalog/clouce.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 11px;
+  height: 11px;
+  display: block;
+}
+
+.catalog-main__filter-sbros {
+  margin-left: auto;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.catalog-main__filter-sbros a {
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+
+.catalog-main__filter-sbros i {
+  margin-left: 10px;
+}
+
+
+@include media-breakpoint-only(xl) {
+  .catalog-main__filter-dropdown-menu {
+    min-width: 855px !important;
+  }
+}
+

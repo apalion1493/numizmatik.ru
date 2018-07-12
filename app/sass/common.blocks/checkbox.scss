@@ -9,7 +9,7 @@
   position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
   width: 18px;             /* Обязательно задаем ширину */
   height: 18px;            /* Обязательно задаем высоту */
-  border: 1px solid $primary;
+  border: 1px solid $secondary;
   border-radius: 2px;
 }
 /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
@@ -31,7 +31,7 @@
   left: 2px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
   font-size: 15px;
-  color: $primary;
+  color: $secondary;
   text-align: center;
   line-height: 15px;
 }

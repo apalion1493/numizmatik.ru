@@ -202,11 +202,13 @@
   margin-bottom: 10px;
 }
 
-.catalog-main__filter-choice {
+.main .catalog-main__filter-choice {
   display: flex;
   margin-top: 40px;
   background: #FAF8F4;
   padding-right: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .catalog-main__filter-dropdown-line {
@@ -214,12 +216,11 @@
   height: 1rem;
   background: $primary;
   position: relative;
-  float: left;
-  top: 10px;
+  left: 18px;
 }
 
 .catalog-main__filter-link {
-  float: left;
+  display: flex;
 }
 
 .catalog-main__filter-options {
@@ -231,8 +232,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 10px;
-  top: 5px;
   float: left;
   margin-left: 10px;
 }
@@ -269,19 +268,32 @@
   background: url("../../img/catalog/more-btn.svg") no-repeat center;
   background-size: 100% auto;
   position: relative;
-  bottom: -5px;
-}
-
-.catalog-main__filter-dropdown:hover .catalog-main__filter-link:after {
-  background: url("../../img/catalog/more-btn2.svg") no-repeat center;
+  bottom: -9px;
+  right: -2px;
 }
 
 .catalog-main .catalog-main__filter-dropdown-menu {
-  padding: 30px 50px 30px 30px;
+  padding: 30px 50px 30px 50px;
+  display: none;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 300;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.catalog-main__filter:hover .catalog-main__filter-dropdown-menu {
+  display: block;
 }
 
 .catalog-main__filter-dropdown-menu-block {
   float: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-main__filter-dropdown-form {
@@ -316,10 +328,217 @@
   margin-left: 10px;
 }
 
+.catalog-main__filter-dropdown-menu-block h5 {
+  color: $secondary;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-@include media-breakpoint-only(xl) {
-  .catalog-main__filter-dropdown-menu {
-    min-width: 855px !important;
+.catalog-main {
+  position: relative;
+}
+
+.catalog-main__filter {
+  position: inherit !important;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-main__filter:hover {
+  background: $primary;
+}
+
+.catalog-main__filter:hover .catalog-main__filter-link {
+  color: #fff;
+}
+
+.catalog-main__filter:hover .catalog-main__filter-link:after {
+  background: url("../../img/catalog/more-btn2.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.catalog-main__filter:hover .catalog-main__filter-options {
+  background: #ffffff;
+}
+
+.catalog-main .catalog-main__filter-totals {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.catalog-main__filter-totals-year,
+.catalog-main__filter-totals-metals {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.catalog-main__filter-totals-name {
+  color: #777;
+}
+
+.catalog-main__filter-totals-block {
+  border: 1px solid #F6E9CF;
+  border-radius: 20px;
+  padding: 5px 13px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  color: #777;
+}
+
+.catalog-main__filter-totals-close {
+  background: url("../../img/catalog/clouce.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 13px;
+  height: 12px;
+  margin-left: 10px;
+}
+
+.product-header__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.product-header .product-header__sort-block {
+  border-bottom: 1px solid #BEBFD9;
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.product-header__sort-list {
+  display: flex;
+  align-items: center;
+
+  h6 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 0;
   }
 }
 
+.product-header__sort-point {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-right: 5px;
+  color: #777777;
+  background: url(../../img/catalog/Triangle1.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.product-header__sort-point.to-top {
+  background: url(../../img/catalog/Triangle-to-top.svg) no-repeat right 15px, url(../../img/catalog/Triangle1.svg) no-repeat right 22px;
+  color: #333333;
+  border-bottom: 1px solid #EAAC44;
+}
+
+.product-header__sort-point.to-bottom {
+  background: url(../../img/catalog/Triangle-to-bottom.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
+  color: #333333;
+  border-bottom: 1px solid #EAAC44;
+}
+
+.product-header .product-header__count-list {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.product-header__count-list .custom-select {
+  border-radius: 0;
+  border: 1px solid #BEBFD9;
+  margin-left: 5px;
+  width: 60px;
+}
+
+.profit-text {
+  margin-bottom: 35px;
+}
+
+.profit-text__header {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.profit-text__list {
+  list-style: none;
+}
+
+.profit-text__cell {
+  position: relative;
+  padding-bottom: 10px;
+  color: #555555;
+}
+
+.profit-text__cell:before {
+  content: '';
+  background: url("../../img/catalog/Oval.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+}
+
+.profit-text__paragraph {
+  color: #555555;
+  line-height: 18px;
+}
+
+.profit-text__title {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.catalog-main .product-footer {
+  border: 1px solid #F6E9CF;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-left: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+.product-footer__application,
+.product-footer__price-list {
+  display: flex;
+  align-items: center;
+}
+
+.product-footer__application-icon {
+  background: url("../../img/catalog/checkbox-pen-outline.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 22px;
+  display: block;
+  margin-right: 15px;
+}
+
+.product-footer__price-list-icon {
+  background: url("../../img/catalog/icon(1).svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 15px;
+}

@@ -221,6 +221,7 @@
 
 .catalog-main__filter-link {
   display: flex;
+  color: $secondary;
 }
 
 .catalog-main__filter-options {
@@ -280,7 +281,7 @@
   left: 0;
   right: 0;
   background: #fff;
-  z-index: 300;
+  z-index: 320;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
   margin-left: 15px;
   margin-right: 15px;
@@ -298,10 +299,11 @@
 
 .catalog-main__filter-dropdown-form {
   display: flex;
+  align-items: center;
 }
 
 .catalog-main .catalog-main__filter-btn {
-  padding: 10px 15px;
+  padding: 8px 15px;
 }
 
 .catalog-main__filter-sbros-icon {
@@ -328,7 +330,8 @@
   margin-left: 10px;
 }
 
-.catalog-main__filter-dropdown-menu-block h5 {
+.catalog-main__filter-dropdown-menu-block h5,
+.catalog-main__filter-dropdown-menu h5 {
   color: $secondary;
   font-size: 16px;
   font-weight: bold;
@@ -541,4 +544,32 @@
   height: 20px;
   display: block;
   margin-right: 15px;
+}
+
+.continents-filter__main {
+  margin-top: 35px;
+}
+
+.checkbox-block__icon {
+  background: url("../../img/catalog/plus.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 5px;
+}
+
+.catalog-main__filter-dropdown-text {
+  color: #777;
+  margin-right: 7px;
+}
+
+.catalog-main__filter-dropdown-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F7EAD0;
+  width: 27px;
+  height: 38px;
+  color: #777777;
 }

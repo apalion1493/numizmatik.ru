@@ -52,6 +52,11 @@
   color: #777;
 }
 
+.checkbox-block {
+  display: flex;
+  align-items: center;
+}
+
 @include media-breakpoint-between(xs,sm) {
   .form-check-position {
     right: 0;

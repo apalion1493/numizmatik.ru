@@ -9,7 +9,28 @@
 }
 
 .card-coins {
-  z-index: 100;
+  z-index: 300;
+  margin-bottom: 40px;
+}
+
+.card-coins:hover {
+  box-shadow: 0 10px 15px #aaa;
+  position: absolute;
+  z-index: 301;
+  left: 15px;
+  right: 15px;
+}
+
+.card-coins:hover .card-coins__btn {
+  display: block;
+}
+
+.card-coins:hover .card-coins__bottom-block{
+  display: block;
+}
+
+.card-coins__bottom-block {
+  display: none;
 }
 
 .card-coins__footer {
@@ -39,6 +60,24 @@
   height: 41px;
   border-radius: 50px;
   margin-left: 5px;
+
+  .quantity-control {
+    display: none;
+  }
+
+  .quantity-control-num {
+    display: none;
+  }
+}
+
+.card-coins__footer-btn-basket:focus {
+  .card-coins__footer-btn-block {
+    display: none;
+  }
+}
+
+.card-coins__footer-btn .quantity-control {
+  display: none;
 }
 
 .card-coins__text {
@@ -119,10 +158,48 @@
 
 .card-coins .card-coins__btn {
   display: none;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
 }
 
 .card-coins__footer-btn {
   display: flex;
+}
+
+.card-coins__bottom-description h6 {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.card-coins__bottom-description p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 20px;
+}
+
+.card-coins__bottom-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-coins__bottom-comparison i {
+  background: url("../../img/catalog/Group4.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 16px;
+  display: block;
+  margin-right: 8px;
+}
+
+.card-coins__bottom-comparison a {
+  font-size: 16px;
 }
 
 @include media-breakpoint-between(xs,sm) {

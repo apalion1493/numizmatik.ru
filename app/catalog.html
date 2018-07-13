@@ -223,7 +223,7 @@
                         </nav>
                         <div class="country-filter__radio-group">
                             <div class="form-check country-filter__radio-first">
-                                <input class="form-check-input radio" type="radio" name="exampleRadios" id="radio" value="option1" checked>
+                                <input class="form-check-input radio radio-alphabet" type="radio" name="exampleRadios" id="radio" value="option1" checked>
                                 <label class="form-check-label" for="radio">
                                     Алфавит
                                 </label>
@@ -373,7 +373,7 @@
                                 <div class="form-check form-check_main-countries">
                                     <label class="checkbox-block">
                                         <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-custom checkbox-block__custom"></span>
                                         <span class="label ml-2 checkbox-block__label">Абхазия <span class="checkbox-block__label-span">- 19 560</span></span>
                                     </label>
                                 </div>
@@ -675,6 +675,69 @@
                             </div>
                         </div>
                     </div>
+                    <div class="continents-filter__main">
+                        <div class="form-check">
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Европа
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Азия
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Африка
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Северная Америка
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Южная Америка
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+
+                            <label class="checkbox-block">
+                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                <span class="label ml-2 checkbox-block__label">
+                                    Антарктида
+                                    <span class="checkbox-block__label-span">- 19 560</span>
+                                </span>
+                                <a href="#" class="checkbox-block__icon"></a>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -694,9 +757,9 @@
 
                     <div class="catalog-main__filter-choice row">
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Года
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-options">
                                 <span>2</span>
                             </div>
@@ -751,9 +814,9 @@
                         </div>
 
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Номиналы
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
                             <div class="dropdown-menu catalog-main__filter-dropdown-menu row">
@@ -964,9 +1027,9 @@
                         </div>
 
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Металлы
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
                             <div class="catalog-main__filter-dropdown-menu">
@@ -997,9 +1060,9 @@
                         </div>
 
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Состояния
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
                             <div class="catalog-main__filter-dropdown-menu">
@@ -1030,9 +1093,9 @@
                         </div>
 
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Тематики
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
                             <div class="catalog-main__filter-dropdown-menu">
@@ -1047,15 +1110,20 @@
                         </div>
 
                         <div class="col catalog-main__filter">
-                            <a class="catalog-main__filter-link" href="#">
+                            <div class="catalog-main__filter-link">
                                 Цены
-                            </a>
+                            </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
                             <div class="catalog-main__filter-dropdown-menu">
+                                <h5 class="pl-4">Выбрать диапазон цен</h5>
                                 <form class="catalog-main__filter-dropdown-form">
-                                    <input type="text" class="form-control col-2 mr-3" placeholder="200">
-                                    <input type="text" class="form-control col-2 mr-2" placeholder="92990">
+                                    <span class="catalog-main__filter-dropdown-text">от</span>
+                                    <input type="text" class="form-control col-2" placeholder="200">
+                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
+                                    <span class="catalog-main__filter-dropdown-text">до</span>
+                                    <input type="text" class="form-control col-2" placeholder="92990">
+                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
                                     <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
                                 </form>
                             </div>
@@ -1096,7 +1164,7 @@
                             </div>
                         </div>
                     </div>
-                    <header class="product-header">
+                    <div class="product-header">
                         <h3 class="product-header__title">Магазин монет от Клуба Нумизмат</h3>
                         <div class="product-header__sort-block row">
                             <div class="col-lg-9 product-header__sort-list pl-0">
@@ -1114,7 +1182,7 @@
                                 </select>
                             </div>
                         </div>
-                    </header>
+                    </div>
                     <div class="row product-content">
 
                         <div class="col-xl-4 col">
@@ -1156,11 +1224,29 @@
                                     <div class="card-coins__footer">
                                         <span class="card-coins__price">8 000 ₽</span>
                                         <div class="card-coins__footer-btn">
-                                            <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <div class="card-coins__footer-btn-block">
+                                                <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                                <button type="button" class="btn card-coins__footer-btn-basket"></button>
+                                            </div>
+                                            <div class="quantity-control">
+                                                <button class="quantity-control-minus"></button>
+                                                <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                                <button class="quantity-control-plus"></button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
+                                    <div class="card-coins__bottom-block">
+                                        <div class="card-coins__bottom-description">
+                                            <h6>Описание:</h6>
+                                            <p>Чемпионат Мира по футболу.
+                                                Монета из раздела мелочь, см. условия покупки в разделе</p>
+                                            <div class="card-coins__bottom-comparison">
+                                                <i></i>
+                                                <a href="#">Сравнить товар</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1204,10 +1290,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1252,10 +1338,10 @@
                                         <span class="card-coins__price">500 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn" data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1299,10 +1385,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn" data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1346,10 +1432,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn" data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1393,10 +1479,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1440,10 +1526,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1487,10 +1573,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1534,10 +1620,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1581,10 +1667,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1628,10 +1714,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1675,10 +1761,10 @@
                                         <span class="card-coins__price">360 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                            <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
                                 </div>
                             </div>
                         </div>
@@ -1699,7 +1785,7 @@
                         <header class="recommendations__header">
                             <h3 class="recommendations__title">Рекомендуем преобрести</h3>
                         </header>
-                        <div class="row recommendations__content" data-slick-slider>
+                        <div class="row recommendations__content" data-slick-slider-default-3>
 
                             <div class="col">
                                 <div class="card card-coins">

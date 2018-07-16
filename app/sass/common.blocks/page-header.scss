@@ -327,8 +327,6 @@ html, body {
 
 }
 
-
-
 .header-menu {
   background: #252B7F;
   border-bottom: 2px solid #EBAD45;
@@ -398,7 +396,7 @@ html, body {
     height: 16px;
     position: absolute;
     top: 17px;
-    right: 0;
+    right: -1px;
   }
 
   &:last-child:after {
@@ -458,6 +456,32 @@ html, body {
 
 .header-info__lines-contacts-lg, .header-info__lines-discounts-lg {
   display: none;
+}
+
+.header-menu .header-menu__dropdown {
+  background: #FFFFFF;
+  z-index: 900;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header-menu__dropdown-block span {
+  color: #777;
+  font-size: 12px;
+}
+
+.header-menu__dropdown-block a:before {
+  content: '';
+  background: $primary;
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  left: 15px;
+  margin-top: 10px;
 }
 
 @include media-breakpoint-between(xs,sm) {
@@ -995,4 +1019,6 @@ html, body {
   .page-header .header-info__ellipsis-menu {
     margin-top: 18px;
   }
+
+
 }

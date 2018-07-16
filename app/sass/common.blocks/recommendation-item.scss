@@ -60,14 +60,6 @@
   height: 41px;
   border-radius: 50px;
   margin-left: 5px;
-
-  .quantity-control {
-    display: none;
-  }
-
-  .quantity-control-num {
-    display: none;
-  }
 }
 
 .card-coins__footer-btn-basket:focus {
@@ -111,11 +103,27 @@
 }
 
 .card-coins__new-icon {
+   display: block;
+   font-size: 10px;
+   padding: 2px 23px 4px 23px;
+   color: #fff;
+   background: $secondary;
+   width: 100px;
+   height: 19px;
+   position: absolute;
+   top: -20px;
+   right: 0;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   z-index: 100;
+ }
+
+.card-coins__novelty {
   display: block;
   font-size: 10px;
   padding: 2px 23px 4px 23px;
-  color: #fff;
-  background: $secondary;
+  color: $secondary;
+  background: $primary;
   width: 100px;
   height: 19px;
   position: absolute;

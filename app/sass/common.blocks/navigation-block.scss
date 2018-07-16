@@ -1,0 +1,53 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.navigation-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-block__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.navigation-block__list {
+  display: flex;
+  margin-bottom: 0;
+  border: 1px solid #F9F2E1;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.navigation-block__list li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navigation-block__list li a {
+  border: none;
+}
+
+.page-item.active .navigation-block__link {
+  background: $secondary !important;
+  border-radius: 50% !important;
+  color: #FFFFFF !important;
+}
+
+.navigation-block__link:focus, .navigation-block__link:hover {
+  background: $secondary !important;
+  border-radius: 50%;
+  color: #FFFFFF !important;
+}
+
+.navigation-block__left-switch {
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.navigation-block__right-switch {
+  font-size: 14px;
+  padding-left: 5px;
+}

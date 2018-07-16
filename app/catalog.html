@@ -139,17 +139,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
                         <ul class="navbar-nav header-menu__main-menu">
-                            <li class="nav-item active dropdown menu-item-goods">
-                                <a class="nav-link dropdown-toggle header-menu__dropdown-store menu-item-goods__link" href="#" id="navbarDropdown" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item  dropdown menu-item-goods">
+                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" href="#navbarDropdown" role="button" aria-expanded="false" aria-controls="collapseExample">
                                     Магазин монет
                                 </a>
-                                <div class="dropdown-menu header-menu__dropdown" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
                             </li>
                             <li class="nav-item  menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Банкноты</a>
@@ -157,13 +150,13 @@
                             <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Аксессуары</a>
                             </li>
-                            <li class="nav-item menu-item-goods">
+                            <li class="nav-item active menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Жетоны</a>
                             </li>
                             <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Нотгельды</a>
                             </li>
-                            <li class="nav-item menu-item-goods">
+                            <li class="nav-item  menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Книги</a>
                             </li>
                             <li class="nav-item menu-item-goods">
@@ -175,6 +168,26 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="collapsing header-menu__dropdown row" id="navbarDropdown">
+                    <div class="col-3 header-menu__dropdown-block">
+                        <a class="dropdown-item" href="#">Наборы монет<span>-543</span></a>
+                        <a class="dropdown-item" href="#">Мелочь<span>-543</span></a>
+                        <a class="dropdown-item" href="#">Дешевые монеты<span>-543</span></a>
+                    </div>
+                    <div class="col-3 header-menu__dropdown-block">
+                        <a class="dropdown-item" href="#">Цветные монеты<span>-543</span></a>
+                        <a class="dropdown-item" href="#">Лоты монет для начинающих<span>-543</span></a>
+                    </div>
+                    <div class="col-3 header-menu__dropdown-block">
+                        <a class="dropdown-item" href="#">Монеты СССР<span>-543</span></a>
+                        <a class="dropdown-item" href="#">Картины из монет<span>-543</span></a>
+                    </div>
+                    <div class="col-3 header-menu__dropdown-block">
+                        <a class="dropdown-item" href="#">Распродажа монет<span>-543</span></a>
+                        <a class="dropdown-item" href="#">Серии монет<span>-543</span></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -674,7 +687,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- при нажатии на кнопку "страны" должен появится этот блок-->
                     <div class="continents-filter__main">
                         <div class="form-check">
                             <label class="checkbox-block">
@@ -737,13 +750,10 @@
                                 <a href="#" class="checkbox-block__icon"></a>
                             </label>
                         </div>
-                    </div>
+                    </div> <!-- при нажатии на кнопку "континенты" должен появится этот блок-->
                 </div>
             </div>
-
-
             <div class="col-9 pr-0">
-
                 <div class="container search-padding">
                     <div class="row search-main">
                         <input type="text" placeholder="Начните поиск">
@@ -752,9 +762,7 @@
                         </button>
                     </div>
                 </div>
-
                 <section class="container recommendations catalog-main">
-
                     <div class="catalog-main__filter-choice row">
                         <div class="col catalog-main__filter">
                             <div class="catalog-main__filter-link">
@@ -1164,6 +1172,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="product-header">
                         <h3 class="product-header__title">Магазин монет от Клуба Нумизмат</h3>
                         <div class="product-header__sort-block row">
@@ -1183,6 +1192,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row product-content">
 
                         <div class="col-xl-4 col">
@@ -1225,13 +1235,16 @@
                                         <span class="card-coins__price">8 000 ₽</span>
                                         <div class="card-coins__footer-btn">
                                             <div class="card-coins__footer-btn-block">
-                                                <a href="#" class="btn card-coins__footer-btn-star"></a>
-                                                <button type="button" class="btn card-coins__footer-btn-basket"></button>
-                                            </div>
-                                            <div class="quantity-control">
-                                                <button class="quantity-control-minus"></button>
-                                                <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                                <button class="quantity-control-plus"></button>
+                                                <a href="#" class="btn card-coins__footer-btn-star "></a>
+                                                <button type="button" class="btn card-coins__footer-btn-basket " data-toggle="button"></button>
+                                                <div class="card-coins__footer-btn-counter">
+                                                    <div class="quantity-control">
+                                                        <button class="quantity-control-minus"></button>
+                                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                                        <button class="quantity-control-plus"></button>
+                                                    </div>
+                                                    <a href="#" class="quantity-control-btn">OK</a>
+                                                </div>  <!--должен при нажатии на корзину появится блок card-coins__footer-btn-counter и изчезнуть card-coins__footer-btn-star, card-coins__footer-btn-basket-->
                                             </div>
                                         </div>
                                     </div>
@@ -1253,6 +1266,7 @@
 
                         <div class="col col-xl-4">
                             <div class="card card-coins">
+                                <div class="card-coins__novelty">НОВИНКА</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
                                     <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
@@ -1293,7 +1307,12 @@
                                             <button type="button" class="btn card-coins__footer-btn-basket"></button>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-light btn-lg card-coins__btn"  data-toggle="modal" data-target=".bd-example-modal-lg">Купить в один клик</button>
+                                    <button type="button" class="btn btn-light btn-lg card-coins__btn">Стать в очередь</button>
+                                    <div class="card-coins__bottom-block">
+                                        <div class="card-coins__bottom-description">
+                                            <div class="timer-mail">Бронь до 00:15</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1768,6 +1787,30 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="navigation-block row">
+                        <nav aria-label="Page navigation example" class="navigation-block__container col-xl-4">
+                            <ul class="pagination navigation-block__list">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true" class="navigation-block__left-switch"><</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link navigation-block__link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link navigation-block__link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link navigation-block__link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link navigation-block__link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link navigation-block__link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true" class="navigation-block__right-switch">></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
 
                     <div class="row product-footer">
@@ -2416,14 +2459,10 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
-
             </div>
         </div>
     </div>
-
-
 </main>
 
 <footer class="page-footer">

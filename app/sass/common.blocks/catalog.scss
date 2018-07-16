@@ -573,3 +573,73 @@
   height: 38px;
   color: #777777;
 }
+
+.card-coins__footer-btn-counter {
+  background: $primary;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 40px;
+  display: flex;
+
+  .quantity-control {
+    border-radius: 0;
+    width: 63px;
+    height: 30px;
+    position: relative;
+    left: 13px;
+  }
+
+  .quantity-control-minus {
+    cursor: pointer;
+    border: none;
+    background: url(../../img/table-img/minus.svg) no-repeat center;
+    background-size: 9px 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 32px;
+  }
+
+  .quantity-control-plus {
+    cursor: pointer;
+    border: none;
+    background: url(../../img/table-img/plus.svg) no-repeat center;
+    background-size: 9px 11px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17px;
+    height: 32px;
+  }
+
+  .quantity-control-num {
+    width: 27px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    border: none;
+    text-align: center;
+  }
+
+  .quantity-control-btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 8px;
+  }
+}
+
+.timer-mail {
+  color: $primary;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+

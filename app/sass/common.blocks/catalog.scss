@@ -8,7 +8,7 @@
 }
 
 .track-new__icon {
-  background: url("../../img/catalog/binoculars.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/binoculars.svg") no-repeat center;
   background-size: 100% auto;
   width: 21px;
   height: 19px;
@@ -266,7 +266,7 @@
   margin-left: $caret-width * .85;
   vertical-align: $caret-width * .85;
   content: "";
-  background: url("../../img/catalog/more-btn.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/more-btn.svg") no-repeat center;
   background-size: 100% auto;
   position: relative;
   bottom: -9px;
@@ -307,7 +307,7 @@
 }
 
 .catalog-main__filter-sbros-icon {
-  background: url("../../img/catalog/clouce.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/clouce.svg") no-repeat center;
   background-size: 100% auto;
   width: 11px;
   height: 11px;
@@ -356,7 +356,7 @@
 }
 
 .catalog-main__filter:hover .catalog-main__filter-link:after {
-  background: url("../../img/catalog/more-btn2.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/more-btn2.svg") no-repeat center;
   background-size: 100% auto;
 }
 
@@ -395,7 +395,7 @@
 }
 
 .catalog-main__filter-totals-close {
-  background: url("../../img/catalog/clouce.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/clouce.svg") no-repeat center;
   background-size: 100% auto;
   width: 13px;
   height: 12px;
@@ -434,20 +434,20 @@
   padding-right: 15px;
   margin-right: 5px;
   color: #777777;
-  background: url(../../img/catalog/Triangle1.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
+  background: url(#{$rootDir}/img/catalog/Triangle1.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
 }
 
 .product-header__sort-point.to-top {
-  background: url(../../img/catalog/Triangle-to-top.svg) no-repeat right 15px, url(../../img/catalog/Triangle1.svg) no-repeat right 22px;
+  background: url(#{$rootDir}/img/catalog/Triangle-to-top.svg) no-repeat right 15px, url(../../img/catalog/Triangle1.svg) no-repeat right 22px;
   color: #333333;
   border-bottom: 1px solid #EAAC44;
 }
 
 .product-header__sort-point.to-bottom {
-  background: url(../../img/catalog/Triangle-to-bottom.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
+  background: url(#{$rootDir}/img/catalog/Triangle-to-bottom.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
   color: #333333;
   border-bottom: 1px solid #EAAC44;
 }
@@ -490,7 +490,7 @@
 
 .profit-text__cell:before {
   content: '';
-  background: url("../../img/catalog/Oval.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/Oval.svg") no-repeat center;
   background-size: 100% auto;
   width: 8px;
   height: 8px;
@@ -529,7 +529,7 @@
 }
 
 .product-footer__application-icon {
-  background: url("../../img/catalog/checkbox-pen-outline.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/checkbox-pen-outline.svg") no-repeat center;
   background-size: 100% auto;
   width: 23px;
   height: 22px;
@@ -538,7 +538,7 @@
 }
 
 .product-footer__price-list-icon {
-  background: url("../../img/catalog/icon(1).svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/icon(1).svg") no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 20px;
@@ -551,7 +551,7 @@
 }
 
 .checkbox-block__icon {
-  background: url("../../img/catalog/plus.svg") no-repeat center;
+  background: url("#{$rootDir}/img/catalog/plus.svg") no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 20px;
@@ -594,7 +594,7 @@
   .quantity-control-minus {
     cursor: pointer;
     border: none;
-    background: url(../../img/table-img/minus.svg) no-repeat center;
+    background: url(#{$rootDir}/img/table-img/minus.svg) no-repeat center;
     background-size: 9px 2px;
     position: absolute;
     left: 0;
@@ -606,7 +606,7 @@
   .quantity-control-plus {
     cursor: pointer;
     border: none;
-    background: url(../../img/table-img/plus.svg) no-repeat center;
+    background: url(#{$rootDir}/img/table-img/plus.svg) no-repeat center;
     background-size: 9px 11px;
     position: absolute;
     right: 0;

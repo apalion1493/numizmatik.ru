@@ -1,0 +1,69 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.table-search {
+  width: 78%;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  z-index: 800;
+  background: #fff;
+  //display: none;
+  top: 40px;
+
+  td {
+    border-bottom: 1px solid #FBF1E0 !important;
+  }
+
+  .table-search__content {
+    margin-bottom: 0;
+  }
+
+  .table-search__content tbody {
+    border-right: none;
+  }
+
+  .table-search__img,
+  .table-search__section {
+    width: 20%;
+    padding-left: 40px;
+  }
+
+  .table-search__section {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .table-search__line-sections {
+    text-align: left;
+  }
+
+  .table-search__line-description {
+    text-align: left;
+  }
+
+  .table-search__line-description a {
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .table-search__line-price {
+    width: 20%;
+    text-align: left;
+    font-size: 18px;
+    color: $primary;
+  }
+
+  .table-search__footer {
+    background: $primary;
+    border: none !important;
+    width: 100%;
+    margin-left: -20px;
+    padding-right: -20px;
+  }
+
+  .table-search__footer a {
+    color: #fff;
+  }
+}
+
+

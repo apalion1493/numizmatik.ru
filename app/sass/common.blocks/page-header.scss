@@ -76,6 +76,13 @@ html, body {
   margin-top: 3px;
   margin-right: 5px;
   margin-left: auto;
+  display: block;
+}
+
+.contact-info__communications-menu {
+  display: flex;
+  position: relative;
+  left: 40px;
 }
 
 .contact-info__email {
@@ -484,7 +491,45 @@ html, body {
   margin-top: 10px;
 }
 
+.contact-info__communications-exit {
+  color: $primary !important;
+}
+
 @include media-breakpoint-between(xs,sm) {
+
+  .contact-info__communications-menu {
+    position: absolute;
+    right: 32px;
+    top: 9px;
+    width: 50px;
+    height: 30px;
+    left: auto;
+    z-index: 700;
+  }
+
+  .header-info__lines {
+    border-bottom: 1px solid #D8D8D8;
+    padding-left: 16px;
+  }
+
+  .header-info__collapse-menu {
+    position: fixed;
+    background: #fff;
+    min-width: 100%;
+    margin-left: -16px;
+    min-height: 100%;
+  }
+
+  .exit-menu {
+    background: url("../../img/header-icon/Group3.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+  }
+
 
   .page-header .contact-info__entry-btn {
     bottom: -7px;
@@ -516,11 +561,11 @@ html, body {
     display: none;
   }
 
-  .contact-info__men {
-    position: absolute;
-    right: 35px;
-    top: 9px;
-  }
+  //.contact-info__men {
+  //  position: absolute;
+  //  right: 35px;
+  //  top: 9px;
+  //}
 
   .contact-info__money {
     position: absolute;
@@ -672,8 +717,8 @@ html, body {
 
   .header-menu .header-menu__main-menu {
     margin-top: 15px;
-    margin-bottom: 15px;
     margin-right: auto;
+    background: #fff;
   }
 
   .header-menu .menu-item-goods {
@@ -694,8 +739,11 @@ html, body {
 
     .nav-link {
       height: 30px;
-      display: block;
-      padding: 4px 0 12px 38px !important;
+      display: flex;
+      align-items: center;
+      padding-left: 30px !important;
+      color: $secondary !important;
+      border-bottom: 1px solid ;
     }
   }
 
@@ -922,9 +970,18 @@ html, body {
       margin-bottom: 10px;
     }
   }
+
 }
 
 @include media-breakpoint-only(lg) {
+
+  .contact-info__communications-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    left: auto;
+  }
+
   .contact-info__schedule {
     justify-content: flex-end;
   }
@@ -992,6 +1049,10 @@ html, body {
 
   .page-header .header-info__ellipsis-menu {
     margin-top: 18px;
+  }
+
+  .menu-item-goods:first-child:after {
+    top: 30px;
   }
 }
 

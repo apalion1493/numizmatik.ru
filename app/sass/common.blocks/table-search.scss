@@ -66,4 +66,13 @@
   }
 }
 
+.product-header__title {
+  margin-top: 30px;
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .table-search {
+    display: none;
+  }
+}
 

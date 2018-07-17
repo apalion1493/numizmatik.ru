@@ -459,6 +459,10 @@
     margin-right: auto;
   }
 
+  .search-main button {
+    padding: 0;
+  }
+
 }
 
 @include media-breakpoint-only(lg) {
@@ -475,5 +479,9 @@
 
   .icon-info-link {
     padding-left: 30px !important;
+  }
+
+  .search-main button {
+    padding: 0;
   }
 }

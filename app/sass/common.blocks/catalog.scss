@@ -458,6 +458,7 @@
   padding-right: 0;
   align-items: center;
   justify-content: flex-end;
+  font-weight: bold;
 }
 
 .product-header__count-list .custom-select {
@@ -642,8 +643,87 @@
   font-size: 14px;
 }
 
+.catalog-main__filter-totals-container,
+.catalog-main__filter-totals-container {
+  display: flex;
+}
+
+
 
 @include media-breakpoint-between(xs,sm) {
 
+
+  .catalog-main__filter-totals-year,
+  .catalog-main__filter-totals-metals {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .catalog-main__filter-totals-metals {
+    margin-top: 20px;
+  }
+
+  .catalog-main__filter-totals-list {
+    display: none;
+  }
+
+  .catalog-main__filter-totals-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .product-header {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .product-header__sort-block {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .product-header .product-header__count-list {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+   .product-header__sort-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-header__sort-container {
+    display: flex;
+  }
+
+  .catalog-main .product-footer {
+    display: none;
+  }
+
 }
 
+@include media-breakpoint-only(lg) {
+  .main .country-filter__radio-third{
+    margin-top: 0;
+  }
+
+  .catalog-main__filter-totals-metals {
+    margin-top: 20px;
+  }
+
+  .country-active-group__main {
+    margin-left: 0;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .catalog-main__filter-totals-metals {
+    margin-top: 20px;
+  }
+
+  .track-new__icon {
+    margin-right: 25px;
+  }
+}

@@ -24,8 +24,17 @@
                 </div>
                 <div class="col-lg-11 col-md-6 col-xl-4 contact-info__communications">
                     <a href="#" class="contact-info__phone-call" data-toggle="modal" data-target="#ModalPhone">Заказать звонок </a>
-                    <i class="contact-info__men"></i>
-                    <a href="mailto:username@yandex.ru" class="contact-info__email"> username@yandex.ru </a>
+                    <div class="contact-info__communications-menu dropdown-toggle" id="contact-info__communications-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="contact-info__men"></i>
+                        <a href="mailto:username@yandex.ru" class="contact-info__email"> username@yandex.ru </a>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="contact-info__communications-menu">
+                        <a class="dropdown-item" href="#">Ваш профайл</a>
+                        <a class="dropdown-item" href="#">Ваши заказы</a>
+                        <a class="dropdown-item" href="#">Монеты из ваших заказов</a>
+                        <a class="dropdown-item" href="#">Рекомендованные товары</a>
+                        <a class="dropdown-item contact-info__communications-exit" href="#">Выйти</a>
+                    </div>
                 </div>
                 <div class="col-lg-1 col-md-2 contact-info__balance">
                     <a href="#" class="contact-info__money">2 500  ₽</a>
@@ -67,7 +76,7 @@
                     <span class="navbar-toggler-icon header-info__burger-light"></span>
                 </button>
                 <div class="collapse navbar-collapse header-info__collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 header-info__collapse-menu">
                         <li class="nav-item header-info__lines">
                             <a class="nav-link header-info__link" href="#">Информация</a>
                         </li>
@@ -103,6 +112,9 @@
                                     </ul>
                                 </div>
                             </div>
+                        </li>
+                        <li>
+                            <a href="#" class="exit-menu"></a>
                         </li>
                     </ul>
                 </div>
@@ -150,7 +162,7 @@
                             <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Аксессуары</a>
                             </li>
-                            <li class="nav-item active menu-item-goods">
+                            <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Жетоны</a>
                             </li>
                             <li class="nav-item menu-item-goods">
@@ -186,7 +198,6 @@
                         <a class="dropdown-item" href="#">Распродажа монет<span>-543</span></a>
                         <a class="dropdown-item" href="#">Серии монет<span>-543</span></a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -224,7 +235,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-12 country-filter-left-column pr-0">
+            <div class="col-lg-3 col-12 country-filter-left-column">
                 <div class="country-filter">
                     <div class="country-filter__header">
                         <h3>ФИЛЬТР СТРАН</h3>
@@ -753,7 +764,7 @@
                     </div> <!-- при нажатии на кнопку "континенты" должен появится этот блок-->
                 </div>
             </div>
-            <div class="col-xl-9 col-12 pr-0">
+            <div class="col-lg-9 col-12 pr-xl-0">
                 <div class="container search-padding">
                     <div class="row search-main">
                         <input type="text" placeholder="Начните поиск">
@@ -764,7 +775,7 @@
                 </div>
                 <section class="container recommendations catalog-main">
                     <div class="catalog-main__filter-choice row">
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Года
                             </div>
@@ -821,7 +832,7 @@
                             </div>
                         </div>
 
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Номиналы
                             </div>
@@ -1034,7 +1045,7 @@
                             </div>
                         </div>
 
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Металлы
                             </div>
@@ -1067,7 +1078,7 @@
                             </div>
                         </div>
 
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Состояния
                             </div>
@@ -1100,7 +1111,7 @@
                             </div>
                         </div>
 
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Тематики
                             </div>
@@ -1117,7 +1128,7 @@
                             </div>
                         </div>
 
-                        <div class="col catalog-main__filter">
+                        <div class="col-xl col-12 catalog-main__filter">
                             <div class="catalog-main__filter-link">
                                 Цены
                             </div>
@@ -1137,7 +1148,7 @@
                             </div>
                         </div>
 
-                        <div class="col-2 pr-0 catalog-main__filter-sbros">
+                        <div class="col-xl-2 col-12 pr-0 catalog-main__filter-sbros">
                             <a href="#">Сбросить все
                                 <i class="catalog-main__filter-sbros-icon"></i>
                             </a>
@@ -1150,25 +1161,29 @@
 
                         <div class="catalog-main__filter-totals-year">
                             <span class="catalog-main__filter-totals-name">Года - </span>
-                            <div class="catalog-main__filter-totals-block">
-                                <span>1901-2000</span>
-                                <a href="#" class="catalog-main__filter-totals-close"></a>
-                            </div>
-                            <div class="catalog-main__filter-totals-block">
-                                <span>1801-1900</span>
-                                <a href="#" class="catalog-main__filter-totals-close"></a>
+                            <div class="catalog-main__filter-totals-container">
+                                <div class="catalog-main__filter-totals-block">
+                                    <span>1901-2000</span>
+                                    <a href="#" class="catalog-main__filter-totals-close"></a>
+                                </div>
+                                <div class="catalog-main__filter-totals-block">
+                                    <span>1801-1900</span>
+                                    <a href="#" class="catalog-main__filter-totals-close"></a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="catalog-main__filter-totals-metals">
                             <span class="catalog-main__filter-totals-name">Металлы - </span>
-                            <div class="catalog-main__filter-totals-block">
-                                <span>Алюминий</span>
-                                <a href="#" class="catalog-main__filter-totals-close"></a>
-                            </div>
-                            <div class="catalog-main__filter-totals-block">
-                                <span>Керамика</span>
-                                <a href="#" class="catalog-main__filter-totals-close"></a>
+                            <div class="catalog-main__filter-totals-container">
+                                <div class="catalog-main__filter-totals-block">
+                                    <span>Алюминий</span>
+                                    <a href="#" class="catalog-main__filter-totals-close"></a>
+                                </div>
+                                <div class="catalog-main__filter-totals-block">
+                                    <span>Керамика</span>
+                                    <a href="#" class="catalog-main__filter-totals-close"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1176,14 +1191,16 @@
                     <div class="product-header">
                         <h3 class="product-header__title">Магазин монет от Клуба Нумизмат</h3>
                         <div class="product-header__sort-block row">
-                            <div class="col-lg-9 product-header__sort-list pl-0">
+                            <div class="col-md-8 col-12 product-header__sort-list pl-0 order-2 order-md-1">
                                 <h6>Сортировать по:</h6>
-                                <span class="product-header__sort-point to-top">новизне</span>
-                                <span class="product-header__sort-point to-bottom">цене</span>
-                                <span class="product-header__sort-point">году</span>
+                                <div class="product-header__sort-container">
+                                    <span class="product-header__sort-point to-top">новизне</span>
+                                    <span class="product-header__sort-point to-bottom">цене</span>
+                                    <span class="product-header__sort-point">году</span>
+                                </div>
                             </div>
-                            <div class="col-lg-3 product-header__count-list">
-                                Показывать по:
+                            <div class="col-md-4 col-12 product-header__count-list order-1 order-md-2">
+                                <span>Показывать по:</span>
                                 <select  class="custom-select">
                                     <option value="">9</option>
                                     <option value="">12</option>
@@ -1264,7 +1281,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <div class="card-coins__novelty">НОВИНКА</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
@@ -1317,7 +1334,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <div class="card-coins__new-icon">NEW  05.11</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
@@ -1365,7 +1382,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1412,7 +1429,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1459,7 +1476,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1506,7 +1523,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1553,7 +1570,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1600,7 +1617,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1647,7 +1664,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1694,7 +1711,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1741,7 +1758,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-xl-4">
+                        <div class="col col-xl-4 col-md-6">
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
@@ -1790,7 +1807,7 @@
                     </div>
 
                     <div class="navigation-block row">
-                        <nav aria-label="Page navigation example" class="navigation-block__container col-xl-4">
+                        <nav aria-label="Page navigation example" class="navigation-block__container col-xl-4 col-md-5">
                             <ul class="pagination navigation-block__list">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">

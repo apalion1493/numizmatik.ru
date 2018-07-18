@@ -469,9 +469,12 @@ html, body {
   background: #FFFFFF;
   z-index: 900;
   position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.header-menu .header-menu__dropdown-padding {
   padding-top: 40px;
   padding-bottom: 40px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   margin-left: 0;
   margin-right: 0;
 }
@@ -932,6 +935,7 @@ html, body {
       display: block;
       border: none;
       padding-top: 0;
+      padding-bottom: 0;
     }
 
     .menu-item-goods:not(.active):after {

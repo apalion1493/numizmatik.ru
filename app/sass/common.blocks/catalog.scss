@@ -74,7 +74,6 @@
 
 .main .country-filter__radio-first {
   padding-left: 20px;
-  padding-right: 40px;
 }
 
 .main .country-filter__radio-third {
@@ -181,7 +180,6 @@
 .country-filter__navigation {
   width: 28px;
   margin-top: 30px;
-  margin-right: 5px;
 }
 
 .country-filter__navigation__paragraph {
@@ -343,6 +341,9 @@
 
 .catalog-main {
   position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .catalog-main__filter {
@@ -444,16 +445,31 @@
   cursor: pointer;
 }
 
-.product-header__sort-point.to-top {
-  background: url(#{$rootDir}/img/catalog/Triangle-to-top.svg) no-repeat right 15px, url(../../img/catalog/Triangle1.svg) no-repeat right 22px;
-  color: #333333;
-  border-bottom: 1px solid #EAAC44;
+.product-header__sort-container {
+  display: flex;
+  align-items: center;
+  width: 20rem;
 }
 
-.product-header__sort-point.to-bottom {
-  background: url(#{$rootDir}/img/catalog/Triangle-to-bottom.svg) no-repeat right 22px, url(../../img/catalog/Triangle.svg) no-repeat right 15px;
+.product-header .product-header__sort-point {
   color: #333333;
+  border: none;
+  border-radius: 0;
+  width: 100px;
+  background:url(#{$rootDir}/img/catalog/Triangle.svg) no-repeat 55px 12px, url(#{$rootDir}/img/catalog/Triangle1.svg) no-repeat 55px 20px;
+}
+
+.product-header .product-header__sort-point.to-top {
+  background: url(#{$rootDir}/img/catalog/Triangle-to-top.svg) no-repeat 75px 12px, url(#{$rootDir}/img/catalog/Triangle1.svg) no-repeat 75px 20px;
   border-bottom: 1px solid #EAAC44;
+  padding-right: 15px;
+}
+
+.product-header .product-header__sort-point.to-bottom {
+  background: url(#{$rootDir}/img/catalog/Triangle-to-bottom.svg) no-repeat 55px 20px, url(#{$rootDir}/img/catalog/Triangle.svg) no-repeat 55px 12px;
+  border-bottom: 1px solid #EAAC44;
+  padding-right: 20px;
+  width: 75px;
 }
 
 .product-header .product-header__count-list {
@@ -553,6 +569,7 @@
 
 .continents-filter__main {
   margin-top: 35px;
+  padding-bottom: 30px;
 }
 
 .checkbox-block__icon {
@@ -652,9 +669,47 @@
   display: flex;
 }
 
+.main .country-filter__main {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 @include media-breakpoint-between(xs,sm) {
+
+  .catalog-main__filter-link {
+    width: 100%;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .catalog-main__filter-link:last-child {
+    border: none;
+  }
+
+  .catalog-main__filter-link:after {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+  }
+
+  .catalog-main__filter-options {
+    position: absolute;
+    left: 50px;
+  }
+
+  .catalog-main__filter-sbros {
+    display: none;
+  }
+
+  .catalog-main .catalog-main__filter {
+    padding: 0 20px;
+  }
+
+  .main .country-filter__radio-third {
+    margin-top: 0;
+  }
 
   .country-filter__header-title {
     border-radius: 3px;
@@ -734,6 +789,10 @@
   .catalog-main__filter {
     position: relative !important;
   }
+
+  .form-check__padding {
+    padding-left: 0 !important;
+  }
 }
 
 @include media-breakpoint-only(lg) {
@@ -751,6 +810,60 @@
 }
 
 @include media-breakpoint-only(md) {
+
+  .catalog-main__filter-link {
+    width: 100%;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .catalog-main__filter-link:last-child {
+    border: none;
+  }
+
+  .catalog-main__filter-link:after {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+  }
+
+  .catalog-main__filter-options {
+    position: absolute;
+    left: 50px;
+  }
+
+  .catalog-main__filter-sbros {
+    display: none;
+  }
+
+  .catalog-main__filter {
+    position: relative !important;
+  }
+
+  .catalog-main__filter-dropdown-line {
+    display: none;
+  }
+
+  .main .catalog-main__filter-choice {
+    padding-right: 0;
+    background: #FFFFFF;
+    border: 1px solid #252B7F;
+    border-radius: 3px;
+  }
+
+  .country-filter__radio-group {
+    align-items: center;
+  }
+
+  .main .country-filter__radio-first {
+    padding-right: 0;
+  }
+
+  .main .country-filter__radio-third {
+    margin-top: 0;
+  }
+
   .catalog-main__filter-totals-metals {
     margin-top: 20px;
   }

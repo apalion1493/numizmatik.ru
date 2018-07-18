@@ -6,7 +6,7 @@
   list-style: none;
   background-color: #ffffff;
   @include border-radius($breadcrumb-border-radius);
-  margin-top: 33px;
+  margin-top: 1rem;
 }
 
 .breadcrumb-item {

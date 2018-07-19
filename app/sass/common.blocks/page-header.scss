@@ -506,7 +506,7 @@ html, body {
     vertical-align: 0.255em;
     content: "";
     position: absolute;
-    bottom: 15px;
+    top: 18px;
     right: 40px;
     background: url(#{$rootDir}/img/header-icon/more-btn1.svg) no-repeat center;
     -webkit-background-size: 100% auto;
@@ -515,9 +515,21 @@ html, body {
     height: 8px;
   }
 
-  .header-menu__dropdown-block {
+  .header-menu .header-menu__dropdown-block {
     background: #FAF8F4;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
   }
+
+  .header-menu__dropdown-block:first-child {
+    padding-top: 10px;
+  }
+
+  .header-menu__dropdown-block:last-child {
+    padding-bottom: 10px;
+  }
+
 
   .contact-info__communications-menu {
     position: absolute;
@@ -744,9 +756,9 @@ html, body {
   }
 
   .header-menu .menu-item-goods {
-    height: 40px;
+    min-height: 40px;
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     margin-left: -15px;
     margin-right: -15px;
@@ -805,9 +817,14 @@ html, body {
     width: 100%;
   }
 
-  .header-menu__dropdown {
-    position: absolute !important;
+  .header-menu .header-menu__dropdown {
     margin-top: 0 !important;
+    box-shadow: none;
+  }
+
+  .header-menu .header-menu__dropdown-padding {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page-header  .contact-info__registration {
@@ -828,6 +845,31 @@ html, body {
 }
 
 @include media-breakpoint-only(md)  {
+
+  .header-menu .header-menu__dropdown-padding {
+    background: #FAF8F4;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .header-menu__dropdown-block {
+      .dropdown-item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .dropdown-item:before {
+        display: none;
+      }
+    }
+
+    .header-menu__dropdown-block:first-child {
+      padding-top: 10px;
+    }
+
+    .header-menu__dropdown-block:last-child {
+      padding-bottom: 10px;
+    }
+  }
 
   .page-header {
 
@@ -924,6 +966,7 @@ html, body {
 
     .header-menu__main-menu {
       padding-top: 10px;
+      background: #ffffff;
     }
 
     .header-info__main-menu {
@@ -991,6 +1034,19 @@ html, body {
 
     .contact-info__location, .contact-info__schedule {
       margin-bottom: 10px;
+    }
+
+    .header-menu .menu-item-goods .nav-link {
+      color: $secondary !important;
+      padding: 12px 40px;
+    }
+
+    .menu-item-goods {
+      border-bottom: 1px solid #D8D8D8;
+    }
+
+    .menu-item-goods:last-child {
+      border: none;
     }
   }
 

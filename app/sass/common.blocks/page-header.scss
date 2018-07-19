@@ -500,6 +500,25 @@ html, body {
 
 @include media-breakpoint-between(xs,sm) {
 
+  .header-menu .header-menu__dropdown-store:after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    background: url(#{$rootDir}/img/header-icon/more-btn1.svg) no-repeat center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 8px;
+    height: 8px;
+  }
+
+  .header-menu__dropdown-block {
+    background: #FAF8F4;
+  }
+
   .contact-info__communications-menu {
     position: absolute;
     right: 32px;
@@ -524,7 +543,7 @@ html, body {
   }
 
   .exit-menu {
-    background: url("../../img/header-icon/Group3.svg") no-repeat center;
+    background: url("#{$rootDir}/img/header-icon/Group3.svg") no-repeat center;
     background-size: 100% auto;
     width: 47px;
     height: 47px;
@@ -746,7 +765,7 @@ html, body {
       align-items: center;
       padding-left: 30px !important;
       color: $secondary !important;
-      border-bottom: 1px solid ;
+      border-bottom: 1px solid #D8D8D8;
     }
   }
 

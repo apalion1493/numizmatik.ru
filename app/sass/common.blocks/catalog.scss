@@ -180,6 +180,7 @@
 .country-filter__navigation {
   width: 28px;
   margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .country-filter__navigation__paragraph {
@@ -796,6 +797,48 @@
 }
 
 @include media-breakpoint-only(lg) {
+
+  .catalog-main__filter-link {
+    width: 100%;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .catalog-main__filter-link:last-child {
+    border: none;
+  }
+
+  .catalog-main__filter-link:after {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+  }
+
+  .catalog-main__filter-options {
+    position: absolute;
+    left: 50px;
+  }
+
+  .catalog-main__filter-sbros {
+    display: none;
+  }
+
+  .catalog-main__filter {
+    position: relative !important;
+  }
+
+  .catalog-main__filter-dropdown-line {
+    display: none;
+  }
+
+  .main .catalog-main__filter-choice {
+    padding-right: 0;
+    background: #FFFFFF;
+    border: 1px solid #252B7F;
+    border-radius: 3px;
+  }
+
   .main .country-filter__radio-third{
     margin-top: 0;
   }

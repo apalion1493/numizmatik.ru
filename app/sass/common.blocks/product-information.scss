@@ -303,6 +303,11 @@
 
 @media (max-width: 575px) {
 
+  .search-margin-x {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+
   .product-information__img {
     height: 200px;
   }

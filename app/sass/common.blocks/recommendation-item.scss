@@ -11,14 +11,20 @@
 .card-coins {
   z-index: 300;
   margin-bottom: 40px;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 
 .card-coins:hover {
   box-shadow: 0 10px 15px #aaa;
   position: absolute;
-  z-index: 98;
+  z-index: 601;
   left: 15px;
   right: 15px;
+}
+
+.card-coins__bottom-block {
+  display: none;
 }
 
 .card-coins:hover .card-coins__btn {
@@ -27,10 +33,6 @@
 
 .card-coins:hover .card-coins__bottom-block{
   display: block;
-}
-
-.card-coins__bottom-block {
-  display: none;
 }
 
 .card-coins__footer {
@@ -208,6 +210,12 @@
 }
 
 @include media-breakpoint-between(xs,sm) {
+
+  .recommendations .recommendations__content__padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .card-coins {
     .card-coins__btn {
       display: block;

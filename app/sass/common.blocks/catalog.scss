@@ -287,19 +287,23 @@
 
 .catalog-main__filter:hover {
   background: $primary;
-}
 
-.catalog-main__filter:hover .catalog-main__filter-link {
-  color: #fff;
-}
+  .catalog-main__filter-link {
+    color: #fff;
+  }
 
-.catalog-main__filter:hover .catalog-main__filter-link:after {
-  background: url("#{$rootDir}/img/catalog/more-btn2.svg") no-repeat center;
-  background-size: 100% auto;
-}
+  .catalog-main__filter-options {
+    color: #333333;
+  }
 
-.catalog-main__filter:hover .catalog-main__filter-options {
-  background: #ffffff;
+  .catalog-main__filter-link:after {
+    background: url("#{$rootDir}/img/catalog/more-btn2.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .catalog-main__filter-options {
+    background: #ffffff;
+  }
 }
 
 .catalog-main .catalog-main__filter-totals {
@@ -536,7 +540,7 @@
   align-items: center;
   width: 115px;
   height: 40px;
-  display: flex;
+  display: none;
 
   .quantity-control {
     border-radius: 0;
@@ -610,6 +614,19 @@
 
 @include media-breakpoint-between(xs,sm) {
 
+  .catalog-main .catalog-main__filter-dropdown-menu {
+    position: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    box-shadow: none;
+  }
+
+  .catalog-main__filter-dropdown-menu-block {
+    float: none;
+  }
+
   .catalog-main__filter-link {
     width: 100%;
     border-bottom: 1px solid #D8D8D8;
@@ -638,6 +655,7 @@
 
   .catalog-main .catalog-main__filter {
     padding: 0 20px;
+    display: block;
   }
 
   .main .country-filter__radio-third {

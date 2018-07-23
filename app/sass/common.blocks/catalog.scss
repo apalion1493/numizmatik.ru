@@ -109,78 +109,10 @@
   margin-right: 50px;
 }
 
-///* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
-//.country-filter__navigation-checkbox-custom {
-//  position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-//  width: 100%;             /* Обязательно задаем ширину */
-//  height: 18px;            /* Обязательно задаем высоту */
-//  background: #FFF8E9;
-//  display: block;
-//  left: -3px;
-//
-//}
-///* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
-//.country-filter__navigation-letter {
-//  display: inline-block;
-//  vertical-align: middle;
-//  color: #252B7F;
-//  position: relative;
-//  top: -19px;
-//  left: 5px;
-//  font-size: 14px;
-//  text-align: center;
-//}
-//
-//.country-filter__navigation-number {
-//  display: inline-block;
-//  vertical-align: middle;
-//  color: #252B7F;
-//  position: relative;
-//  top: -19px;
-//  left: 0;
-//  font-size: 12px;
-//  text-align: center;
-//}
-//
-///* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
-//.checkbox:checked + .country-filter__navigation-checkbox-custom:before {
-//  content: "";         /* Добавляем наш псевдоэлемент */
-//  display: block;			 /* Делаем его блочным элементом */
-//  position: absolute;      /* Позиционируем его абсолютным образом */
-//  /* Задаем расстояние от верхней, правой, нижней и левой границы */
-//  top: 0;
-//  right: 0;
-//  bottom: 0;
-//  left: 0;
-//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-//  font-size: 15px;
-//  color: #fff;
-//  text-align: center;
-//  line-height: 15px;
-//  background: #EAAC44;
-//}
-//
-//.checkbox + .country-filter__navigation-checkbox-custom:before {
-//  content: "";         /* Добавляем наш псевдоэлемент */
-//  display: block;			 /* Делаем его блочным элементом */
-//  position: absolute;      /* Позиционируем его абсолютным образом */
-//  /* Задаем расстояние от верхней, правой, нижней и левой границы */
-//  top: 0;
-//  right: 0;
-//  bottom: 0;
-//  left: 0;
-//  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-//  font-size: 15px;
-//  color: #252B7F;
-//  text-align: center;
-//  line-height: 15px;
-//  background: #FFF8E9;
-//}
-
 .country-filter__navigation {
   width: 28px;
   margin-top: 30px;
-  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .country-filter__navigation__paragraph {
@@ -798,6 +730,10 @@
 
 @include media-breakpoint-only(lg) {
 
+  .country-filter__content {
+    display: block !important;
+  }
+
   .catalog-main__filter-link {
     width: 100%;
     border-bottom: 1px solid #D8D8D8;
@@ -913,5 +849,11 @@
 
   .track-new__icon {
     margin-right: 25px;
+  }
+}
+
+@include media-breakpoint-only(xl) {
+  .country-filter__content {
+    display: block !important;
   }
 }

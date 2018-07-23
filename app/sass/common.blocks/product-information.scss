@@ -446,6 +446,11 @@
 
 
 @include media-breakpoint-only(md) {
+
+  .search-padding {
+    margin-top: 20px;
+  }
+
   .icon-info-link {
     padding-left: 30px !important;
   }

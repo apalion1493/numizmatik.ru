@@ -244,19 +244,6 @@ input[type="number"] {
   width: 154px;
 }
 
-.header-menu .header-menu__dropdown-store:after {
-  display: inline-block;
-  margin-left: $caret-width * .85;
-  vertical-align: $caret-width * .85;
-  content: "";
-  position: relative;
-  bottom: -4px;
-  background: url("#{$rootDir}/img/header-icon/more-btn.svg") no-repeat center;
-  background-size: 100% auto;
-  width: 8px;
-  height: 8px;
-}
-
 .cart-table__th-vertical {
   transform: rotate(270deg);
   text-align: center;

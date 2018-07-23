@@ -234,11 +234,13 @@
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-12 country-filter-left-column">
                 <div class="country-filter">
-                    <div class="country-filter__header">
+                    <div class="country-filter__header" data-toggle="collapse" aria-expanded="false" data-target="#country-filter__content" aria-controls="country-filter__content">
                         <div class="country-filter__header-title">
                             <h3>ФИЛЬТР СТРАН</h3>
                             <i class="country-filter__header-icon"></i>
                         </div>
+                    </div>
+                    <div class="country-filter__content collapse" id="country-filter__content">
                         <nav class="navbar navbar-light bg-light country-filter-search">
                             <form class="form-inline country-filter-search__content">
                                 <input class="form-control country-filter-search__form" type="search" placeholder="Название страны" aria-label="Search">
@@ -267,7 +269,7 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
+
 
                     <div class="country-filter__main row">
                         <div class="country-filter__main-container d-flex col-12">
@@ -762,6 +764,7 @@
                             </label>
                         </div>
                     </div> <!-- при нажатии на кнопку "континенты" должен появится этот блок-->
+                    </div>
                 </div>
             </div>
             <div class="col-xl-9 col-lg-8 col-12 pr-xl-0">

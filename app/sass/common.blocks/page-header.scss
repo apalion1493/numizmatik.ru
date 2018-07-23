@@ -469,7 +469,7 @@ html, body {
   background: #FFFFFF;
   z-index: 900;
   position: relative;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  //box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 .header-menu .header-menu__dropdown-padding {
@@ -496,6 +496,19 @@ html, body {
 
 .contact-info__communications-exit {
   color: $primary !important;
+}
+
+.header-menu .header-menu__dropdown-store:after {
+  display: inline-block;
+  margin-left: $caret-width * .85;
+  vertical-align: $caret-width * .85;
+  content: "";
+  position: relative;
+  bottom: -4px;
+  background: url("#{$rootDir}/img/header-icon/more-btn.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 8px;
+  height: 8px;
 }
 
 @include media-breakpoint-between(xs,sm) {
@@ -755,6 +768,7 @@ html, body {
     background: #fff;
   }
 
+
   .header-menu .menu-item-goods {
     min-height: 40px;
     position: relative;
@@ -775,9 +789,9 @@ html, body {
       height: 30px;
       display: flex;
       align-items: center;
-      padding-left: 30px !important;
       color: $secondary !important;
       border-bottom: 1px solid #D8D8D8;
+      padding: 22px 30px !important;
     }
   }
 
@@ -845,6 +859,21 @@ html, body {
 }
 
 @include media-breakpoint-only(md)  {
+
+  .header-menu .header-menu__dropdown-store:after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background: url(#{$rootDir}/img/header-icon/more-btn1.svg) no-repeat center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 8px;
+    height: 8px;
+  }
 
   .header-menu .header-menu__dropdown-padding {
     background: #FAF8F4;
@@ -965,8 +994,8 @@ html, body {
     }
 
     .header-menu__main-menu {
-      padding-top: 10px;
       background: #ffffff;
+      margin-top: 15px;
     }
 
     .header-info__main-menu {

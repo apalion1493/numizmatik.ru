@@ -211,15 +211,10 @@
 .catalog-main .catalog-main__filter-dropdown-menu {
   padding: 30px 50px 30px 50px;
   display: block;
-  position: absolute;
-  top: 68px;
-  left: 0;
-  right: 0;
-  background: #fff;
-  z-index: 320;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
   margin-left: 15px;
   margin-right: 15px;
+  z-index: 320;
+  background: #fff;
 }
 
 //.catalog-main__filter:hover .catalog-main__filter-dropdown-menu {
@@ -612,19 +607,21 @@
   margin-right: 0;
 }
 
+#catalog-main__filter-dropdown-menu-year,
+#catalog-main__filter-dropdown-menu-denominations,
+#catalog-main__filter-dropdown-menu-metals,
+#catalog-main__filter-dropdown-menu-state,
+#catalog-main__filter-dropdown-menu-subjects,
+#catalog-main__filter-dropdown-menu-prices {
+  margin-left: -20px;
+  margin-right: -20px;
+  background: #fff;
+}
+
 
 @include media-breakpoint-between(xs,sm) {
 
-  #catalog-main__filter-dropdown-menu-year,
-  #catalog-main__filter-dropdown-menu-denominations,
-  #catalog-main__filter-dropdown-menu-metals,
-  #catalog-main__filter-dropdown-menu-state,
-  #catalog-main__filter-dropdown-menu-subjects,
-  #catalog-main__filter-dropdown-menu-prices {
-    margin-left: -20px;
-    margin-right: -20px;
-    background: #fff;
-  }
+
 
   .catalog-main .catalog-main__filter-dropdown-menu {
     position: inherit;
@@ -655,7 +652,7 @@
   .catalog-main__filter-link:after {
     position: absolute;
     right: 20px;
-    bottom: 16px;
+    top: 16px;
   }
 
   .catalog-main__filter-options {
@@ -757,6 +754,23 @@
 
   .form-check__padding {
     padding-left: 0 !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #catalog-main__filter-dropdown-menu-year,
+  #catalog-main__filter-dropdown-menu-denominations,
+  #catalog-main__filter-dropdown-menu-metals,
+  #catalog-main__filter-dropdown-menu-state,
+  #catalog-main__filter-dropdown-menu-subjects,
+  #catalog-main__filter-dropdown-menu-prices {
+    background: #fff;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    z-index: 320;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
   }
 }
 

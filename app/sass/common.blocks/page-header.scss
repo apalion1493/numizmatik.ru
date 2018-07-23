@@ -95,6 +95,7 @@ html, body {
   justify-content: flex-end;
   padding-left: 0;
   padding-right: 15px;
+  z-index: 985;
 }
 
 .contact-info__money {
@@ -514,6 +515,20 @@ html, body {
 
 @include media-breakpoint-between(xs,sm) {
 
+  body {
+    padding-top: 42px;
+  }
+
+  .header-info__list-of-links {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 980;
+    background-color: #fff;
+    padding-top: 10px !important;
+}
+
   .header-menu .header-menu__dropdown {
     position: relative;
     box-shadow: none;
@@ -551,13 +566,13 @@ html, body {
 
 
   .contact-info__communications-menu {
-    position: absolute;
-    right: 32px;
-    top: 9px;
+    position: fixed;
+    right: 75px;
+    top: 10px;
     width: 50px;
     height: 30px;
     left: auto;
-    z-index: 700;
+    z-index: 985;
   }
 
   .header-info__lines {
@@ -621,8 +636,8 @@ html, body {
   //}
 
   .contact-info__money {
-    position: absolute;
-    top: 16px;
+    position: fixed;
+    top: 11px;
     padding-right: 0;
     font-weight: bold;
   }
@@ -692,10 +707,17 @@ html, body {
     }
   }
 
-  .page-header .header-info__burger-light {
+  .header-info__main-menu.collapsed .header-info__burger-light {
     background: url("#{$rootDir}/img/header-icon/gamburger1.svg") no-repeat center !important;
     background-size: 100% auto;
     width: 18px;
+    height: 15px;
+  }
+
+  .header-info__main-menu .header-info__burger-light {
+    background: url("#{$rootDir}/img/header-icon/gamburger-close.svg") no-repeat center !important;
+    background-size: 100% auto;
+    width: 16px;
     height: 15px;
   }
 
@@ -957,11 +979,17 @@ html, body {
       background: #ffffff;
     }
 
-    .header-info__burger-light {
-      background: url(#{$rootDir}/img/header-icon/gamburger1.svg) no-repeat center !important;
-      -webkit-background-size: 100% auto;
+    .header-info__main-menu.collapsed .header-info__burger-light {
+      background: url("#{$rootDir}/img/header-icon/gamburger1.svg") no-repeat center !important;
       background-size: 100% auto;
       width: 18px;
+      height: 15px;
+    }
+
+    .header-info__main-menu .header-info__burger-light {
+      background: url("#{$rootDir}/img/header-icon/gamburger-close.svg") no-repeat center !important;
+      background-size: 100% auto;
+      width: 16px;
       height: 15px;
     }
 

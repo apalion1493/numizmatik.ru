@@ -616,6 +616,12 @@
   background: #fff;
 }
 
+.catalog-main__filter-collapce {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 
 @include media-breakpoint-between(xs,sm) {
 

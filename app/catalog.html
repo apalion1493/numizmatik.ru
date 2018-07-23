@@ -778,8 +778,8 @@
                 </div>
                 <section class="recommendations catalog-main">
                     <div class="catalog-main__filter-choice row accordion" id="accordionExample">
-                            <div class="col-xl col-12 catalog-main__filter"  data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-year" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-year">
-                                <div id="filterOne">
+                            <div class="col-xl col-12 catalog-main__filter"  >
+                                <div id="filterOne" class="catalog-main__filter-collapce" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-year" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-year">
                                     <div class="catalog-main__filter-link">
                                     Года
                                     <span class="catalog-main__filter-options">2</span>
@@ -836,8 +836,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl col-12 catalog-main__filter" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-denominations" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-denominations">
-                                <div id="filterTwo">
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterTwo" class="catalog-main__filter-collapce"  data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-denominations" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-denominations">
                                     <div class="catalog-main__filter-link">
                                     Номиналы
                                 </div>
@@ -1052,8 +1052,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl col-12 catalog-main__filter"  data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-metals" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-metals">
-                                <div id="filterThird">
+                            <div class="col-xl col-12 catalog-main__filter" >
+                                <div id="filterThird" class="catalog-main__filter-collapce" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-metals" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-metals">
                                     <div class="catalog-main__filter-link">
                                     Металлы
                                 </div>
@@ -1089,8 +1089,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl col-12 catalog-main__filter" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-state" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-state">
-                                <div id="filterFourth">
+                            <div class="col-xl col-12 catalog-main__filter" >
+                                <div id="filterFourth" class="catalog-main__filter-collapce" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-state" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-state" >
                                     <div class="catalog-main__filter-link">
                                     Состояния
                                 </div>
@@ -1125,8 +1125,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl col-12 catalog-main__filter" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-subjects" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-subjects">
-                                <div id="filterFive">
+                            <div class="col-xl col-12 catalog-main__filter" >
+                                <div id="filterFive" class="catalog-main__filter-collapce" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-subjects" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-subjects">
                                     <div class="catalog-main__filter-link" >
                                         Тематики
                                     </div>
@@ -1145,37 +1145,41 @@
                                 </div>
                             </div>
 
-                        <div class="col-xl col-12 catalog-main__filter" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-prices" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-prices">
-                            <div id="filterSixth">
-                                <div class="catalog-main__filter-link">
-                                    Цены
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterSixth" class="catalog-main__filter-collapce"  data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-prices" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-prices">
+                                    <div class="catalog-main__filter-link">
+                                        Цены
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-prices" aria-labelledby="filterSixth" data-parent="#accordionExample">
-                                <div class="catalog-main__filter-dropdown-menu row">
-                                    <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                        <h5 class="pl-4">Выбрать диапазон цен</h5>
-                                        <form class="catalog-main__filter-dropdown-form">
-                                            <span class="catalog-main__filter-dropdown-text">от</span>
-                                            <input type="text" class="form-control col-2" placeholder="200">
-                                            <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
-                                            <span class="catalog-main__filter-dropdown-text">до</span>
-                                            <input type="text" class="form-control col-2" placeholder="92990">
-                                            <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
-                                            <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
-                                        </form>
+                                <div class="catalog-main__filter-dropdown-line"></div>
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-prices" aria-labelledby="filterSixth" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row">
+                                        <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                            <h5 class="pl-4">Выбрать диапазон цен</h5>
+                                            <form class="catalog-main__filter-dropdown-form row">
+                                                <div class="col-6 col-xl-3 d-flex align-items-center">
+                                                    <span class="catalog-main__filter-dropdown-text">от</span>
+                                                    <input type="text" class="form-control" placeholder="200">
+                                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
+                                                </div>
+                                                <div class="col-6 col-xl-3 d-flex align-items-center">
+                                                    <span class="catalog-main__filter-dropdown-text">до</span>
+                                                    <input type="text" class="form-control" placeholder="92990">
+                                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
+                                                </div>
+                                                <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn col col-xl-1">OK</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-xl-2 col-12 pr-0 catalog-main__filter-sbros">
-                            <a href="#">Сбросить все
-                                <i class="catalog-main__filter-sbros-icon"></i>
-                            </a>
+                            <div class="col-xl-2 col-12 pr-0 catalog-main__filter-sbros">
+                                <a href="#">Сбросить все
+                                    <i class="catalog-main__filter-sbros-icon"></i>
+                                </a>
 
-                        </div>
+                            </div>
                     </div>
 
                     <div class="catalog-main__filter-totals row">

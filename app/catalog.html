@@ -777,326 +777,296 @@
                     </div>
                 </div>
                 <section class="recommendations catalog-main">
-                    <div class="catalog-main__filter-choice row">
-                        <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-year" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-year">
-                                Года
-                                <span class="catalog-main__filter-options">2</span>
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
+                    <div class="catalog-main__filter-choice row accordion" id="accordionExample">
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterOne">
+                                    <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-year" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-year">
+                                    Года
+                                    <span class="catalog-main__filter-options">2</span>
+                                </div>
+                                </div>
+                                <div class="catalog-main__filter-dropdown-line"></div>
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-year" aria-labelledby="filterOne" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row">
+                                        <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">2001-настоящее время <span class="checkbox-block__label-span">- 19</span></span>
+                                            </label>
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">1901-2000 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                            </label>
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">1801-1900 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                            </label>
+                                        </div>
 
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-year">
-                                <div class="catalog-main__filter-dropdown-menu row">
-                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                        <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">1701-1800 <span class="checkbox-block__label-span">- 19 560</span></span>
+                                            </label>
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">1601-1700 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                            </label>
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">до 1600 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                            <h5>Выбор по годам</h5>
+                                            <form class="catalog-main__filter-dropdown-form">
+                                                <input type="text" class="form-control col-4 mr-3" placeholder="185">
+                                                <input type="text" class="form-control col-4 mr-2" placeholder="2018">
+                                                <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterTwo">
+                                    <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-denominations" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-denominations">
+                                    Номиналы
+                                </div>
+                                </div>
+                                <div class="catalog-main__filter-dropdown-line"></div>
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-denominations" aria-labelledby="filterTwo" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row">
+                                    <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">2001-настоящее время <span class="checkbox-block__label-span">- 19</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
                                         </label>
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">1901-2000 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 аргент</span>
                                         </label>
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">1801-1900 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 асс</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 денарий</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 динарий</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 драхма</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 дупондий</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 легкая тетрадрахма</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 майорина</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 малый фолис</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 сестерций</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1  систерций</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 статер</span>
                                         </label>
                                     </div>
 
-                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                    <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">1701-1800 <span class="checkbox-block__label-span">- 19 560</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 тетрадрахма</span>
                                         </label>
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">1601-1700 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 тетродрахма</span>
                                         </label>
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">до 1600 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                            <span class="label ml-2 checkbox-block__label">1 фолис</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 фоллис</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 халк</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 центонианализ</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1/4 фоллиса</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">AE</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">AE4</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">АЕ 18</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">АЕ 3</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">АЕ 4</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">АЕ2</span>
                                         </label>
                                     </div>
 
-                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
-                                        <h5>Выбор по годам</h5>
-                                        <form class="catalog-main__filter-dropdown-form">
-                                            <input type="text" class="form-control col-4 mr-3" placeholder="185">
-                                            <input type="text" class="form-control col-4 mr-2" placeholder="2018">
-                                            <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
-                                        </form>
+                                    <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">АЕ3</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">Малый фоллис</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">Милиаренс</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">МОНЕТА-ДЕЛЬФИН</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">Номинал</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">номинал?</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">Тежелый милиаренс</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1 антониниан</span>
+                                        </label>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-denominations" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-denominations">
-                                Номиналы
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
-
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-denominations">
-                                <div class="catalog-main__filter-dropdown-menu row">
-                                <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 аргент</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 асс</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 денарий</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 динарий</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 драхма</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 дупондий</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 легкая тетрадрахма</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 майорина</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 малый фолис</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 сестерций</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1  систерций</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 статер</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 тетрадрахма</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 тетродрахма</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 фолис</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 фоллис</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 халк</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 центонианализ</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1/4 фоллиса</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">AE</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">AE4</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">АЕ 18</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">АЕ 3</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">АЕ 4</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">АЕ2</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">АЕ3</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Малый фоллис</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Милиаренс</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">МОНЕТА-ДЕЛЬФИН</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Номинал</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">номинал?</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Тежелый милиаренс</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1 антониниан</span>
-                                    </label>
                                 </div>
                             </div>
-                            </div>
-                        </div>
 
-                        <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-metals" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-metals">
-                                Металлы
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
-
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-metals">
-                                <div class="catalog-main__filter-dropdown-menu row">
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Бронза</span>
-                                    </label>
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterThird">
+                                    <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-metals" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-metals">
+                                    Металлы
                                 </div>
-
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Медь</span>
-                                    </label>
                                 </div>
+                                <div class="catalog-main__filter-dropdown-line"></div>
 
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Серебро</span>
-                                    </label>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-state" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-state">
-                                Состояния
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-state">
-                                <div class="catalog-main__filter-dropdown-menu row">
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-metals" aria-labelledby="filterThird" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row">
                                     <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">XF</span>
+                                            <span class="label ml-2 checkbox-block__label">Бронза</span>
                                         </label>
                                     </div>
 
@@ -1104,7 +1074,7 @@
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">VF+</span>
+                                            <span class="label ml-2 checkbox-block__label">Медь</span>
                                         </label>
                                     </div>
 
@@ -1112,37 +1082,77 @@
                                         <label class="checkbox-block">
                                             <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
                                             <span class="checkbox-custom checkbox-block__custom"></span>
-                                            <span class="label ml-2 checkbox-block__label">VF</span>
+                                            <span class="label ml-2 checkbox-block__label">Серебро</span>
                                         </label>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-subjects" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-subjects">
-                                Тематики
-                            </div>
-                            <div class="catalog-main__filter-dropdown-line"></div>
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-subjects">
-                                <div class="catalog-main__filter-dropdown-menu row" >
-                                <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">Исторические события</span>
-                                    </label>
                                 </div>
                             </div>
+
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterFourth">
+                                    <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-state" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-state">
+                                    Состояния
+                                </div>
+                                </div>
+                                <div class="catalog-main__filter-dropdown-line"></div>
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-state" aria-labelledby="filterFourth" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row">
+                                        <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">XF</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">VF+</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                            <label class="checkbox-block">
+                                                <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                                <span class="checkbox-custom checkbox-block__custom"></span>
+                                                <span class="label ml-2 checkbox-block__label">VF</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="col-xl col-12 catalog-main__filter">
+                                <div id="filterFive">
+                                    <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-subjects" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-subjects">
+                                        Тематики
+                                    </div>
+                                </div>
+                                <div class="catalog-main__filter-dropdown-line"></div>
+                                <div class="collapse" id="catalog-main__filter-dropdown-menu-subjects" aria-labelledby="filterFive" data-parent="#accordionExample">
+                                    <div class="catalog-main__filter-dropdown-menu row" >
+                                    <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">Исторические события</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-prices" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-prices">
-                                Цены
+                            <div id="filterSixth">
+                                <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-prices" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-prices">
+                                    Цены
+                                </div>
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
-                            <div class="collapse" id="catalog-main__filter-dropdown-menu-prices">
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-prices" aria-labelledby="filterSixth" data-parent="#accordionExample">
                                 <div class="catalog-main__filter-dropdown-menu row">
                                     <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
                                         <h5 class="pl-4">Выбрать диапазон цен</h5>

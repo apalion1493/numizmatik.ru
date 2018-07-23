@@ -210,7 +210,6 @@
 
 .catalog-main .catalog-main__filter-dropdown-menu {
   padding: 30px 50px 30px 50px;
-  display: block;
   margin-left: 15px;
   margin-right: 15px;
   z-index: 320;
@@ -222,7 +221,6 @@
 //}
 
 .catalog-main__filter-dropdown-menu-block {
-  float: left;
   display: flex;
   flex-direction: column;
 }
@@ -621,14 +619,16 @@
 
 @include media-breakpoint-between(xs,sm) {
 
-
+  .catalog-main__filter-dropdown-form {
+    justify-content: center;
+  }
 
   .catalog-main .catalog-main__filter-dropdown-menu {
     position: inherit;
     top: 0;
     left: 0;
     right: 0;
-    padding: 30px;
+    padding: 30px 25px;
     margin-left: 0 !important;
     margin-right: 0 !important;
     box-shadow: none;
@@ -643,6 +643,10 @@
     border-bottom: 1px solid #D8D8D8;
     padding-bottom: 8px;
     padding-top: 8px;
+  }
+
+  .catalog-main__filter:hover .catalog-main__filter-link {
+    border-bottom: none;
   }
 
   .catalog-main__filter-link:last-child {
@@ -767,14 +771,31 @@
     background: #fff;
     position: absolute;
     top: 68px;
-    left: 0;
-    right: 0;
+    left: 35px;
+    right: 35px;
     z-index: 320;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
   }
 }
 
 @include media-breakpoint-only(lg) {
+
+  #catalog-main__filter-dropdown-menu-year,
+  #catalog-main__filter-dropdown-menu-denominations,
+  #catalog-main__filter-dropdown-menu-metals,
+  #catalog-main__filter-dropdown-menu-state,
+  #catalog-main__filter-dropdown-menu-subjects,
+  #catalog-main__filter-dropdown-menu-prices {
+    background: #fff;
+    position: initial;
+    top: 68px;
+    left: 35px;
+    right: 35px;
+    z-index: 320;
+    margin-left: -15px;
+    margin-right: -15px;
+    box-shadow: none;
+  }
 
   .country-filter__content {
     display: block !important;
@@ -787,6 +808,10 @@
     padding-top: 8px;
   }
 
+  .catalog-main__filter:hover .catalog-main__filter-link {
+    border-bottom: none;
+  }
+
   .catalog-main__filter-link:last-child {
     border: none;
   }
@@ -794,7 +819,7 @@
   .catalog-main__filter-link:after {
     position: absolute;
     right: 20px;
-    bottom: 16px;
+    top: 16px;
   }
 
   .catalog-main__filter-options {
@@ -808,6 +833,7 @@
 
   .catalog-main__filter {
     position: relative !important;
+    display: block;
   }
 
   .catalog-main__filter-dropdown-line {
@@ -836,11 +862,42 @@
 
 @include media-breakpoint-only(md) {
 
+  .catalog-main .catalog-main__filter {
+    display: block;
+  }
+
+  #catalog-main__filter-dropdown-menu-year,
+  #catalog-main__filter-dropdown-menu-denominations,
+  #catalog-main__filter-dropdown-menu-metals,
+  #catalog-main__filter-dropdown-menu-state,
+  #catalog-main__filter-dropdown-menu-subjects,
+  #catalog-main__filter-dropdown-menu-prices {
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #fff;
+  }
+
+  .catalog-main .catalog-main__filter-dropdown-menu {
+    position: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
   .catalog-main__filter-link {
     width: 100%;
     border-bottom: 1px solid #D8D8D8;
     padding-bottom: 8px;
     padding-top: 8px;
+  }
+
+  .catalog-main__filter:hover .catalog-main__filter-link {
+    border-bottom: none;
   }
 
   .catalog-main__filter-link:last-child {
@@ -850,7 +907,7 @@
   .catalog-main__filter-link:after {
     position: absolute;
     right: 20px;
-    bottom: 16px;
+    top: 16px;
   }
 
   .catalog-main__filter-options {

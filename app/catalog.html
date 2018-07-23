@@ -779,67 +779,70 @@
                 <section class="recommendations catalog-main">
                     <div class="catalog-main__filter-choice row">
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-year" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-year">
                                 Года
                                 <span class="catalog-main__filter-options">2</span>
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
-                            <div class="catalog-main__filter-dropdown-menu row">
-                                <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">2001-настоящее время <span class="checkbox-block__label-span">- 19</span></span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1901-2000 <span class="checkbox-block__label-span">- 10 517</span></span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1801-1900 <span class="checkbox-block__label-span">- 5 317</span></span>
-                                    </label>
-                                </div>
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-year">
+                                <div class="catalog-main__filter-dropdown-menu row">
+                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">2001-настоящее время <span class="checkbox-block__label-span">- 19</span></span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1901-2000 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1801-1900 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                        </label>
+                                    </div>
 
-                                <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1701-1800 <span class="checkbox-block__label-span">- 19 560</span></span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">1601-1700 <span class="checkbox-block__label-span">- 10 517</span></span>
-                                    </label>
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">до 1600 <span class="checkbox-block__label-span">- 5 317</span></span>
-                                    </label>
-                                </div>
+                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1701-1800 <span class="checkbox-block__label-span">- 19 560</span></span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">1601-1700 <span class="checkbox-block__label-span">- 10 517</span></span>
+                                        </label>
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">до 1600 <span class="checkbox-block__label-span">- 5 317</span></span>
+                                        </label>
+                                    </div>
 
-                                <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
-                                    <h5>Выбор по годам</h5>
-                                    <form class="catalog-main__filter-dropdown-form">
-                                        <input type="text" class="form-control col-4 mr-3" placeholder="185">
-                                        <input type="text" class="form-control col-4 mr-2" placeholder="2018">
-                                        <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
-                                    </form>
+                                    <div class="col-md-6 col-12 col-xl-4 catalog-main__filter-dropdown-menu-block px-0">
+                                        <h5>Выбор по годам</h5>
+                                        <form class="catalog-main__filter-dropdown-form">
+                                            <input type="text" class="form-control col-4 mr-3" placeholder="185">
+                                            <input type="text" class="form-control col-4 mr-2" placeholder="2018">
+                                            <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-denominations" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-denominations">
                                 Номиналы
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
-                            <div class="dropdown-menu catalog-main__filter-dropdown-menu row">
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-denominations">
+                                <div class="catalog-main__filter-dropdown-menu row">
                                 <div class="col-12 col-md-4 catalog-main__filter-dropdown-menu-block px-0">
                                     <label class="checkbox-block">
                                         <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
@@ -1044,15 +1047,17 @@
                                     </label>
                                 </div>
                             </div>
+                            </div>
                         </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-metals" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-metals">
                                 Металлы
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
 
-                            <div class="catalog-main__filter-dropdown-menu">
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-metals">
+                                <div class="catalog-main__filter-dropdown-menu row">
                                 <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
                                     <label class="checkbox-block">
                                         <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
@@ -1077,48 +1082,50 @@
                                     </label>
                                 </div>
                             </div>
+                            </div>
                         </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-state" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-state">
                                 Состояния
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-state">
+                                <div class="catalog-main__filter-dropdown-menu row">
+                                    <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">XF</span>
+                                        </label>
+                                    </div>
 
-                            <div class="catalog-main__filter-dropdown-menu">
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">XF</span>
-                                    </label>
-                                </div>
+                                    <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">VF+</span>
+                                        </label>
+                                    </div>
 
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">VF+</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
-                                    <label class="checkbox-block">
-                                        <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom checkbox-block__custom"></span>
-                                        <span class="label ml-2 checkbox-block__label">VF</span>
-                                    </label>
+                                    <div class="col-md-4 col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                        <label class="checkbox-block">
+                                            <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
+                                            <span class="checkbox-custom checkbox-block__custom"></span>
+                                            <span class="label ml-2 checkbox-block__label">VF</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-subjects" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-subjects">
                                 Тематики
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
-
-                            <div class="catalog-main__filter-dropdown-menu">
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-subjects">
+                                <div class="catalog-main__filter-dropdown-menu row" >
                                 <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
                                     <label class="checkbox-block">
                                         <input class="checkbox form-check__checkbox" type="checkbox" name="checkbox-test">
@@ -1127,25 +1134,29 @@
                                     </label>
                                 </div>
                             </div>
+                            </div>
                         </div>
 
                         <div class="col-xl col-12 catalog-main__filter">
-                            <div class="catalog-main__filter-link">
+                            <div class="catalog-main__filter-link" data-toggle="collapse" data-target="#catalog-main__filter-dropdown-menu-prices" aria-expanded="false" aria-controls="catalog-main__filter-dropdown-menu-prices">
                                 Цены
                             </div>
                             <div class="catalog-main__filter-dropdown-line"></div>
-
-                            <div class="catalog-main__filter-dropdown-menu col-12">
-                                <h5 class="pl-4">Выбрать диапазон цен</h5>
-                                <form class="catalog-main__filter-dropdown-form">
-                                    <span class="catalog-main__filter-dropdown-text">от</span>
-                                    <input type="text" class="form-control col-2" placeholder="200">
-                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
-                                    <span class="catalog-main__filter-dropdown-text">до</span>
-                                    <input type="text" class="form-control col-2" placeholder="92990">
-                                    <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
-                                    <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
-                                </form>
+                            <div class="collapse" id="catalog-main__filter-dropdown-menu-prices">
+                                <div class="catalog-main__filter-dropdown-menu row">
+                                    <div class="col-12 catalog-main__filter-dropdown-menu-block px-0">
+                                        <h5 class="pl-4">Выбрать диапазон цен</h5>
+                                        <form class="catalog-main__filter-dropdown-form">
+                                            <span class="catalog-main__filter-dropdown-text">от</span>
+                                            <input type="text" class="form-control col-2" placeholder="200">
+                                            <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
+                                            <span class="catalog-main__filter-dropdown-text">до</span>
+                                            <input type="text" class="form-control col-2" placeholder="92990">
+                                            <div class="catalog-main__filter-dropdown-img mr-3">₽</div>
+                                            <button type="button" class="btn btn-primary btn-sm catalog-main__filter-btn">OK</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

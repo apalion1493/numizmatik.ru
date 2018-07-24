@@ -11,3 +11,7 @@ https://apalion1493.github.io/numizmatik.ru/app/Product-page.html
 https://apalion1493.github.io/numizmatik.ru/app/search.html
 
 https://apalion1493.github.io/numizmatik.ru/app/catalog.html
+
+
+
+На странице unauthorized.html в хэдере есть изменения. Добавлены блоки входа и регистрации, добавлены модальные окна для входа и регистрации.

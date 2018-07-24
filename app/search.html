@@ -24,8 +24,18 @@
                 </div>
                 <div class="col-lg-11 col-md-6 col-xl-4 contact-info__communications">
                     <a href="#" class="contact-info__phone-call" data-toggle="modal" data-target="#ModalPhone">Заказать звонок </a>
-                    <i class="contact-info__men"></i>
-                    <a href="mailto:username@yandex.ru" class="contact-info__email"> username@yandex.ru </a>
+                    <div class="contact-info__communications-menu dropdown-toggle" id="contact-info__communications-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="contact-info__men"></i>
+                        <a href="#" class="contact-info__email"> username@yandex.ru </a>
+                    </div>
+                    <div class="dropdown-menu cabinet-menu" aria-labelledby="contact-info__communications-menu">
+                        <a class="dropdown-item" href="#">Ваш профайл</a>
+                        <a class="dropdown-item" href="#">Ваши заказы</a>
+                        <a class="dropdown-item" href="#">Монеты из ваших заказов</a>
+                        <a class="dropdown-item" href="#">Рекомендованные товары</a>
+                        <a class="dropdown-item contact-info__communications-exit" href="#">Выйти</a>
+                        <a href="#" class="exit-menu cabinet-menu_exit-menu" data-toggle="dropdown"></a>
+                    </div>
                 </div>
                 <div class="col-lg-1 col-md-2 contact-info__balance">
                     <a href="#" class="contact-info__money">2 500  ₽</a>
@@ -63,11 +73,11 @@
                 <a href="index.html"><div class="header-info__logo"></div></a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
-                <button class="navbar-toggler header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon header-info__burger-light"></span>
                 </button>
                 <div class="collapse navbar-collapse header-info__collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav mr-auto mt-lg-0 header-info__collapse-menu">
                         <li class="nav-item header-info__lines">
                             <a class="nav-link header-info__link" href="#">Информация</a>
                         </li>
@@ -92,17 +102,14 @@
                                             <a class="nav-link header-info__link header-info__link-contact" href="#">Контакты</a>
                                         </li>
                                         <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Action</a>
-                                        </li>
-                                        <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Another action</a>
-                                        </li>
-                                        <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Something else here</a>
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Пункт меню</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                        </li>
+                        <li>
+                            <a href="#" class="exit-menu" data-toggle="collapse" data-target="#navbarTogglerDemo01"></a>
                         </li>
                     </ul>
                 </div>
@@ -134,15 +141,36 @@
         <div class="container header-menu__content">
             <div class="px-0" id="section-navbar">
                 <nav class="navbar navbar-expand-lg navbar-dark header-menu__navbar px-0">
-                    <button class="navbar-toggler pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon header-menu__catalog"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
-                        <ul class="navbar-nav header-menu__main-menu">
-                            <li class="nav-item  dropdown menu-item-goods">
-                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" href="#navbarDropdown" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <ul class="navbar-nav header-menu__main-menu ">
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" data-target="#navbarDropdown"  aria-expanded="false" aria-controls="navbarDropdown">
                                     Магазин монет
                                 </a>
+                                <div class="collapse header-menu__dropdown" id="navbarDropdown" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="header-menu__dropdown-padding row">
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Наборы монет<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Мелочь<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Дешевые монеты<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Цветные монеты<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Лоты монет для начинающих<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Монеты СССР<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Картины из монет<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Распродажа монет<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Серии монет<span>-543</span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item  menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Банкноты</a>
@@ -150,7 +178,7 @@
                             <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Аксессуары</a>
                             </li>
-                            <li class="nav-item active menu-item-goods">
+                            <li class="nav-item menu-item-goods">
                                 <a class="nav-link menu-item-goods__link" href="#">Жетоны</a>
                             </li>
                             <li class="nav-item menu-item-goods">
@@ -168,26 +196,7 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="collapse header-menu__dropdown row" id="navbarDropdown">
-                    <div class="col-3 header-menu__dropdown-block">
-                        <a class="dropdown-item" href="#">Наборы монет<span>-543</span></a>
-                        <a class="dropdown-item" href="#">Мелочь<span>-543</span></a>
-                        <a class="dropdown-item" href="#">Дешевые монеты<span>-543</span></a>
-                    </div>
-                    <div class="col-3 header-menu__dropdown-block">
-                        <a class="dropdown-item" href="#">Цветные монеты<span>-543</span></a>
-                        <a class="dropdown-item" href="#">Лоты монет для начинающих<span>-543</span></a>
-                    </div>
-                    <div class="col-3 header-menu__dropdown-block">
-                        <a class="dropdown-item" href="#">Монеты СССР<span>-543</span></a>
-                        <a class="dropdown-item" href="#">Картины из монет<span>-543</span></a>
-                    </div>
-                    <div class="col-3 header-menu__dropdown-block">
-                        <a class="dropdown-item" href="#">Распродажа монет<span>-543</span></a>
-                        <a class="dropdown-item" href="#">Серии монет<span>-543</span></a>
-                    </div>
 
-                </div>
             </div>
         </div>
     </div>
@@ -324,7 +333,7 @@
                                 <div class="card-coins__new-icon">NEW  05.11</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -393,7 +402,7 @@
                                 <div class="card-coins__novelty">НОВИНКА</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -446,7 +455,7 @@
                                 <div class="card-coins__new-icon">NEW  05.11</div>
                                 <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -493,7 +502,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -540,7 +549,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -587,7 +596,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -634,7 +643,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -681,7 +690,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -728,7 +737,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -775,7 +784,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -822,7 +831,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -869,7 +878,7 @@
                             <div class="card card-coins">
                                 <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
                                 <div class="card-body card-coins__body">
-                                    <h4 class="card-coins__title"><a href="#" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
                                     <div class="card-coins__text">
                                         <table class="card-coins__table">
                                             <tbody class="card-coins__table-body">
@@ -1300,3 +1309,24 @@
 
     </div>
 </footer>
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="js/recommendations.js"></script>
+<script src="js/table-form.js"></script>
+<script src="js/img-coin-block.js"></script>
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>
+</html>

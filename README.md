@@ -6,7 +6,7 @@ https://apalion1493.github.io/numizmatik.ru/app/unauthorized.html
 
 https://apalion1493.github.io/numizmatik.ru/app/ui.html
 
-https://apalion1493.github.io/numizmatik.ru/app/Product-page.html
+https://apalion1493.github.io/numizmatik.ru/app/product-page.html
 
 https://apalion1493.github.io/numizmatik.ru/app/search.html
 

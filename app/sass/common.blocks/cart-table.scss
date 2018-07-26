@@ -232,6 +232,7 @@ input[type="number"] {
   height: 54px;
   width: 101px;
   display: block;
+  position: relative !important;
 }
 
 
@@ -310,6 +311,27 @@ tbody {
 .cart-content__container {
   display: flex;
   align-items: center;
+}
+
+.cart-table__link-img-big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 10px 15px #aaa;
+  width: 600px;
+  height: 325px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: 800;
+  display: none;
+}
+
+.cart-table__lines {
+  position: relative !important;
+}
+
+.cart-table__link-img:hover .cart-table__link-img-big {
+  display: block;
 }
 
 @include media-breakpoint-between(xs,sm)  {

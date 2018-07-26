@@ -63,6 +63,15 @@
   height: 41px;
   border-radius: 50px;
   margin-left: 5px;
+  display: block;
+}
+
+.card-coins__footer-btn-basket:active {
+  background: url("#{$rootDir}/img/header-icon/shopping-cart3.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 40px;
+  height: 41px;
+  opacity: 1 !important;
 }
 
 .card-coins__footer-btn-basket:focus {

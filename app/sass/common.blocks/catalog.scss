@@ -622,6 +622,10 @@
   align-items: center;
 }
 
+.card-coins__footer-btn-block {
+  display: flex;
+}
+
 
 @include media-breakpoint-between(xs,sm) {
 

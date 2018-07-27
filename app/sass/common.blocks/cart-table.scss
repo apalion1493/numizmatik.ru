@@ -330,8 +330,8 @@ tbody {
   position: relative !important;
 }
 
-.cart-table__link-img:hover .cart-table__link-img-big {
-  display: block;
+.cart-table__photo {
+  min-width: 130px;
 }
 
 @include media-breakpoint-between(xs,sm)  {
@@ -632,6 +632,8 @@ tbody {
       height: 150px;
       display: block;
       width: auto;
+
+
     }
 
     .card-coins__link {
@@ -667,6 +669,10 @@ tbody {
     .cart-content__container {
       align-items: start;
     }
+
+    .cart-table__link-img:hover .cart-table__link-img-big {
+      display: block;
+    }
   }
 
 }
@@ -679,11 +685,19 @@ tbody {
   .cart-table__name-country {
     min-width: 152px;
   }
+
+  .cart-table__link-img:hover .cart-table__link-img-big {
+    display: block;
+  }
 }
 
 @include media-breakpoint-only(xl) {
 
   .cart-table .cart-table__width {
     max-width: 1169px;
+  }
+
+  .cart-table__link-img:hover .cart-table__link-img-big {
+    display: block;
   }
 }

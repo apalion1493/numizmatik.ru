@@ -627,6 +627,11 @@
 }
 
 
+.country-filter .views-modal {
+  max-width: 940px;
+}
+
+
 @include media-breakpoint-between(xs,sm) {
 
   .catalog-main .catalog-main__filter-btn {

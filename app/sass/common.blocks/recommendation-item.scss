@@ -221,7 +221,7 @@
 
 @include media-breakpoint-between(xs,sm) {
 
-  .recommendations .recommendations__content__padding {
+  .recommendations .recommendations__content-padding {
     padding-left: 0;
     padding-right: 0;
   }
@@ -243,4 +243,14 @@
     right: 0;
   }
 
+}
+
+@include media-breakpoint-only(md) {
+  .card-coins__link {
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 170px;
+    display: block;
+  }
 }

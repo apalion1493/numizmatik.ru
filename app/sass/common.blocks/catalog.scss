@@ -626,9 +626,12 @@
   display: flex;
 }
 
+.views-modal {
+  max-width: 940px !important;
+}
 
-.country-filter .views-modal {
-  max-width: 940px;
+.country-active-group {
+  width: 100%;
 }
 
 
@@ -686,6 +689,7 @@
   .catalog-main__filter-options {
     position: absolute;
     left: 50px;
+    top: 7px;
   }
 
   .catalog-main__filter-sbros {
@@ -859,6 +863,7 @@
   .catalog-main__filter-options {
     position: absolute;
     left: 50px;
+    top: 7px;
   }
 
   .catalog-main__filter-sbros {
@@ -947,6 +952,7 @@
   .catalog-main__filter-options {
     position: absolute;
     left: 50px;
+    top: 7px;
   }
 
   .catalog-main__filter-sbros {

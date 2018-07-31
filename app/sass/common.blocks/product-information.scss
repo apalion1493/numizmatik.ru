@@ -8,7 +8,8 @@
   display: block;
 }
 
-.img-coin-block__border {
+.img-coin-block__border,
+.img-coin-block__border-modal {
   border: 1px solid #E9E9E9;
 }
 
@@ -313,6 +314,10 @@
 
 .img-coin-block__border {
   height: 400px;
+}
+
+.img-coin-block__border-modal {
+  padding: 10px;
 }
 
 .img-coin-block__list-item {

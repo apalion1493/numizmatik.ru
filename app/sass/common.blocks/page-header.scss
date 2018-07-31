@@ -641,7 +641,8 @@ html, body {
 
 
   .page-header .contact-info__entry-btn {
-    bottom: -7px;
+    z-index: 981;
+    position: absolute;
   }
 
   //body {
@@ -660,7 +661,6 @@ html, body {
 
   .contact-info__location,
   .contact-info__schedule,
-  .contact-info__phone-call,
   .contact-info__email,
   .page-header .header-info__number-second,
   .page-header .header-info__ellipsis,
@@ -715,7 +715,7 @@ html, body {
 
   .page-header .header-info__number-first {
     position: absolute;
-    bottom: 0;
+    bottom: -7px;
   }
 
   .header-info__number-icon {
@@ -922,6 +922,13 @@ html, body {
 
   .header-info__cart {
     width: 30px !important;
+  }
+
+  .contact-info__phone-call {
+    position: absolute;
+    top: 45px;
+    right: -12px;
+    z-index: 900;
   }
 
 }

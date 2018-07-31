@@ -252,8 +252,8 @@
 
     <div class="container return-button">
         <div class="row">
-            <div class="col-lg-12 col-xl-12 button-group return-button__content">
-                <form action="index.html">
+            <div class="col-lg-12 col-xl-12 button-group return-button__content d-flex justify-content-center">
+                <form action="index.html" class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary btn-lg mb-5">Назад в корзину</button>
                 </form>
             </div>
@@ -379,6 +379,55 @@
             <div class="details-link">
                 <p class="details-link__text">Более подробно смотрите раздел <a href="#" class="details-link__ref"> Оплата и доставка</a></p>
             </div>
+
+            <div class="payment-method_block">
+                <section class="row order-title">
+                    <h3 class="order-title__text">Способ оплаты</h3>
+                    <div class="order-title__line"></div>
+                </section>
+
+                <div class="row blocks-payment btn-group btn-group-toggle" data-toggle="buttons">
+                    <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
+                        <label class="block-info block-info_payment btn">
+                            <i class="block-info__cash"></i>
+                            <p class="block-info__text">Наличными</p>
+                            <input type="radio" name="options" id="option1" autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
+                        <label class="block-info block-info_payment btn">
+                            <i class="block-info__yandex"></i>
+                            <p class="block-info__text">YandexMoney - 1%</p>
+                            <input type="radio" name="options" id="option2" autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
+                        <label class="block-info block-info_payment btn">
+                            <i class="block-info__sberbank"></i>
+                            <p class="block-info__text">Сбербанк - экономия <br> времени и стоимости</p>
+                            <input type="radio" name="options" id="option3" autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
+                        <label class="block-info block-info_payment btn">
+                            <i class="block-info__credit-cards"></i>
+                            <p class="block-info__text">Кредитные карты VISA,<br> MasterCard - 4%</p>
+                            <input type="radio" name="options" id="option4" autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
+                        <label class="block-info block-info_payment btn">
+                            <i class="block-info__webmoney"></i>
+                            <p class="block-info__text">WebMoney - 0,8%</p>
+                            <input type="radio" name="options" id="option5" autocomplete="off">
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="form-subway row collapse" id="blocks-info__metro">
@@ -429,47 +478,7 @@
 
         </div>
 
-        <section class="row order-title">
-            <h3 class="order-title__text">Способ оплаты</h3>
-            <div class="order-title__line"></div>
-        </section>
 
-        <div class="row blocks-payment">
-            <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
-                <div class="block-info block-info_payment">
-                    <i class="block-info__cash"></i>
-                    <a href="#" class="block-info__text">Наличными</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
-                <div class="block-info block-info_payment">
-                    <i class="block-info__yandex"></i>
-                    <a href="#" class="block-info__text">YandexMoney - 1%</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
-                <div class="block-info block-info_payment">
-                    <i class="block-info__sberbank"></i>
-                    <a href="#" class="block-info__text">Сбербанк - экономия времени и стоимости</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
-                <div class="block-info block-info_payment">
-                    <i class="block-info__credit-cards"></i>
-                    <a href="#" class="block-info__text">Кредитные карты VISA,MasterCard - 4%</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 blocks-payment__container">
-                <div class="block-info block-info_payment">
-                    <i class="block-info__webmoney"></i>
-                    <a href="#" class="block-info__text">WebMoney - 0,8%</a>
-                </div>
-            </div>
-        </div>
 
         <div class="form-discount row">
             <div class="form-discount__content align-items-start">
@@ -576,6 +585,19 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="alert alert-success" role="alert">
+        Это уведомление об успехе
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Это уведомление об опасности
+    </div>
+    <div class="alert alert-warning" role="alert">
+        Это уведомление-предупреждение
+    </div>
+    <div class="alert alert-info" role="alert">
+        Это инфо-уведомление
     </div>
 </main>
 

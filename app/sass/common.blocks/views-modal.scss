@@ -1,0 +1,59 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.views-modal {
+  max-width: 940px !important;
+}
+
+.coins-nav_header,
+.countries-nav_header,
+.search-nav_header,
+.favorites-nav_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-between(xs,sm) {
+  .coins-nav_header,
+  .countries-nav_header,
+  .search-nav_header,
+  .favorites-nav_header {
+    flex-direction: column;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-left: auto;
+    }
+  }
+
+  .modal-body__top {
+
+    ul {
+      flex-direction: column;
+      min-width: 100%;
+    }
+
+    .modal-entry__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .nav-tabs {
+      border-bottom: none;
+    }
+
+    .nav-tabs .nav-link.active {
+      color: #495057;
+      background-color: #fff;
+      border-color: #fff #fff #dee2e6;
+    }
+  }
+}

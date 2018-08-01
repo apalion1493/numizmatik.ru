@@ -102,7 +102,7 @@
                                             <a class="nav-link header-info__link header-info__link-contact" href="#">Контакты</a>
                                         </li>
                                         <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Пункт меню</a>
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Монеты по заявкам</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -119,7 +119,207 @@
                     <a href="tel:+88003331477" class="header-info__number-link header-info__number-icon header-info__number-first">8 <span>(</span>800<span>)</span> 333-14-77</a>
                     <a href="tel:+79030060044" class="header-info__number-link header-info__number-second">7 <span>(</span>903<span>)</span> 006-00-44</a>
                 </div>
-                <a href="#"><i class="header-info__star"></i></a>
+                <a href="#" data-toggle="modal" data-target="#favoritsModal"><i class="header-info__star"></i></a>
+                <div class="modal fade" id="favoritsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="views-modal modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header py-0 d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0">Избранные товары</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="modal-quick-order__icon"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-pane">
+                                    <div class="favorites-nav_header d-flex mt-3 align-items-center justify-content-end">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="favorites-nav_main row mt-5">
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__new-icon">NEW  05.11</div>
+                                                <a href="product-page.html" style="background-image: url(img/recommendation/coin-img.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Россия</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2008</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Серебро</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">Proof</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">PL129-09</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">8 000 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <div class="card-coins__footer-btn-block">
+                                                                <a href="#" class="btn card-coins__footer-btn-star "></a>
+                                                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="button"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__novelty">НОВИНКА</div>
+                                                <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Австралия</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Латунь</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">UNC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">CS-080</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">360 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__new-icon">NEW  05.11</div>
+                                                <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Украина</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Биметалл</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">UNC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">CS-542</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">500 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <a href="#" class="btn card-coins__footer-btn-star"></a>
+                                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation example" class="justify-content-end d-flex">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-2 col-md-4">
                 <a href="index.html" class="btn btn-outline-primary header-info__cart">
@@ -1290,10 +1490,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
-
-
 <script src="js/recommendations.js"></script>
 <script src="js/table-form.js"></script>
+<script src="js/dropdown.js"></script>
 <!-- JS Inline -->
 <script>
     $('[data-toggle="popover"]').popover();

@@ -20,21 +20,16 @@
   width: 100%;
   height: 99px;
   margin-top: 12px;
+  cursor: pointer;
 
   .block-info__text {
     text-decoration: none;
   }
 }
 
-.block-info_payment {
-  display: flex !important;
-  padding: 0 !important;
 
-  input {
-    display: none;
-  }
-}
 
+.blocks-info .block-info:not(.collapsed),
 .block-info.active {
   background: #EBAD45;
 
@@ -54,8 +49,17 @@
   .block-info__desk {
     filter: sepia(100%) brightness(300%);
   }
-
 }
+
+.block-info_payment {
+  display: flex !important;
+  padding: 0 !important;
+
+  input {
+    display: none;
+  }
+}
+
 
 .blocks-info__container:nth-child(1),
 .blocks-info__container:nth-child(4),

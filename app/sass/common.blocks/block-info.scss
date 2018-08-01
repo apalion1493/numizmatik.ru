@@ -201,6 +201,12 @@
 
 
 @include media-breakpoint-between(xs,sm) {
+
+  .payment-method_block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .blocks-info, .blocks-payment  {
     padding-left: 20px;
     padding-right: 20px;
@@ -228,6 +234,7 @@
     i {
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 

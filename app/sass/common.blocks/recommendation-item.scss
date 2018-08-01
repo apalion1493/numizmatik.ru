@@ -45,6 +45,7 @@
   font-size: 30px;
   color: #333;
   font-weight: bold;
+  width: 100%;
 }
 
 .card-coins__footer-btn-star {
@@ -217,6 +218,39 @@
 
 .card-coins__bottom-comparison a {
   font-size: 16px;
+}
+
+.card-coins__price-block {
+  position: relative;
+}
+
+.card-coins__price-old {
+  text-decoration: line-through;
+  position: absolute;
+  top: -20px;
+  width: 100px;
+}
+
+.card-coins__price-discount {
+  width: auto;
+  position: absolute;
+  top: -22px;
+  left: 70px;
+  background: red;
+  color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-coins__price-bonus {
+  width: 70px;
+  position: absolute;
+  top: -22px;
+  left: 0;
+  background: #4dff86;
+  color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @include media-breakpoint-between(xs,sm) {

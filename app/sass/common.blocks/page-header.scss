@@ -526,6 +526,16 @@ html, body {
 
 @include media-breakpoint-between(xs,sm) {
 
+  .navbar-toggler.collapsed .header-menu__catalog {
+    background: url(#{$rootDir}/img/header-icon/gamburger2.svg) no-repeat center !important;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 18px;
+    height: 15px;
+    position: relative;
+    left: 15px;
+  }
+
   .cabinet-menu a {
     color: $secondary;
     font-size: 18px;

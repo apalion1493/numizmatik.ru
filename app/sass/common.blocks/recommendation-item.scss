@@ -57,6 +57,14 @@
   border-radius: 50px;
 }
 
+.card-coins__footer-btn-star.active {
+  background: url(#{$rootDir}/img/product-page__main/favorite1.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 40px;
+  height: 41px;
+  border-radius: 50px;
+}
+
 .card-coins__footer-btn-basket {
   background: url("#{$rootDir}/img/recommendation/cart.svg") no-repeat center;
   background-size: 100% auto;

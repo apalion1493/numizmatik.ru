@@ -18,6 +18,14 @@
 
 }
 
+.form-discount {
+  .btn-discount-code-ext{
+    position: absolute;
+    right: 9px;
+    top: 5px;
+  }
+}
+
 .form-discount__dash {
   background: url("#{$rootDir}/img/forms-img/dash.svg") no-repeat center;
   background-size: 100% auto;

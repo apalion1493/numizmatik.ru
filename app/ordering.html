@@ -891,43 +891,16 @@
             <div class="form-discount__content align-items-start">
                 <label for="discount-code" class="col-form-label form-discount__label col-md-3">Купоны на скидку</label>
                 <div class="discount-code__forms col-md-4 flex-column">
-                    <div class="discount-code__forms-block d-flex align-items-center mb-1">
-                        <input type="text"  class="form-control form-discount__code" id="discount-code">
-                        <!--<i class="form-discount__dash"></i>-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--<i class="form-discount__dash"></i>-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--<i class="form-discount__dash"></i>-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <a href="#">
-                            <img src="img/forms-img/plus.svg" alt="" width="11" height="11">
-                        </a>
+                    <span href="#" class="btn-discount-code-ext">
+                        <img src="img/forms-img/plus.svg" alt="" width="11" height="11">
+                    </span>
+                    <div class="discount-code__forms-block d-flex align-items-center mb-1 clearfix">
+                        <div class="clearfix"><input type="text"  class="form-control form-discount__code" name="discount-code[]" /></div>
+                        
                     </div>
-                    <!--<div class="discount-code__forms-block d-flex align-items-center mb-1">-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--<a href="#">-->
-                            <!--<img src="img/forms-img/plus.svg" alt="" width="11" height="11">-->
-                        <!--</a>-->
-                    <!--</div>-->
-                    <!--<div class="discount-code__forms-block d-flex align-items-center mb-1">-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<i class="form-discount__dash"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<input type="text"  class="form-control form-discount__code" id="discount-code">&ndash;&gt;-->
-                        <!--<a href="#">-->
-                            <!--<img src="img/forms-img/plus.svg" alt="" width="11" height="11">-->
-                        <!--</a>-->
-                    <!--</div>-->
                 </div>
+                <!--<i class="form-discount__dash"></i>-->
+                
                 <p class="form-discount__text col-md-5">Если у Вас есть купон(ы) на скидку и Вы желаете их использовать в данном заказе, введите код.</p>
             </div>
             <div class="form-discount__links">
@@ -1993,6 +1966,8 @@
 <script src="js/recommendations.js"></script>
 <script src="js/table-form.js"></script>
 <script src="js/dropdown.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/script.js"></script>
 <!-- JS Inline -->
 <script>
     $('[data-toggle="popover"]').popover();

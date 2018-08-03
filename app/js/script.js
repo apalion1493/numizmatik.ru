@@ -24,4 +24,29 @@ jQuery(document).ready(function($) {
     });
     
     
+    // Search Filter
+    countryFilter = $('.country-filter__radio-group input');
+    $('.country-filter-search__form').keyup(function(){
+        
+        switch($('.country-filter__radio-group input:checked').val()) {
+            case 'alphabet':
+                field='.country-filter__main';
+                break;
+            case 'krause':
+                field='.continents-filter__main-krause';
+                break;
+            case 'continents':
+            default:
+                return false;
+        }
+        
+        var r=$(field).find(' .form-check'),th=this;
+
+        r.each(function(i,v){
+            if($(v).text().toLowerCase().indexOf($(th).val().toLowerCase())==-1)
+                r.eq(i).hide(); 
+            else r.eq(i).show();
+        })
+    });
+
 });

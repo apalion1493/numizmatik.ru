@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
     $('.cart-table').change(function(){cartTableCalc();});
     $('button[data-minus]').click(function(){elPlusMin($(this).data('minus'));});
     $('button[data-plus]').click(function(){elPlusMin($(this).data('plus'),true);});
-    $('.cart-table__last-cell-link').click(function(){$(this).parent('tr').remove();});
+    $('.cart-table__last-cell-link').click(function(){$(this).parents('tr').eq(0).remove();cartTableCalc();});
+    $('.cart-table__last-cell').click(function(){$('.cart-table tr.cart-table__lines').remove();cartTableCalc();});
     
     function cartTableCalc() {
 		var total = 0;

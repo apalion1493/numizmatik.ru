@@ -338,33 +338,6 @@ tbody {
   position: relative !important;
 }
 
-.small-change {
-  position: relative;
-}
-
-.small-change:before {
-  content: "Мелочь";
-  transform: rotate(-90deg);
-  display: block;
-  z-index: 999999;
-  position: absolute;
-  top: 0;
-  bottom: 20px;
-  left: 0;
-  height: 30px;
-  margin: auto;
-}
-
-.small-change:after {
-  background-color: red;
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 0;
-  bottom: 0;
-  width: 30px;
-}
-
 
 @include media-breakpoint-between(xs,sm)  {
 
@@ -685,6 +658,65 @@ tbody {
 
 @include media-breakpoint-only(md) {
 
+  .small-change {
+    position: relative;
+  }
+
+  .small-change:before {
+    content: "Мелочь";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 45px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .small-change:after {
+    background-color: #EDE7D9;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
+  .boni:before {
+    content: "Боны";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 30px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .boni:after {
+    background-color: #E2DAC8;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
+
+
+
   .cart-table__year {
     position: relative;
     width: 66px;/////////
@@ -760,6 +792,62 @@ tbody {
 
 @include media-breakpoint-only(lg) {
 
+  .small-change {
+    position: relative;
+  }
+
+  .small-change:before {
+    content: "Мелочь";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 45px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .small-change:after {
+    background-color: #EDE7D9;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
+  .boni:before {
+    content: "Боны";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 30px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .boni:after {
+    background-color: #E2DAC8;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
   .cart-table__year {
     position: relative;
     width: 66px;/////////
@@ -824,6 +912,66 @@ tbody {
 
 @include media-breakpoint-only(xl) {
 
+  .cart-table .table-responsive {
+    overflow: initial !important;
+  }
+
+  .small-change {
+    position: relative;
+  }
+
+  .small-change:before {
+    content: "Мелочь";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 45px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .small-change:after {
+    background-color: #EDE7D9;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
+  .boni:before {
+    content: "Боны";
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    height: 30px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .boni:after {
+    background-color: #E2DAC8;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+
   .cart-table__year {
     position: relative;
     width: 66px;/////////
@@ -833,9 +981,9 @@ tbody {
 
 
   .cart-table__country {
-    width: 154px;
-    min-width: 154px;
-    max-width: 154px;
+    width: 179px;
+    min-width: 179px;
+    max-width: 179px;
   }
 
   .cart-table__denomination {

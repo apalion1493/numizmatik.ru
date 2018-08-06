@@ -115,10 +115,11 @@
     font-size: 20px;
     margin-bottom: 0;
     margin-left: 100px;
+    white-space: nowrap;
   }
 
   .cart-table__totals-price {
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
   .cart-table__totals-cross {
@@ -157,6 +158,8 @@
   color: #555;
   font-size: 16px;
   width: 280px;
+  min-width: 280px;
+  max-width: 280px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -219,6 +222,10 @@ input[type="number"] {
   font-weight: bold;
   color: #555555;
   font-size: 18px;
+  width: 85px;////////
+  min-width: 85px;
+  max-width: 85px;
+  white-space: nowrap;
 }
 
 .cart-table__link {
@@ -268,6 +275,7 @@ th:first-child {
   width: 20px;
   background-color: #EDE7D9;
   padding: 0;
+  padding-left: 40px !important;
 }
 
 tbody {
@@ -330,11 +338,36 @@ tbody {
   position: relative !important;
 }
 
-.cart-table__photo {
-  min-width: 130px;
+.small-change {
+  position: relative;
 }
 
+.small-change:before {
+  content: "Мелочь";
+  transform: rotate(-90deg);
+  display: block;
+  z-index: 999999;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  left: 0;
+  height: 30px;
+  margin: auto;
+}
+
+.small-change:after {
+  background-color: red;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+
+
 @include media-breakpoint-between(xs,sm)  {
+
   .main {
 
     table {
@@ -652,6 +685,54 @@ tbody {
 
 @include media-breakpoint-only(md) {
 
+  .cart-table__year {
+    position: relative;
+    width: 66px;/////////
+    min-width: 66px;
+    max-width: 66px;
+  }
+
+  .cart-table__country {
+    width: 154px;
+    min-width: 154px;
+    max-width: 154px;
+  }
+
+  .cart-table__denomination {
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+
+  .cart-table__sum {
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
+  }
+
+  .cart-table__last-cell {
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
+  }
+
+
+  .cart-table {
+    width: 100%;
+
+    .cart-table__img {
+      padding-left: 40px;
+      min-width: 130px;
+      max-width: 130px;
+    }
+  }
+
+  .cart-table__denomination {
+    width: 135px;
+    min-width: 148px;
+    max-width: 148px;
+  }
+
   .cart-content {
 
     .cart-table__description {
@@ -678,6 +759,56 @@ tbody {
 }
 
 @include media-breakpoint-only(lg) {
+
+  .cart-table__year {
+    position: relative;
+    width: 66px;/////////
+    min-width: 66px;
+    max-width: 66px;
+  }
+
+  .cart-table__country {
+    width: 154px;
+    min-width: 154px;
+    max-width: 154px;
+  }
+
+  .cart-table__denomination {
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+
+  .cart-table__sum {
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
+  }
+
+  .cart-table__last-cell {
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
+  }
+
+
+
+  .cart-table {
+    width: 100%;
+
+    .cart-table__img {
+      padding-left: 40px;
+      min-width: 130px;
+      max-width: 130px;
+    }
+  }
+
+  .cart-table__denomination {
+    width: 135px;
+    min-width: 148px;
+    max-width: 148px;
+  }
+
   .cart-table__description {
     min-width: 245px;
   }
@@ -692,6 +823,50 @@ tbody {
 }
 
 @include media-breakpoint-only(xl) {
+
+  .cart-table__year {
+    position: relative;
+    width: 66px;/////////
+    min-width: 66px;
+    max-width: 66px;
+  }
+
+
+  .cart-table__country {
+    width: 154px;
+    min-width: 154px;
+    max-width: 154px;
+  }
+
+  .cart-table__denomination {
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+
+  .cart-table__sum {
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
+  }
+
+  .cart-table__last-cell {
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
+  }
+
+
+  .cart-table {
+    width: 100%;
+
+    .cart-table__img {
+      padding-left: 40px;
+      min-width: 130px;
+      max-width: 130px;
+    }
+  }
+
 
   .cart-table .cart-table__width {
     max-width: 1169px;

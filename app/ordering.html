@@ -347,7 +347,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
                         <ul class="navbar-nav header-menu__main-menu " id="accordionMenus">
                             <li class="nav-item menu-item-goods">
-                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" data-target="#navbarDropdown"  aria-expanded="false" aria-controls="navbarDropdown">
+                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link" data-toggle="collapse" data-target="#navbarDropdown"  aria-expanded="false" aria-controls="navbarDropdown">
                                     Магазин монет
                                 </a>
                                 <div class="collapse header-menu__dropdown" id="navbarDropdown" aria-labelledby="headingThree" data-parent="#accordionMenus">
@@ -1635,10 +1635,10 @@
                                     <td class="cart-table__year">2018</td>
                                     <td class="cart-table__bold-text cart-table__price">250 ₽</td>
                                     <td class="cart-table__sum">
-                                        <div class="quantity-control">
-                                            <button class="quantity-control-minus"></button>
-                                            <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                            <button class="quantity-control-plus"></button>
+                                        <div class="quantity-control cart-table__block">
+                                            <button class="quantity-control-minus" type="button" data-minus="1"></button>
+                                            <input data-id="1" class="quantity-control-num" type="number" value="2" name="cart-table__block-num">
+                                            <button type="button" class="quantity-control-plus" data-plus="1"></button>
                                         </div>
                                     </td>
                                     <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
@@ -1966,7 +1966,6 @@
 <script src="js/recommendations.js"></script>
 <script src="js/table-form.js"></script>
 <script src="js/dropdown.js"></script>
-<script src="js/filter.js"></script>
 <script src="js/script.js"></script>
 <!-- JS Inline -->
 <script>

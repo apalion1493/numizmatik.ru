@@ -93,35 +93,39 @@ jQuery(document).ready(function($) {
         var cart = $(this);
         
         cart.change(function(){
-            cartTableCalc();
+            //cartTableCalc();
         });
         
         cart.find('button[data-minus]').each(function(){
             $(this).click(function(){
                 elPlusMin($(this).data('minus'));
-                cartTableCalc();
+                //cartTableCalc();
             });
         });
         
         cart.find('button[data-plus]').each(function(){
             $(this).click(function(){
                 elPlusMin($(this).data('plus'),true);
-                cartTableCalc();
+                //cartTableCalc();
             });
         });
         
         cart.find('.cart-table__last-cell-link').each(function(){
             $(this).click(function(){
                 $(this).parents('tr').eq(0).remove();
-                cartTableCalc();
+                //cartTableCalc();
             });
         });
         
         cart.find('.cart-table__last-cell').each(function(){
             $(this).click(function(){
                 $('.cart-table tr.cart-table__lines').remove();
-                cartTableCalc();
+                //cartTableCalc();
             });
+        });
+
+        cart.find('.cart-table__totals-cross').on('click', function() {
+            cart.find('tbody').empty();
         });
     
         function cartTableCalc() {

@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="contact-info">
+        <div class="container">
+            <div class="row contact-info__content">
+                <div class="col-lg-6 col-md-5 col-xl-3 contact-info__location">
+                    <i class="contact-info__location-marker"></i>
+                    <address class="contact-info__location-address"><a href="https://yandex.ru/maps/213/moscow/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933&ll=37.609982%2C55.764224&z=18" class="contact-info__location-address-link" target="_blank" rel="noopener">Москва: ул. Тверская 12 стр. 8</a></address>
+                </div>
+                <div class="col-lg-6 col-md-7 col-xl-4 contact-info__schedule">
+                    <i class="contact-info__clock"></i>
+                    <p class="contact-info__timetable"><b>Пн-Пт:</b> 9-00 до 19-30,  <b>Сб-Вс:</b> 10-00 до 18-00</p>
+                </div>
+                <div class="col-lg-11 col-md-6 col-xl-4 contact-info__communications">
+                    <a href="#" class="contact-info__phone-call" data-toggle="modal" data-target="#ModalPhone">Заказать звонок </a>
+                    <div class="contact-info__communications-menu dropdown-toggle" id="contact-info__communications-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="contact-info__men"></i>
+                        <a href="#" class="contact-info__email"> username@yandex.ru </a>
+                    </div>
+                    <div class="dropdown-menu cabinet-menu" aria-labelledby="contact-info__communications-menu">
+                        <a class="dropdown-item" href="#">Ваш профайл</a>
+                        <a class="dropdown-item" href="#">Ваши заказы</a>
+                        <a class="dropdown-item" href="#">Монеты из ваших заказов</a>
+                        <a class="dropdown-item" href="#">Рекомендованные товары</a>
+                        <a class="dropdown-item contact-info__communications-exit" href="#">Выйти</a>
+                        <a href="#" class="exit-menu cabinet-menu_exit-menu" data-toggle="dropdown"></a>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-2 contact-info__balance">
+                    <a href="#" class="contact-info__money">2 500  ₽</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ModalPhone -->
+    <div class="modal fade" id="ModalPhone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Заказать обратный звонок</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="modal-quick-order__icon"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field" id="contact-number" placeholder="Ваш телефон">
+                    <input type="text"  class="form-control form-control-lg form-personal__entry-field mt-4" id="contact-your-data" placeholder="Ваше имя">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+
+    <div class="container">
+        <div class="row header-info">
+            <div class="col-lg-3 col-md-4 header-info__logotip">
+                <a href="index.html"><div class="header-info__logo"></div></a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light col-lg-4 header-info__list-of-links">
+                <button class="navbar-toggler collapsed header-info__main-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon header-info__burger-light"></span>
+                </button>
+                <div class="collapse navbar-collapse header-info__collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-lg-0 header-info__collapse-menu">
+                        <li class="nav-item header-info__lines">
+                            <a class="nav-link header-info__link" href="#">Информация</a>
+                        </li>
+                        <li class="nav-item header-info__lines">
+                            <a class="nav-link header-info__link" href="#">Гарантия</a>
+                        </li>
+                        <li class="nav-item header-info__lines header-info__lines-discounts">
+                            <a class="nav-link header-info__link" href="#">Скидки</a>
+                        </li>
+                        <li class="nav-item header-info__lines header-info__lines-contacts">
+                            <a class="nav-link header-info__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-info__ellipsis" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu header-info__ellipsis-menu" aria-labelledby="dropdownMenuButton">
+                                    <ul class="navbar-nav mr-auto mt-lg-0 d-block">
+                                        <li class="header-info__lines header-info__lines-discounts-lg">
+                                            <a class="nav-link header-info__link header-info__link-discounts" href="#">Скидки</a>
+                                        </li>
+                                        <li class="header-info__lines header-info__lines-contacts-lg">
+                                            <a class="nav-link header-info__link header-info__link-contact" href="#">Контакты</a>
+                                        </li>
+                                        <li class="header-info__lines">
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Монеты по заявкам</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="exit-menu" data-toggle="collapse" data-target="#navbarTogglerDemo01"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-lg-3 col-md-4 header-info__phone">
+                <div class="header-info__number">
+                    <a href="tel:+88003331477" class="header-info__number-link header-info__number-icon header-info__number-first">8 <span>(</span>800<span>)</span> 333-14-77</a>
+                    <a href="tel:+79030060044" class="header-info__number-link header-info__number-second">7 <span>(</span>903<span>)</span> 006-00-44</a>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#favoritsModal"><i class="header-info__star"></i></a>
+                <div class="modal fade" id="favoritsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="views-modal modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header py-0 d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0">Избранные товары</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="modal-quick-order__icon"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-pane">
+                                    <div class="favorites-nav_header d-flex mt-3 align-items-center justify-content-end">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="favorites-nav_main row mt-5">
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__new-icon">NEW  05.11</div>
+                                                <a href="product-page.html" style="background-image: url(img/recommendation/coin-img.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Россия</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2008</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Серебро</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">Proof</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">PL129-09</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">8 000 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <div class="card-coins__footer-btn-block">
+                                                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="button"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__novelty">НОВИНКА</div>
+                                                <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Австралия</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Латунь</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">UNC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">CS-080</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">360 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md  col-md-6 col-lg-4">
+                                            <div class="card card-coins">
+                                                <div class="card-coins__new-icon">NEW  05.11</div>
+                                                <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
+                                                <div class="card-body card-coins__body">
+                                                    <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                                                    <div class="card-coins__text">
+                                                        <table class="card-coins__table">
+                                                            <tbody class="card-coins__table-body">
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Страна:</td>
+                                                                <td class="card-coins__dynamic-information">Украина</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Год:</td>
+                                                                <td class="card-coins__dynamic-information">2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Металл:</td>
+                                                                <td class="card-coins__dynamic-information">Биметалл</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Состояние:</td>
+                                                                <td class="card-coins__dynamic-information">UNC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Номер:</td>
+                                                                <td class="card-coins__dynamic-information">CS-542</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="card-coins__static-information">Количество:</td>
+                                                                <td class="card-coins__dynamic-information">10 шт.</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-coins__footer">
+                                                        <span class="card-coins__price">500 ₽</span>
+                                                        <div class="card-coins__footer-btn">
+                                                            <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                                            <button type="button" class="btn card-coins__footer-btn-basket"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation example" class="justify-content-end d-flex">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <a href="index.html" class="btn btn-outline-primary header-info__cart">
+                    <i class="header-info__basket"></i>
+                    <span class="badge badge-secondary header-info__badge">
+                    <span class="header-info__badge-content">99</span>
+                </span>
+                    <div class="header-info__purchases">
+                        <div class="header-info__purchases-text">Товаров: <span class="header-info__price-amount">3</span> <b>шт.</b></div>
+                        <div class="header-info__purchases-text">На сумму: <span class="header-info__price-total">200 000</span> <b>₽</b></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-menu">
+        <div class="container header-menu__content">
+            <div class="px-0" id="section-navbar">
+                <nav class="navbar navbar-expand-lg navbar-dark header-menu__navbar px-0">
+                    <button class="navbar-toggler collapsed pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon header-menu__catalog"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+                        <ul class="navbar-nav header-menu__main-menu " id="accordionMenus">
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" data-target="#navbarDropdown"  aria-expanded="false" aria-controls="navbarDropdown">
+                                    Магазин монет
+                                </a>
+                                <div class="collapse header-menu__dropdown" id="navbarDropdown" aria-labelledby="headingThree" data-parent="#accordionMenus">
+                                    <div class="header-menu__dropdown-padding row">
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Наборы монет<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Мелочь<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Дешевые монеты<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Цветные монеты<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Лоты монет для начинающих<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Монеты СССР<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Картины из монет<span>-543</span></a>
+                                        </div>
+                                        <div class="col-lg-3 col-12 header-menu__dropdown-block">
+                                            <a class="dropdown-item" href="#">Распродажа монет<span>-543</span></a>
+                                            <a class="dropdown-item" href="#">Серии монет<span>-543</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item  menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Банкноты</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Аксессуары</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Жетоны</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Нотгельды</a>
+                            </li>
+                            <li class="nav-item  menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Книги</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">Распродажи</a>
+                            </li>
+                            <li class="nav-item menu-item-goods">
+                                <a class="nav-link menu-item-goods__link" href="#">История просмотров</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <div class="container search-padding">
+        <div class="row search-main mt-4">
+            <input type="text" placeholder="Начните поиск">
+            <button class="btn btn-primary">
+                Найти товар
+            </button>
+        </div>
+    </div>
+
+    <a href="#" class="btn back-to-top"></a>
+    <div class="container main-breadcrumb">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                        <li class="breadcrumb-item"><a href="#">Магазин монет</a></li>
+                        <li class="breadcrumb-item"><a href="#">Магазин монет</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Монета Россия 25 рублей Медно-никель 2018 UNC Номер Sets18-11</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-light bg-light main-search">
+        <form class="form-inline main-search__content">
+            <input class="form-control main-search__form" type="search" placeholder="Начните поиск." aria-label="Search">
+            <button class="btn btn-outline-success main-search__icon" type="submit"></button>
+        </form>
+    </nav>
+    <div class="container product-information">
+        <h2 class="mt-2 pt-2 pb-2">Монета США 20 долларов Золото 1927 UNC- Номер ZL05-03</h2>
+        <div class="row main-info-coin pt-3">
+            <div class="col-lg-7 img-coin-block">
+                <div class="product-information__new-icon">NEW  05.11</div>
+                <div class="a-t-f-p-p-icon-mobile text-center">
+                    <svg width="23px" height="22px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="cartblock" transform="translate(-183.000000, -359.000000)" fill="#FFFFFF" stroke="#333333">
+                                <g transform="translate(0.000000, 4.000000)" id="cart">
+                                    <g>
+                                        <g id="favorit" transform="translate(173.000000, 344.000000)">
+                                            <polygon id="favorite" points="20 26 14.1221475 29.0901699 15.2447174 22.545085 10.4894348 17.9098301 17.0610737 16.954915 20 11 22.9389263 16.954915 29.5105652 17.9098301 24.7552826 22.545085 25.8778525 29.0901699"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="img-coin-block__border">
+                    <ul class="img-coin-block__list">
+                        <li class="img-coin-block__list-item"><img src="img/product-page__main/Bitmap.jpg" alt=""></li>
+                        <li class="img-coin-block__list-item"><img src="img/product-page__main/Bitmap.jpg" alt=""></li>
+                        <li class="img-coin-block__list-item"><img src="img/product-page__main/Bitmap.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <span class="product-information__big-photo">Другие фото:</span>
+                <div class="product-information__images">
+                    <ul class="img-coin-block__list-nav">
+                        <li><img src="img/product-page__main/Bitmap1.jpg" alt="" class="product-information__img-min"></li>
+                        <li><img src="img/product-page__main/Bitmap1.jpg" alt="" class="product-information__img-min"></li>
+                        <li><img src="img/product-page__main/Bitmap1.jpg" alt="" class="product-information__img-min"></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col-lg-5 product-information__column">
+                <div class="row">
+                    <div class="product-information__price-rating">
+                        <div class="product-information__price col-lg-7 order-2 order-lg-1 col-md-12 col-12">
+                            <span class="product-information__new-price">8000 ₽</span>
+                            <span class="product-information__old-price">9000 ₽</span>
+                        </div>
+                        <div class="col-lg-5 stars-block text-right order-1 order-lg-2 col-12 text-center text-lg-right pt-lg-0 pb-sm-5 pb-lg-0 pt-4">
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star.svg" alt=""></a>
+                            <a href="#"><img src="img/rating/Star2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row buy-coin-count d-flex align-items-center">
+                    <div class="col-5 col-sm-6 col-lg-6 col-xl-7 pt-1">
+                        <div class="buy-coin-count__container">
+                            <div class="quantity-control">
+                                <button class="quantity-control-minus" type="button" data-minus="1000"></button>
+                                <input data-id="1000" class="quantity-control-num" type="number" value="2" name="cart-table__block-num">
+                                <button type="button" class="quantity-control-plus" data-plus="1000"></button>
+                            </div>
+                            <div class="count-text">
+                                В наличии: 10 шт.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 col-sm-6 col-lg-6  col-xl-5 btn-to-cart">
+                        <button class="btn btn-primary w-100 btn-lg button-add-cart">
+                            <img src="img/product-page__main/shopping-cart.svg" alt="">
+                            <span class="pl-2">В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row other-capabilities pt-2">
+                    <div class="col-6 col-sm-6 col-lg-6 col-xl-7 buy-one-click  mt-3 ">
+                        <a href="#" class="pl-3">Купить в один клик</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-6 col-xl-5 add-to-favorite-product-page pt-4">
+                        <div class="a-t-f-p-p-btn d-flex" data-toggle="button">
+                            <div class="a-t-f-p-p-btn__img"></div>
+                            <!--<div class="a-t-f-p-p-icon text-center">-->
+                                <!--&lt;!&ndash;<svg width="23px" height="22px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<g id="cartblock" transform="translate(-183.000000, -359.000000)" fill="#FFFFFF" stroke="#333333">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<g transform="translate(0.000000, 4.000000)" id="cart">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<g>&ndash;&gt;-->
+                                                    <!--&lt;!&ndash;<g id="favorit" transform="translate(173.000000, 344.000000)">&ndash;&gt;-->
+                                                        <!--&lt;!&ndash;<polygon id="favorite" points="20 26 14.1221475 29.0901699 15.2447174 22.545085 10.4894348 17.9098301 17.0610737 16.954915 20 11 22.9389263 16.954915 29.5105652 17.9098301 24.7552826 22.545085 25.8778525 29.0901699"></polygon>&ndash;&gt;-->
+                                                    <!--&lt;!&ndash;</g>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;</g>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</g>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</g>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</g>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</svg>&ndash;&gt;-->
+                                <!--<i></i>-->
+                            <!--</div>-->
+                            <a href="#" class="a-t-f-p-p-text">
+                                В избранное
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristics">
+                    <div class="opportunities col-sm-12 pt-4 mt-1 pl-0">
+                        <h4 class="opportunities__title">Характеристики:</h4>
+                        <table class="characteristics-table">
+                            <tfoot>
+                            <tr class="characteristics-table__last-tr">
+                                <td class="characteristics-table__static-information characteristics-table__last-td">Описание:</td>
+                                <td class="characteristics-table__dynamic-information characteristics-table__last-td">Маха Вачиралонгкорн, Рама X</td>
+                            </tr>
+                            </tfoot>
+                            <tbody class="characteristics-table-body">
+                            <tr>
+                                <td class="characteristics-table__static-information">Страна:</td>
+                                <td class="characteristics-table__dynamic-information">Россия</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Номинал:</td>
+                                <td class="characteristics-table__dynamic-information">20 бат</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Год:</td>
+                                <td class="characteristics-table__dynamic-information">2008</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Металл:</td>
+                                <td class="characteristics-table__dynamic-information">Серебро</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Состояние:</td>
+                                <td class="characteristics-table__dynamic-information">Proof</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristics-table__static-information">Номер:</td>
+                                <td class="characteristics-table__dynamic-information">PL129-09</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="social-button pt-4 social-button__icon">
+                    <script type="text/javascript">(function() {
+                        if (window.pluso)if (typeof window.pluso.start == "function") return;
+                        if (window.ifpluso==undefined) { window.ifpluso = 1;
+                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                            var h=d[g]('body')[0];
+                            h.appendChild(s);
+                        }})();</script>
+                    <div class="pluso" data-background="#ebebeb" data-options="medium,square,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row delivery-and-pay mt-5">
+            <div class="col-md-6">
+                <h5 class="pb-3">
+                    Доставка:
+                </h5>
+                <p class="list-orange-points">
+                    Самовывоз в офисе м.Тверская
+                </p>
+                <p class="list-orange-points">
+                    Встречи на кольцевых
+                </p>
+                <p class="list-orange-points">
+                    Курьерская доставка
+                </p>
+                <p class="list-orange-points">
+                    Пункт выдачи BoxBerry
+                </p>
+                <p class="list-orange-points">
+                    Отправка по почте
+                </p>
+                <p class="list-orange-points">
+                    Экспресс доставка (ЕМС)
+                </p>
+                <p class="list-orange-points link-point pt-2">
+                    <a href="">Подробнее</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="pb-3">Оплата:</h5>
+                <p class="list-orange-points">
+                    Наличные
+                </p>
+                <p class="list-orange-points">
+                    Эквайринг от Сбербанка
+                </p>
+                <p class="list-orange-points">
+                    Кредитные карты VISA,MasterCard
+                </p>
+                <p class="list-orange-points">
+                    WebMoney
+                </p>
+                <p class="list-orange-points">
+                    Сбербанк - экономия времени и стоимости
+                </p>
+                <p class="list-orange-points link-point pt-2">
+                    <a href="">Подробнее</a>
+                </p>
+            </div>
+        </div>
+        <div class="other-information-links mt-5 mb-5">
+            <div class="row other-information-links__container">
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a1">
+                        <i class="other-information-links__icon-reviews"></i>
+                        <a href="#">Отзывы покупателей</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a2">
+                        <i class="other-information-links__icon-guarantee"></i>
+                        <a href="#">Гарантия подлинности</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center icon-info-link">
+                    <div class="icon-i-b-product a3">
+                        <i class="other-information-links__icon-discounts"></i>
+                        <a href="#">Система скидок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container recommendations">
+        <header class="recommendations__header">
+            <h3 class="recommendations__title">Рекомендуем преобрести</h3>
+        </header>
+        <div class="row recommendations__content" data-slick-slider>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <div class="card-coins__new-icon">NEW  05.11</div>
+                    <a href="#" style="background-image: url(img/recommendation/coin-img.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Россия 3 рубля Серебро 2008 Proof</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Россия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2008</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Серебро</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">Proof</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">PL129-09</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">8 000 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/coin-img-2.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <div class="card-coins__new-icon">NEW  05.11</div>
+                    <a href="#" style="background-image: url(img/recommendation/coin-img-3.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Украина 5 гривен Биметалл 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Украина</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Биметалл</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-542</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">500 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-coins">
+                    <a href="#" style="background-image: url(img/recommendation/Bitmap.png);" class="card-coins__link"></a>
+                    <div class="card-body card-coins__body">
+                        <h4 class="card-coins__title"><a href="product-page.html" class="card-coins__title-link">Монета Австралия 2 доллара Латунь 2018 UNC</a></h4>
+                        <div class="card-coins__text">
+                            <table class="card-coins__table">
+                                <tbody class="card-coins__table-body">
+                                <tr>
+                                    <td class="card-coins__static-information">Страна:</td>
+                                    <td class="card-coins__dynamic-information">Австралия</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Год:</td>
+                                    <td class="card-coins__dynamic-information">2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Металл:</td>
+                                    <td class="card-coins__dynamic-information">Латунь</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Состояние:</td>
+                                    <td class="card-coins__dynamic-information">UNC</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Номер:</td>
+                                    <td class="card-coins__dynamic-information">CS-080</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-coins__static-information">Количество:</td>
+                                    <td class="card-coins__dynamic-information">10 шт.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-coins__footer">
+                            <span class="card-coins__price">360 ₽</span>
+                            <div class="card-coins__footer-btn">
+                                <a href="#" class="btn card-coins__footer-btn-star" data-toggle="button"></a>
+                                <button type="button" class="btn card-coins__footer-btn-basket" data-toggle="modal" data-target=".bd-example-modal-lg"></button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg card-coins__btn">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-quick-order">
+                <div class="modal-content">
+                    <section class="container-fluid">
+                        <div class="row">
+                            <header class="col-lg-6 col-10 modal-quick-order__title">Форма быстрого заказа</header>
+                            <div class="col-lg-6 col-2">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="modal-quick-order__icon"></i>
+                                </button>
+                            </div>
+                            <div class="media col-12 modal-quick-order__info">
+                                <img class="" src="img/modal-img/exclamation.svg" alt="">
+                                <div class="media-body modal-quick-order__text">
+                                    Чтобы оформить заказ, укажите только свое имя
+                                    и номер телефона. Все остальные данные Вы можете сообщить менеджеру. Форма "Быстрый заказ" предназначена для заказа одного вида товаров.
+                                    Если вы хотите продолжать выбор товаров, то используйте обычную функцию заказа - "В корзину"
+                                </div>
+                            </div>
+                            <div class="cart-table col-lg-12">
+                                <table class="table table-hover cart-table__main mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="cart-table__photo">Фото</th>
+                                        <th scope="col" class="cart-table__name-country">Группа - Страна</th>
+                                        <th scope="col">Наименование</th>
+                                        <th scope="col">Год</th>
+                                        <th scope="col">Ценна</th>
+                                        <th scope="col">Количество</th>
+                                        <th scope="col">Сумма</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="modal-content__tbody">
+                                    <tr class="cart-table__lines">
+                                        <td class="cart-table__img">
+                                            <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
+                                                <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                                        <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
+                                        <td class="cart-table__year">2018</td>
+                                        <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                        <td class="cart-table__sum">
+                                            <div class="quantity-control cart-table__block">
+                                                <button class="quantity-control-minus" type="button" data-minus="1"></button>
+                                                <input data-id="1" class="quantity-control-num" type="number" value="2" name="cart-table__block-num">
+                                                <button type="button" class="quantity-control-plus" data-plus="1"></button>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="totals-modal totals">
+                                    <h1 class="totals__titles totals__titles-modal">Итого:</h1>
+                                    <span class="totals__price totals__price-modal">1000  ₽</span>
+                                </div>
+
+
+                                <div class="modal-forms">
+                                    <div class="form-group modal-forms__phone">
+                                        <label for="your-data" class="col-form-label">Телефон</label>
+                                        <div class="modal-forms__phone-form">
+                                            <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                                        </div>
+                                    </div>
+                                    <div class="form-group modal-forms__name">
+                                        <label for="your-data" class="col-form-label">ФИО</label>
+                                        <div class="modal-forms__name-form">
+                                            <input type="text"  class="form-control" id="your-data" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="modal-forms__btn">
+                                        <div class="row">
+                                            <div class="button-group">
+                                                <button type="submit" class="btn btn-primary btn-lg modal-forms__button-ordering">Отправить заказ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="subscription">
+        <div class="subscription__text">
+            <p>ХОТИТЕ БЫТЬ В КУРСЕ СОБЫТИЙ? ВСЕГДА АКТУАЛЬНАЯ ИНФОРМАЦИЯ! ПОДПИШИТЕСЬ</p>
+        </div>
+        <div class="subscription__btn">
+            <button type="button" class="btn btn-secondary">
+                <span>Подписаться</span>
+                <i class="subscription__icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+
+                <!---->
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingOne">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Магазин монет
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="collapse footer-info__card-content" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Монеты</a>
+                                    <a href="#" class="footer-info__link">Распродажа монет</a>
+                                    <a href="#" class="footer-info__link">Оплата и доставка</a>
+                                    <a href="#" class="footer-info__link">Покупка/скупка монет</a>
+                                    <a href="#" class="footer-info__link">Скупка-оценка</a>
+                                    <a href="#" class="footer-info__link">Контакты</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">Монеты</a>
+                        <a href="#" class="footer-info__link">Распродажа монет</a>
+                        <a href="#" class="footer-info__link">Оплата и доставка</a>
+                        <a href="#" class="footer-info__link">Покупка/скупка монет</a>
+                        <a href="#" class="footer-info__link">Скупка-оценка</a>
+                        <a href="#" class="footer-info__link">Контакты</a>
+                    </nav>
+                </div>
+
+                <!---->
+
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingTwo">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Каталог монет
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse footer-info__card-content" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Каталог монет</a>
+                                    <a href="#" class="footer-info__link">Наборы монет</a>
+                                    <a href="#" class="footer-info__link">Банкноты</a>
+                                    <a href="#" class="footer-info__link">Подарочные монеты</a>
+                                    <a href="#" class="footer-info__link">Аксессуары</a>
+                                    <a href="#" class="footer-info__link">Программа нумизмата</a>
+                                    <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">Каталог монет</a>
+                        <a href="#" class="footer-info__link">Наборы монет</a>
+                        <a href="#" class="footer-info__link">Банкноты</a>
+                        <a href="#" class="footer-info__link">Подарочные монеты</a>
+                        <a href="#" class="footer-info__link">Аксессуары</a>
+                        <a href="#" class="footer-info__link">Программа нумизмата</a>
+                        <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                    </nav>
+                </div>
+
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingThree">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Нумизмату
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseThree" class="collapse footer-info__card-content" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                                    <a href="#" class="footer-info__link">Новости нумизматики</a>
+                                    <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                                    <a href="#" class="footer-info__link">Форум нумизматов</a>
+                                    <a href="#" class="footer-info__link">Черный список</a>
+                                    <a href="#" class="footer-info__link">Ценник на монеты</a>
+                                    <a href="#" class="footer-info__link">Стоимость монет</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">Каталог монет</a>
+                        <a href="#" class="footer-info__link">Наборы монет</a>
+                        <a href="#" class="footer-info__link">Банкноты</a>
+                        <a href="#" class="footer-info__link">Подарочные монеты</a>
+                        <a href="#" class="footer-info__link">Аксессуары</a>
+                        <a href="#" class="footer-info__link">Программа нумизмата</a>
+                        <a href="#" class="footer-info__link">Приложения для смартфона</a>
+                    </nav>
+                </div>
+
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingFour">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Обратная связь
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFour" class="collapse footer-info__card-content" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                                    <a href="#" class="footer-info__link">Новости нумизматики</a>
+                                    <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                                    <a href="#" class="footer-info__link">Форум нумизматов</a>
+                                    <a href="#" class="footer-info__link">Черный список</a>
+                                    <a href="#" class="footer-info__link">Ценник на монеты</a>
+                                    <a href="#" class="footer-info__link">Стоимость монет</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">Библиотека нумизмата</a>
+                        <a href="#" class="footer-info__link">Новости нумизматики</a>
+                        <a href="#" class="footer-info__link">Клуб Нумизмат</a>
+                        <a href="#" class="footer-info__link">Форум нумизматов</a>
+                        <a href="#" class="footer-info__link">Черный список</a>
+                        <a href="#" class="footer-info__link">Ценник на монеты</a>
+                        <a href="#" class="footer-info__link">Стоимость монет</a>
+                    </nav>
+                </div>
+
+                <!---->
+
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingFive">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Для клиентов
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFive" class="collapse footer-info__card-content" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <nav class="d-flex flex-column footer-info__card-list">
+                                    <a href="#" class="footer-info__link">О магазине</a>
+                                    <a href="#" class="footer-info__link">Видео о компании</a>
+                                    <a href="#" class="footer-info__link">Доставка и оплата</a>
+                                    <a href="#" class="footer-info__link">Boxberry в 360 городах России</a>
+                                    <a href="#" class="footer-info__link">Правила монетной лавки</a>
+                                    <a href="#" class="footer-info__link">Гарантии подлинности монет</a>
+                                    <a href="#" class="footer-info__link">ЧаВо по магазину</a>
+                                    <a href="#" class="footer-info__link">Панорама магазина</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex flex-column footer-info__list">
+                        <a href="#" class="footer-info__link">О магазине</a>
+                        <a href="#" class="footer-info__link">Видео о компании</a>
+                        <a href="#" class="footer-info__link">Доставка и оплата</a>
+                        <a href="#" class="footer-info__link">Boxberry в 360 городах России</a>
+                        <a href="#" class="footer-info__link">Правила монетной лавки</a>
+                        <a href="#" class="footer-info__link">Гарантии подлинности монет</a>
+                        <a href="#" class="footer-info__link">ЧаВо по магазину</a>
+                        <a href="#" class="footer-info__link">Панорама магазина</a>
+                    </nav>
+                </div>
+
+                <!---->
+
+                <div class="col-lg-3 col-md-4 d-flex flex-column footer-info__block">
+                    <div class="card footer-info__card">
+                        <div class="card-header footer-info__card-header" id="headingSix">
+                            <h4 class="mb-0 footer-info__title">
+                                <button class="btn btn-link footer-info__card-btn" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    Контактные данные
+                                </button>
+                            </h4>
+                        </div>
+
+                        <div id="collapseSix" class="collapse footer-info__card-content" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body footer-info__card-body">
+                                <h5 class="title-moscow">Москва</h5>
+                                <p class="address-text">Адрес:</p>
+                                <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
+                                <p class="address-text">Телефоны:</p>
+                                <a href="tel:+88003331477" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                                <a href="tel:+79030060044" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                                <h5 class="title-petersburg">Санкт-Петербургe</h5>
+                                <p class="address-text">Адрес:</p>
+                                <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
+                                <p class="address-text">Телефон:</p>
+                                <a href="tel:+78129255322" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-info__list">
+                        <h5 class="title-moscow">Москва</h5>
+                        <p class="address-text">Адрес:</p>
+                        <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
+                        <p class="address-text">Телефоны:</p>
+                        <a href="tel:+88003331477" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                        <a href="tel:+79030060044" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="col-lg-3 col-md-8 footer-info__address-piter footer-info__block">
+                    <h5 class="title-petersburg">Санкт-Петербургe</h5>
+                    <p class="address-text">Адрес:</p>
+                    <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
+                    <p class="address-text">Телефон:</p>
+                    <a href="tel:+78129255322" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                </div>
+
+                <!---->
+
+                <div class="col-lg-3 col-md-4 footer-info__block">
+                    <div class="footer-logo"></div>
+                    <p>2001 - 2018 &copy Клуб Нумизмат</p>
+                    <div class="footer-img">
+                        <a href="#"><div class="footer-img__metrika"></div></a>
+                        <a href="#"><div class="footer-img__icon"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info__copyrighted">
+            <p class="footer-info__copyrighted-text">
+                При полном или частичном использовании материалов ссылка на Клуб Нумизмат обязательна.
+                <a href="mailto:administrator@numizmatik.ru" class="footer-info__copyrighted-link">administrator@numizmatik.ru</a>
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="js/recommendations.js"></script>
+<script src="js/img-coin-block.js"></script>
+<script src="js/table-form.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/script.js"></script>
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>
+</html>

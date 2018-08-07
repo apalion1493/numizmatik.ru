@@ -345,12 +345,12 @@
                         <span class="navbar-toggler-icon header-menu__catalog"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
-                        <ul class="navbar-nav header-menu__main-menu ">
+                        <ul class="navbar-nav header-menu__main-menu " id="accordionMenus">
                             <li class="nav-item menu-item-goods">
                                 <a class="nav-link header-menu__dropdown-store menu-item-goods__link"  data-toggle="collapse" data-target="#navbarDropdown"  aria-expanded="false" aria-controls="navbarDropdown">
                                     Магазин монет
                                 </a>
-                                <div class="collapse header-menu__dropdown" id="navbarDropdown" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="collapse header-menu__dropdown" id="navbarDropdown" aria-labelledby="headingThree" data-parent="#accordionMenus">
                                     <div class="header-menu__dropdown-padding row">
                                         <div class="col-lg-3 col-12 header-menu__dropdown-block">
                                             <a class="dropdown-item" href="#">Наборы монет<span>-543</span></a>
@@ -449,11 +449,11 @@
             </div>
             <div class="cart-table cart-table__main">
                 <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-hover cart-table__width mb-0 position-relative">
+                    <div class="table-responsive table-responsive-xl">
+                        <table class="table table-hover cart-table__width mb-0">
                             <thead>
                             <tr>
-                                <!--<th scope="col" class="cart-table__cell-angle">&shy</th>-->
+                                <th scope="col" class="cart-table__cell-angle">&shy</th>
                                 <th scope="col" class="cart-table__photo">Фото</th>
                                 <th scope="col" class="cart-table__name-country">Группа - Страна</th>
                                 <th scope="col">Наименование</th>
@@ -467,13 +467,13 @@
                                 </th>
                             </tr>
                             </thead>
-                            <tbody class="small-change">
+                            <tbody>
                             <tr class="cart-table__lines">
-                                <!--<th rowspan="3" scope="row" class="cart-table__th-grey">-->
-                                <!--<div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>-->
-                                <!--</th>-->
+                                <th rowspan="3" scope="row" class="cart-table__th-grey">
+                                    <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
+                                </th>
                                 <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
+                                    <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
                                     </div>
                                 </td>
@@ -481,22 +481,22 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span id="1_price">300</span> ₽</td>
                                 <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                    <div class="quantity-control">
+                                        <button class="quantity-control-minus" type="button" data-minus="1"></button>
+                                        <input data-id="1" class="quantity-control-num" type="number" value="2" name="cart-table__block-num">
+                                        <button type="button" class="quantity-control-plus" data-plus="1"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span id="1_sum">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a class="cart-table__last-cell-link" href="#"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
                             </tr>
                             <tr class="cart-table__lines">
                                 <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
+                                    <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
                                     </div>
                                 </td>
@@ -504,22 +504,22 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span id="2_price">250</span> ₽</td>
                                 <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                    <div class="quantity-control">
+                                        <button class="quantity-control-minus" type="button" data-minus="2"></button>
+                                        <input data-id="2" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="2"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span id="2_sum">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
                             </tr>
                             <tr class="cart-table__lines">
                                 <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
+                                    <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
                                     </div>
                                 </td>
@@ -527,29 +527,25 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span id="3_price">250</span> ₽</td>
                                 <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                    <div class="quantity-control">
+                                        <button class="quantity-control-minus" type="button" data-minus="3"></button>
+                                        <input data-id="3" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="3"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span id="3_sum">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
                             </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-hover cart-table__width mb-0 position-relative">
-                            <tbody class="boni">
                             <tr class="cart-table__lines">
-                                <!--<th scope="row" class="cart-table__th-grey">-->
-                                <!--<div class="cart-table__th-vertical">Боны</div>-->
-                                <!--</th>-->
+                                <th scope="row" class="cart-table__th-grey">
+                                    <div class="cart-table__th-vertical">Боны</div>
+                                </th>
                                 <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
+                                    <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
                                     </div>
                                 </td>
@@ -557,67 +553,15 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span id="4_price">250</span> ₽</td>
                                 <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                    <div class="quantity-control">
+                                        <button class="quantity-control-minus" type="button" data-minus="4"></button>
+                                        <input data-id="4" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="4"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
-                            </tr>
-                            <tr class="cart-table__lines">
-                                <!--<th scope="row" class="cart-table__th-grey">-->
-                                <!--<div class="cart-table__th-vertical">Боны</div>-->
-                                <!--</th>-->
-                                <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
-                                        <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Бангладеш</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
-                                <td class="cart-table__last-cell">
-                                    <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
-                                </td>
-                            </tr>
-                            <tr class="cart-table__lines">
-                                <!--<th scope="row" class="cart-table__th-grey">-->
-                                <!--<div class="cart-table__th-vertical">Боны</div>-->
-                                <!--</th>-->
-                                <td class="cart-table__img">
-                                    <div class="cart-table__link cart-table__link-img" style="background-image: url(img/table-img/Bitmap.svg);">
-                                        <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Бангладеш</a></td>
-                                <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
-                                <td class="cart-table__year">2018</td>
-                                <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
-                                <td class="cart-table__sum">
-                                    <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
-                                    </div>
-                                </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span id="4_sum">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
@@ -630,7 +574,7 @@
                     <div class="cart-table__totals">
                         <div class="cart-table__totals-content">
                             <h1 class="cart-table__totals-titles">Итого:</h1>
-                            <span class="cart-table__totals-price">1000  ₽</span>
+                            <span class="cart-table__totals-price"><b>1000</b>  ₽</span>
                         </div>
                         <div class="cart-table__totals-cross">
                             <a href="#" class="cart-table__totals-cross-link"><span class="cart-table__totals-cross-mobil">Очистить корзину</span><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>

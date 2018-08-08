@@ -10,7 +10,7 @@ https://apalion1493.github.io/numizmatik.ru/app/product-page.html
 
 https://apalion1493.github.io/numizmatik.ru/app/search.html
 
-https://apalion1493.github.io/numizmatik.ru/app/catalog.html
+https://apalion1493.github.io/numizmatik.ru/app/catalog1.html
 
 
 

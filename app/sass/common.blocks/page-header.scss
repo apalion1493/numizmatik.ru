@@ -101,6 +101,7 @@ html, body {
 .contact-info__money {
   color: #EBAD45;
   font-size: $normal-size;
+  white-space: nowrap;
 }
 
 .contact-info__registration {
@@ -522,6 +523,10 @@ html, body {
   height: 8px;
 }
 
+.header-info .header-info__coins-by-request {
+  white-space: nowrap;
+  display: none;
+}
 
 
 @include media-breakpoint-between(xs,sm) {
@@ -1266,6 +1271,20 @@ html, body {
 }
 
 @include media-breakpoint-only(xl) {
+
+  .header-info  .header-info__coins-by-request {
+    white-space: nowrap;
+    display: block;
+  }
+
+  .header-info__ellipsis {
+    display: none !important;
+  }
+
+  .page-header_unauthorized-page .header-info__ellipsis {
+    display: block !important;
+  }
+
   .page-header .contact-info__registration {
     color: #252B7F;
     margin-left: 85px;

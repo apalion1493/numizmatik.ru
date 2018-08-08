@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header_unauthorized-page">
     <div class="contact-info">
         <div class="container">
             <div class="row contact-info__content">
@@ -205,7 +205,7 @@
                                             <a class="nav-link header-info__link header-info__link-contact" href="#">Контакты</a>
                                         </li>
                                         <li class="header-info__lines">
-                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Пункт меню</a>
+                                            <a class="dropdown-item header-info__link header-info__ellipsis-item" href="#">Монеты по заявкам</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -546,11 +546,10 @@
             </div>
             <div class="cart-table cart-table__main">
                 <div class="col-lg-12">
-                    <div class="table-responsive">
+                    <div class="table-responsive table-responsive-xl">
                         <table class="table table-hover cart-table__width mb-0">
                             <thead>
                             <tr>
-                                <th scope="col" class="cart-table__cell-angle">&shy</th>
                                 <th scope="col" class="cart-table__photo">Фото</th>
                                 <th scope="col" class="cart-table__name-country">Группа - Страна</th>
                                 <th scope="col">Наименование</th>
@@ -559,16 +558,11 @@
                                 <th scope="col">Ценна</th>
                                 <th scope="col">Количество</th>
                                 <th scope="col">Сумма</th>
-                                <th scope="col" class="cart-table__last-cell">
-                                    <i class="cart-table__trashcan"></i>
-                                </th>
+                                <th scope="col"></th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="cart-table__small-change">
                             <tr class="cart-table__lines">
-                                <th rowspan="3" scope="row" class="cart-table__th-grey">
-                                    <div class="cart-table__th-vertical cart-table__first-vertical-th">Мелочь</div>
-                                </th>
                                 <td class="cart-table__img">
                                     <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
@@ -578,15 +572,15 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span data-price="1">300</span> ₽</td>
                                 <td class="cart-table__sum">
                                     <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                        <button class="quantity-control-minus" type="button" data-minus="1"></button>
+                                        <input data-id="1" class="quantity-control-num" type="number" value="2" name="cart-table__block-num">
+                                        <button type="button" class="quantity-control-plus" data-plus="1"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span data-sum="1">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a class="cart-table__last-cell-link" href="#"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
@@ -601,15 +595,15 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span data-price="2">250</span> ₽</td>
                                 <td class="cart-table__sum">
                                     <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                        <button class="quantity-control-minus" type="button" data-minus="2"></button>
+                                        <input data-id="2" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="2"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span data-sum="2">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
@@ -624,23 +618,23 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span data-price="3">250</span> ₽</td>
                                 <td class="cart-table__sum">
                                     <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                        <button class="quantity-control-minus" type="button" data-minus="3"></button>
+                                        <input data-id="3" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="3"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span data-sum="3">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
                             </tr>
+                            </tbody>
+
+                            <tbody class="cart-table__bonds">
                             <tr class="cart-table__lines">
-                                <th scope="row" class="cart-table__th-grey">
-                                    <div class="cart-table__th-vertical">Боны</div>
-                                </th>
                                 <td class="cart-table__img">
                                     <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
                                         <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
@@ -650,15 +644,15 @@
                                 <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">70 така</a></td>
                                 <td class="cart-table__year">2018</td>
                                 <td class="cart-table__information-subject">Красная Книга СССР. Чёрный гриф. UNUSUAL. ММД</td>
-                                <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__price"><span data-price="4">250</span> ₽</td>
                                 <td class="cart-table__sum">
                                     <div class="quantity-control cart-table__block">
-                                        <button class="quantity-control-minus"></button>
-                                        <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
-                                        <button class="quantity-control-plus"></button>
+                                        <button class="quantity-control-minus" type="button" data-minus="4"></button>
+                                        <input data-id="4" class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                        <button class="quantity-control-plus" type="button" data-plus="4"></button>
                                     </div>
                                 </td>
-                                <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                <td class="cart-table__bold-text cart-table__amount"><span data-sum="4">250</span> ₽</td>
                                 <td class="cart-table__last-cell">
                                     <a href="#" class="cart-table__last-cell-link"><i class="cart-table__last-cell-img"></i></a>
                                 </td>
@@ -671,7 +665,7 @@
                     <div class="cart-table__totals">
                         <div class="cart-table__totals-content">
                             <h1 class="cart-table__totals-titles">Итого:</h1>
-                            <span class="cart-table__totals-price">1000  ₽</span>
+                            <span class="cart-table__totals-price"><b>1000</b>  ₽</span>
                         </div>
                         <div class="cart-table__totals-cross">
                             <a href="#" class="cart-table__totals-cross-link"><span class="cart-table__totals-cross-mobil">Очистить корзину</span><img src="img/table-img/cross.svg" alt="" class="cart-table__totals-cross-img"></a>
@@ -1523,13 +1517,13 @@
                                 <p class="address-text">Адрес:</p>
                                 <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
                                 <p class="address-text">Телефоны:</p>
-                                <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
-                                <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                                <a href="tel:+88003331477" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                                <a href="tel:+79030060044" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
                                 <h5 class="title-petersburg">Санкт-Петербургe</h5>
                                 <p class="address-text">Адрес:</p>
                                 <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
                                 <p class="address-text">Телефон:</p>
-                                <a href="#" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                                <a href="tel:+78129255322" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
                             </div>
                         </div>
                     </div>
@@ -1539,8 +1533,8 @@
                         <p class="address-text">Адрес:</p>
                         <address><a href="https://yandex.ru/maps/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2012%D1%818&sll=37.609290%2C55.763933" class="footer-info__link footer-info__link-compact" target="_blank" rel="noopener">г. Москва, ул. Тверская 12 стр. 8.</a><br> Станция метро: Чеховская,<br> Тверская, Пушкинская</address>
                         <p class="address-text">Телефоны:</p>
-                        <a href="#" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
-                        <a href="#" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
+                        <a href="tel:+88003331477" class="footer-info__link footer-info__link-compact">+8-800-333-14-77(Россия <br> бесплатно),</a>
+                        <a href="tel:+79030060044" class="footer-info__link footer-info__link-compact">+7-903-006-00-44</a>
                     </div>
                 </div>
 
@@ -1551,7 +1545,7 @@
                     <p class="address-text">Адрес:</p>
                     <address><a href="https://yandex.ru/maps/2/saint-petersburg/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D1%83%D1%80%D0%BA%D1%83%2C%2031&sll=30.409374%2C59.866152&ll=30.409374%2C59.866152&z=16" class="footer-info__link" target="_blank" rel="noopener">Санкт-Петербург, ул. Турку 31</a></address>
                     <p class="address-text">Телефон:</p>
-                    <a href="#" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
+                    <a href="tel:+78129255322" class="footer-info__link footer-info__link-compact">+7-812-925-53-22</a>
                 </div>
 
                 <!---->

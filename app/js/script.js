@@ -76,10 +76,10 @@ jQuery(document).ready(function($) {
         r.each(function(i,v){
             if($(v).text().toLowerCase().indexOf($(th).val().toLowerCase())==-1){
                 r.eq(i).hide();
-                $('.country-filter__navigation').hide();
+                $('.country-filter__navigation, .country-group-list__check').hide();
             } else {
                 r.eq(i).show();
-                $('.country-filter__navigation').show()
+                $('.country-filter__navigation, .country-group-list__check').show()
             }
         })
     });

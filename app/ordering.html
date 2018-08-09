@@ -898,21 +898,6 @@
                         <div class="clearfix"><input type="text"  class="form-control form-discount__code" name="discount-code[]" /></div>
                         
                     </div>
-<<<<<<< HEAD
-                    <!--<div class="discount-code__forms-block d-flex align-items-center mb-1">-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--<a href="#">-->
-                            <!--<img src="img/forms-img/plus.svg" alt="" width="11" height="11">-->
-                        <!--</a>-->
-                    <!--</div>-->
-                    <!--<div class="discount-code__forms-block d-flex align-items-center mb-1">-->
-                        <!--<input type="text"  class="form-control form-discount__code" id="discount-code">-->
-                        <!--<a href="#">-->
-                            <!--<img src="img/forms-img/plus.svg" alt="" width="11" height="11">-->
-                        <!--</a>-->
-                    <!--</div>-->
-=======
->>>>>>> 6972be4a82228c4d60ed790e1eb823cb956af16e
                 </div>
                 <!--<i class="form-discount__dash"></i>-->
                 
@@ -1557,7 +1542,7 @@
                                         <td class="cart-table__year">2018</td>
                                         <td class="cart-table__bold-text cart-table__price">250 ₽</td>
                                         <td class="cart-table__sum">
-                                            <div class="quantity-control cart-table__block">
+                                            <div class="quantity-control">
                                                 <button class="quantity-control-minus"></button>
                                                 <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
                                                 <button class="quantity-control-plus"></button>
@@ -1605,6 +1590,94 @@
 </main>
 
 <footer class="page-footer">
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-quick-order">
+            <div class="modal-content">
+                <section class="container-fluid">
+                    <div class="row">
+                        <header class="col-lg-6 col-10 modal-quick-order__title">Форма быстрого заказа</header>
+                        <div class="col-lg-6 col-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="modal-quick-order__icon"></i>
+                            </button>
+                        </div>
+                        <div class="media col-12 modal-quick-order__info">
+                            <img class="" src="img/modal-img/exclamation.svg" alt="">
+                            <div class="media-body modal-quick-order__text">
+                                Чтобы оформить заказ, укажите только свое имя
+                                и номер телефона. Все остальные данные Вы можете сообщить менеджеру. Форма "Быстрый заказ" предназначена для заказа одного вида товаров.
+                                Если вы хотите продолжать выбор товаров, то используйте обычную функцию заказа - "В корзину"
+                            </div>
+                        </div>
+                        <div class="cart-table col-lg-12">
+                            <table class="table table-hover cart-table__main mb-0">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="cart-table__photo">Фото</th>
+                                    <th scope="col" class="cart-table__name-country">Группа - Страна</th>
+                                    <th scope="col">Наименование</th>
+                                    <th scope="col">Год</th>
+                                    <th scope="col">Ценна</th>
+                                    <th scope="col">Количество</th>
+                                    <th scope="col">Сумма</th>
+                                </tr>
+                                </thead>
+                                <tbody class="modal-content__tbody">
+                                <tr class="cart-table__lines">
+                                    <td class="cart-table__img">
+                                        <div class="cart-table__link cart-table__link-img"  style="background-image: url(img/table-img/Bitmap.svg);">
+                                            <div class="cart-table__link-img-big" style="background-image: url(img/table-img/Bitmap.svg);"></div>
+                                        </div>
+                                    </td>
+                                    <td class="cart-table__color-text cart-table__country"><a href="#" class="cart-table__link">Кирибати</a></td>
+                                    <td class="cart-table__color-text cart-table__denomination"><a href="#" class="cart-table__link">1 доллар</a></td>
+                                    <td class="cart-table__year">2018</td>
+                                    <td class="cart-table__bold-text cart-table__price">250 ₽</td>
+                                    <td class="cart-table__sum">
+                                        <div class="quantity-control">
+                                            <button class="quantity-control-minus"></button>
+                                            <input class="quantity-control-num" type="number" value="1" name="cart-table__block-num">
+                                            <button class="quantity-control-plus"></button>
+                                        </div>
+                                    </td>
+                                    <td class="cart-table__bold-text cart-table__amount">250 ₽</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="totals-modal totals">
+                                <h1 class="totals__titles totals__titles-modal">Итого:</h1>
+                                <span class="totals__price totals__price-modal">1000  ₽</span>
+                            </div>
+
+
+                            <div class="modal-forms">
+                                <div class="form-group modal-forms__phone">
+                                    <label for="your-data" class="col-form-label">Телефон</label>
+                                    <div class="modal-forms__phone-form">
+                                        <input type="text"  class="form-control" id="your-data" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                                    </div>
+                                </div>
+                                <div class="form-group modal-forms__name">
+                                    <label for="your-data" class="col-form-label">ФИО</label>
+                                    <div class="modal-forms__name-form">
+                                        <input type="text"  class="form-control" id="your-data" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="modal-forms__btn">
+                                    <div class="row">
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn-primary btn-lg modal-forms__button-ordering">Отправить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <div class="subscription">
         <div class="subscription__text">
@@ -1899,6 +1972,7 @@
     $('[data-toggle="popover"]').popover();
     $('[data-toggle="tooltip"]').tooltip();
 </script>
+
 
 </body>
 </html>

@@ -137,6 +137,8 @@ jQuery(document).ready(function($) {
             });
             cart.find('.cart-table__totals-price b').text(total);
         }
+        
+        cartTableCalc();
     
     });
     
